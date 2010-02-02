@@ -136,6 +136,12 @@ padding:6px 0;
  background : #f9f9f9;
 }
 
+.bird {
+float:right;
+margin-top:-12px;
+}
+
+
 .left {
 text-align:left;
 width:140px;
