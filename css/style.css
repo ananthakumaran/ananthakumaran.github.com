@@ -78,13 +78,13 @@ li {
 
 
 a {
-color:#000000;
+color:#c30;
 text-decoration:none;
 font-style:italic;
 }
 
 a:hover {
- color:#c30;
+ text-decoration:underline;
 }
 
 #header {
