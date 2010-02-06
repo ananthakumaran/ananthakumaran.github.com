@@ -5,6 +5,14 @@ header : Anantha Kumaran's blog
 ---
 
 <div>
+<h2>Recent Posts </h2>
+<div>
+<ul >
+    {% for post in site.posts offset: 0 limit: 3 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 <h2>Recent Activities</h2>
 <div id="activity">
 </div>
