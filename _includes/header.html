@@ -1,3 +1,12 @@
+<head>
+{% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}" />{% endif %}
+{% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}" />{% endif %}
+<meta name="author" content="Anantha Kumaran" />
+<meta name="google-site-verification" content="xQxaSmhj3mBfuDNK9W8TilEd3BdvtUKZldgeBdZYMyA" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js" type="text/javascript"></script>
 <script src="http://www.google.com/jsapi?key=ABQIAAAAsVbIYvzbtMdeeqGp0QRuTxRDU4ANYXgL8iuc5vvSjbnkPll6URSEVci_EMgSGr1yEtYCOu1-SrW-YQ"></script>
     <script type="text/javascript">
     google.load("feeds", "1");
@@ -23,4 +32,18 @@
       // Calling load sends the request off.  It requires a callback function.
       feed.load(feedLoaded);
     });
-    </script>
+</script>
+<script language="javascript" src="/js/jquery.tweet.js" type="text/javascript"></script>
+<script type='text/javascript'>
+      jQuery(document).ready(function($) {
+        $(".tweet").tweet({
+          join_text: "auto",
+          username: "ananthakumaran",
+          count: 3,
+          loading_text: "loading tweets..."
+        });
+	});	
+</script>
+
+<title>Anantha Kumaran &mdash; {{ page.title }}</title>
+</head>

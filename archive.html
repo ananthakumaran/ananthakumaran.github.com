@@ -1,0 +1,17 @@
+---
+layout: home
+title: Archive
+header : Archive
+meta_keywords: Anantha Kumaran , Anatha Kumaran's blog , ananthakumaran's blog archive
+meta_description: ananthakumaran's blog archive
+---
+<div class="archive">
+<h2>List of All Posts </h2>
+<div>
+<ul>
+    {% for post in site.posts offset: 0 limit: 3 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+</div>

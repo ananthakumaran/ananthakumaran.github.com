@@ -1,34 +1,10 @@
-<html>
-<head>
-{% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}" />{% endif %}
-{% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}" />{% endif %}
-<meta name="author" content="Anantha Kumaran" />
-<link rel="stylesheet" href="/css/style.css" />
-<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js" type="text/javascript"></script>
-<script language="javascript" src="/js/jquery.tweet.js" type="text/javascript"></script>
-<script type='text/javascript'>
-      jQuery(document).ready(function($) {
-        $(".tweet").tweet({
-          join_text: "auto",
-          username: "ananthakumaran",
-          count: 3,
-          loading_text: "loading tweets..."
-        });
-	});	
-</script>
-<title>Anantha Kumaran &mdash; {{ page.title }}</title>
-</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+{% include header.html %}
 <body>
-<div id="nav">
-<ul>
-<li><a href="/index.html" title="Home">Home</a>
-</li>
-<li class="last">
-<a href="/resume.html"  title="About the author and site">Resume</a>
-</li>
-</ul>
-</div>
-<div  class="clear"></div>
+{% include navigation.html %}
 <div id="header">
 {{ page.header}}
 </div>
@@ -36,25 +12,7 @@
  {{ content }}
  {% include  comments.html%}
 </div>
-<div id="right">
-<h2>Downloads</h2>
-<ul>
-<li><a href="/res/resume.pdf">resume</a></li>
-</ul>
-<h2>Contact Info </h2>
-<div >
-<ul>
-<li>Email: ananthakumaran@gmail.com</li>
-<li>Twitter: <a href="http://twitter.com/ananthakumaran">ananthakumaran</a></li>
-<li>Moblie : +91 9442024417</li>
-<li>Status:   Interested in full-time jobs</li>
-</ul>
-</div>
-<h2><a href="http://twitter.com/ananthakumaran">Follow Me</a><img class="bird" src="/img/bird_48.png" ></img></h2>
-<div class="clear" ></div>
-<div class="tweet">
-</div>
-</div>
+{% include sidebar.html %}
 {% include analytics.html %}
 </body>
 <html>
