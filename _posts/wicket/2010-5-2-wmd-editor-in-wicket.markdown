@@ -111,3 +111,8 @@ div.grippie {
 </html>
 
 {% endhighlight %}
+
+### Resources ###
+
+*	[wmd-editor] (http://wmd-editor.com/)
+* 	[Text Area Resizer] (http://plugins.jquery.com/project/TextAreaResizer)
