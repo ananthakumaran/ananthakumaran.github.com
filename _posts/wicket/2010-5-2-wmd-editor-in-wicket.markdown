@@ -6,7 +6,9 @@ header : Wmd Editor in Wicket
 i guess this post needs no explanation
 
 RichEditor.java
+
 {% highlight java %}
+
 import org.apache.wicket.ResourceReference;
 import org.apache.wicket.markup.html.IHeaderContributor;
 import org.apache.wicket.markup.html.IHeaderResponse;
@@ -105,4 +107,5 @@ div.grippie {
 	<div class="wmd-preview"></div>
 </wicket:panel>
 </html>
+
 {% endhighlight %}
