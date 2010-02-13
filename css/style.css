@@ -118,6 +118,10 @@ div.clear {
 	padding : 15px 10px 0 0;
 }
 
+#post {
+	padding : 15px 0 0;
+}
+
 /** rightside bar**/
 #right {
 	float:left;

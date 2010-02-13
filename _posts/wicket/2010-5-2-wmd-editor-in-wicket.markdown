@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Wmd Editor in Wicket
 header : Wmd Editor in Wicket
 meta_keywords: Wmd editor , wmd-editor , wmd editor wicket
