@@ -78,12 +78,12 @@ div.clear {
 
 /** navigation **/
 #nav {
-	height : 50px;
+	height : 80px;
 	float :right;
 }
 
 #nav ul {
-	margin : 10px ;
+	margin-top:47px;
 }
 #nav li {
 	display:inline;
