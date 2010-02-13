@@ -42,7 +42,7 @@ a:hover {
 body {
 	margin : 0 auto;
 	width:960px;
-	font-family:Georgia,"Times New Roman",Times,serif
+	font-family:georgia,"Times New Roman",Times,serif;
 	line-height:20px;
 	background:#F9F8F7 ;
 	color:#323231;
