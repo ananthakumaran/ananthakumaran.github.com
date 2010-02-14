@@ -1,0 +1,26 @@
+<script src="http://www.google.com/jsapi?key=ABQIAAAAsVbIYvzbtMdeeqGp0QRuTxRDU4ANYXgL8iuc5vvSjbnkPll6URSEVci_EMgSGr1yEtYCOu1-SrW-YQ"></script>
+    <script type="text/javascript">
+    google.load("feeds", "1");
+    function feedLoaded(result) {
+      if (!result.error) {
+        var container = $("#activity"); 
+        container.text("");
+        // Loop through the feeds, putting the titles onto the page.
+        // Check out the result object for a list of properties returned in each entry.
+        // http://code.google.com/apis/ajaxfeeds/documentation/reference.html#JSON
+        for (var i = 0; i < result.feed.entries.length; i++) {
+          var entry = result.feed.entries[i];
+        container.append($("<h3>"+entry.title+"</h3>"));
+          container.append(entry.content);
+        }
+      }
+    }
+    
+      $().ready(function(){
+      // Create a feed instance that will grab Digg's feed.
+      var feed = new google.feeds.Feed("http://github.com/ananthakumaran.atom");
+    
+      // Calling load sends the request off.  It requires a callback function.
+      feed.load(feedLoaded);
+    });
+</script>
