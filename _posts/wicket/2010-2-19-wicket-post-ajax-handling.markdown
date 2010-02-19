@@ -13,12 +13,12 @@ If you want to do something before and after every ajax call you would do that
 by registering the wicket ajax callbacks as follows.
 
 {% highlight javascript %}
-		// check whether the page contains any ajax links
-		if (Wicket.Ajax) {
-			Wicket.Ajax.registerPreCallHandler(preAjaxHandler);
-			Wicket.Ajax.registerPostCallHandler(successHandler);
-			Wicket.Ajax.registerFailureHandler(failureHandler);
-		}
+// check whether the page contains any ajax links
+if (Wicket.Ajax) {
+	Wicket.Ajax.registerPreCallHandler(preAjaxHandler);
+	Wicket.Ajax.registerPostCallHandler(successHandler);
+	Wicket.Ajax.registerFailureHandler(failureHandler);
+}
 {% endhighlight %}
 
 
@@ -89,42 +89,42 @@ Now we finished our client side work. Ok let start our server side work.
 Add this function to your base class;
 
 {% highlight java %}
-	/**
-	 * fires a event with the collection of all the updated dom elements after
-	 * the wicket ajax response. To subscribe the event call the
-	 * <code>MyApp.Ajax.registerPostAjax</code>. Your callback function
-	 * will be called with a jQuery Wrapped set of all the update dom as the
-	 * first argument.
-	 * 
-	 * NOTE: call this only once after all the components are added to the
-	 * target
-	 * 
-	 * 
-	 * @param target
-	 *            ajax target
-	 */
-	public void firePostAjaxUpdateEvent(final AjaxRequestTarget target)
+/**
+ * fires a event with the collection of all the updated dom elements after
+ * the wicket ajax response. To subscribe the event call the
+ * <code>MyApp.Ajax.registerPostAjax</code>. Your callback function
+ * will be called with a jQuery Wrapped set of all the update dom as the
+ * first argument.
+ * 
+ * NOTE: call this only once after all the components are added to the
+ * target
+ * 
+ * 
+ * @param target
+ *            ajax target
+ */
+public void firePostAjaxUpdateEvent(final AjaxRequestTarget target)
+{
+	final StringBuffer script = new StringBuffer(" MyApp.Ajax.handle([");
+	for (final Component component : target.getComponents())
 	{
-		final StringBuffer script = new StringBuffer(" MyApp.Ajax.handle([");
-		for (final Component component : target.getComponents())
-		{
-			script.append("\"" + component.getMarkupId() + "\",");
-		}
-		script.append("])");
-
-		target.getHeaderResponse().renderOnDomReadyJavascript(script.toString());
+		script.append("\"" + component.getMarkupId() + "\",");
 	}
+	script.append("])");
+
+	target.getHeaderResponse().renderOnDomReadyJavascript(script.toString());
+}
 {% endhighlight %}
 
 Now if you want to intialize something on the newly added DOMs simply call this 
 method and a event with the list of updated DOMs will be fired on the client side.
 {% highlight java %}
-		@Override
-		protected void onSubmit(final AjaxRequestTarget target)
-		{
-			// add all the components
-			firePostAjaxUpdateEvent(target);
-		}
+@Override
+protected void onSubmit(final AjaxRequestTarget target)
+{
+	// add all the components
+	firePostAjaxUpdateEvent(target);
+}
 {% endhighlight %}
 
 Your comments are welcome.
