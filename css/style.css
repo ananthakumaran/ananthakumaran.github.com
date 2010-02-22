@@ -168,6 +168,10 @@ div.clear {
 	margin:10px 0;
 }
 
+div#activity {
+	margin-top:-25px;
+}
+
 /** --------- syntax highlight----------**/
 
 /* Font sizing */
