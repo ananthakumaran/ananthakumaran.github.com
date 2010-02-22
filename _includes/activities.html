@@ -10,8 +10,10 @@
         // http://code.google.com/apis/ajaxfeeds/documentation/reference.html#JSON
         for (var i = 0; i < result.feed.entries.length; i++) {
           var entry = result.feed.entries[i];
-        container.append($("<h3>"+entry.title+"</h3>"));
-          container.append(entry.content);
+		  var activity = $('<div>',{ 'class' : 'section'});
+		  activity.append($("<h3>"+entry.title+"</h3>"));
+          activity.append(entry.content);
+		  container.append(activity);
         }
       }
     }
