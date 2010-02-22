@@ -33,7 +33,7 @@ call your post handlers with the list of newly added DOMs.
 Solution
 --------
 
-You have do it by yourself.Ok let start by creating a Ajax event Handler
+It is very easy to do it by yourself.Ok let start by creating a Ajax event Handler
 
 {% highlight javascript %}
 
