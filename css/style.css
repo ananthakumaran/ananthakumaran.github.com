@@ -1,4 +1,8 @@
-/** RESET **/
+/** 
+ *	@author Anantha Kumaran
+ *
+ **/
+/************************reset****************************/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
 	margin:0;
 	padding:0;
@@ -29,150 +33,125 @@ q:before,q:after {
 }
 abbr,acronym { border:0;
 }
+/***********************end of reset ******************/
+/********************** block *************************/
+body {
+	margin : 0 auto;
+	width:960px;
+}
+#content {
+	width:73%;
+	padding : 15px 10px 0 0;
+}
+#rightBar{
+	width:24%;
+	padding : 0 0 0 10px;
+}
+#header { padding:30px 0; }
+#post { padding : 15px 0 0; }
+.clear {
+	clear:both;
+	height:0;
+}
+.hNav{ height : 40px; }
+.hNavL li{ display:inline; }
+.vNavL li { padding:6px 0; }
+.big { padding:10px; }
+.section { margin:20px 0 5px; }
+.right { float:right; }
+.left { float:left; }
+/*********************end of block ********************/
 
-/** elements **/
+/*********************skin*****************************/
+body {
+	background:#F9F8F7 ;
+	color:#323231;	
+}
 a {
 	color:#c30;
+}
+h3 {
+	color:#666;
+}
+.hNavL li { border-right:1px solid #ccc; }
+.vNavL li { color:#666666; }
+.vNavL li:hover{ background : #FFF; }
+.borderTop { border-top:1px solid #ccc; }
+.borderRight { border-right:1px solid #ccc; }
+.borderBottom { border-bottom:1px solid #ccc; }
+.borderLeft { border-left:1px solid #ccc;}
+.borderTopDot , .borderTopDotL li { border-top:1px dotted #ccc; }
+.borderBottomDot { border-bottom:1px dotted #ccc;}
+/*********************end of skin**********************/
+
+/*********************typography***********************/
+body {
+	font-family:georgia , "Times New Roman",Times,serif;
+	line-height:20px;
+	font-size:16px;
+}
+a {
 	text-decoration:none;
 	font-style:italic;
 }
 a:hover {
 	text-decoration:underline;
 }
-body {
-	margin : 0 auto;
-	width:960px;
-	font-family:georgia,"Times New Roman",Times,serif;
-	line-height:20px;
-	background:#F9F8F7 ;
-	color:#323231;
-	font-size:16px;
-}
-ul {
- margin : 0;
- padding:0;
-}
-h3 {
-	color:#666666;
-	font-family:georgia;
-	font-size:18px;
-	font-style:italic;
-	font-weight:normal;
-	margin:30px 0 5px;
-	line-height:23px;
-}
+
 h2 {
 	font-family:arial;
 	font-size:20px;
 	font-style:normal;
-	font-weight:normal;
-	margin:20px 0 5px;
+	font-weight:normal;	
 	line-height:25px;
 }
 
-
-div.clear {
-	clear:both;
-	height:0;
+h3 {	
+	font-family:georgia;
+	font-size:18px;
+	font-style:italic;
+	font-weight:normal;
+	line-height:23px;
 }
 
-/** navigation **/
-#nav {
-	height : 80px;
-	float :right;
-}
-
-#nav ul {
-	margin-top:47px;
-}
-#nav li {
-	display:inline;
-	padding:10px;
-	border-right:1px solid #ccc
-}
-#nav li a {
+.big {
 	font-size:27px;
 }
-#nav li.last {
-	border-right:none;
-}
-
-/** header **/
 
 #header {
-	border-bottom:1px solid #ccc;
-	border-top:1px solid #ccc;
 	font-family:georgia;
 	font-size:41px;
 	font-style:normal;;
 	font-weight:normal;
 	line-height:41px;
-	padding:30px 0;
 }
 
-/** content **/
-#content {
-	float:left;
-	width:73%;
-	border-right:1px solid #ccc;
-	padding : 15px 10px 0 0;
-}
-
-#post {
-	padding : 15px 0 0;
-}
-
-/** rightside bar**/
-#right {
-	float:left;
-	width:24%;
-	padding : 0 0 0 10px;
-}
-
-#right ul {
-	border-top:1px dotted #CCC;
-}
-
-#right li {
-	border-bottom:1px dotted #CCC;
-	color:#666666;
+.vNavL li {
 	font-family:arial;
 	font-size:13px;
 	font-style:normal;
 	font-variant:normal;
 	font-weight:normal;
 	line-height:normal;
-	list-style-image:none;
-	list-style-position:outside;
-	list-style-type:none;
-	padding:6px 0;
 }
-
-#right li:hover{
-	background : #FFF;
+/*********************end of typography****************/
+/********************* specific **************************/
+ul.hNavL {
+	margin-top:47px;
 }
-
 .bird {
-	float:right;
 	margin-top:-12px;
 }
 
-.left {
-	text-align:left;
-	width:140px;
-	display:inline-block;
-}
-
-
-#tech li {
-	margin:10px 0;
-}
-
-div#activity {
-	margin-top:-25px;
-}
-
-/** --------- syntax highlight----------**/
+/** 
+ * TODO
+ * [*] activities
+ * [*] posts
+ *
+ *
+ */
+/********************* end of specific *******************/
+/*******************syntax highlight*******************/
 
 /* Font sizing */
 .highlight {
@@ -247,3 +226,4 @@ div#activity {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
+/*********************end of syntax highlight******************/
