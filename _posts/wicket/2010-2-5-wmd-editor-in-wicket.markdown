@@ -8,7 +8,7 @@ meta_description: wmd editor in wicket
 i guess this post needs no explanation
 
 RichEditor.java
-
+---------------
 {% highlight java %}
 
 import org.apache.wicket.ResourceReference;
@@ -59,7 +59,7 @@ response.renderOnDomReadyJavascript("$('textarea').TextAreaResizer();");
 {% endhighlight %}
 
 RichEditor.html
-
+---------------
 {% highlight html %}
 
 <html xmlns:wicket>
@@ -109,12 +109,15 @@ div.grippie {
 	<div class="wmd-preview"></div>
 </wicket:panel>
 </html>
-
 {% endhighlight %}
-### Resources ###
+
+Resources 
+---------
 *	[wmd-editor] (http://wmd-editor.com/)
 * 	[Text Area Resizer] (http://plugins.jquery.com/project/TextAreaResizer)
-### Update ###
+
+Updates
+-------
 This works fine if there is only on Editor in a Page. If you want to use multiple editor in a single page then you have to use
 the reverse engineered version of [Wmd-Editor] (http://github.com/openlibrary/wmd). I am attaching a sample project which uses
 multiple editors [Sample-project] (/res/editor.zip). Change it according to you need.

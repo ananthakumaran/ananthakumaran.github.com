@@ -11,28 +11,19 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img { 
-	border:0;
-}
+fieldset,img {  border:0; }
 address,caption,cite,code,dfn,em,strong,th,var {
 	font-style:normal;
 	font-weight:normal;
 }
-ol,ul {
-	list-style:none;
-}
-caption,th {
-	text-align:left;
-}
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
 h1,h2,h3,h4,h5,h6 {
 	font-size:100%;
 	font-weight:normal;
 }
-q:before,q:after {
-	content:'';
-}
-abbr,acronym { border:0;
-}
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
 /***********************end of reset ******************/
 /********************** block *************************/
 body {
@@ -67,12 +58,8 @@ body {
 	background:#F9F8F7 ;
 	color:#323231;	
 }
-a {
-	color:#c30;
-}
-h3 {
-	color:#666;
-}
+a { color:#c30; }
+h3 { color:#666; }
 .hNavL li { border-right:1px solid #ccc; }
 .vNavL li { color:#666666; }
 .vNavL li:hover{ background : #FFF; }
@@ -94,60 +81,41 @@ a {
 	text-decoration:none;
 	font-style:italic;
 }
-a:hover {
-	text-decoration:underline;
-}
-
+a:hover { text-decoration:underline; }
 h2 {
 	font-family:arial;
 	font-size:20px;
-	font-style:normal;
-	font-weight:normal;	
 	line-height:25px;
 }
-
 h3 {	
-	font-family:georgia;
 	font-size:18px;
 	font-style:italic;
-	font-weight:normal;
 	line-height:23px;
 }
-
-.big {
-	font-size:27px;
-}
-
 #header {
-	font-family:georgia;
 	font-size:41px;
-	font-style:normal;;
-	font-weight:normal;
 	line-height:41px;
 }
-
 .vNavL li {
 	font-family:arial;
 	font-size:13px;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
 	line-height:normal;
 }
+.big { font-size:27px; }
 /*********************end of typography****************/
 /********************* specific **************************/
-ul.hNavL {
-	margin-top:47px;
-}
-.bird {
-	margin-top:-12px;
+#post h2 { margin:20px 0 5px;}
+ul.hNavL { margin-top:47px; }
+.bird { margin-top:-12px; }
+.mainNav {
+	position:relative;
+	top:3px;
+	padding-right:0;
 }
 
 /** 
  * TODO
  * [*] activities
- * [*] posts
- *
  *
  */
 /********************* end of specific *******************/
