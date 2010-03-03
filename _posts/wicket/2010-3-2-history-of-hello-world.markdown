@@ -26,10 +26,8 @@ written by Brian W.Kernighan and Dennis M.Ritchie.
 		printf("hello, world\n");
 	}
 {% endhighlight %}
-
 It is also claimed that the `'hello world'` program was used by Kernighan's in 1972 
 in a Tutorial Introduction to the Language B
-
 {% highlight c %}
 	main( ) {
 	extrn a, b, c;
@@ -39,7 +37,6 @@ in a Tutorial Introduction to the Language B
 	b 'o, w';
 	c 'orld';
 {% endhighlight %}
-
 I looks like 'C' copied the `'hello world'` from program 'B' :).
 
 Hello World 
