@@ -30,7 +30,7 @@ written by Brian W.Kernighan and Dennis M.Ritchie.
 It is also claimed that the `'hello world'` program was used by Kernighan's in 1972 
 in a Tutorial Introduction to the Language B
 
-{% highlight b %}
+{% highlight c %}
 	main( ) {
 	extrn a, b, c;
 	putchar(a); putchar(b); putchar(c); putchar('!*n');
@@ -44,8 +44,6 @@ I looks like 'C' copied the `'hello world'` from program 'B' :).
 
 Hello World 
 -----------
-
-
 Ok, What about writing a `'hello world'` program in all the languages you know. Wolfram Rösler have
 already written(collected) [hello world in different languages](http://www.roesler-ac.de/wolfram/hello.htm).
 Enough talking lets go and write a `'hello world'` program.
