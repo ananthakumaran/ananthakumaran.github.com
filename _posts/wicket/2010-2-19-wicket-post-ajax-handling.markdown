@@ -9,7 +9,7 @@ meta_description: wicket post ajax handling
 Wicket Ajax Hooks
 -----------------
 
-If you want to do something before and after every ajax call you would do that
+In Wicket if we want to do something before and after every ajax call we would do that
 by registering the wicket ajax callbacks as follows.
 
 {% highlight javascript %}
@@ -25,15 +25,15 @@ if (Wicket.Ajax) {
 Problem
 -------
 
-Most of the time you need to update or add event handlers or do some initialization on 
-the newly added DOMs. But you don't know Which DOMs are updated by wicket.wicket doesn't
-call your post handlers with the list of newly added DOMs.
+Most of the time we need to update or add event handlers or do some initialization on 
+the newly added DOMs. But we don't know Which DOMs are updated by wicket.wicket doesn't
+call our post handlers with the list of newly added DOMs.
 
 
 Solution
 --------
 
-It is very easy to do it by yourself.Ok let start by creating a Ajax event Handler
+It is very easy to do it by ourself.Ok let start by creating a Ajax event Handler
 
 {% highlight javascript %}
 
@@ -116,7 +116,7 @@ public void firePostAjaxUpdateEvent(final AjaxRequestTarget target)
 }
 {% endhighlight %}
 
-Now if you want to intialize something on the newly added DOMs simply call this 
+Now if we want to intialize something on the newly added DOMs simply we can call this 
 method and a event with the list of updated DOMs will be fired on the client side.
 {% highlight java %}
 @Override
