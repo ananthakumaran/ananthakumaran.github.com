@@ -39,7 +39,7 @@ Shell Script
 ------------
 Shell script is there to rescue us. "Oh! i never written anything in very low level language.
 Can i write shell script in windows", Yes we can. Although it is a very ugly language,
-it is very useful to do some work.
+it is very useful to do some work. Here is the script to do the above mentioned work in a single click.
 
 {% highlight bat %}
 @echo off
