@@ -41,7 +41,7 @@ Shell script is there to rescue us. "Oh! i never written anything in very low le
 Can i write shell script in windows", Yes we can. Although it is a very ugly language,
 it is very useful to do some work.
 
-{% highlight sh %}
+{% highlight bat %}
 @echo off
 :: start the Git Bash
 start "Git Bash" /DD:\Git_Repo\ananthakumaran.github.com  "cmd" /c ""e:\Program Files\Git\bin\sh.exe" --login -i "
