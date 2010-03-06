@@ -6,10 +6,9 @@ meta_keywords: Anantha Kumaran , Anatha Kumaran's blog , ananthakumaran's blog a
 meta_description: ananthakumaran's blog archive
 ---
 <div class="section">
-<h2>List of All Posts </h2>
 <div>
 <ul>
-    {% for post in site.posts offset: 0 limit: 3 %}
+    {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
