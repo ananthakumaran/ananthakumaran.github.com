@@ -8,9 +8,9 @@ meta_description: shell script are time saver
 
 Don't Repeat Yourself
 ---------------------
-Every time when i start to do some work i find myself doing some  repetitive non productive work again
-and again. I used to type a series of commands in the system to set up the working
-envirorment.For example consider i am going to write a new post for my blog, then i will do the following things
+Every time when i start to do some work, i find myself doing some  repetitive, non productive work again
+and again. To set up the working envirorment, i used to type a series of commands in the system.For example
+consider i am going to write a new post for my blog, i will do the following things
 
 		Press window + R
 		Type cmd
@@ -25,14 +25,14 @@ envirorment.For example consider i am going to write a new post for my blog, the
 		Go to the _post folder
 		right click and create a new file   
 
-Oh My God!, I am doing the same task again and again for every changes i make in 
+Oh My God!, I am doing the same task again and again, for every changes i make in 
 my website. Don't i write programs to automate this kind of work. Then why i am
 not automating this.
 
 Be lazy
 -------
-I am very lazy. Being a lazy person is good in some ways. Sometimes it turnsout that i neednot do some work, otherwise i would have done it.
-Ok Is it right to be a lazy programmer. Yes it is. Lazy programmers are the best programmers in the world :). 
+I am very lazy. Being a lazy person is good in some ways. Sometimes it turnsout, i neednot do some work, otherwise i would have done it.
+Ok is it right to be a lazy programmer?. Yes it is. Lazy programmers are the best programmers in the world :). 
 Now i am going to try hard to be a lazy programmer. So i am going to do all this repetetive work in a single click.
 
 Shell Script
