@@ -32,7 +32,7 @@ associated with the markup file PagingNavigator.html.I got the markup from [1](h
 
 Extend the Component
 --------------------
-First we need the extend the PagingNavigator.
+First we need to extend the Component, in our case it is PagingNavigator.
 
 {% highlight java %}
 public class CustomPagingNavigator extends PagingNavigator
@@ -53,7 +53,7 @@ public class CustomPagingNavigator extends PagingNavigator
 
 Customize the Markup
 --------------------
-Create the CustomPagingNavigator.html file and copy the original markup. The only
+Create a markup file for the compoent(CustomPagingNavigator.html) and copy the original markup. The only
 restriction is, we should not change the `wicket:id` and the hierarchy of the `wicket:id`.
 i don't like the &lt; and &gt; symbols. So i am going to change it and i like to add `|` between
 the links.
@@ -72,4 +72,4 @@ the links.
 {% endhighlight %}
 
 
-I made small changes. But you can make changes like showing images instead of first , last etc.
+I have made small changes only. But you can go on and make further changes like showing images instead of first , last etc.
