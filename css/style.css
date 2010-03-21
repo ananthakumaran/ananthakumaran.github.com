@@ -113,6 +113,10 @@ ul.hNavL { margin-top:47px; }
 	top:3px;
 	padding-right:0;
 }
+ul.social li { 
+	float:left;
+	margin-right:6px;
+}
 
 /** 
  * TODO
