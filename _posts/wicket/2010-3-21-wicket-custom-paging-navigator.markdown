@@ -8,7 +8,7 @@ meta_description: wicket custom paging navigator
 
 Wicket Built-in Components
 --------------------------
-Wicket provides lot of useful components out of the box. Sometimes we would like the
+Wicket provides lot of useful components out of the box. Sometimes we would like to
 change the appearance(aka markup) of the built-in components. It is very easy to do.
 
 Original Markup
@@ -53,7 +53,7 @@ public class CustomPagingNavigator extends PagingNavigator
 
 Customize the Markup
 --------------------
-Create a markup file for the compoent(CustomPagingNavigator.html) and copy the original markup. The only
+Create a markup file for the component(CustomPagingNavigator.html) and copy the original markup. The only
 restriction is, we should not change the `wicket:id` and the hierarchy of the `wicket:id`.
 i don't like the &lt; and &gt; symbols. So i am going to change it and i like to add `|` between
 the links.
