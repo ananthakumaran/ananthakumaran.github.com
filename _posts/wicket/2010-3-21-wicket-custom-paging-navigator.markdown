@@ -13,7 +13,7 @@ change the appearance(aka markup) of the built-in components. It is very easy to
 
 Original Markup
 ---------------
-Each component have a markup file associated with it. We will take the PagingNavigator as an example. It is 
+Each component has a markup file associated with it. We will take the PagingNavigator as an example. It is 
 associated with the markup file PagingNavigator.html. I got the markup from [1](http://github.com/apache/wicket/blob/trunk/wicket/src/main/java/org/apache/wicket/markup/html/navigation/paging/PagingNavigator.html).
 
 {% highlight html %}
