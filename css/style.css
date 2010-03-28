@@ -198,3 +198,13 @@ ul.social li {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /*********************end of syntax highlight******************/
+
+/************ tipsy ********************/
+.tipsy { padding: 4px; font-size: 16px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(/img/tipsy.gif); }
+  .tipsy-inner { padding: 5px 8px 4px 8px; background-color: #cc3300; color: white; max-width: 200px; text-align: center; }
+  .tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
+  .tipsy-north { background-position: top center; }
+  .tipsy-south { background-position: bottom center; }
+  .tipsy-east { background-position: right center; }
+  .tipsy-west { background-position: left center; }
+/*********** end of tipsy ************/
