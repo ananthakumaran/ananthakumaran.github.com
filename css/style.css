@@ -127,12 +127,15 @@ ul.social li {
 /*******************syntax highlight*******************/
 
 /* Font sizing */
+code , .highlight {
+ background: #f0f0f0;
+ font-size:14px;
+ font-familiy:Monaco,"Courier New",monospace;
+ padding : 0 5px;
+ }
 .highlight {
-	font-size:14px;
+    padding : 0 2em;
     line-height: 2em;
-    font-family: Monaco, "Courier New", monospace;
-    padding:0 2em;
-    background: #f0f0f0;
 	margin-bottom:10px;
 	margin-top:15px;
 	overflow:auto;
