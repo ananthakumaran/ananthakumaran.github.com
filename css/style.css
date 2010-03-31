@@ -30,6 +30,9 @@ body {
 	margin : 0 auto;
 	width:960px;
 }
+p {
+	margin : 12px 0;
+}
 #content {
 	width:73%;
 	padding : 15px 10px 0 0;
@@ -81,6 +84,7 @@ a {
 	font-style:italic;
 }
 a:hover { text-decoration:underline; }
+#post a { font-style:normal; }
 h2 {
 	font-family:arial;
 	font-size:20px;
