@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://ananthakuamaran.github.com</loc>
+        <loc>http://ananthakumaran.github.com</loc>
         <lastmod>2010-03-29T19:08:17+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
@@ -29,7 +29,7 @@ layout: nil
 	</url>
     {% for post in site.posts %}
     <url>
-        <loc>http://ananthakuamaran.github.com{{ post.url }}</loc>
+        <loc>http://ananthakumaran.github.com{{ post.url }}</loc>
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
