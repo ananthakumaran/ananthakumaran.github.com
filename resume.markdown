@@ -43,8 +43,7 @@ Sun Certified Programmer (SCJP) for Java 2 Platform 1.6.
  
  
 ##Technical Skill##
-Java, JavaScript, C#, SQL, HTML, Ajax, CSS, XML, Servlets, JSP, JEE, EJB, Wicket, Spring, jQuery, YUI, Hibernate, JPA, JDO, Netbeans, Eclipse, 
-MySql, Subversion, Git, Maven.
+Java, JavaScript, C#, SQL, HTML, Ajax, CSS, Servlets, JSP, Wicket, Spring, jQuery, Hibernate, Netbeans, Eclipse, MySql, Subversion, Git, Maven.
 
 --------------------
 
