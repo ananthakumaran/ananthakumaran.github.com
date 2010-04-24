@@ -36,7 +36,6 @@ Sun Certified Programmer (SCJP) for Java 2 Platform 1.6.
 
 ##Ongoing Projects##
 [ImageBundler](http://ananthakumaran.github.com/imagebundler-wicket "ImageBundler for Apache Wicket") : Image Bundler for Apache Wicket Web FrameWork.  
-[FileOsculator](http://fileosculator.kenai.com "An application used to share files among the users in the same LAN") : An application used to share files among the users in the same LAN.  
 [Social Site](http://github.com/ananthakumaran/socialsite "A social network for the students"): A social network for the students.  
 
 --------------------
