@@ -7,10 +7,8 @@ meta_description: Anantha Kumaran resume
 ---
 
 
-2, Ammanpuram,  
-seerkatchi(po),  
-Thiruchendur,  
-Tuticorin-628208.  
+Medavakkam,
+Chennai.  
 +91 9442024417.  
 ananthakumaran@gmail.com.     
 
