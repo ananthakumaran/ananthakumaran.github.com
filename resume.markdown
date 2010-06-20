@@ -37,7 +37,7 @@ Sun Certified Programmer (SCJP) for Java 2 Platform 1.6.
 
 --------------------
 
-##Ongoing Projects##
+##Projects##
 [ImageBundler](http://ananthakumaran.github.com/imagebundler-wicket
  "ImageBundler for Apache Wicket"): Image Bundler for Apache Wicket
 Web FrameWork.   
