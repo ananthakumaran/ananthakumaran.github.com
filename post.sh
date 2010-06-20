@@ -1,0 +1,1 @@
+emacs ./_posts/$2/`date +%F`-$1.markdown &

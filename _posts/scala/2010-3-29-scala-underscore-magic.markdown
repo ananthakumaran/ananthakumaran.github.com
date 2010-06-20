@@ -127,7 +127,7 @@ Functions
 ---------
 
 Scala is a functional language. So we can treat function as a  normal variable. If you try to
-assign a function to a new variable, the function will invoked and the result will be assigned to
+assign a function to a new variable, the function will be invoked and the result will be assigned to
 the variable. This confusion occurs due to the optional braces for method invocation. We should
 use `_` after the function name to assign it to another variable.
 
