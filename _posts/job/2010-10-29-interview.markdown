@@ -6,7 +6,7 @@ meta_keywords: interview
 meta_description: my interview story
 ---
 
-`written on 9th June 2010`
+`written on 9nth June 2010`
 
 I think i will never publish this post. Who knows my mind changes very
 rapidly than i could imagine. But any how i will just write down my
@@ -29,7 +29,7 @@ can solve it quickly. I didn't want to spend my free time by reading
 RS Agarwal or other puzzle books. So to wrap up, all the problem asked
 in the GA was new to me. So it took lot of time for me to solve the
 problem, But there was only thirty minutes. Any how both of the
-company did a good job, they made me realise that i am not a genies.
+company did a good job, they made me realise that i am not a genius.
 
 There are some common things between this two company. I guess their
 recruiting the based on the fact that, " if a student is smart, then
