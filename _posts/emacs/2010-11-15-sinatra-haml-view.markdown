@@ -10,7 +10,9 @@ meta_descripton: Emacs Tips
 
 ;; usage
 ;;
-;; (local-set-key (kbd "C-x j") 'jump-to-view)
+;; (add-hook 'ruby-mode-hook
+;;          (lambda ()
+;;	    (local-set-key (kbd "C-x j") 'jump-to-view)))
 ;;
 ;; keep the point anywhere inside a sinatra route and
 ;; press C-x j to open the haml file
