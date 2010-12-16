@@ -12,5 +12,6 @@ meta_description: evolution of programming languages
 
 Suggestion
 ----------
-  Your comments are welcome. if you want to change anything please fork the [gist](http://gist.github.com/330304) and send me a mail.
-I will update the diagram if it looks good.
+  Your comments are welcome. if you want to change anything please
+fork the [gist](http://gist.github.com/330304) and send me a mail.  I
+will update the diagram if it looks good.

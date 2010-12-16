@@ -3,7 +3,7 @@ layout: post
 title: Emacs Tips
 header: Emacs Tips
 meta_keywords: Emacs Tips
-meta_descripton: Emacs Tips
+meta_descripton: Emacs jump to haml view
 ---
 
 {% highlight cl %}

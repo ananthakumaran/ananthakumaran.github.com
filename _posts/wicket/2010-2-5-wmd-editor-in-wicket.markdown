@@ -111,13 +111,16 @@ div.grippie {
 </html>
 {% endhighlight %}
 
-Resources 
+Resources
 ---------
-*	[wmd-editor] (http://wmd-editor.com/)
-* 	[Text Area Resizer] (http://plugins.jquery.com/project/TextAreaResizer)
+*	[wmd-editor](http://wmd-editor.com/)
+* 	[Text Area Resizer](http://plugins.jquery.com/project/TextAreaResizer)
 
 Updates
 -------
-This works fine if there is only on Editor in a Page. If you want to use multiple editor in a single page then you have to use
-the reverse engineered version of [Wmd-Editor] (http://github.com/openlibrary/wmd). I am attaching a sample project which uses
-multiple editors [Sample-project] (/res/editor.zip). Change it according to your needs.
+This works fine if there is only on Editor in a Page. If you want to
+use multiple editor in a single page then you have to use the reverse
+engineered version of
+[Wmd-Editor](http://github.com/openlibrary/wmd). I am attaching a
+sample project which uses multiple editors
+[Sample-project](/res/editor.zip). Change it according to your needs.

@@ -10,7 +10,7 @@ meta_descripton: comparing ruby's block with lisp functions
 def foo
   print "foo"
   yield
-end  
+end
 
 foo { print "bar" }
 {% endhighlight %}
@@ -42,7 +42,7 @@ functional programming
   (display "foo")
   (block))
 
-(foo (lambda () 
+(foo (lambda ()
        (display "bar")))
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ explicitly
 def foo(&b)
   print "foo"
   b.call()
-end  
+end
 
 foo { print "bar" }
 {% endhighlight %}

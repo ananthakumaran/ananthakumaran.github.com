@@ -9,8 +9,8 @@ meta_description: wicket post ajax handling
 Wicket Ajax Hooks
 -----------------
 
-In Wicket if we want to do something before and after every ajax call we would do that
-by registering the wicket ajax callbacks as follows.
+In Wicket if we want to do something before and after every ajax call
+we would do that by registering the wicket ajax callbacks as follows.
 
 {% highlight javascript %}
 // check whether the page contains any ajax links
@@ -25,15 +25,17 @@ if (Wicket.Ajax) {
 Problem
 -------
 
-Most of the time we need to update or add event handlers or do some initialization on 
-the newly added DOMs. But we don't know Which DOMs are updated by wicket.wicket doesn't
-call our post handlers with the list of newly added DOMs.
+Most of the time we need to update or add event handlers or do some
+initialization on the newly added DOMs. But we don't know Which DOMs
+are updated by wicket.wicket doesn't call our post handlers with the
+list of newly added DOMs.
 
 
 Solution
 --------
 
-It is very easy to do it by ourself.Ok let start by creating a Ajax event Handler
+It is very easy to do it by ourself.Ok let start by creating a Ajax
+event Handler
 
 {% highlight javascript %}
 
@@ -95,11 +97,11 @@ Add this function to your base class;
  * <code>MyApp.Ajax.registerPostAjax</code>. Your callback function
  * will be called with a jQuery Wrapped set of all the update dom as the
  * first argument.
- * 
+ *
  * NOTE: call this only once after all the components are added to the
  * target
- * 
- * 
+ *
+ *
  * @param target
  *            ajax target
  */
@@ -116,8 +118,9 @@ public void firePostAjaxUpdateEvent(final AjaxRequestTarget target)
 }
 {% endhighlight %}
 
-Now if we want to intialize something on the newly added DOMs simply we can call this 
-method and a event with the list of updated DOMs will be fired on the client side.
+Now if we want to intialize something on the newly added DOMs simply
+we can call this method and a event with the list of updated DOMs will
+be fired on the client side.
 {% highlight java %}
 @Override
 protected void onSubmit(final AjaxRequestTarget target)

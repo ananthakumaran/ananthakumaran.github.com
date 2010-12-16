@@ -8,13 +8,16 @@ meta_description: wicket custom paging navigator
 
 Wicket Built-in Components
 --------------------------
-Wicket provides lot of useful components out of the box. Sometimes we would like to
-change the appearance(aka markup) of the built-in components. It is very easy to do.
+Wicket provides lot of useful components out of the box. Sometimes we
+would like to change the appearance(aka markup) of the built-in
+components. It is very easy to do.
 
 Original Markup
 ---------------
-Each component has a markup file associated with it. We will take the PagingNavigator as an example. It is 
-associated with the markup file PagingNavigator.html. I got the markup from [1](http://github.com/apache/wicket/blob/trunk/wicket/src/main/java/org/apache/wicket/markup/html/navigation/paging/PagingNavigator.html).
+Each component has a markup file associated with it. We will take the
+PagingNavigator as an example. It is associated with the markup file
+PagingNavigator.html. I got the markup from
+[1](http://github.com/apache/wicket/blob/trunk/wicket/src/main/java/org/apache/wicket/markup/html/navigation/paging/PagingNavigator.html).
 
 {% highlight html %}
 <html xmlns:wicket>
@@ -41,22 +44,23 @@ public class CustomPagingNavigator extends PagingNavigator
 	{
 		this(id, pageable, null);
 	}
-	
+
 	public CustomPagingNavigator(final String id, final IPageable pageable,
 		final IPagingLabelProvider labelProvider)
 	{
 		super(id,pageable,labelProvider);
 	}
-	
+
 }
 {% endhighlight %}
 
 Customize the Markup
 --------------------
-Create a markup file for the component(CustomPagingNavigator.html) and copy the original markup. The only
-restriction is, we should not change the `wicket:id` and the hierarchy of the `wicket:id`. 
-I don't like the &lt; and &gt; symbols. So i am going to change it and i like to add `|` between
-the links.
+Create a markup file for the component(CustomPagingNavigator.html) and
+copy the original markup. The only restriction is, we should not
+change the `wicket:id` and the hierarchy of the `wicket:id`.  I don't
+like the &lt; and &gt; symbols. So i am going to change it and i like
+to add `|` between the links.
 {% highlight html %}
 <html xmlns:wicket>
 <body>
@@ -72,4 +76,5 @@ the links.
 {% endhighlight %}
 
 
-I have made small changes only. But you can go on and make further changes like showing images instead of first, last etc.
+I have made small changes only. But you can go on and make further
+changes like showing images instead of first, last etc.
