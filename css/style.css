@@ -1,9 +1,9 @@
-/** 
+/**
  *	@author Anantha Kumaran
  *
  **/
 /************************reset****************************/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
 	padding:0;
 }
@@ -58,7 +58,7 @@ p {
 
 /*********************skin*****************************/
 body {
-	color:#333;	
+	color:#333;
 }
 a { color:#c30; }
 h3 { color:#666; }
@@ -85,13 +85,13 @@ a {
 }
 a:hover { text-decoration:underline; }
 #post a { font-style:normal; }
-h2 {
+h1, h2 {
 	font-family:arial;
 	font-size:20px;
 	line-height:25px;
 	font-weight:bold;
 }
-h3 {	
+h3 {
 	font-size:18px;
 	font-style:italic;
 	line-height:23px;
@@ -117,12 +117,12 @@ ul.hNavL { margin-top:47px; }
 	top:3px;
 	padding-right:0;
 }
-ul.social li { 
+ul.social li {
 	float:left;
 	margin-right:6px;
 }
 
-/** 
+/**
  * TODO
  * [*] tweets
  *

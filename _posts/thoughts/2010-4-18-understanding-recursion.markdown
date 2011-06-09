@@ -68,5 +68,3 @@ suggest you to read the
 ), if you are new to functional programming.  I may read the
 [seasoned schemer](http://www.amazon.com/gp/product/026256100X?ie=UTF8&tag=anankumasblog-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=026256100X)
 in the future.
-
-<iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=anankumasblog-20&o=1&p=8&l=as1&m=amazon&f=ifr&md=10FE9736YVPPT7A0FBG2&asins=0262560992" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
