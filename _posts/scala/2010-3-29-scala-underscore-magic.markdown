@@ -126,7 +126,7 @@ class Test {
 {% endhighlight %}
 
 
-{% highlight scala  %}
+{% highlight scala %}
 val t = new Test
 t.age = 5
 println(t.age)
