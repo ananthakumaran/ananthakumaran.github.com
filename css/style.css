@@ -42,7 +42,11 @@ p {
 	padding : 0 0 0 10px;
 }
 #header { padding:30px 0; }
-#post { padding : 15px 0 0; }
+#post {
+    padding : 15px 0 0;
+    text-align : justify;
+}
+
 .clear {
 	clear:both;
 	height:0;
@@ -54,6 +58,9 @@ p {
 .section { margin:20px 0 5px; }
 .right { float:right; }
 .left { float:left; }
+.date { font-weight : bold;
+	font-style : italic;
+}
 /*********************end of block ********************/
 
 /*********************skin*****************************/

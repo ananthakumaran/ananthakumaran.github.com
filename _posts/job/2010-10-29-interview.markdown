@@ -43,7 +43,7 @@ fail during the training also. If their recruiting method is good then
 no one should fail in the training.
 
 I think no one will hire a juggler without seeing him juggling the
-balls. But they are hiring people with seeing him writing code. As of
+balls. But they are hiring people without seeing him writing code. As of
 today, i have attended six or seven interviews and none of them asked
 me to write a single line of code. This was a rather surprise for
 me. I thought people will ask me write code for difficult
