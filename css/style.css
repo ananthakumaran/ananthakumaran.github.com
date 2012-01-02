@@ -237,3 +237,25 @@ pre code {
   .tipsy-east { background-position: right center; }
   .tipsy-west { background-position: left center; }
 /*********** end of tipsy ************/
+
+/* resume */
+body.resume {
+    width:650px;
+}
+
+.resume p {
+    margin : 5px 0;
+}
+
+strong {
+    font-weight : bold;
+}
+
+.resume #header {
+    font-size : 35px;
+    line-height : 5px;
+}
+
+.resume #post {
+    text-align : left;
+}

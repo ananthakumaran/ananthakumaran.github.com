@@ -1,39 +1,63 @@
 ---
-layout: default
+layout: resume
 title: Resume
 header: Anantha Kumaran
 meta_keywords: Anantha Kumaran , Resume , cv , ananthakumaran resume
 meta_description: Anantha Kumaran resume
 ---
 
-{% highlight scheme %}
-((Address '("Villivakkam"
-	    "Chennai"
-	    "+91 9442024417"
-	    "ananthakumaran@gmail.com"))
- (Objective "I wish to find a position that will allow me to develop experience
-	     using my educational background. I am seeking new challenges to
-	     broaden my areas of expertise and to use my skills to the best of my
-	     ability in a team-oriented workplace.")
- (Education '("BE Computer Science and Engineering"
-	      "Karunya University"
-	      "Coimbatore"
-	      (Percentage 81)))
- (Certification '("Sun Certified Programmer (SCJP) for Java 2 Platform 1.6."))
- (Project '((ImageBundler
-	     "http://ananthakumaran.github.com/imagebundler-wicket"
-	     "Image Bundler for Apache Wicket")
-	    (SocialSite
-	     "http://github.com/ananthakumaran/socialsite"
-	     "A social network for the students")))
- (Skill '(Java
-	  Ruby
-	  JavaScript
-	  jQuery
-	  Wicket
-	  Hibernate
-	  MySql
-	  Git
-	  Unix)))
- (Interest '(Web-Application Programming)))
-{% endhighlight %}
+ananthakumaran@gmail.com  
++91 9483862362  
+Bangalore, India.
+
+
+Work Experience
+---------------
+
+**Software Programmer - Bitstat Technologies Pvt Ltd. Jan 2011 - present**  
+
+Developed and deployed www.postoz.com. Used several technologies
+including nginx, unicorn, solr, amazon ec2, amazon ses, qpsmtpd,
+redis, oauth, capistrano. Authored a WYSIWYG Form Editor similar to
+wufoo.com.
+
+**Associate Development - Artha42 Innovations Pvt Ltd. July 2010 -
+December 2011**  
+
+Worked with a team which developed and deployed
+www.phrhealthconnect.com. Used several technologies including mongodb,
+sinatra, nginx, thin, beanstalk.
+
+Proficiency
+-----------
+**Experienced** (written good amount of code) - Ruby, JavaScript, Java,
+Emacs Lisp.  
+**Knowledgeable** (played with) - Scheme, Scala, Bash, Clojure, C.  
+
+Side Projects
+-------------
+
+**Monky - An Emacs mode for Hg**
+
+provides an interactive interface for Hg similar to Magit.
+
+**jquery-doc.el - jQuery doc inside emacs**
+
+provides a completion source for autocomplete plugin and provides a
+command to lookup the documentation for a method in jQuery.
+
+
+Education
+---------
+B.E Computer Science(2006-2010).  
+Karunya University - Coimbatore.  
+CGPA (8.1/10).  
+
+Links
+-----
+code -
+[http://github.com/ananthakumaran](http://github.com/ananthakumaran)  
+blog - [http://ananthakumaran.in](http://ananthakumaran.in)   
+reading list -
+[http://www.goodreads.com/user/show/5312630-anantha-kumaran](http://www.goodreads.com/user/show/5312630-anantha-kumaran)  
+
