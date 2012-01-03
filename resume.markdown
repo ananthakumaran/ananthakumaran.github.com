@@ -17,9 +17,9 @@ Work Experience
 **Software Programmer - Bitstat Technologies Pvt Ltd. Jan 2011 - present**  
 
 Developed and deployed www.postoz.com. Used several technologies
-including nginx, unicorn, solr, amazon ec2, amazon ses, qpsmtpd,
-redis, oauth, capistrano. Authored a WYSIWYG Form Editor similar to
-wufoo.com.
+including nginx, unicorn, rails, solr, mysql, amazon ec2, amazon ses,
+qpsmtpd, redis, oauth, capistrano. Authored a WYSIWYG Form Editor
+similar to wufoo.com.
 
 **Associate Development - Artha42 Innovations Pvt Ltd. July 2010 -
 December 2011**  
@@ -55,9 +55,7 @@ CGPA (8.1/10).
 
 Links
 -----
-code -
-[http://github.com/ananthakumaran](http://github.com/ananthakumaran)  
+code - [http://github.com/ananthakumaran](http://github.com/ananthakumaran)  
 blog - [http://ananthakumaran.in](http://ananthakumaran.in)   
-reading list -
-[http://www.goodreads.com/user/show/5312630-anantha-kumaran](http://www.goodreads.com/user/show/5312630-anantha-kumaran)  
+reading list - [http://bit.ly/uu0E6l](http://bit.ly/uu0E6l)
 
