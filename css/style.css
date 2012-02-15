@@ -259,3 +259,22 @@ strong {
 .resume #post {
     text-align : left;
 }
+
+.resume h1, h2 {
+    font-size : 17px;
+    line-height : 1.25;
+}
+
+.resume strong {
+    font-size : 15px;
+    line-height : 1.42;
+}
+
+.resume em {
+    color : #999;
+}
+
+.resume {
+    font-size : 14px;
+    line-height : 1.42;
+}

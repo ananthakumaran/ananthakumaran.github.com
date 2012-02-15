@@ -14,18 +14,19 @@ Bangalore, India.
 Work Experience
 ---------------
 
-**Software Programmer - Bitstat Technologies Pvt Ltd. Jan 2011 - present**  
+**Software Programmer - Bitstat Technologies Pvt Ltd.** *Jan 2011 - Jan 2012*  
 
-Developed and deployed www.postoz.com. Used several technologies
-including nginx, unicorn, rails, solr, mysql, amazon ec2, amazon ses,
-qpsmtpd, redis, oauth, capistrano. Authored a WYSIWYG Form Editor
-similar to wufoo.com.
+Developed and deployed a web based business process management
+system [\[www.postoz.com\]](http://www.postoz.com). Used several technologies including nginx,
+unicorn, rails, solr, mysql, amazon ec2, amazon ses, qpsmtpd, redis,
+oauth, capistrano. Authored a WYSIWYG Form Editor similar to
+wufoo.com.
 
-**Associate Development - Artha42 Innovations Pvt Ltd. July 2010 -
-December 2011**  
+**Associate Development - Artha42 Innovations Pvt Ltd.** *July 2010 -
+December 2011*  
 
 Worked with a team which developed and deployed
-www.phrhealthconnect.com. Used several technologies including mongodb,
+a personal health record management system [\[www.phrhealthconnect.com\]](http://www.phrhealthconnect.com). Used several technologies including mongodb,
 sinatra, nginx, thin, beanstalk.
 
 Proficiency
@@ -37,11 +38,11 @@ Emacs Lisp.
 Side Projects
 -------------
 
-**Monky - An Emacs mode for Hg**
+**Monky - An Emacs mode for Hg** [\[http://github.com/ananthakumaran/monky\]](http://github.com/ananthakumaran/monky)
 
 provides an interactive interface for Hg similar to Magit.
 
-**jquery-doc.el - jQuery doc inside emacs**
+**jquery-doc.el - jQuery doc inside emacs** [\[http://github.com/ananthakumaran/jquery-doc.el\]](http://github.com/ananthakumaran/jquery-doc.el)
 
 provides a completion source for autocomplete plugin and provides a
 command to lookup the documentation for a method in jQuery.
