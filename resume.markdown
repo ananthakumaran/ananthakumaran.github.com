@@ -14,6 +14,8 @@ Bangalore, India.
 Work Experience
 ---------------
 
+**Application Developer - Activesphere ** *Feb 2012 - Present*
+
 **Software Programmer - Bitstat Technologies Pvt Ltd.** *Jan 2011 - Jan 2012*  
 
 Developed and deployed a web based business process management
@@ -37,6 +39,10 @@ Emacs Lisp.
 
 Side Projects
 -------------
+
+**Fake Dynamo - Dynamodb emulator** [\[https://github.com/ananthakumaran/fake_dynamo\]](https://github.com/ananthakumaran/fake_dynamo)
+
+localhosted, inmemory dynamodb emulator.
 
 **Monky - An Emacs mode for Hg** [\[http://github.com/ananthakumaran/monky\]](http://github.com/ananthakumaran/monky)
 
