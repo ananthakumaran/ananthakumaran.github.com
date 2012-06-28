@@ -6,7 +6,7 @@ meta_keywords: interview
 meta_description: my interview story
 ---
 
-`written on 9nth June 2010`
+`written on 9th June 2010`
 
 I think i will never publish this post. Who knows my mind changes very
 rapidly than i could imagine. But any how i will just write down my
