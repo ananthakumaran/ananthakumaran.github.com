@@ -35,7 +35,8 @@ Proficiency
 -----------
 **Experienced** (written good amount of code) - Ruby, JavaScript, Java,
 Emacs Lisp.  
-**Knowledgeable** (played with) - Scheme, Scala, Bash, Clojure, C.  
+**Knowledgeable** (played with) - Clojure, C, Erlang, Shell script,
+Scala.
 
 Side Projects
 -------------
@@ -63,6 +64,5 @@ CGPA (8.1/10).
 Links
 -----
 code - [http://github.com/ananthakumaran](http://github.com/ananthakumaran)  
-blog - [http://ananthakumaran.in](http://ananthakumaran.in)   
 reading list - [http://bit.ly/uu0E6l](http://bit.ly/uu0E6l)
 
