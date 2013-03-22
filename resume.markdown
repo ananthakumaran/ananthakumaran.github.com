@@ -25,7 +25,7 @@ oauth, capistrano. Authored a WYSIWYG Form Editor similar to
 wufoo.com.
 
 **Associate Development - Artha42 Innovations Pvt Ltd.** *Jul 2010 -
-Dec 2011*  
+Dec 2010*  
 
 Worked with a team which developed and deployed
 a personal health record management system [\[www.phrhealthconnect.com\]](http://www.phrhealthconnect.com). Used several technologies including mongodb,
