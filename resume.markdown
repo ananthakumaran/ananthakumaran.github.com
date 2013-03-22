@@ -24,8 +24,8 @@ unicorn, rails, solr, mysql, amazon ec2, amazon ses, qpsmtpd, redis,
 oauth, capistrano. Authored a WYSIWYG Form Editor similar to
 wufoo.com.
 
-**Associate Development - Artha42 Innovations Pvt Ltd.** *July 2010 -
-December 2011*  
+**Associate Development - Artha42 Innovations Pvt Ltd.** *Jul 2010 -
+Dec 2011*  
 
 Worked with a team which developed and deployed
 a personal health record management system [\[www.phrhealthconnect.com\]](http://www.phrhealthconnect.com). Used several technologies including mongodb,
@@ -36,24 +36,21 @@ Proficiency
 **Experienced** (written good amount of code) - Ruby, JavaScript, Java,
 Emacs Lisp.  
 **Knowledgeable** (played with) - Clojure, C, Erlang, Shell script,
-Scala.
+Scala, Go.
 
 Side Projects
 -------------
 
-**Fake Dynamo - Dynamodb emulator** [\[https://github.com/ananthakumaran/fake_dynamo\]](https://github.com/ananthakumaran/fake_dynamo)
+[**NEato**](https://github.com/ananthakumaran/neato) - Nintendo emulator written in go.
 
-localhosted, inmemory dynamodb emulator.
+[**Fake Dynamo**](https://github.com/ananthakumaran/fake_dynamo) - Amazon Dynamodb emulator.
 
-**Monky - An Emacs mode for Hg** [\[http://github.com/ananthakumaran/monky\]](http://github.com/ananthakumaran/monky)
+[**Monky**](http://github.com/ananthakumaran/monky) - Emacs mode
+for Hg, provides an interactive inteface similar to Magit.
 
-provides an interactive interface for Hg similar to Magit.
+[**Erbot**](http://github.com/ananthakumaran/erbot) - IRC bot written in erlang.
 
-**jquery-doc.el - jQuery doc inside emacs** [\[http://github.com/ananthakumaran/jquery-doc.el\]](http://github.com/ananthakumaran/jquery-doc.el)
-
-provides a completion source for autocomplete plugin and provides a
-command to lookup the documentation for a method in jQuery.
-
+[**jquery-doc.el**](http://github.com/ananthakumaran/jquery-doc.el) - Emacs mode to view jQuery documentation.
 
 Education
 ---------

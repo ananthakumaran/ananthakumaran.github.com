@@ -241,10 +241,14 @@ pre code {
 /* resume */
 body.resume {
     width:650px;
+    font-family: monospace;
+    color: #131211;
+    line-height: 1.42857142857143;
 }
 
 .resume p {
     margin : 5px 0;
+    text-align: justify;
 }
 
 strong {
@@ -261,12 +265,12 @@ strong {
 }
 
 .resume h1, h2 {
-    font-size : 17px;
+    font-size : 16px;
     line-height : 1.25;
 }
 
 .resume strong {
-    font-size : 15px;
+    font-size : 14px;
     line-height : 1.42;
 }
 
