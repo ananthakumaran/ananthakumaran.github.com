@@ -16,6 +16,9 @@ Work Experience
 
 **Application Developer - Activesphere ** *Feb 2012 - Present*
 
+Working with team that builds web-based products using rails and
+node.js.
+
 **Software Programmer - Bitstat Technologies Pvt Ltd.** *Jan 2011 - Jan 2012*  
 
 Developed and deployed a web based business process management
