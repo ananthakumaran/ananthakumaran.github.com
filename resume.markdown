@@ -49,7 +49,7 @@ Side Projects
 [**Fake Dynamo**](https://github.com/ananthakumaran/fake_dynamo) - Amazon Dynamodb emulator.
 
 [**Monky**](http://github.com/ananthakumaran/monky) - Emacs mode
-for Hg, provides an interactive inteface similar to Magit.
+for Hg, provides an interactive interface similar to Magit.
 
 [**Erbot**](http://github.com/ananthakumaran/erbot) - IRC bot written in erlang.
 
