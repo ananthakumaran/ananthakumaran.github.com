@@ -16,7 +16,7 @@ Work Experience
 
 **Application Developer - Activesphere ** *Feb 2012 - Present*
 
-Working with team that builds web-based products using rails and
+Working with a team that builds web based products using rails and
 node.js.
 
 **Software Programmer - Bitstat Technologies Pvt Ltd.** *Jan 2011 - Jan 2012*  
@@ -30,7 +30,7 @@ wufoo.com.
 **Associate Development - Artha42 Innovations Pvt Ltd.** *Jul 2010 -
 Dec 2010*  
 
-Worked with a team which developed and deployed
+Worked with a team that developed and deployed
 a personal health record management system [\[www.phrhealthconnect.com\]](http://www.phrhealthconnect.com). Used several technologies including mongodb,
 sinatra, nginx, thin, beanstalk.
 
