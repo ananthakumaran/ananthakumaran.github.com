@@ -7,20 +7,10 @@ meta_description: ananthakumaran blog
 ---
 
 <div>
-<div>
-<h2>About Me</h2>
-<div>
-I'm a Programmer, currently live in Bangalore, India.
-</div>
-</div>
-<div class="section">
-<h2>Recent Posts </h2>
-<div>
-<ul >
-    {% for post in site.posts offset: 0 limit: 3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-</div>
+  <div>
+    <h2>About Me</h2>
+    <div>
+      I'm a Programmer, currently live in Bangalore, India.
+    </div>
+  </div>
 </div>
