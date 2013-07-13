@@ -15,11 +15,5 @@ end
 desc 'Run Jekyll in development mode'
 task :dev do
   puts '* Running Jekyll with auto-generation and server'
-  puts `jekyll --auto --server`
-end
-
-desc 'Push source code to Github'
-task :push do
-  puts '* Pushing to Github'
-  puts `git push github master`
+  system 'jekyll server --watch --port 7777'
 end
