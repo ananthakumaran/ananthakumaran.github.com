@@ -54,7 +54,7 @@ for Hg, provides an interactive interface similar to Magit.
 [**Webify**](https://github.com/ananthakumaran/webify) - webfont
 generator - converts ttf to woff, eot and svg
 
-[**Erbot**](http://github.com/ananthakumaran/erbot) - IRC bot written in erlang.
+[**Erbot**](http://github.com/ananthakumaran/erbot) - IRC bot.
 
 [**jquery-doc.el**](http://github.com/ananthakumaran/jquery-doc.el) - Emacs mode to view jQuery documentation.
 
