@@ -15,5 +15,5 @@ end
 desc 'Run Jekyll in development mode'
 task :dev do
   puts '* Running Jekyll with auto-generation and server'
-  system 'jekyll server --watch --port 7777'
+  system 'bundle exec jekyll server --watch --trace --port 7777'
 end
