@@ -7,7 +7,6 @@ meta_description: Anantha Kumaran resume
 ---
 
 ananthakumaran@gmail.com  
-+91 9483862362  
 Bangalore, India.
 
 
