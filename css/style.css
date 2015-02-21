@@ -4,168 +4,184 @@
  **/
 /************************reset****************************/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-	margin:0;
-	padding:0;
+    margin: 0;
+    padding: 0;
 }
 table {
-	border-collapse:collapse;
-	border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-fieldset,img {  border:0; }
+fieldset,img {  border: 0; }
 address,caption,cite,code,dfn,em,strong,th,var {
-	font-style:normal;
-	font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
 }
-ol,ul { list-style:none; }
-caption,th { text-align:left; }
+ol,ul { list-style: none; }
+caption,th { text-align: left; }
 h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
+    font-size: 100%;
+    font-weight: normal;
 }
-q:before,q:after { content:''; }
-abbr,acronym { border:0; }
+q:before,q:after { content: ''; }
+abbr,acronym { border: 0; }
 /***********************end of reset ******************/
 /********************** block *************************/
 body {
-	margin : 0 auto;
-	width:960px;
+    margin: 0 auto;
+    width: 960px;
 }
 p {
-	margin : 12px 0;
+    margin: 12px 0;
 }
 #content {
-	width:73%;
-	padding : 15px 10px 0 0;
+    width: 73%;
+    padding: 15px 10px 0 0;
 }
 #rightBar{
-	width:24%;
-	padding : 0 0 0 10px;
+    width: 24%;
+    padding: 0 0 0 10px;
 }
-#header { padding:30px 0; }
+#header { padding: 30px 0; }
 #post {
-    padding : 15px 0 0;
-    text-align : justify;
+    padding:  15px 0 0;
+    text-align: justify;
 }
 
 .clear {
-	clear:both;
-	height:0;
+    clear: both;
+    height: 0;
 }
-.hNav{ height : 40px; }
-.hNavL li{ display:inline; }
-.vNavL li { padding:6px 0; }
-.big { padding:10px; }
-.section { margin:20px 0 5px; }
-.right { float:right; }
-.left { float:left; }
-.date { font-weight : bold;
-	font-style : italic;
+.hNav { height: 40px; }
+.hNavL li { display: inline; }
+.vNavL li { padding: 6px 0; }
+.big { padding: 10px; }
+.section { margin: 20px 0 5px; }
+.right { float: right; }
+.left { float: left; }
+.date {
+    font-weight: bold;
+    font-style: italic;
 }
 /*********************end of block ********************/
 
 /*********************skin*****************************/
 body {
-	color:#333;
+    color: #333;
 }
-a { color:#c30; }
-h3 { color:#666; }
-.hNavL li { border-right:1px solid #ccc; }
-.vNavL li { color:#666666; }
-.vNavL li:hover{ background : #FFF; }
-.borderTop { border-top:1px solid #ccc; }
-.borderRight { border-right:1px solid #ccc; }
-.borderBottom { border-bottom:1px solid #ccc; }
-.borderLeft { border-left:1px solid #ccc;}
-.borderTopDot , .borderTopDotL li { border-top:1px dotted #ccc; }
-.borderBottomDot { border-bottom:1px dotted #ccc;}
+a { color: #c30; }
+h3 { color: #666; }
+.hNavL li { border-right: 1px solid #ccc; }
+.vNavL li { color: #666666; }
+.vNavL li:hover { background: #FFF; }
+.borderTop { border-top: 1px solid #ccc; }
+.borderRight { border-right: 1px solid #ccc; }
+.borderBottom { border-bottom: 1px solid #ccc; }
+.borderLeft { border-left: 1px solid #ccc;}
+.borderTopDot , .borderTopDotL li { border-top: 1px dotted #ccc; }
+.borderBottomDot { border-bottom: 1px dotted #ccc;}
 /*********************end of skin**********************/
 
 /*********************typography***********************/
 body {
-	font-family:georgia , "Times New Roman",Times,serif;
-	line-height:25px;
-	font-size:16px;
+    font-family: georgia , "Times New Roman",Times,serif;
+    line-height: 25px;
+    font-size: 16px;
 }
 a {
-	text-decoration:none;
-	font-style:italic;
+    text-decoration: none;
+    font-style: italic;
 }
-a:hover { text-decoration:underline; }
-#post a { font-style:normal; }
+a:hover { text-decoration: underline; }
+#post a { font-style: normal; }
 h1, h2 {
-	font-family:arial;
-	font-size:20px;
-	line-height:25px;
-	font-weight:bold;
+    font-family: arial;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
 }
 h3 {
-	font-size:18px;
-	font-style:italic;
-	line-height:23px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 23px;
 }
 #header {
-	font-size:41px;
-	line-height:41px;
+    font-size: 41px;
+    line-height: 41px;
 }
 .vNavL li {
-	font-family:arial;
-	font-size:13px;
-	line-height:normal;
+    font-family: arial;
+    font-size: 13px;
+    line-height: normal;
 }
-.big { font-size:27px; }
+.big { font-size: 27px; }
 /*********************end of typography****************/
 /********************* specific **************************/
-#post h2 { margin:20px 0 5px;}
-.comments { margin-top: 30px;}
-ul.hNavL { margin-top:47px; }
-.bird { margin-top:-12px; }
+#post h2 { margin: 20px 0 5px;}
+.comments { margin-top:  30px;}
+ul.hNavL { margin-top: 47px; }
+.bird { margin-top: -12px; }
+.intro {
+    font-size: 20px;
+    margin: 10px auto 60px;
+    text-align: center;
+}
 .mainNav {
-	position:relative;
-	top:3px;
-	padding-right:0;
+    position: relative;
+    top: 3px;
+    padding-right: 0;
 }
 ul.social li {
-	float:left;
-	margin-right:6px;
+    float: left;
+    margin: 0 20px;
+    padding: 0 25px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    height: 100px;
+    line-height: 100px;
 }
 
-/**
- * TODO
- * [*] tweets
- *
- */
+ul.social li a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul.social li a img {
+    width: 225px;
+    display: inline-block;
+    vertical-align: middle;
+}
 /********************* end of specific *******************/
 /*******************syntax highlight*******************/
 
 pre {
-    background-color:#F8F8FF ;
-    border:1px solid #DEDEDE ;
-    color:#444444 ;
-    font-size:90% ;
-    line-height:1.5em ;
-    margin:1em 0 ;
-    overflow:auto;
-    padding:0.5em ;
+    background-color: #F8F8FF ;
+    border: 1px solid #DEDEDE ;
+    color: #444444 ;
+    font-size: 90% ;
+    line-height: 1.5em ;
+    margin: 1em 0 ;
+    overflow: auto;
+    padding: 0.5em ;
 }
 
 /* Font sizing */
 code , .highlight {
-    font-size:16px;
-    font-familiy:Monaco,"Courier New",monospace;
- }
+    font-size: 16px;
+    font-familiy: Monaco,"Courier New",monospace;
+}
 
 code {
-    background-color:#F8F8FF ;
-    border:1px solid #DEDEDE ;
-    color:#444444 ;
-    font-size:90% ;
-    padding:0 0.2em ;
+    background-color: #F8F8FF ;
+    border: 1px solid #DEDEDE ;
+    color: #444444 ;
+    font-size: 90% ;
+    padding: 0 0.2em ;
 }
 
 
 pre code {
-    border : none;
-    font-size:100%;
+    border: none;
+    font-size: 100%;
 }
 
 
@@ -228,57 +244,48 @@ pre code {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-/************ tipsy ********************/
-.tipsy { padding: 4px; font-size: 16px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(/img/tipsy.gif); }
-  .tipsy-inner { padding: 5px 8px 4px 8px; background-color: #cc3300; color: white; max-width: 200px; text-align: center; }
-  .tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
-  .tipsy-north { background-position: top center; }
-  .tipsy-south { background-position: bottom center; }
-  .tipsy-east { background-position: right center; }
-  .tipsy-west { background-position: left center; }
-/*********** end of tipsy ************/
 
 /* resume */
 body.resume {
-    width:650px;
+    width: 650px;
     font-family: monospace;
     color: #131211;
     line-height: 1.42857142857143;
 }
 
 .resume p {
-    margin : 5px 0;
+    margin: 5px 0;
     text-align: justify;
 }
 
 strong {
-    font-weight : bold;
+    font-weight: bold;
 }
 
 .resume #header {
-    font-size : 35px;
-    line-height : 5px;
+    font-size: 35px;
+    line-height: 5px;
 }
 
 .resume #post {
-    text-align : left;
+    text-align: left;
 }
 
 .resume h1, h2 {
-    font-size : 16px;
-    line-height : 1.25;
+    font-size: 16px;
+    line-height: 1.25;
 }
 
 .resume strong {
-    font-size : 14px;
-    line-height : 1.42;
+    font-size: 14px;
+    line-height: 1.42;
 }
 
 .resume em {
-    color : #999;
+    color: #999;
 }
 
 .resume {
-    font-size : 14px;
-    line-height : 1.42;
+    font-size: 14px;
+    line-height: 1.42;
 }

@@ -13,7 +13,7 @@ Bangalore, India.
 Work Experience
 ---------------
 
-**Application Developer - Activesphere ** *Feb 2012 - Present*
+**Application Developer - Activesphere** *Feb 2012 - Present*
 
 Working with a team that builds web based products using rails and
 node.js.
