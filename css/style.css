@@ -250,42 +250,36 @@ body.resume {
     width: 650px;
     font-family: monospace;
     color: #131211;
-    line-height: 1.42857142857143;
-}
-
-.resume p {
-    margin: 5px 0;
-    text-align: justify;
-}
-
-strong {
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .resume #header {
-    font-size: 35px;
-    line-height: 5px;
-}
-
-.resume #post {
-    text-align: left;
+    padding: 20px 0 0 0;
 }
 
 .resume h1, h2 {
     font-size: 16px;
-    line-height: 1.25;
+    font-family: monospace;
+    font-weight: 700;
 }
 
 .resume strong {
     font-size: 14px;
-    line-height: 1.42;
+    font-weight: 500;
 }
 
 .resume em {
     color: #999;
+    font-weight: 300;
+    font-style: italic;
 }
 
-.resume {
-    font-size: 14px;
-    line-height: 1.42;
+.resume p {
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.resume #post {
+    text-align: left;
 }
