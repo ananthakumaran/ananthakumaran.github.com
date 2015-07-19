@@ -1,8 +1,4 @@
-/**
- *	@author Anantha Kumaran
- *
- **/
-/************************reset****************************/
+/* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
     padding: 0;
@@ -24,8 +20,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 q:before,q:after { content: ''; }
 abbr,acronym { border: 0; }
-/***********************end of reset ******************/
-/********************** block *************************/
+
+/* block */
 body {
     margin: 0 auto;
     width: 960px;
@@ -62,9 +58,8 @@ p {
     font-weight: bold;
     font-style: italic;
 }
-/*********************end of block ********************/
 
-/*********************skin*****************************/
+/* skin */
 body {
     color: #333;
 }
@@ -79,13 +74,12 @@ h3 { color: #666; }
 .borderLeft { border-left: 1px solid #ccc;}
 .borderTopDot , .borderTopDotL li { border-top: 1px dotted #ccc; }
 .borderBottomDot { border-bottom: 1px dotted #ccc;}
-/*********************end of skin**********************/
 
-/*********************typography***********************/
+/* typography */
 body {
     font-family: georgia , "Times New Roman",Times,serif;
-    line-height: 25px;
     font-size: 16px;
+    line-height: 1.5;
 }
 a {
     text-decoration: none;
@@ -114,8 +108,8 @@ h3 {
     line-height: normal;
 }
 .big { font-size: 27px; }
-/*********************end of typography****************/
-/********************* specific **************************/
+
+/* specific */
 #post h2 { margin: 20px 0 5px;}
 .comments { margin-top:  30px;}
 ul.hNavL { margin-top: 47px; }
@@ -150,9 +144,8 @@ ul.social li a img {
     display: inline-block;
     vertical-align: middle;
 }
-/********************* end of specific *******************/
-/*******************syntax highlight*******************/
 
+/* syntax highlight */
 pre {
     background-color: #F8F8FF ;
     border: 1px solid #DEDEDE ;
@@ -247,39 +240,62 @@ pre code {
 
 /* resume */
 body.resume {
-    width: 650px;
-    font-family: monospace;
-    color: #131211;
+    width: 640px;
+    font-family: 'Lora', serif;
+    color: rgb(119, 119, 119);
     font-size: 14px;
 }
 
 .resume #header {
+    font-family: 'Lora', serif;
+    color: rgb(50, 50, 50);
     padding: 20px 0 0 0;
 }
 
 .resume h1, h2 {
-    font-size: 16px;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 85, 85);
+    font-size: 20px;
     font-weight: 700;
 }
 
 .resume strong {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+.resume .experience strong {
+    font-weight: 700;
+}
+
+.resume a strong {
+    color: #c30;
 }
 
 .resume em {
+    font-family: 'Open Sans', sans-serif;
     color: #999;
-    font-weight: 300;
+    font-size: 14px;
     font-style: italic;
 }
 
 .resume p {
     margin: 5px 0;
-    font-size: 12px;
-    line-height: 24px;
 }
 
 .resume #post {
     text-align: left;
+}
+
+.resume section {
+    margin: 10px 0;
+}
+
+.resume section.experience {
+    margin: 15px 0;
+}
+
+.resume section.projects strong {
+    font-size: 14px;
 }
