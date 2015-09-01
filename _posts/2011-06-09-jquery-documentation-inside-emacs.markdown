@@ -32,7 +32,7 @@ code will look as follows.
  jquery-doc-hash)
 {% endhighlight %}
 
-Now all i have to do is configure
+Now all I have to do is configure
 [auto complete](http://www.emacswiki.org/emacs/AutoComplete) to use
 this data and write some
 [code](https://github.com/ananthakumaran/jquery-doc.el) to display the
