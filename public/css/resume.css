@@ -1,0 +1,54 @@
+.page.resume {
+    font-family: 'Lora', serif;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+}
+
+.resume h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 85, 85);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.resume strong {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+.resume .experience strong {
+    font-weight: 700;
+}
+
+.resume a strong {
+    color: #ac4142;
+}
+
+.resume em {
+    font-family: 'Open Sans', sans-serif;
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.resume p {
+    margin: 5px 0;
+}
+
+.resume #post {
+    text-align: left;
+}
+
+.resume section {
+    margin: 10px 0;
+}
+
+.resume section.experience {
+    margin: 15px 0;
+}
+
+.resume section.projects strong {
+    font-size: 14px;
+    font-weight: normal;
+}

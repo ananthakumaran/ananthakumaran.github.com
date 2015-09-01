@@ -1,4 +1,27 @@
-safe: true
-lsi: false
-pygments: true
-excerpt_separator: ""
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           date
+relative_permalinks: true
+
+# Setup
+title:               Anantha Kumaran
+tagline:             'random thoughts'
+description:         'Random thoughts of a programmer.'
+url:                 http://ananthakumaran.in
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Anantha Kumaran
+  url:               http://ananthakumaran.in
+  email:             ananthakumaran@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+highlighter:         pygments
+lsi:                 false
+safe:                true
+excerpt_separator:   ""

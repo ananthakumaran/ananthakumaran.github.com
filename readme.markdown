@@ -1,2 +1,0 @@
-Anantha Kumaran's Blog
-======================

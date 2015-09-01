@@ -1,0 +1,26 @@
+---
+layout: post
+title: Ratings
+---
+
+I have been using Goodreads for about 3 years. Usually, I add a book
+to Goodreads reading list, once I am sure that I would finish the
+book. For some books, I can sense it right away. Either the writing
+would be outright bad, or I might not be interested in the subject, or
+it might be way over my current knowledge. For some cases, I would
+read about 30% and then realize it's not worth to finish it. In cases
+where I successfully finish the book, I would rate it in Goodreads.
+
+The above process eliminates "Rating book without reading" problem,
+but it introduces new kind of problems. I don't rate very bad books,
+because who has time to finish it. I also abandon most of the mediocre
+books. The books I finish and rate mostly falls into either good or
+very good category. If I use 3 stars for good and 4 stars for very
+good, and 5 stars for outstanding, then I would never use 1 star or 2
+stars. So my reading habit systematically prevents me from using lower
+ratings.
+
+It seems like most of the Goodreads' users suffer from this
+problem. Most of the books are rated between 3.5 - 4.25. I rarely see
+books rated below 3. So basically Goodreads rating is useless in most
+of the situation.
