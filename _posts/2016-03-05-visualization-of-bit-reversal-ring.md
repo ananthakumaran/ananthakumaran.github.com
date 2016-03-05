@@ -18,15 +18,15 @@ color of the line represents distance between the two numbers.
 
 
 > Two list of numbers a and b can be said as <strong>order
-> equivalent</strong> if and only if the value of a[i] < a[j] is the
-> same as b[i] < b[j] for every i and j.
+> equivalent</strong> if and only if a[i] < a[j] = b[i] < b[j] for
+> every i and j.
 
 An example would be [1, 5, 3] and [2, 6, 4]. The bit reversal
-operation preserves some of the order equivalence of sub groups with
-in the ring. Each arch represents a group of numbers after bit
-reversal operation. Groups with same order share same color.  The size
-of the group increases as you go top to bottom. The size of the ring
-(4, 8, 16) increases as you go from left to right.
+operation preserves some of the order equivalence of sub groups within
+the ring. Each arch represents a group of numbers after bit reversal
+operation. Groups with same order share same color.  The size of the
+group increases as you go from top to bottom. The size of the ring (4,
+8, 16) increases as you go from left to right.
 
 For example, the ring in the column 2 and row 3 represents the groups
 <span style="color: #1f77b4">(0,4,2)</span>,
