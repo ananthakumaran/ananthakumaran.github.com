@@ -30,13 +30,13 @@ of the group increases as you go top to bottom. The size of the ring
 
 For example, the ring in the column 2 and row 3 represents the groups
 <span style="color: #1f77b4">(0,4,2)</span>,
-<span style="color: #ff7f0e">(4,2,6)</span>,
-<span style="color: #2ca02c">(2,6,1)</span>,
-<span style="color: #d62728">(6,1,5)</span>,
+<span style="color: #aec7e8">(4,2,6)</span>,
+<span style="color: #ff7f0e">(2,6,1)</span>,
+<span style="color: #ffbb78">(6,1,5)</span>,
 <span style="color: #1f77b4">(1,5,3)</span>,
-<span style="color: #ff7f0e">(5,3,7)</span>,
-<span style="color: #2ca02c">(3,7,0)</span>,
-<span style="color: #d62728">(7,0,4)</span>.
+<span style="color: #aec7e8">(5,3,7)</span>,
+<span style="color: #ff7f0e">(3,7,0)</span>,
+<span style="color: #ffbb78">(7,0,4)</span>.
 
 
 <svg id="symmetry"></svg>

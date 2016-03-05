@@ -185,7 +185,7 @@ function renderOrderEquivalent(group, i, h) {
         return ['M', x(start), ',', y(start), 'a', rx, ',', rx, ',0,', i >= n / 2 ? 1 : 0,',1,', x(end) - x(start), ',', y(end) - y(start)].join('');
       };
 
-  var color = d3.scale.category10();
+  var color = d3.scale.category20();
 
   symmetry.append('g')
     .attr('transform', 'translate(' + ((h-2) * r * 2 + r) + ',' + (i * 2 * r + (i * 20)) + ')')
