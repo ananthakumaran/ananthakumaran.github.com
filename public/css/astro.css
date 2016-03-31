@@ -1,5 +1,9 @@
-svg rect, svg line {
+svg.astro rect, svg.astro line {
     shape-rendering: crispEdges;
+}
+
+svg.astro text.legend {
+    fill: #999;
 }
 
 .axis text {

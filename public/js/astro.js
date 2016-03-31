@@ -254,6 +254,7 @@ function renderMatrix(ruleName, rule) {
 
   var svg = d3.select(divId(ruleName))
         .append('svg')
+        .attr('class', 'astro')
         .attr('width', margin.left + length + margin.right)
         .attr('height', margin.top + length + margin.bottom);
 
@@ -314,11 +315,23 @@ function renderMatrix(ruleName, rule) {
     .attr('x', 10)
     .style('text-anchor', 'start');
 
+  svg.append('text')
+    .attr('class', 'legend')
+    .attr('transform', translate(margin.left + length / 2, 15))
+    .attr('text-anchor', 'middle')
+    .text('Male');
+
   var yaxis = d3.svg.axis().scale(x).orient('left');
   svg.append('g')
-        .attr('class', 'axis')
-        .attr('transform', translate(margin.left, margin.top))
-        .call(yaxis);
+    .attr('class', 'axis')
+    .attr('transform', translate(margin.left, margin.top))
+    .call(yaxis);
+
+  svg.append('text')
+    .attr('transform', translate(15, margin.top + length/2) + ' rotate(-90)')
+    .attr('class', 'legend')
+    .attr('text-anchor', 'middle')
+    .text('Female');
 }
 
 renderMatrix('dhinam', dhinam);
