@@ -62,15 +62,16 @@ time. Each porutham can be described as a set of rules.
 > misunderstandings.
 >
 > 1. Ashwini, Murugashreedam, Punarpoosam, Poosam, Hastham, Swathi,
-> Anusham, Thiruvonam and Revathi are the stars belonging to Deiva
-> ganam.
+> Anusham, Thiruvonam and Revathi are the stars belonging to <span
+> style="color: rgb(31, 119, 180);">Deiva</span> ganam.
 >
 > 2. Bharani, Rohini, Thiruvadirai, Pooram, Uthiram, Pooradam,
 > Uthiradam, Poorattathi and Uthirattathi are the stars belonging to
-> Manitha ganam.
+> <span style="color: rgb(255, 127, 14)">Manitha</span> ganam.
 >
 > 3. Karthigai, Aayilyam, Magam, Chittirai, Visakam, Kettai, Moolam,
-> Avittam and Sathayam are the starts belongings to Ratchasa ganam.
+> Avittam and Sathayam are the starts belongings to <span
+> style="color: rgb(44, 160, 44)">Ratchasa</span> ganam.
 >
 > A male and a female belonging to the same ganam or even if either
 > belong to deiva ganam and other belong to manitha ganam they can get
@@ -128,14 +129,17 @@ time. Each porutham can be described as a set of rules.
 > filled. And if both Male and female are of different Nadi then this
 > match is fullfilled.
 >
-> **Paarsuva Nadi** - Ashwini, Thiruvathirai, Punarpoosam, Uthiram,
-> Astham, Kettai, Moolam, Sathayam, Puratahi
+> <span style="color: rgb(31, 119, 180)">Paarsuva</span> Nadi -
+> Ashwini, Thiruvathirai, Punarpoosam, Uthiram, Astham, Kettai,
+> Moolam, Sathayam, Puratahi
 >
-> **Madhya Nadi** - Barani, Mirugasrisham, Poosam, Puram, Sitthirai,
-> Anusham, Puradam, Avitam, Uthiratathi
+> <span style="color: rgb(255, 127, 14)">Madhya</span> Nadi - Barani,
+> Mirugasrisham, Poosam, Puram, Sitthirai, Anusham, Puradam, Avitam,
+> Uthiratathi
 >
-> **Samana Nadi** - Karthigai, Rohini, Ayilam, Magam, Swathi, Visakam,
-> Uthiradam, Thiruvonam, Revathi
+> <span style="color: rgb(44, 160, 44)">Samana</span> Nadi -
+> Karthigai, Rohini, Ayilam, Magam, Swathi, Visakam, Uthiradam,
+> Thiruvonam, Revathi
 
 <div id="rule_nadi"></div>
 
@@ -146,43 +150,43 @@ time. Each porutham can be described as a set of rules.
 > yoni(animals). And for fulfillment of this match there should not be
 > enemity between the animals(yoni) matched.
 >
-> Aswini - Male Horse  
-> Baraṇi - Male Elephant  
-> Karthikai - Female Goat  
-> Rohiṇi - Male Snake  
-> Mirugasīridam - Female Snake  
-> Thiruvādhirai - Female Dog  
-> Punarpoosam - Female Cat  
-> Poosam - Male Goat  
-> Ayilyam - Male Cat  
-> Magam - Male Rat  
-> Pooram - Female Rat  
-> Uthiram - Male Cow  
-> Astham - Female Buffalo  
-> Chithirai - Female Tiger  
-> Swathi - Male Buffalo  
-> Visakam - Male Tiger  
+> Aswini - 🐴 Male Horse  
+> Baraṇi - 🐘 Male Elephant  
+> Karthikai - 🐐 Female Goat  
+> Rohiṇi - 🐍 Male Snake  
+> Mirugasīridam - 🐍 Female Snake  
+> Thiruvādhirai - 🐶 Female Dog  
+> Punarpoosam - 🐈 Female Cat  
+> Poosam - 🐐 Male Goat  
+> Ayilyam - 🐈 Male Cat  
+> Magam - 🐀 Male Rat  
+> Pooram - 🐀 Female Rat  
+> Uthiram - 🐮 Male Cow  
+> Astham - 🐃 Female Buffalo  
+> Chithirai - 🐯 Female Tiger  
+> Swathi - 🐃 Male Buffalo  
+> Visakam - 🐯 Male Tiger  
 > Anusham - Female Deer  
 > Kettai - Male Deer  
-> Mulam - Male Dog  
-> Puradam - Male Monkey  
+> Mulam - 🐶 Male Dog  
+> Puradam - 🐵 Male Monkey  
 > Uthirādam - Male Mongoose  
-> Tiruvōnam - Female Monkey  
-> Aviṭṭam - Female Lion  
-> Sadayam - Female Horse  
-> Puraṭṭādhi - Male Lion  
-> Uttṛṭṭādhi - Female Cow  
-> Revathi - Female Elephant  
+> Tiruvōnam - 🐵 Female Monkey  
+> Aviṭṭam - 🦁 Female Lion  
+> Sadayam - 🐴 Female Horse  
+> Puraṭṭādhi - 🦁 Male Lion  
+> Uttṛṭṭādhi - 🐮 Female Cow  
+> Revathi - 🐘 Female Elephant  
 >
 > **Animals with Enemity**
 >
-> Snake - Mongoose  
-> Elephant - Lion  
-> Monkey - Goat  
-> Deer - Dog  
-> Rat - Cat  
-> Horse - Buffalo  
-> Cow - Tiger  
+> <span style="color: rgb(214, 39, 40)">🐍 Snake x Mongoose</span>  
+> <span style="color: rgb(255, 127, 14)">🐘 Elephant x 🦁 Lion</span>  
+> <span style="color: rgb(44, 160, 44)">🐵 Monkey x 🐐 Goat</span>  
+> <span style="color: rgb(148, 103, 189)">Deer x 🐶 Dog</span>  
+> <span style="color: rgb(140, 86, 75)">🐀 Rat x 🐈 Cat</span>  
+> <span style="color: rgb(31, 119, 180)">🐴 Horse x 🐃 Buffalo</span>  
+> <span style="color: rgb(227, 119, 194)">🐮 Cow x 🐯 Tiger</span>  
 
 <div id="rule_yoni"></div>
 
@@ -195,23 +199,23 @@ time. Each porutham can be described as a set of rules.
 > given such an importance for this match. Rajju is being divided into
 > five parts.
 >
-> **Siro Rajii** - Mirugasrisham, Sitthirai, Avittam
+> <span style="color: rgb(148, 103, 189)">Siro Rajii</span> - Mirugasrisham, Sitthirai, Avittam
 >
 > **Kanda Rajii**  
-> *Arohanam* - Rohini, Astham, Thiruvonam  
-> *Avaraohanam* - Thiruvathirai, Swathi, Sathayam
+> <span style="color: rgb(214, 39, 40)">Arohanam</span> - Rohini, Astham, Thiruvonam  
+> <span style="color: rgb(140, 86, 75)">Avaraohanam</span> - Thiruvathirai, Swathi, Sathayam
 >
 > **Uthara Rajii**  
-> *Arohanam* - Karthigai, Utharam, Uthradasm  
-> *Avaraohanam* - Punarpoosam, Visaham, Purattathi
+> <span style="color: rgb(44, 160, 44)">Arohanam</span> - Karthigai, Utharam, Uthradasm  
+> <span style="color: rgb(227, 119, 194)">Avaraohanam</span> - Punarpoosam, Visaham, Purattathi
 >
 > **Uuru Rajii**  
-> *Arohanam* - Barani, Pooram, Pooradam  
-> *Avaraohanam* - Poosam, Anusham, Utthiratathi
+> <span style="color: rgb(255, 127, 14)">Arohanam</span> - Barani, Pooram, Pooradam  
+> <span style="color: rgb(127, 127, 127)">Avaraohanam</span> - Poosam, Anusham, Utthiratathi
 >
 > **Paadha Rajii**  
-> *Arohanam* - Aswini, Magam, Mulam  
-> *Avaraohanam* - Ayilam, Kettai, Revathi
+> <span style="color: rgb(31, 119, 180)">Arohanam</span> - Aswini, Magam, Mulam  
+> <span style="color: rgb(188, 189, 34)">Avaraohanam</span> - Ayilam, Kettai, Revathi
 >
 > Matches are looked for in such a way that if the stars of both male
 > and female are not of the same Rajji then the female will lead the

@@ -2,20 +2,20 @@
 
 var π = Math.PI;
 var M = 'Male', F = 'Female';
-var Elephant = "Elephant";
-var Goat = "Goat";
-var Snake = "Snake";
-var Dog = "Dog";
-var Cat = "Cat";
-var Rat = "Rat";
-var Cow = "Cow";
-var Buffalo = "Buffalo";
-var Tiger = "Tiger";
-var Deer = "Deer";
-var Monkey = "Monkey";
-var Mongoose = "Mongoose";
-var Lion = "Lion";
-var Horse = "Horse";
+var Elephant = {name: "Elephant", emoji: '🐘'};
+var Goat = {name: "Goat", emoji: '🐐'};
+var Snake = {name: "Snake", emoji: '🐍'};
+var Dog = {name: "Dog", emoji: '🐶'};
+var Cat = {name: "Cat", emoji: '🐈'};
+var Rat = {name: "Rat", emoji: '🐀'};
+var Cow = {name: "Cow", emoji: '🐮'};
+var Buffalo = {name: "Buffalo", emoji: '🐃'};
+var Tiger = {name: "Tiger", emoji: '🐯'};
+var Deer = {name: "Deer", emoji: ''};
+var Monkey = {name: "Monkey", emoji: '🐵' };
+var Mongoose = {name: "Mongoose", emoji: ''};
+var Lion = {name: "Lion", emoji: '🦁'};
+var Horse = {name: "Horse", emoji: '🐴'};
 
 
 function Nakshatra(index, name, animal, animalGender)  {
@@ -106,6 +106,11 @@ function and() {
   };
 }
 
+function groupColor(groups) {
+  var colors = d3.scale.category10();
+  return d3.scale.ordinal().domain(Nakshatras).range(_.map(Nakshatras, function (n) { return colors(_.findIndex(groups, function (g) { return _.includes(g, n); })); }));
+}
+
 var dhinam = function (female, male) {
   // 4
   if (male === female && _.includes([Baraṇi, Aviṭṭam, Sadayam, Puraṭṭādhi], male)) {
@@ -126,11 +131,11 @@ var dhinam = function (female, male) {
   return _.includes([2, 4, 6, 8, 9, 11, 13, 15, 17, 18, 20, 22, 26, 27], distance(female, male));
 };
 
-var ganam = function (female, male) {
-  var deiva = [Aswini, Mirugasīridam, Punarpoosam, Poosam, Astham, Swathi, Anusham, Tiruvōnam, Revathi];
-  var manitha = [Baraṇi, Rohiṇi, Thiruvādhirai, Pooram, Uthiram, Puradam, Uthirādam, Puraṭṭādhi, Uttṛṭṭādhi];
-  var ratchasa = [Karthikai, Ayilyam, Magam, Chithirai, Visakam, Kettai, Mulam, Aviṭṭam, Sadayam];
+var deiva = [Aswini, Mirugasīridam, Punarpoosam, Poosam, Astham, Swathi, Anusham, Tiruvōnam, Revathi];
+var manitha = [Baraṇi, Rohiṇi, Thiruvādhirai, Pooram, Uthiram, Puradam, Uthirādam, Puraṭṭādhi, Uttṛṭṭādhi];
+var ratchasa = [Karthikai, Ayilyam, Magam, Chithirai, Visakam, Kettai, Mulam, Aviṭṭam, Sadayam];
 
+var ganam = function (female, male) {
   if (_.any([deiva, manitha, ratchasa], function (g) { return _.includes(g, male)  && _.includes(g, female); })) {
     return true;
   }
@@ -175,44 +180,43 @@ var rasi = function (female, male) {
   return false;
 };
 
-var nadi = function (female, male) {
-  var paarusuva = [Aswini, Thiruvādhirai, Punarpoosam, Uthiram, Astham, Kettai, Mulam, Sadayam, Puraṭṭādhi];
-  var madhya = [Baraṇi, Mirugasīridam, Poosam, Pooram, Chithirai, Anusham, Puradam, Aviṭṭam, Uttṛṭṭādhi];
-  var samana = [Karthikai, Rohiṇi, Ayilyam, Magam, Swathi, Visakam, Uthirādam, Tiruvōnam, Revathi];
+var paarusuva = [Aswini, Thiruvādhirai, Punarpoosam, Uthiram, Astham, Kettai, Mulam, Sadayam, Puraṭṭādhi];
+var madhya = [Baraṇi, Mirugasīridam, Poosam, Pooram, Chithirai, Anusham, Puradam, Aviṭṭam, Uttṛṭṭādhi];
+var samana = [Karthikai, Rohiṇi, Ayilyam, Magam, Swathi, Visakam, Uthirādam, Tiruvōnam, Revathi];
 
+var nadi = function (female, male) {
   return !_.any([paarusuva, madhya, samana], function (n) {
     return both(n, male, female);
   });
 };
 
-var yoni = function (female, male) {
-  var enemies = [
-    [Snake, Mongoose],
-    [Elephant, Lion],
-    [Monkey, Goat],
-    [Deer, Dog],
-    [Rat, Cat],
-    [Horse, Buffalo],
-    [Cow, Tiger]
-  ];
+var enemies = [
+  [Snake, Mongoose],
+  [Elephant, Lion],
+  [Monkey, Goat],
+  [Deer, Dog],
+  [Rat, Cat],
+  [Horse, Buffalo],
+  [Cow, Tiger]
+];
 
+var yoni = function (female, male) {
   return !_.any(enemies, function (pair) { return samePair(pair, male.animal, female.animal); });
 };
 
-var rajii = function (female, male) {
-  var siro = [Mirugasīridam, Chithirai, Aviṭṭam];
-  var kandaAro = [Rohiṇi, Astham, Tiruvōnam];
-  var kandaAva = [Thiruvādhirai, Swathi, Sadayam];
-  var UtharaAro = [Karthikai, Uthiram, Uthirādam];
-  var UtharaAva = [Punarpoosam, Visakam, Puraṭṭādhi];
-  var UuruAro = [Baraṇi, Pooram, Puradam];
-  var UuruAva = [Poosam, Anusham, Uttṛṭṭādhi];
-  var PaadhaAro = [Aswini, Magam, Mulam];
-  var PaadhaAva = [Ayilyam, Kettai, Revathi];
+var siro = [Mirugasīridam, Chithirai, Aviṭṭam];
+var kandaAro = [Rohiṇi, Astham, Tiruvōnam];
+var kandaAva = [Thiruvādhirai, Swathi, Sadayam];
+var UtharaAro = [Karthikai, Uthiram, Uthirādam];
+var UtharaAva = [Punarpoosam, Visakam, Puraṭṭādhi];
+var UuruAro = [Baraṇi, Pooram, Puradam];
+var UuruAva = [Poosam, Anusham, Uttṛṭṭādhi];
+var PaadhaAro = [Aswini, Magam, Mulam];
+var PaadhaAva = [Ayilyam, Kettai, Revathi];
+var rajiis = [siro, kandaAro, kandaAva, UtharaAro, UtharaAva, UuruAro, UuruAva, PaadhaAro, PaadhaAva];
 
-  return !_.any([siro, kandaAro, kandaAva, UtharaAro, UtharaAva, UuruAro, UuruAva, PaadhaAro, PaadhaAva], function (r) {
-    return both(r, male, female);
-  });
+var rajii = function (female, male) {
+  return !_.any(rajiis, function (r) { return both(r, male, female); });
 };
 
 var vethai = function (female, male) {
@@ -246,10 +250,12 @@ function translate(x, y) {
   return 'translate(' + x + ',' + y + ')';
 }
 
-function renderMatrix(ruleName, rule) {
+function renderMatrix(ruleName, rule, groupColor, pieColor, showAnimal) {
+  groupColor = groupColor || _.constant(null);
+  pieColor = pieColor || _.constant(null);
   var cellLength = 20, length = Nakshatras.length * cellLength;
   var margin = {
-    top: 100, left: 100, right: 50, bottom: 20
+    top: 100, left: 120, right: 50, bottom: 20
   };
 
   var svg = d3.select(divId(ruleName))
@@ -283,11 +289,13 @@ function renderMatrix(ruleName, rule) {
   var gap = 2;
   var radius = (cellLength - 2 * gap) / 2;
   var arc = d3.svg.arc().innerRadius(0).outerRadius(radius).startAngle(0);
+  var pieFillColor = function (d, i) { return pieColor(Nakshatras[i]); };
 
   // pies
   row.append('path')
     .attr('class', 'row pie')
     .attr('transform', translate(length + radius + gap, radius + gap))
+    .style('fill', pieFillColor)
     .attr('d', function (d) { return arc({endAngle: 2 * π * (sum(d) / Nakshatras.length)}); });
 
   var columns = _.unzip(matrix);
@@ -297,22 +305,27 @@ function renderMatrix(ruleName, rule) {
     .enter()
     .append('path')
     .attr('class', 'column pie')
+    .style('fill', pieFillColor)
     .attr('transform', function (d, i) { return translate(margin.left + (i * cellLength) + radius + gap, margin.top + length + radius + gap); })
     .attr('d', function (d) { return arc({endAngle: 2 * π * (sum(d) / Nakshatras.length)}); });
 
   // axis
   var x = d3.scale.ordinal().domain(Nakshatras).rangeBands([0, length], 0, 0);
-  var xaxis = d3.svg.axis().scale(x).orient('top');
+  var axis = d3.svg.axis().scale(x).orient('top');
+  if (showAnimal) {
+    axis.tickFormat(function (n) { return axis.orient() === 'top' ? n.animal.emoji + ' ' + n.name : n.name + ' ' + n.animal.emoji; });
+  }
   var xaxisg = svg.append('g')
         .attr('class', 'axis')
         .attr('transform', translate(margin.left, margin.top))
-        .call(xaxis);
+        .call(axis);
 
   xaxisg.selectAll('text')
     .attr('transform', 'rotate(-50)')
     .attr('y', -7)
     .attr('dy', 0)
     .attr('x', 10)
+    .style('fill', groupColor)
     .style('text-anchor', 'start');
 
   svg.append('text')
@@ -321,11 +334,14 @@ function renderMatrix(ruleName, rule) {
     .attr('text-anchor', 'middle')
     .text('Male');
 
-  var yaxis = d3.svg.axis().scale(x).orient('left');
-  svg.append('g')
-    .attr('class', 'axis')
-    .attr('transform', translate(margin.left, margin.top))
-    .call(yaxis);
+  axis.orient('left');
+  var yaxisg = svg.append('g')
+        .attr('class', 'axis')
+        .attr('transform', translate(margin.left, margin.top))
+        .call(axis);
+
+  yaxisg.selectAll('text')
+    .style('fill', groupColor);
 
   svg.append('text')
     .attr('transform', translate(15, margin.top + length/2) + ' rotate(-90)')
@@ -335,12 +351,12 @@ function renderMatrix(ruleName, rule) {
 }
 
 renderMatrix('dhinam', dhinam);
-renderMatrix('ganam', ganam);
+renderMatrix('ganam', ganam, groupColor([deiva, manitha, ratchasa]), groupColor([deiva, manitha, ratchasa]));
 renderMatrix('mahendra', mahendra);
 renderMatrix('rasi', rasi);
-renderMatrix('nadi', nadi);
-renderMatrix('yoni', yoni);
-renderMatrix('rajii', rajii);
+renderMatrix('nadi', nadi, groupColor([paarusuva, madhya, samana]));
+renderMatrix('yoni', yoni, groupColor(_.map(enemies, function (pair) { return _.flatten(_.map(pair, function (animal) { return _.where(Nakshatras, {animal: animal}); })); })), undefined, true);
+renderMatrix('rajii', rajii, groupColor(rajiis));
 renderMatrix('vethai', vethai);
 
 renderMatrix('dhinam_ganam', or(dhinam, ganam));
