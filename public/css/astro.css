@@ -1,0 +1,21 @@
+svg rect, svg line {
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 14px;
+    fill: #aaa;
+}
+.axis path.domain, .axis line {
+    fill: none;
+}
+
+.axis .tick line {
+    stroke: #ccc;
+}
+
+.pie {
+    fill: #ddd;
+    stroke: #333;
+    shape-rendering: geometricPrecision;
+}
