@@ -36,7 +36,7 @@ the root folder.
 
 I am using a rake task to automate the release. Create a file named
 rakefile.rb in the project root folder and drop the following snippet
-in it.  To run this you need the [git 1.7](http://git-scm.com/).
+in it. To run this you need the [git 1.7](http://git-scm.com/).
 {% highlight ruby %}
 task :release do
   temp = "../temp"
