@@ -1,0 +1,42 @@
+svg.tta .axis text {
+    font-size: 14px;
+    fill: #aaa;
+}
+svg.tta .axis path.domain, .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+svg.tta .axis .tick line {
+    stroke: #dedede;
+    shape-rendering: crispEdges;
+}
+
+svg.tta .y.axis .tick:first-child text {
+    display: none;
+}
+
+svg.tta path.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+svg.tta text.cutoff {
+    font-size: 10px;
+    font-family: serif;
+}
+
+svg.tta g.slider path.handle {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+svg.tta text.legend {
+    fill: #999;
+    font-size: 16px;
+}
+
+svg.tta text.line-legend {
+    font-size: 16px;
+}
