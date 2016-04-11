@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Visualization of Bit Reversal Ring
+viz: true
 ---
 
 > Bit reversal ring of size z could be defined as the reverse of the
@@ -41,6 +42,4 @@ For example, the ring in the column 2 and row 3 represents the groups
 
 <svg id="symmetry"></svg>
 
-<script src="/public/js/d3.js"></script>
-<script src="/public/js/underscore.js"></script>
 <script src="/public/js/bit-reversal-ring.js"></script>

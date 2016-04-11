@@ -1,5 +1,7 @@
 /* global _, d3 */
 
+(function () {
+
 var k = 3;
 
 function reverse(s) {
@@ -214,3 +216,4 @@ _.each([2, 3, 4], function (h) {
 });
 
 
+})();

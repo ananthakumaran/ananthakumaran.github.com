@@ -1,5 +1,6 @@
 /* global _, d3 */
 
+(function () {
 
 function ci(principal, rate, n, years) {
   return (principal * Math.pow((1 + (rate / 100) / n), n * years)) - principal;
@@ -242,3 +243,5 @@ function renderLines(baseRate) {
 var delayedRenderLines = _.debounce(renderLines, 100);
 
 renderLines(4);
+
+})();

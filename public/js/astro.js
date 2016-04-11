@@ -1,5 +1,7 @@
 /* global _, d3 */
 
+(function () {
+
 var π = Math.PI;
 var M = 'Male', F = 'Female';
 var Elephant = {name: "Elephant", emoji: '🐘'};
@@ -363,3 +365,5 @@ renderMatrix('dhinam_ganam', or(dhinam, ganam));
 renderMatrix('mahendra_rasi_nadi', or(mahendra, rasi, nadi));
 
 renderMatrix('porutham', and(or(dhinam, ganam), or(mahendra, rasi, nadi), yoni, rajii, vethai));
+
+})();
