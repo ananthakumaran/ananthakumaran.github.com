@@ -149,6 +149,7 @@ function renderLines(baseRate) {
     .style('fill', function (d) { return d.color; });
 
   cutoff
+    .transition()
     .attr('cy', y(maxDeduction))
     .attr('cx', function (d) {
       return x(cutOffInverse(d));
@@ -167,6 +168,7 @@ function renderLines(baseRate) {
     .style('fill', function (d) { return d.color; });
 
   cutoffText
+    .transition()
     .attr('y', y(maxDeduction))
     .attr('x', function (d) {
       return x(cutOffInverse(d));
@@ -190,6 +192,7 @@ function renderLines(baseRate) {
     .style('fill', function (d) { return d.color; });
 
   lineLegend
+    .transition()
     .attr('y', function (d) {
       return y(withoutPercent(ci(principal, maxRate, 4, 1), d.tax));
     })
