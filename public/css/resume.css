@@ -20,6 +20,9 @@
 .resume .experience strong {
     font-weight: 700;
 }
+.resume .experience p strong {
+    font-size: 14px;
+}
 
 .resume a strong {
     color: #ac4142;
