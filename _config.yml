@@ -17,7 +17,10 @@ author:
 # Custom vars
 version:             1.0.0
 
-highlighter:         pygments
-lsi:                 false
-safe:                true
+highlighter:         rouge
+# lsi:                 false
+# safe:                true
 excerpt_separator:   ""
+
+gems:
+  - jekyll-paginate
