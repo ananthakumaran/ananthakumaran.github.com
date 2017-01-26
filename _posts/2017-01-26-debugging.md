@@ -24,8 +24,8 @@ connection is failing. But it doesn't say why it is failing.
 
 To get more information, I tried to use ssl module directly.
 
-```elixir 
-:ssl.connect('piay.iflix.com', 443, []) 
+```elixir
+:ssl.connect('piay.iflix.com', 443, [])
 # => {:ok,{:sslsocket, {:gen_tcp, #Port<0.10658>, :tls_connection, :undefined}, #PID<0.325.0>}}
 ```
 
@@ -52,7 +52,7 @@ This looks quite simple, but still something is going wrong. The same
 through the proxy server.
 
 The [dbg](http://erlang.org/doc/man/dbg.html) app provides text based
-tracing functionaly. It can be used to trace function at various
+tracing functionality. It can be used to trace function at various
 granularities, from all the functions in a module to a function with
 specific arguments. I started to trace all the function calls in ssl
 module, but it resulted in too much data for me to analyze
@@ -101,5 +101,5 @@ the first param, sni extension was not enabled.
 ```elixir
 HTTPoison.get("https://piay.iflix.com", [], [proxy: {'10.128.10.16', 3128}, ssl: [server_name_indication: 'piay.iflix.com']])
 ```
-The fix was easy. The sni extenstion has to be enabled explicitly. As
+The fix was easy. The sni extension has to be enabled explicitly. As
 always, more layers introduce more points of failures.
