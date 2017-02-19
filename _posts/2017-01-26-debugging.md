@@ -6,7 +6,7 @@ title: Debugging cryptic errors
 At a project I am working on, our backend system makes http requests
 to hundreds of different servers. It is sort of like webhook, http
 requests are made to the customer server with the payload whenever
-some specific events occur in our system. We are in the midst of
+some specific events occur in our system. We were in the midst of
 migrating our systems from ruby to elixir.
 
 During the test run, we started to get a cryptic error for some small
