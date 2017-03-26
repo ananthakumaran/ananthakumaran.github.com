@@ -8,7 +8,6 @@
     font-family: 'Open Sans', sans-serif;
     color: rgb(85, 85, 85);
     font-size: 20px;
-    font-weight: 700;
 }
 
 .resume strong {
@@ -17,9 +16,6 @@
     color: rgb(85, 85, 85);
 }
 
-.resume .experience strong {
-    font-weight: 700;
-}
 .resume .experience p strong {
     font-size: 14px;
 }
