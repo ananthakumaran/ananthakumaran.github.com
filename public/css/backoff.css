@@ -1,0 +1,46 @@
+svg.backoff .axis text {
+    font-size: 14px;
+    fill: #aaa;
+}
+svg.backoff .axis path.domain, .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+svg.backoff .axis .tick line {
+    stroke: #dedede;
+    shape-rendering: crispEdges;
+}
+
+svg.backoff .y.axis .tick:first-child text {
+    display: none;
+}
+
+svg.backoff.distribution .y.axis text {
+    font-size: 9px;
+}
+
+svg.backoff path.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+svg.backoff text.cutoff {
+    font-size: 10px;
+    font-family: serif;
+}
+
+svg.backoff g.slider path.handle {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+svg.backoff text.legend {
+    fill: #999;
+    font-size: 16px;
+}
+
+svg.backoff text.line-legend {
+    font-size: 16px;
+}
