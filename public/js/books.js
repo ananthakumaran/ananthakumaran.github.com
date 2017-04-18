@@ -26,6 +26,39 @@ function add(a, b) {
   return a + b;
 }
 
+function direction(a, b) {
+  if (a > b) {
+    return 'up';
+  } else {
+    return 'down';
+  }
+}
+
+function connect(x1, x2, y1, y2, state) {
+  var line = d3.line()
+      .curve(function (context) {
+        var step = d3.curveStep(context);
+        var d = direction(y1, y2);
+        if (!state._t || Math.floor(y1) == Math.floor(y2) || (state._t >= 0.8 && d == "down") || (state._t <= 0.3 && d === "up") || state.d !== d) {
+          if (d === 'down') {
+            state._t = 0.3;
+          } else {
+            state._t = 0.8;
+          }
+        } else {
+          if (d === 'down') {
+            state._t += 0.2;
+          } else {
+            state._t -= 0.2;
+          }
+        }
+        state.d = d;
+        step._t = state._t;
+        return step;
+      });
+  return line([[x1,y1], [x2,y2]]);
+}
+
 function layout(read, y) {
   function push(previous, x) {
     var d = previous[1].x - (previous[0].x + previous[0].height + x);
@@ -74,9 +107,9 @@ function layout(read, y) {
   right.reverse();
   for (i = 0; i < read.length; i++) {
     if (i % 2 == 0) {
-      read[i].y = left[Math.floor(i/2)].x;
+      read[i].y1 = left[Math.floor(i/2)].x;
     } else {
-      read[i].y = right[Math.floor(i/2)].x;
+      read[i].y1 = right[Math.floor(i/2)].x;
     }
   }
 }
@@ -91,7 +124,7 @@ function timeline() {
   var node = document.getElementById('timeline');
   var margin = {top: 20, right: 0, bottom: 50, left: 40};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.left - margin.right;
-  var height = 10000;
+  var height = 15000;
   var svg = d3.select("#timeline")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -126,6 +159,7 @@ function timeline() {
 
   var container = d3.select('.timeline');
 
+  var cardWidth = (width/2) - 30;
   var card = container.selectAll('.card')
       .data(read)
       .enter()
@@ -137,22 +171,39 @@ function timeline() {
     .text(function (d) { return d.title; });
 
   card
-    .style('width', ((width/2) - 30) + 'px')
+    .style('width', cardWidth + 'px')
     .style('left', function(b, i) {
       b.cardHeight = parseInt(window.getComputedStyle(this).getPropertyValue('height'), 10) + 10;
       b.y = y(b.read);
-      b.x = x;
+      var x;
       if (i % 2 == 0) {
-        return margin.left + 'px';
+        x = margin.left;
       } else {
-        return (margin.left + (width/2) + 30) + 'px';
+        x = margin.left + (width/2) + 30;
       }
+      b.x = x;
+      return x + 'px';
     });
 
   layout(read, y);
 
   card
-    .style('top', function (d) { return d.y + 'px'; });
+    .style('top', function (d) { return d.y1 + 'px'; });
+
+  var leftState = {};
+  var rightState = {};
+  var edges = svg.selectAll('.edge')
+      .data(read)
+      .enter()
+      .append('path')
+      .attr('class', 'edge')
+      .attr("d", function(d, i) {
+        if (i % 2 == 0) {
+          return connect(x, d.x + cardWidth - margin.left, d.y, d.y1, leftState);
+        } else {
+          return connect(x, d.x - margin.left, d.y, d.y1, rightState);
+        }
+      });
 }
 
 function stars(n) {

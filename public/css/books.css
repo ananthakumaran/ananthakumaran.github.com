@@ -11,6 +11,13 @@
     float: left;
     position: relative;
 }
+
+.books .timeline path.edge {
+    stroke: #d28445;
+    stroke-width: 1px;
+    fill: none;
+}
+
 .books .content {
     width: 50%;
     float: left;
