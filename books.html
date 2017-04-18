@@ -1,0 +1,31 @@
+---
+layout: books
+title: Books
+---
+
+<div class="content">
+  So far I have read <span class="counter read"></span> books written
+  by <span class="counter author"></span> distinct authors
+  in <span class="counter language">2</span> different languages
+  totalling about <span class="counter pages"></span> pages.
+
+  <svg id="timeline-small"></svg>
+  <div class="desc">
+    A short timeline of when I read each book. A single dot represents
+    a book and their positions are adjusted such that they don't
+    collide with each other. Color represents the rating, the darker
+    the better.
+  </div>
+
+</div>
+<div class="timeline">
+  <svg id="timeline"></svg>
+</div>
+
+
+<link rel="stylesheet" href="/public/css/books.css"/>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/public/js/underscore.js"></script>
+<script src="/public/js/book-data.js"></script>
+<script src="/public/js/moment.min.js"></script>
+<script src="/public/js/books.js"></script>

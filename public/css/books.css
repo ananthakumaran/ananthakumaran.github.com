@@ -1,0 +1,76 @@
+.books-container {
+    max-width: 45rem;
+}
+
+.books .counter {
+    color: #d28445;
+}
+
+.books .timeline {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.books .content {
+    width: 50%;
+    float: left;
+}
+
+.books .desc {
+    font-size: .7rem;
+    font-weight: light;
+    color: #aaa;
+}
+
+.books .card {
+    position: absolute;
+    border: 2px solid #d28445;
+    font-size: .7rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.books .card span {
+    padding: 5px;
+    display: inline-block;
+}
+
+.books svg .axis text {
+    font-size: 10px;
+    fill: #aaa;
+}
+.books svg .axis path.domain, .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+.books svg .axis .tick line {
+    stroke: #dedede;
+    shape-rendering: crispEdges;
+}
+
+.books svg .y.axis .tick:first-child text {
+    display: none;
+}
+
+.books svg.distribution .y.axis text {
+    font-size: 9px;
+}
+
+.books svg path.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+
+.books .cells path {
+    fill: none;
+    pointer-events: all;
+}
+
+.books .cells :hover circle {
+    fill: #75b5aa;
+    stroke: #75b5aa;
+    stroke-width: 3px;
+}
