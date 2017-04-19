@@ -10,7 +10,7 @@ read = _.sortBy(_.map(read, function (book) {
     title: book['Title'].split(/[:([]/)[0].trim(),
     pageCount: pageCount,
     read: moment((book['Date Read']), 'YYYY/MM/DD'),
-    published: parseInt(book['Original Publication Year'], 10),
+    published: moment(book['Original Publication Year'], 'YYYY'),
     rating: parseInt(book['My Rating']),
     author: book['Author']
   };
@@ -32,6 +32,10 @@ function direction(a, b) {
   } else {
     return 'down';
   }
+}
+
+function color(rating) {
+  return ['', '#fef0d9', '#fdcc8a', '#fc8d59', '#e34a33', '#b30000'][rating];
 }
 
 function connect(x1, x2, y1, y2, state) {
@@ -122,7 +126,7 @@ setCounter('pages', _.reduce(_.pluck(read, 'pageCount'), add, 0));
 
 function timeline() {
   var node = document.getElementById('timeline');
-  var margin = {top: 20, right: 0, bottom: 50, left: 40};
+  var margin = {top: 20, right: 0, bottom: 50, left: 80};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.left - margin.right;
   var height = 15000;
   var svg = d3.select("#timeline")
@@ -137,14 +141,23 @@ function timeline() {
       .range([height, 0]);
   var x = width/2;
 
-  svg.selectAll(".dot")
-    .data(read)
-    .enter().append("circle")
-    .attr("class", "dot")
-    .attr("r", 7)
-    .attr("cx", x)
-    .attr("cy", function(b) { return y(b.read); })
-    .style("fill", "#d28445");
+  var ticks = [];
+  var start = domain[0].clone();
+  while (start <= domain[1]) {
+    ticks.push(start.clone());
+    start.add(1, 'month');
+  }
+
+  var axis = d3
+      .axisLeft(y)
+      .tickValues(ticks)
+      .tickSize(-(x + 10))
+      .tickFormat(function (x) { return moment(x).format('MMM YYYY'); });
+
+  svg.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(-10,0)")
+    .call(axis);
 
   svg.selectAll(".line")
     .data([0])
@@ -153,9 +166,7 @@ function timeline() {
     .attr('x1', x)
     .attr('x2', x)
     .attr('y1', y(domain[0]))
-    .attr('y2', y(domain[1]))
-    .style("stroke-width", "2px")
-    .style("stroke", "#d28445");
+    .attr('y2', y(domain[1]));
 
   var container = d3.select('.timeline');
 
@@ -172,6 +183,9 @@ function timeline() {
 
   card
     .style('width', cardWidth + 'px')
+    .style('border-color', function(d) {
+      return color(d.rating);
+    })
     .style('left', function(b, i) {
       b.cardHeight = parseInt(window.getComputedStyle(this).getPropertyValue('height'), 10) + 10;
       b.y = y(b.read);
@@ -197,6 +211,9 @@ function timeline() {
       .enter()
       .append('path')
       .attr('class', 'edge')
+      .style('stroke', function(d) {
+        return color(d.rating);
+      })
       .attr("d", function(d, i) {
         if (i % 2 == 0) {
           return connect(x, d.x + cardWidth - margin.left, d.y, d.y1, leftState);
@@ -204,6 +221,17 @@ function timeline() {
           return connect(x, d.x - margin.left, d.y, d.y1, rightState);
         }
       });
+
+  svg.selectAll(".dot")
+    .data(read)
+    .enter().append("circle")
+    .attr("class", "dot")
+    .attr("r", 7)
+    .attr("cx", x)
+    .attr("cy", function(b) { return y(b.read); })
+    .style('fill', function(d) {
+      return color(d.rating);
+    });
 }
 
 function stars(n) {
@@ -261,7 +289,7 @@ function timelineSmall() {
   cell.append("circle")
     .attr("r", 2)
     .style('fill', function(d) {
-      return ['', '#fef0d9', '#fdcc8a', '#fc8d59', '#e34a33', '#b30000'][d.data.rating];
+      return color(d.data.rating);
     })
     .attr("cx", function(d) { return d.data.x; })
     .attr("cy", function(d) { return d.data.y; });
@@ -270,9 +298,120 @@ function timelineSmall() {
     .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
 
   cell.append("title")
-    .text(function(d) { return d.data.read.format('MMM - YYYY') + '  ' + stars(d.data.rating) + '  ' + d.data.title; });
+    .text(function(d) { return d.data.read.format('MMM YYYY') + '  ' + stars(d.data.rating) + '  ' + d.data.title; });
 }
+
+function distribution() {
+  var node = document.getElementById('rating-distribution');
+  var margin = {top: 20, right: 10, bottom: 30, left: 20};
+  var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
+  var height = 100;
+  var svg = d3.select(node)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var distribution = _.mapObject(_.groupBy(read, 'rating'), function (l) { return l.length; });
+
+  var x = d3.scaleLinear()
+      .domain([0, _.max(_.values(distribution))])
+      .rangeRound([0, width]);
+
+  var y = d3.scaleBand()
+      .domain(_.chain(distribution).keys().reverse().value())
+      .range([0, height])
+      .round(true)
+      .padding([0.1]);
+
+  var xAxis = d3.axisBottom()
+      .scale(x);
+
+  var yAxis = d3.axisLeft()
+      .scale(y);
+
+ svg.selectAll(".bar")
+    .data(_.pairs(distribution))
+    .enter().append("rect")
+    .attr("class", 'bar')
+    .style("fill", function (d) { return color(parseInt(d[0], 10)); })
+    .attr("x", x(0))
+    .attr("y", function(d) { return y(d[0]); })
+    .attr("width", function(d) { return Math.abs(x(d[1]) - x(0)); })
+    .attr("height", y.bandwidth());
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(" + x(0) + ",0)")
+    .call(yAxis);
+}
+
+function timelinePublications(id, height, domain) {
+  var node = document.getElementById(id);
+  var margin = {top: 0, right: 20, bottom: 20, left: 20};
+  var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
+  var svg = d3.select(node)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var published = _.filter(read, function(b) { return b.published.isValid() && b.published >= domain[0] && b.published < domain[1]; });
+  var x = d3.scaleLinear()
+      .domain(domain)
+      .range([0, width]);
+
+  var simulation = d3.forceSimulation(published)
+      .force("x", d3.forceX(function(d) { return x(d.published); }).strength(1))
+      .force("y", d3.forceY(height / 2))
+      .force("collide", d3.forceCollide(3))
+      .stop();
+
+  for (var i = 0; i < 500; ++i) simulation.tick();
+
+  svg.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3
+          .axisBottom(x)
+          .tickFormat(function (x) { return moment(x).format('YYYY'); }));
+
+  var polygons = d3.voronoi()
+      .extent([[-margin.left, -margin.top], [width + margin.right, height + margin.top]])
+      .x(function(d) { return d.x; })
+      .y(function(d) { return d.y; })
+    .polygons(published);
+
+  var cell = svg.append("g")
+    .attr("class", "cells")
+    .selectAll("g").data(polygons).enter().append("g");
+
+  cell.append("circle")
+    .attr("r", 2)
+    .style('fill', function(d) {
+      return color(d.data.rating);
+    })
+    .attr("cx", function(d) { return d.data.x; })
+    .attr("cy", function(d) { return d.data.y; });
+
+  cell.append("path")
+    .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+  cell.append("title")
+    .text(function(d) { return d.data.published.format('YYYY') + '  ' + stars(d.data.rating) + '  ' + d.data.title; });
+}
+
+
 
 
 timeline();
 timelineSmall();
+distribution();
+var breakAt = moment('1970', 'YYYY');
+timelinePublications("timeline-publication-old", 50, [moment('1800', 'YYYY'), breakAt.clone()]);
+timelinePublications("timeline-publication-current", 75, [breakAt.clone(), moment()]);

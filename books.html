@@ -1,6 +1,6 @@
 ---
 layout: books
-title: Books
+title: Reading Statistics
 ---
 
 <div class="content">
@@ -17,6 +17,23 @@ title: Books
     the darker the better.
   </div>
 
+  <svg id="rating-distribution" class="distribution"></svg>
+  <div class="desc">
+    Distribution of ratings given by me for each book. I rarely finish
+    badly written books, which
+    <a href="http://localhost:7777/2015/09/01/rating.html">explains</a>
+    the near non existence of 1 and 2 star ratings.
+  </div>
+
+  <svg id="timeline-publication-old"></svg>
+  <svg id="timeline-publication-current"></svg>
+  <div class="desc">
+    Published year of each book. Some entries are not present because
+    their publication dates are not available. Canterbury Tales which
+    is published in 1390, is also removed due to difficulty in the
+    selection of scale appropriate for it.
+  </div>
+
 </div>
 <div class="timeline">
   <svg id="timeline"></svg>
@@ -24,7 +41,7 @@ title: Books
 
 
 <link rel="stylesheet" href="/public/css/books.css"/>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/public/js/d3.v4.min.js"></script>
 <script src="/public/js/underscore.js"></script>
 <script src="/public/js/book-data.js"></script>
 <script src="/public/js/moment.min.js"></script>

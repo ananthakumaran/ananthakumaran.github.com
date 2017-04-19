@@ -13,9 +13,15 @@
 }
 
 .books .timeline path.edge {
-    stroke: #d28445;
     stroke-width: 1px;
     fill: none;
+    shape-rendering: crispEdges;
+}
+
+.books .timeline line {
+    shape-rendering: crispEdges;
+    stroke-width: 2px;
+    stroke: #ddd;
 }
 
 .books .content {
@@ -31,10 +37,11 @@
 
 .books .card {
     position: absolute;
-    border: 2px solid #d28445;
+    border: 1px solid #d28445;
     font-size: .7rem;
     padding: 0;
     box-sizing: border-box;
+    background: white;
 }
 
 .books .card span {
@@ -80,4 +87,30 @@
     fill: #75b5aa;
     stroke: #75b5aa;
     stroke-width: 3px;
+}
+
+.books .timeline .axis path.domain, .axis line {
+    fill: none;
+    stroke: none;
+}
+
+.books .timeline .axis .tick line {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+
+
+.books .distribution .y.axis .domain {
+    stroke: none;
+}
+
+#timeline-publication-old {
+    margin-top: 30px;
+}
+
+#timeline-publication-current {
+    margin-bottom: 30px;
 }
