@@ -42,6 +42,7 @@
     padding: 0;
     box-sizing: border-box;
     background: white;
+    cursor: pointer;
 }
 
 .books .card span {
