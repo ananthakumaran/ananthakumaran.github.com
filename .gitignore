@@ -1,3 +1,6 @@
 _site/
 *~
 .rake_tasks
+node_modules
+books/
+.DS_Store
