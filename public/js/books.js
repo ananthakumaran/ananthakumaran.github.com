@@ -433,6 +433,60 @@ function timelinePublications(id, height, domain) {
 }
 
 
+function pageCount() {
+  var node = document.getElementById('page-count');
+  var margin = {top: 20, right: 10, bottom: 30, left: 10};
+  var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
+  var height = 100;
+  var svg = d3.select(node)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var readWithCount = _.filter(read, function(b) { return b.pageCount > 0; });
+  var domain = [0, _.max(_.pluck(readWithCount, 'pageCount'))];
+  var x = d3.scaleLinear()
+      .domain(domain)
+      .rangeRound([0, width]);
+
+  var simulation = d3.forceSimulation(readWithCount)
+      .force("x", d3.forceX(function(d) { return x(d.pageCount); }).strength(1))
+      .force("y", d3.forceY(height / 2))
+      .force("collide", d3.forceCollide(3))
+      .stop();
+
+  for (var i = 0; i < 120; ++i) simulation.tick();
+
+  svg.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+
+  var cell = svg.append("g")
+    .attr("class", "cells")
+    .selectAll("g").data(d3.voronoi()
+                         .extent([[-margin.left, -margin.top], [width + margin.right, height + margin.top]])
+                         .x(function(d) { return d.x; })
+                         .y(function(d) { return d.y; })
+                         .polygons(readWithCount)).enter().append("g");
+
+  cell.append("circle")
+    .attr("r", 2)
+    .style('fill', function(d) {
+      return color(d.data.rating);
+    })
+    .attr("cx", function(d) { return d.data.x; })
+    .attr("cy", function(d) { return d.data.y; });
+
+  cell.append("path")
+    .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+  cell.append("title")
+    .text(function(d) { return d.data.pageCount + '  ' + stars(d.data.rating) + '  ' + d.data.title; });
+}
+
+
 
 
 timeline();
@@ -441,3 +495,4 @@ distribution();
 var breakAt = moment('1970', 'YYYY');
 timelinePublications("timeline-publication-old", 50, [moment('1800', 'YYYY'), breakAt.clone()]);
 timelinePublications("timeline-publication-current", 75, [breakAt.clone(), moment()]);
+pageCount();
