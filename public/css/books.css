@@ -116,3 +116,44 @@
 #timeline-publication-current {
     margin-bottom: 30px;
 }
+
+
+.books #page-per-year .y.axis .domain, .books #book-per-year .y.axis .domain {
+    stroke: none;
+}
+
+.books #page-per-year .bar, .books #book-per-year .bar {
+    fill: #fc8d59;
+}
+
+.books #book-per-year .count {
+    text-anchor: end;
+    font-size: 10px;
+    fill: white;
+    font-family: sans-serif;
+}
+
+.desc.cover {
+    margin: 15px 0 0 0;
+}
+
+.book-group .star {
+    clear: both;
+    padding: 20px 5px 5px;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+
+.book-cover {
+    float: left;
+    height: 140px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.book-cover img {
+    width: 93px;
+    max-height: 139.5px;
+    border-radius: 0;
+    margin: 0 5px;
+}
