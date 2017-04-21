@@ -605,7 +605,6 @@ function covers() {
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width'));
   var container = d3.select(node);
   var data = _.chain(read).sortBy('averageRating').groupBy('rating').values().reverse().value();
-  console.log('data', data);
   var cardGroup = container.selectAll('.book-group')
       .data(data);
 
@@ -621,7 +620,7 @@ function covers() {
 
   var card = cardGroup.merge(enter)
       .selectAll('.book-cover')
-      .data(function(d, i) { console.log('d', d); return d; })
+      .data(function(d, i) { return d; })
       .enter()
       .append('a')
       .attr('title', function (d) { return stars(d.rating) + '  ' + d.title; })
