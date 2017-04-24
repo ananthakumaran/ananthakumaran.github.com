@@ -636,7 +636,7 @@ function covers() {
 
 function authors() {
   var node = document.getElementById('authors');
-  var margin = {top: 20, right: 20, bottom: 30, left: 20};
+  var margin = {top: 30, right: 20, bottom: 30, left: 20};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
   var height = 100;
   var svg = d3.select(node)
@@ -665,11 +665,16 @@ function authors() {
 
   for (var i = 0; i < 120; ++i) simulation.tick();
 
-
   svg.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x));
+
+  var count = _.chain(authors).values().groupBy('length').value();
+  svg.append("g")
+    .attr("class", "axis top")
+    .attr("transform", "translate(0,10)")
+    .call(d3.axisTop(x).tickFormat(function (x) { return count[x] ? count[x].length : 0; }));
 
   var cell = svg.append("g")
     .attr("class", "cells")
@@ -681,7 +686,6 @@ function authors() {
 
   cell.append("circle")
     .attr("r", function (d) {
-      console.log('d', d);
       return radius(d.data[1].length);
     })
     .style('fill', color(3))
