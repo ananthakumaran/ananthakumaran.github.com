@@ -86,7 +86,7 @@
 }
 
 .books .cells :hover circle {
-    fill: #75b5aa;
+    fill: #75b5aa !important;
     stroke: #75b5aa;
     stroke-width: 3px;
 }

@@ -633,6 +633,68 @@ function covers() {
       .attr('alt', function (d) { return d.title; });
 }
 
+
+function authors() {
+  var node = document.getElementById('authors');
+  var margin = {top: 20, right: 20, bottom: 30, left: 20};
+  var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
+  var height = 100;
+  var svg = d3.select(node)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var authors = _.groupBy(read, 'author');
+
+  var domain = d3.extent(_.chain(authors).values().pluck('length').value());
+  var x = d3.scaleLinear()
+      .domain(domain)
+      .rangeRound([0, width]);
+
+  var radius = d3.scaleLinear()
+      .domain(domain)
+      .range([1, 10]);
+
+  var data = _.pairs(authors);
+  var simulation = d3.forceSimulation(data)
+      .force("x", d3.forceX(function(d) { return x(d[1].length); }).strength(1))
+      .force("y", d3.forceY(height / 2))
+      .force("collide", d3.forceCollide().radius(function (d) { return radius(d[1].length) + 1;}))
+      .stop();
+
+  for (var i = 0; i < 120; ++i) simulation.tick();
+
+
+  svg.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+
+  var cell = svg.append("g")
+    .attr("class", "cells")
+    .selectAll("g").data(d3.voronoi()
+                         .extent([[-margin.left, -margin.top], [width + margin.right, height + margin.top]])
+                         .x(function(d) { return d.x; })
+                         .y(function(d) { return d.y; })
+                         .polygons(data)).enter().append("g");
+
+  cell.append("circle")
+    .attr("r", function (d) {
+      console.log('d', d);
+      return radius(d.data[1].length);
+    })
+    .style('fill', color(3))
+    .attr("cx", function(d) { return d.data.x; })
+    .attr("cy", function(d) { return d.data.y; });
+
+  cell.append("path")
+    .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+  cell.append("title")
+    .text(function(d) { return d.data[1].length + ' ' + d.data[0] + '\n\n' + _.pluck(d.data[1], 'title').join('\n'); });
+}
+
 timeline();
 timelineSmall();
 distribution();
@@ -643,3 +705,4 @@ pageCount();
 pagePerYear();
 bookPerYear();
 covers();
+authors();
