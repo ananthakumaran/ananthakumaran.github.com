@@ -1,5 +1,10 @@
 /* global _, d3, $, moment, books */
 
+function year(string) {
+  var n = parseInt(string, 10);
+  return moment(new Date(n, 0, 1));
+}
+
 var read = _.filter(books, function (book) { return !!book['Date Read']; });
 read = _.sortBy(_.map(read, function (book) {
   var pageCount = parseInt(book['Number of Pages'], 10);
@@ -11,7 +16,7 @@ read = _.sortBy(_.map(read, function (book) {
     fullTitle: book['Title'],
     pageCount: pageCount,
     read: moment((book['Date Read']), 'YYYY/MM/DD'),
-    published: moment(book['Original Publication Year'], 'YYYY'),
+    published: year(book['Original Publication Year']),
     rating: parseInt(book['My Rating']),
     averageRating: parseInt(book['Average Rating']),
     author: book['Author'],
@@ -702,8 +707,9 @@ function authors() {
 timeline();
 timelineSmall();
 distribution();
-var breakAt = moment('1970', 'YYYY');
-timelinePublications("timeline-publication-old", 50, [moment('1800', 'YYYY'), breakAt.clone()]);
+var breakAt = year('1970');
+timelinePublications("timeline-publication-too-old", 30, [year('-1000'), year('1800')]);
+timelinePublications("timeline-publication-old", 50, [year('1800'), breakAt.clone()]);
 timelinePublications("timeline-publication-current", 75, [breakAt.clone(), moment()]);
 pageCount();
 pagePerYear();
