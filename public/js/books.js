@@ -18,9 +18,10 @@ read = _.sortBy(_.map(read, function (book) {
     read: moment((book['Date Read']), 'YYYY/MM/DD'),
     published: year(book['Original Publication Year']),
     rating: parseInt(book['My Rating']),
-    averageRating: parseInt(book['Average Rating']),
+    averageRating: parseFloat(book['Average Rating']),
     author: book['Author'],
-    id: book['Book Id']
+    id: book['Book Id'],
+    bookshelves: book['Bookshelves'].split(', ')
   };
 }), 'read');
 
@@ -605,11 +606,11 @@ function bookPerYear() {
     .call(yAxis);
 }
 
-function covers() {
-  var node = document.getElementById('covers');
+function covers(id, list) {
+  var node = document.getElementById(id);
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width'));
   var container = d3.select(node);
-  var data = _.chain(read).sortBy('averageRating').groupBy('rating').values().reverse().value();
+  var data = _.chain(list).sortBy('averageRating').reverse().groupBy('rating').values().reverse().value();
   var cardGroup = container.selectAll('.book-group')
       .data(data);
 
@@ -714,5 +715,7 @@ timelinePublications("timeline-publication-current", 75, [breakAt.clone(), momen
 pageCount();
 pagePerYear();
 bookPerYear();
-covers();
+var technical = _.filter(read, function (book) { return _.includes(book.bookshelves, 'technical'); });
+covers('technical-covers', technical);
+covers('covers', read);
 authors();

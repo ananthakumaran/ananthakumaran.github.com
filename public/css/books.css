@@ -161,3 +161,8 @@
 .books #authors .top.axis .domain {
     stroke: none;
 }
+
+.clear {
+    clear: both;
+    margin-bottom: 30px;
+}
