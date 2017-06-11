@@ -213,6 +213,7 @@ function timeline() {
     .text(function (d) { return d.title; });
 
   card
+    .attr('title', function(d) { return d.read.format('D MMM YYYY') + '  ' + stars(d.rating) + '  ' + d.title + ' - ' + d.author; })
     .style('width', cardWidth + 'px')
     .style('border-color', function(d) {
       return color(d.rating);
