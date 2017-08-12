@@ -159,14 +159,14 @@ function timeline() {
   var node = document.getElementById('timeline');
   var margin = {top: 20, right: 0, bottom: 50, left: 80};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.left - margin.right;
-  var height = 15000;
+  var domain = d3.extent(_.pluck(read, 'read'));
+  var height = (domain[1] - domain[0]) / 15000000;
   var svg = d3.select("#timeline")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var domain = d3.extent(_.pluck(read, 'read'));
   var y = d3.scaleLinear()
       .domain(domain)
       .range([height, 0]);
