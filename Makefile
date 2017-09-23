@@ -9,3 +9,4 @@ book-covers:
 	node generate-covers.js
 	git add books.csv books.json public/js/book-data.js public/covers
 	git commit -m "update books"
+	git push origin master
