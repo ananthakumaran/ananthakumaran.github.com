@@ -2,6 +2,7 @@
     font-family: 'Lora', serif;
     color: rgb(119, 119, 119);
     font-size: 14px;
+    max-width: 32rem;
 }
 
 .resume h1, h2 {
@@ -9,6 +10,14 @@
     color: rgb(85, 85, 85);
     font-size: 20px;
 }
+
+.resume h2 {
+    color: rgb(119, 119, 119);
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
 
 .resume strong {
     font-size: 16px;
