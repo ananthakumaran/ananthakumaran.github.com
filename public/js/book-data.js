@@ -14,7 +14,7 @@ var books = [
     "Number of Pages": "144",
     "Year Published": "2002",
     "Original Publication Year": "2002",
-    "Date Read": "",
+    "Date Read": "2017/11/20",
     "Date Added": "2017/11/20",
     "Bookshelves": "",
     "Bookshelves with positions": "",
