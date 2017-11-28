@@ -5,7 +5,7 @@ title: A primer on Elixir Stream
 viz: true
 ---
 
-For many problems in programming, the most straightforward solution is to transform a list (Ex, map/filter/reduce etc over it). Once in a while, there will be problems which could be solved with list and transformations, except that the list is big and consumes lot of memory. Let's say you want to export records in database as a csv report, it might not be possible to load the entire set of records in memory before the transformations can be applied to it. [Stream](https://hexdocs.pm/elixir/Stream.html) abstraction in Elixir is designed to address these kinds of problems.
+For many problems in programming, the most straightforward solution is to transform a list (E.g. map/filter/reduce etc over it). Once in a while, there will be problems which could be solved with list and transformations, except that the list is big and consumes lot of memory. Let's say you want to export records in database as a csv report, it might not be possible to load the entire set of records in memory before the transformations can be applied to it. [Stream](https://hexdocs.pm/elixir/Stream.html) abstraction in Elixir is designed to address these kinds of problems.
 
 Steams allow for processing of elements, without any buffering. A transformation is a function which takes an element and returns zero or more elements. The stream abstraction helps us to apply a sequence of such transformations on a stream with a constant memory overhead.
 
@@ -43,7 +43,7 @@ Though most of the functions that deal with streams look exactly like the list c
 
 2. Stream abstraction is lot more restrictive in nature. Stream only allows linear transformations. When you force a stream, all the streams associated with it are also forced. 
 
-When you force a stream (ex [run](https://hexdocs.pm/elixir/Stream.html#run/1)), the bottommost stream will pull elements from the above stream, which in turn will pull from the stream above it and apply the transformation on it. Effectively each element travels from the top to bottom without being buffered anywhere. 
+When you force a stream (E.g. [run](https://hexdocs.pm/elixir/Stream.html#run/1)), the bottommost stream will pull elements from the above stream, which in turn will pull from the stream above it and apply the transformation on it. Effectively each element travels from the top to bottom without being buffered anywhere. 
 
 For example, the following transformation is easy to perform using stream abstraction
 
@@ -89,8 +89,8 @@ Why is the second version difficult? What happens if you pull 2 elements from on
 
 There seem to be two options for allowing pull from both end operations.
 
-1. Introduce a buffer in stream two, which would break our constant memory overhead promise. _Ex, if ndjson side pulled 2 elements, but csv side pulled only 1, `filter records` would have to keep the 1 extra element buffered for when csv side asks for more element._
-2. Split the stream into two pipelines, which means, the first two streams (fetch and filter) would be applied twice. _Ex, for both sides, db records would be fetched separately._
+1. Introduce a buffer in stream two, which would break our constant memory overhead promise. E.g. if ndjson side pulled 2 elements, but csv side pulled only 1, filter records would have to keep the 1 extra element buffered for when csv side asks for more element.
+2. Split the stream into two pipelines, which means, the first two streams (fetch and filter) would be applied twice. E.g. for both sides, db records would be fetched separately.
 
 Is there any other way to implement this without introducing buffer? Fortunately for us, this is a well-studied problem[^1][^2]. Libraries like [conduit](https://hackage.haskell.org/package/conduit) and [repa-flow](https://hackage.haskell.org/package/repa-flow) provide abstraction to handle those scenario elegantly. But the models are not without shortcoming.
 
@@ -120,7 +120,7 @@ Source <span class="source"></span> is good for cases where two streams needs to
 
 Sink <span class="sink"></span> is good for stream that needs to be split into multiple streams. It's not possible to merge multiple sinks into a single sink.
 
-The difference between the two types will become apparent when you think about the three fundamental transformations `merge`, `fork` and `map`
+The difference between the two types will become apparent when you think about the three fundamental transformations **merge**, **fork** and **map**
 
 <div class="diagram small" style="height: 180px">
  <div style="position: relative; margin-left: -500px">
@@ -182,7 +182,7 @@ Effectively
 
 1. if a stream implements only Collectable then it's a sink.
 2. if a stream implements Enumerable then it's a source.
-3. if a stream implements both Enumerable and Collectable then it's both a source and sink (ex [File.stream!](https://hexdocs.pm/elixir/File.html#stream!/1)).
+3. if a stream implements both Enumerable and Collectable then it's both a source and sink (E.g. [File.stream!](https://hexdocs.pm/elixir/File.html#stream!/1)).
 
 [Stream.into](https://hexdocs.pm/elixir/Stream.html#into/2) could be considered as a function that performs the fork transformation. It takes a source and a sink as arguments and returns a new source and connects the source to the sink. When the returned source is forced, each element will get pushed to the sink
 
