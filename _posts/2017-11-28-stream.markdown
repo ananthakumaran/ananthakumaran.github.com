@@ -1,0 +1,289 @@
+---
+container: stream-layout
+layout: post
+title: A primer on Elixir Stream
+viz: true
+---
+
+For many problems in programming, the most straightforward solution is to transform a list (Ex, map/filter/reduce etc over it). Once in a while, there will be problems which could be solved with list and transformations, except that the list is big and consumes lot of memory. Let's say you want to export records in database as a csv report, it might not be possible to load the entire set of records in memory before the transformations can be applied to it. [Stream](https://hexdocs.pm/elixir/Stream.html) abstraction in Elixir is designed to address these kinds of problems.
+
+Steams allow for processing of elements, without any buffering. A transformation is a function which takes an element and returns zero or more elements. The stream abstraction helps us to apply a sequence of such transformations on a stream with a constant memory overhead.
+
+Let's look at an example to understand the api and semantics. I will skip details like escaping csv entries and focus on stream.
+
+<div class="diagram small margin-left">
+  <div class="source circle" style="top: 0px;"><span class="label left">cycle</span></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">take</span></div>
+  <div class="source arrow" style="top: -10px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 120px;"><span class="label left">map</span></div>
+  <div class="source arrow" style="top: 50px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 180px;"><span class="label left">into</span></div>
+  <div class="source arrow" style="top: 110px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 240px;"><span class="label left">run</span></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -70px; top: 240px;"><span class="label left">File.stream</span></div>
+</div>
+
+```elixir
+Stream.cycle([[name: "Johh", age: "42", id: "4774", plan: "premium"]])
+|> Stream.take(1000_000)
+|> Stream.map(fn record ->
+  [Enum.join(Keyword.values(record), ","), "\n"]
+  end)
+|> Stream.into(File.stream!("records.csv"))
+|> Stream.run
+```
+
+The function [cycle](https://hexdocs.pm/elixir/Stream.html#cycle/1) creates an infinite stream of elements. In more real scenarios the source would be a database, etc.  The function [take](https://hexdocs.pm/elixir/Stream.html#take/2) creates a new stream that will return the first 1 million elements from the source stream. The function [map](https://hexdocs.pm/elixir/Stream.html#map/2) creates a new stream that applies the given function to each element in the source stream. The function [into](https://hexdocs.pm/elixir/Stream.html#into/2) emits each element in the source stream into the destination stream. The function [run](https://hexdocs.pm/elixir/Stream.html#run/1) forces the stream to run.
+
+Though most of the functions that deal with streams look exactly like the list counterpart, there are some subtle semantical differences.
+
+1. Stream is lazy in nature. When you apply a transformation to a stream, instead of the result of the transformation, you get a new stream. The stream has to be explicitly forced by either using [Stream.run](https://hexdocs.pm/elixir/Stream.html#run/1) or using any other function in [Enum](https://hexdocs.pm/elixir/Enum.html) module.
+
+2. Stream abstraction is lot more restrictive in nature. Stream only allows linear transformations. When you force a stream, all the streams associated with it are also forced. 
+
+When you force a stream (ex [run](https://hexdocs.pm/elixir/Stream.html#run/1)), the bottommost stream will pull elements from the above stream, which in turn will pull from the stream above it and apply the transformation on it. Effectively each element travels from the top to bottom without being buffered anywhere. 
+
+For example, the following transformation is easy to perform using stream abstraction
+
+<div class="diagram small" style="height: 300px">
+  <div class="source circle" style="top: 0px;"><span class="label left">fetch records from db</span></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">filter records</span></div>
+  <div class="source arrow" style="top: -10px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 120px;"><span class="label left">map records to csv format</span></div>
+  <div class="source arrow" style="top: 50px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 180px;"><span class="label left">Stream.into</span></div>
+  <div class="source arrow" style="top: 110px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 240px;"><span class="label right">Stream.run</span></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -70px; top: 240px;"><span class="label left">File.stream</span></div>
+</div>
+
+This works well when there is one operation in the end (the one that writes to file in the case above). But if you want to have multiple end operations, things get tricky. Though the version below looks similar to the one above, it is much more difficult to model using the stream abstraction.
+
+<div class="diagram small" style="height: 300px">
+  <div class="source circle" style="top: 0px;"><span class="label left">fetch records from db</span></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">filter records</span></div>
+  <div class="source arrow" style="top: 17px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="source circle" style="top: 120px; margin-left: -70px;"><span class="label left">map records to csv format</span></div>
+  <div class="source arrow" style="top: 12px; margin-left: -47px; transform: rotate(43deg);"></div>
+  <div class="source circle" style="top: 120px; margin-left: 70px;"><span class="label right">map records to ndjson format</span></div>
+  <div class="source arrow" style="top: 50px; margin-left: -49px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 180px; margin-left: -70px"><span class="label left">Stream.into</span></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 18px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -140px; top: 240px;"><span class="label left">File.stream</span></div>
+  <div class="source arrow" style="top: 110px; margin-left: -49px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 240px; margin-left: -70px;"><span class="label right">run</span></div>
+  <div class="source arrow" style="top: 50px; margin-left: 92px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 180px; margin-left: 70px"><span class="label right">Stream.into</span></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 27px; transform: rotate(43deg);"></div>
+  <div class="sink circle" style="margin-left: 140px; top: 240px;"><span class="label right">File.stream</span></div>
+  <div class="source arrow" style="top: 110px; margin-left: 92px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 240px; margin-left: 70px;"><span class="label left">run</span></div>
+</div>
+
+Why is the second version difficult? What happens if you pull 2 elements from one end operation (the ndjson side), and 1 element from another (the csv side)? Because there are two streams in the bottom, each might be pulling elements at different speed.
+
+There seem to be two options for allowing pull from both end operations.
+
+1. Introduce a buffer in stream two, which would break our constant memory overhead promise. _Ex, if ndjson side pulled 2 elements, but csv side pulled only 1, `filter records` would have to keep the 1 extra element buffered for when csv side asks for more element._
+2. Split the stream into two pipelines, which means, the first two streams (fetch and filter) would be applied twice. _Ex, for both sides, db records would be fetched separately._
+
+Is there any other way to implement this without introducing buffer? Fortunately for us, this is a well-studied problem[^1][^2]. Libraries like [conduit](https://hackage.haskell.org/package/conduit) and [repa-flow](https://hackage.haskell.org/package/repa-flow) provide abstraction to handle those scenario elegantly. But the models are not without shortcoming.
+
+## Source and Sink
+
+A stream can be implemented in two ways: **push →** and **pull ←**. Let's say two streams A and B are connected in the following way
+
+<div class="diagram small" style="height: 60px;margin-left: -100px">
+  <div class="source circle" style="top: 0px;"><span class="label left">A</span></div>
+  <div class="source arrow" style="top: 15px; margin-left: -70px; transform: rotate(0deg);"></div>
+  <div class="source circle" style="top: 0px; margin-left: 100px"><span class="label right">B</span></div>
+</div>
+
+An implementation is called pull based if B controls the main loop. Whenever B wants more elements it will pull from A.
+
+<div class="diagram small" style="height: 60px;margin-left: -100px">
+  <div class="source circle" style="top: 0px;"><span class="label left">A</span></div>
+  <div class="sink arrow" style="top: 15px; margin-left: -70px; transform: rotate(0deg);"></div>
+  <div class="sink circle" style="top: 0px; margin-left: 100px"><span class="label right">B</span></div>
+</div>
+
+An implementation is called push based if A controls the main loop. A will push the elements to B and B will not have any control over when it will get the next element.
+
+Pull based stream is called source <span class="source"></span> and push based stream is called sink <span class="sink"></span>. Is one type of implementation strictly better than another? No, each has its own pros and cons.
+
+Source <span class="source"></span> is good for cases where two streams needs to be merged into a single stream. But forking a source into two sources is not possible (without having buffers, which defeats the purpose).
+
+Sink <span class="sink"></span> is good for stream that needs to be split into multiple streams. It's not possible to merge multiple sinks into a single sink.
+
+The difference between the two types will become apparent when you think about the three fundamental transformations `merge`, `fork` and `map`
+
+<div class="diagram small" style="height: 180px">
+ <div style="position: relative; margin-left: -500px">
+  <div class="source arrow" style="top: -40px; margin-left: 157px; transform: rotate(137deg);"></div>
+  <div class="source circle" style="top: 0px; margin-left: -70px;"></div>
+  <div class="source arrow" style="top: -46px; margin-left: -113px; transform: rotate(43deg);"></div>
+  <div class="source circle" style="top: 0px; margin-left: 70px;"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">merge</span></div>
+  <div class="source arrow" style="top: -10px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 120px;"></div>
+ </div>
+ <div style="position: relative; margin-left: 0px">
+  <div class="source circle" style="top: 0px;"></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">fork</span></div>
+  <div class="sink arrow" style="top: 17px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="top: 120px; margin-left: -70px;"></div>
+  <div class="source arrow" style="top: 12px; margin-left: -47px; transform: rotate(43deg);"></div>
+  <div class="source circle" style="top: 120px; margin-left: 70px;"></div>
+ </div>
+ <div style="position: relative; margin-left: 400px">
+  <div class="source circle" style="top: 0px;"></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">map</span></div>
+  <div class="source arrow" style="top: -10px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 120px;"></div>
+ </div>
+</div>
+
+The table below shows all the possible combinations of source, sink and transformation and which can be implemented without introducing buffers.
+
+<div class="table">
+merge(<span class="source"></span>,<span class="source"></span>)::<span class="source"></span>  <span class="strike">fork(<span class="source"></span>)::(<span class="source"></span>,<span class="source"></span>)</span>   map(<span class="source"></span>)::<span class="source"></span><br/>
+merge(<span class="source"></span>,<span class="source"></span>)::<span class="sink"></span>  fork(<span class="source"></span>)::(<span class="source"></span>,<span class="sink"></span>)  map(<span class="source"></span>)::<span class="sink"></span><br/>
+<span class="strike">merge(<span class="source"></span>,<span class="sink"></span>)::<span class="source"></span></span>   fork(<span class="source"></span>)::(<span class="sink"></span>,<span class="source"></span>)  <span class="strike">map(<span class="sink"></span>)::<span class="source"></span></span> <br/>
+<span class="strike">merge(<span class="source"></span>,<span class="sink"></span>)::<span class="sink"></span></span>   fork(<span class="source"></span>)::(<span class="sink"></span>,<span class="sink"></span>)  map(<span class="sink"></span>)::<span class="sink"></span><br/>
+<span class="strike">merge(<span class="sink"></span>,<span class="source"></span>)::<span class="source"></span></span>   <span class="strike">fork(<span class="sink"></span>)::(<span class="source"></span>,<span class="source"></span>)</span> <br/>
+<span class="strike">merge(<span class="sink"></span>,<span class="source"></span>)::<span class="sink"></span></span>   <span class="strike">fork(<span class="sink"></span>)::(<span class="source"></span>,<span class="sink"></span>)</span> <br/>
+<span class="strike">merge(<span class="sink"></span>,<span class="sink"></span>)::<span class="source"></span></span>   <span class="strike">fork(<span class="sink"></span>)::(<span class="sink"></span>,<span class="source"></span>)</span> <br/>
+<span class="strike">merge(<span class="sink"></span>,<span class="sink"></span>)::<span class="sink"></span></span>   fork(<span class="sink"></span>)::(<span class="sink"></span>,<span class="sink"></span>)<br/>
+</div>
+
+There are two main points that could be inferred from the above table
+
+
+1. Once you map from source to sink, there is no way you can map back to source.
+2. If you need to fork the stream at any point, you need to choose at least one of the resultant stream as sink. 
+
+There can be only one main loop in any series of connected streams. If all the streams are sink, then the main loop would be controlled by the first sink. In case of mixed streams, only one of the end streams can be a source, which will control the main loop. Rest of the end streams (if there are any) would be sink. Each sink would receive elements based on how source streams are getting elements. Source pulls elements. Sinks get pushed the elements.
+
+
+## Elixir Source and Sink Streams
+
+Does Elixir support source and sink abstraction? The documentation doesn't explicitly talk about push/pull or source/sink. So I could only make educated guess.
+
+A stream should implement at least one of [Enumerable](https://hexdocs.pm/elixir/Enumerable.html) and [Collectable](https://hexdocs.pm/elixir/Collectable.html). Enumerable protocol enables pull type implementation via [suspend](http://elixir-lang.github.io/blog/2013/12/11/elixir-s-new-continuable-enumerators/) operator. Collectable protocol only allows the push type implementation.
+
+Effectively
+
+1. if a stream implements only Collectable then it's a sink.
+2. if a stream implements Enumerable then it's a source.
+3. if a stream implements both Enumerable and Collectable then it's both a source and sink (ex [File.stream!](https://hexdocs.pm/elixir/File.html#stream!/1)).
+
+[Stream.into](https://hexdocs.pm/elixir/Stream.html#into/2) could be considered as a function that performs the fork transformation. It takes a source and a sink as arguments and returns a new source and connects the source to the sink. When the returned source is forced, each element will get pushed to the sink
+
+<div class="diagram small margin-left">
+  <div class="source circle" style="top: 0px;"><span class="label left">cycle</span></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">take</span></div>
+  <div class="source arrow" style="top: -10px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 120px;"><span class="label left">map</span></div>
+  <div class="source arrow" style="top: 50px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 180px;"><span class="label left">into</span></div>
+  <div class="source arrow" style="top: 110px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 240px;"><span class="label left">into</span></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -70px; top: 240px;"><span class="label left">File.stream</span></div>
+  <div class="sink arrow" style="top: 195px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -70px; top: 300px;"><span class="label left">File.stream</span></div>
+  <div class="source arrow" style="top: 135px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 300px;"><span class="label left">run</span></div>
+</div>
+
+```elixir
+Stream.cycle([[name: "Johh", age: "42", id: "4774", plan: "premium"]])
+|> Stream.take(1000_000)
+|> Stream.map(fn record ->
+  [Enum.join(Keyword.values(record), ","), "\n"]
+  end)
+|> Stream.into(File.stream!("records_1.csv"))
+|> Stream.into(File.stream!("records_2.csv"))
+|> Stream.run
+```
+
+Here we use the [Stream.into](https://hexdocs.pm/elixir/Stream.html#into/2) to fork twice thereby writing the same content to two different streams.
+
+
+Let's go back to our main problem. We wanted to create both csv and json file. We should be able to manipulate the sink after it's forked. But this where Elixir support lacks. The [Stream](https://hexdocs.pm/elixir/Stream.html) module only provides functions to transform source type streams. As [Collectable](https://hexdocs.pm/elixir/Collectable.html) is a protocol, we could implement the transform functions ourself.
+
+```elixir
+defmodule Sink do
+  defstruct [:builder]
+
+  def map(dest, fun) do
+    builder = fn ->
+      {state, dest_fun} = Collectable.into(dest)
+      collector_fun = fn
+        state, {:cont, elem} -> dest_fun.(state, {:cont, fun.(elem)})
+        state, :done -> dest_fun.(state, :done)
+        state, :halt -> dest_fun.(state, :halt)
+      end
+      {state, collector_fun}
+    end
+    %Sink{builder: builder}
+  end
+end
+
+
+defimpl Collectable, for: Sink do
+  def into(%Sink{builder: builder}) do
+    builder.()
+  end
+end
+```
+
+<div class="diagram small margin-left">
+  <div class="source circle" style="top: 0px;"><span class="label left">cycle</span></div>
+  <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 60px;"><span class="label left">take</span></div>
+  <div class="source arrow" style="top: -10px; transform: rotate(90deg);"></div>
+  <div class="source circle" style="top: 120px;"><span class="label left">into</span></div>
+  <div class="source arrow" style="top: 50px; transform: rotate(90deg);"></div>
+  <div class="sink arrow" style="top: 75px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -70px; top: 180px;"><span class="label left">map</span></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 20px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -140px; top: 240px;"><span class="label left">File.stream</span></div>
+
+  <div class="source circle" style="top: 180px;"><span class="label left">into</span></div>
+  <div class="source arrow" style="top: 110px; transform: rotate(90deg);"></div>
+  <div class="sink arrow" style="top: 135px; margin-left: 85px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -70px; top: 240px;"><span class="label left">map</span></div>
+  <div class="source circle" style="top: 240px;"><span class="label left">run</span></div>
+  <div class="sink arrow" style="top: 195px; margin-left: 20px; transform: rotate(137deg);"></div>
+  <div class="sink circle" style="margin-left: -140px; top: 300px;"><span class="label left">File.stream</span></div>
+</div>
+
+```elixir
+Stream.cycle([[name: "Johh", age: "42", id: "4774", plan: "premium"]])
+|> Stream.take(1000_000)
+|> Stream.into(Sink.map(File.stream!("records.csv"), fn record ->
+  [Enum.join(Keyword.values(record), ","), "\n"]
+end))
+|> Stream.into(Sink.map(File.stream!("records.ndjson"), fn record ->
+  [Poison.encode!(Enum.into(record, %{})), "\n"]
+end))
+|> Stream.run
+```
+
+One of the quirks with transforming sink is that all the transformations have to be applied in reverse order starting with the last sink.
+
+[^1]: Lippmeierα, Ben, Fil Mackayβ, and Amos Robinsonγ. "Polarized Data Parallel Data Flow."
+
+[^2]: Kay, Michael. "You pull, I’ll push: on the polarity of pipelines." Balisage: The Markup Conference. 2009.
+
+
+<link rel="stylesheet" href="/public/css/stream.css"/>

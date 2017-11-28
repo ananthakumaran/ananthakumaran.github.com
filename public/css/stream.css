@@ -1,0 +1,128 @@
+.clear {
+    clear: both;
+}
+
+.diagram {
+    position: relative;
+}
+
+.margin-left .circle {
+    left: -10%;
+}
+
+.margin-left .arrow {
+    left: -10%;
+}
+
+.circle {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 50%;
+    border-radius: 50%;
+    display: block;
+}
+
+span.source, span.sink {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circle .label {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    position: absolute;
+    white-space: nowrap;
+    top: 26%;
+}
+
+.circle .label.left {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    position: absolute;
+    left: -5px;
+    width: 0;
+    direction: rtl;
+    white-space: nowrap;
+}
+
+.circle .label.right {
+    left: 100%;
+    margin-left: 5px;
+}
+
+.small .circle {
+    width: 36px;
+    height: 36px;
+}
+
+.source {
+    background: #aff1b6;
+    color: #3ECF8E;
+}
+
+.sink {
+    background: #ffe0f5;
+    color: #F6A4EB;
+}
+
+@keyframes move-arrows {
+    to {
+        -webkit-mask-position: 11px 0;
+        mask-position: 11px 0;
+    }
+}
+
+.arrow {
+    left: 50%;
+    margin-left: 40px;
+    -webkit-mask: url(/public/images/arrow.svg);
+    mask: url(/public/images/arrow.svg);
+    width: 330px;
+    height: 8px;
+    animation: move-arrows .5s linear infinite;
+    transform-origin: 0% 0%;
+    position: absolute;
+}
+
+.small .arrow {
+    width: 165px;
+    height: 8px;
+    margin-left: 22px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.table {
+    font-family: monospace;
+    margin: 15px;
+}
+
+.stream-layout .post {
+    margin-left: 14rem;
+}
+
+.container.stream-layout {
+  max-width: 40rem;
+}
+@media (min-width: 48em) {
+  .container.stream-layout {
+    max-width: 44rem;
+  }
+}
+@media (min-width: 56em) {
+  .container.stream-layout {
+    max-width: 50rem;
+  }
+}
+
+.stream-layout pre.highlight {
+    font-size: .7rem;
+}
