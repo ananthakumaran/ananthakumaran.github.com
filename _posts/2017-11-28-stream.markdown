@@ -7,7 +7,7 @@ viz: true
 
 For many problems in programming, the most straightforward solution is to transform a list (E.g. map/filter/reduce etc over it). Once in a while, there will be problems which could be solved with list and transformations, except that the list is big and consumes lot of memory. Let's say you want to export records in database as a csv report, it might not be possible to load the entire set of records in memory before the transformations can be applied to it. [Stream](https://hexdocs.pm/elixir/Stream.html) abstraction in Elixir is designed to address these kinds of problems.
 
-Steams allow for processing of elements, without any buffering. A transformation is a function which takes an element and returns zero or more elements. The stream abstraction helps us to apply a sequence of such transformations on a stream with a constant memory overhead.
+Streams allow for processing of elements, without any buffering. A transformation is a function which takes an element and returns zero or more elements. The stream abstraction helps us to apply a sequence of such transformations on a stream with a constant memory overhead.
 
 Let's look at an example to understand the api and semantics. I will skip details like escaping csv entries and focus on stream.
 
@@ -26,7 +26,7 @@ Let's look at an example to understand the api and semantics. I will skip detail
 </div>
 
 ```elixir
-Stream.cycle([[name: "Johh", age: "42", id: "4774", plan: "premium"]])
+Stream.cycle([[name: "John", age: "42", id: "4774", plan: "premium"]])
 |> Stream.take(1000_000)
 |> Stream.map(fn record ->
   [Enum.join(Keyword.values(record), ","), "\n"]
@@ -205,7 +205,7 @@ Effectively
 </div>
 
 ```elixir
-Stream.cycle([[name: "Johh", age: "42", id: "4774", plan: "premium"]])
+Stream.cycle([[name: "John", age: "42", id: "4774", plan: "premium"]])
 |> Stream.take(1000_000)
 |> Stream.map(fn record ->
   [Enum.join(Keyword.values(record), ","), "\n"]
@@ -268,7 +268,7 @@ end
 </div>
 
 ```elixir
-Stream.cycle([[name: "Johh", age: "42", id: "4774", plan: "premium"]])
+Stream.cycle([[name: "Johhn", age: "42", id: "4774", plan: "premium"]])
 |> Stream.take(1000_000)
 |> Stream.into(Sink.map(File.stream!("records.csv"), fn record ->
   [Enum.join(Keyword.values(record), ","), "\n"]
