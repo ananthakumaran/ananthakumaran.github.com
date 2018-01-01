@@ -5,36 +5,25 @@ viz: true
 ---
 
 <div class="container content">
-  <div class="posts">
-    {% for post in paginator.posts %}
+  <div class="aboutme">
     <div class="post">
-      <h1 class="post-title">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h1>
-
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-
-      {{ post.content }}
+      I write software programs for <a href="resume.html">living</a>, some of them are <a href="https://github.com/ananthakumaran">open source</a>. I try to better understand the world around me primarily via <a href="books.html">reading</a> fiction, nonfiction, and technical books. I spend my free time on acquiring knowledge about things that interest me, which currently happens to be data <a href="visualization">visualizations</a> and distributed systems. Occasionally, I write blog posts when I have something to say or ramble something out of sheer boredom, the list can be found below.
     </div>
-    {% endfor %}
   </div>
 
-  <div class="pagination">
-    {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-    {% else %}
-    <span class="pagination-item older">Older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-    {% else %}
-    <span class="pagination-item newer">Newer</span>
-    {% endif %}
+  <div class="related">
+    <h2>Posts</h2>
+    <ul class="related-posts">
+      {% for post in site.posts %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
