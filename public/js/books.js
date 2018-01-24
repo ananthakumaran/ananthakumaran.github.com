@@ -281,23 +281,24 @@ function stars(n) {
   return result;
 }
 
-function timelineSmall() {
-  var node = document.getElementById('timeline-small');
-  var margin = {top: 20, right: 5, bottom: 30, left: 5};
+function timelineSmall(id, range) {
+  var node = document.getElementById(id);
+  var margin = {top: 0, right: 10, bottom: 20, left: 10};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
-  var height = 100;
-  var svg = d3.select("#timeline-small")
+  var height = 60;
+  var svg = d3.select(node)
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var domain = d3.extent(_.pluck(read, 'read'));
+  var readInRange = _.filter(read, function(b) { return b.read >= range[0] && b.read < range[1]; });
+  var domain = d3.extent(_.pluck(readInRange, 'read'));
   var x = d3.scaleLinear()
-      .domain(domain)
+      .domain(range)
       .rangeRound([0, width]);
 
-  var simulation = d3.forceSimulation(read)
+  var simulation = d3.forceSimulation(readInRange)
       .force("x", d3.forceX(function(d) { return x(d.read); }).strength(1))
       .force("y", d3.forceY(height / 2))
       .force("collide", d3.forceCollide(3))
@@ -319,7 +320,7 @@ function timelineSmall() {
                          .extent([[-margin.left, -margin.top], [width + margin.right, height + margin.top]])
                          .x(function(d) { return d.x; })
                          .y(function(d) { return d.y; })
-                         .polygons(read)).enter().append("g");
+                         .polygons(readInRange)).enter().append("g");
 
   cell.append("circle")
     .attr("r", 2)
@@ -707,7 +708,8 @@ function authors() {
 }
 
 timeline();
-timelineSmall();
+timelineSmall('timeline-small-1', [year('2009'), year('2015')]);
+timelineSmall('timeline-small-2', [year('2015'), year('2021')]);
 distribution();
 var breakAt = year('1970');
 timelinePublications("timeline-publication-too-old", 30, [year('-1000'), year('1800')]);
