@@ -197,6 +197,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-paginate
+  jekyll-sitemap
 
 BUNDLED WITH
-   1.13.6
+   1.15.4

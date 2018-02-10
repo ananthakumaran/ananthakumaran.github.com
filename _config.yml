@@ -24,3 +24,4 @@ excerpt_separator:   ""
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap

@@ -1,0 +1,3 @@
+user-agent: *
+disallow: /socialsite/
+sitemap: http://ananthakumaran.in/sitemap.xml
