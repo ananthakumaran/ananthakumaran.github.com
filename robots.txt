@@ -1,3 +1,4 @@
 user-agent: *
 disallow: /socialsite/
+disallow: /imagebundler-wicket/
 sitemap: http://ananthakumaran.in/sitemap.xml
