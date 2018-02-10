@@ -1,4 +1,5 @@
 user-agent: *
 disallow: /socialsite/
 disallow: /imagebundler-wicket/
+disallow: /maven-demo/
 sitemap: http://ananthakumaran.in/sitemap.xml
