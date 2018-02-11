@@ -95,57 +95,24 @@ function connect(x1, x2, y1, y2, state) {
 }
 
 function layout(read, y) {
-  function push(previous, x) {
-    var d = previous[1].x - (previous[0].x + previous[0].height + x);
-    if(d >= 0) {
-      previous[0].x += x;
-      return 0;
-    } else {
-      var current = previous.shift();
-      var a = push(previous, Math.abs(d));
-      previous.unshift(current);
-      current.x += (x - a);
-      return a;
-    }
-  }
+  var points = _.map(read, function (r, i) {
+    var h = r.cardHeight;
+    return {x: i % 2 == 0 ? 0 : 5000, y: y(r.read), height: h};
+  });
 
-  function place(previous, x, height) {
-    if (previous.length === 0) {
-      return [{
-        x: x, height: height
-      }];
-    }
-    var d = previous[0].x - (x + height);
-    if (d >= 0) {
-      previous.unshift({
-        x: x, height: height
-      });
-    } else {
-      var actual = push(previous, height/2);
-      previous.unshift({
-        x: previous[0].x - height, height: height
-      });
-    }
-    return previous;
-  }
+  var simulation = d3.forceSimulation(points)
+      .force("x", d3.forceX(function (d) { return d.x; }).strength(1))
+      .force("y", d3.forceY(function (d) { return d.y; }).strength(.01))
+      .force("collide", d3.forceCollide(function (d) {
+        return d.height/2;
+      }).strength(0.9).iterations(5))
+      .stop();
 
-  var left = [], right = [];
-  for (var i = 0; i < read.length; i++) {
-    if (i % 2 == 0) {
-      left = place(left, y(read[i].read), read[i].cardHeight);
-    } else {
-      right = place(right, y(read[i].read), read[i].cardHeight);
-    }
-  }
+  for (var i = 0; i < 500; ++i) simulation.tick();
 
-  left.reverse();
-  right.reverse();
   for (i = 0; i < read.length; i++) {
-    if (i % 2 == 0) {
-      read[i].y1 = left[Math.floor(i/2)].x;
-    } else {
-      read[i].y1 = right[Math.floor(i/2)].x;
-    }
+    read[i].y1 = points[i].y;
+    read[i].y = y(read[i].read);
   }
 }
 
@@ -237,7 +204,7 @@ function timeline() {
   layout(read, y);
 
   card
-    .style('top', function (d) { return d.y1 + 'px'; });
+    .style('top', function (d) { return (d.y1 + 25 - d.cardHeight/2) + 'px'; });
 
   var leftState = {};
   var rightState = {};
