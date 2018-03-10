@@ -595,17 +595,54 @@ function covers(id, list) {
 
   var card = cardGroup.merge(enter)
       .selectAll('.book-cover')
-      .data(function(d, i) { return d; })
-      .enter()
-      .append('a')
-      .attr('title', function (d) { return stars(d.rating) + '  ' + d.title; })
-      .on('click', function (d) {
-        window.open(linkToBook(d), '_blank');
-      })
-      .attr('class', 'book-cover')
-      .append('img')
-      .attr('src', function (d) { return '/public/covers/' + d.id + '.jpg'; })
-      .attr('alt', function (d) { return d.title; });
+      .data(function(d, i) { return d; });
+
+  card.enter()
+    .append('a')
+    .attr('class', 'book-cover')
+    .on('click', function (d) {
+      window.open(linkToBook(d), '_blank');
+    })
+    .attr('title', function (d) { return stars(d.rating) + '  ' + d.title; })
+    .append('img')
+    .attr('src', function (d) { return '/public/covers/' + d.id + '.jpg'; })
+    .attr('alt', function (d) { return d.title; });
+
+  card.attr('title', function (d) { return stars(d.rating) + '  ' + d.title; })
+    .select('img')
+    .attr('src', function (d) { return '/public/covers/' + d.id + '.jpg'; })
+    .attr('alt', function (d) { return d.title; });
+
+  card.exit().remove();
+
+  cardGroup.exit().remove();
+}
+
+function tags() {
+  var shelves = _.chain(read).pluck('bookshelves').flatten().uniq().without('', 'own').unshift('all').value();
+  var node = document.getElementById('tags');
+
+  d3.select(node)
+    .selectAll('.tag')
+    .data(shelves)
+    .enter()
+    .append('a')
+    .attr('class', 'tag')
+    .on('click', function (d) {
+      d3.select(node).selectAll('.tag').classed('active', false);
+      d3.select(this).classed('active', true);
+      document.getElementById('selected-tag').innerHTML = d;
+
+      var books = read;
+      if (d !== 'all') {
+        books = _.filter(read, function (book) { return _.includes(book.bookshelves, d); });
+      }
+
+      covers('covers', books);
+    })
+    .text(_.identity);
+
+  d3.select(node).selectAll('.tag').filter(':first-child').dispatch('click');
 }
 
 
@@ -685,7 +722,5 @@ timelinePublications("timeline-publication-current", 75, [breakAt.clone(), momen
 pageCount();
 pagePerYear();
 bookPerYear();
-var technical = _.filter(read, function (book) { return _.includes(book.bookshelves, 'technical'); });
-covers('technical-covers', technical);
-covers('covers', read);
 authors();
+tags();
