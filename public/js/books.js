@@ -593,6 +593,10 @@ function covers(id, list) {
     .attr('class', 'star')
     .text(function (d) { return stars(d[0].rating);});
 
+  cardGroup
+    .select('.star')
+    .text(function (d) { return stars(d[0].rating);});
+
   var card = cardGroup.merge(enter)
       .selectAll('.book-cover')
       .data(function(d, i) { return d; });
@@ -622,6 +626,14 @@ function tags() {
   var shelves = _.chain(read).pluck('bookshelves').flatten().uniq().without('', 'own').unshift('all').value();
   var node = document.getElementById('tags');
 
+  var filter = function(shelf) {
+    var books = read;
+    if (shelf !== 'all') {
+      books = _.filter(read, function (book) { return _.includes(book.bookshelves, shelf); });
+    }
+    return books;
+  };
+
   d3.select(node)
     .selectAll('.tag')
     .data(shelves)
@@ -633,14 +645,11 @@ function tags() {
       d3.select(this).classed('active', true);
       document.getElementById('selected-tag').innerHTML = d;
 
-      var books = read;
-      if (d !== 'all') {
-        books = _.filter(read, function (book) { return _.includes(book.bookshelves, d); });
-      }
-
-      covers('covers', books);
+      covers('covers', filter(d));
     })
-    .text(_.identity);
+    .html(function (d) {
+      return d + ' <span class="tag-count">' + filter(d).length + '<span>';
+    });
 
   d3.select(node).selectAll('.tag').filter(':first-child').dispatch('click');
 }

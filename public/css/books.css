@@ -177,7 +177,6 @@
     font-size: .7rem;
     margin: 8px 5px 0 0;
     padding: 2px 5px;
-    border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -190,4 +189,8 @@
 
 #selected-tag {
     color: #d28445;
+}
+
+.books .tag-count {
+    font-size: .5rem;
 }
