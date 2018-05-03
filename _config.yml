@@ -4,14 +4,14 @@ permalink:           date
 title:               Anantha Kumaran
 tagline:             'random thoughts'
 description:         'Random thoughts of a programmer.'
-url:                 http://ananthakumaran.in
+url:                 https://ananthakumaran.in
 baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
   name:              Anantha Kumaran
-  url:               http://ananthakumaran.in
+  url:               https://ananthakumaran.in
   email:             ananthakumaran@gmail.com
 
 # Custom vars
