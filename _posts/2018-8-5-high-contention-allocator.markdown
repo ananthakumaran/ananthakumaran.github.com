@@ -14,11 +14,11 @@ they get stored and stripped from the keys when they are
 retrieved. The primary disadvantage is the size of prefix, which
 increases as the level of nesting increases.
 
-**Directory** - The size problem is solved by converting namespace to a short unique
-prefix. There is an extra cost involved when a directory is created or
-opened compared to the subspace, but this will get amortized over time
-if the number of directories used is small enough compared to other
-requests.
+**Directory** - The size problem is solved by converting the namespace
+to a short unique prefix. There is an extra cost involved when a
+directory is created or opened compared to the subspace, but this will
+get amortized over time if the number of directories used is small
+enough compared to other requests.
 
 This blog post attempts to explain the algorithm used to create short
 unique prefixes in the FoundationDB client libraries. To understand
@@ -50,7 +50,7 @@ prefix clash between numbers of different byte sizes like `0x05` and
 <svg id="naive-average"></svg>
 
 Why does the allocations per second seem to max out at about
-300?. FoundationDB uses multiversion concurrency control (MVCC) for
+300?. FoundationDB uses multi-version concurrency control (MVCC) for
 reads and optimistic concurrency for writes. As a result, neither
 reads nor writes are blocked by other readers or writers. Instead,
 conflicting transactions will fail at commit time and should be
@@ -170,7 +170,7 @@ This function returns the latest window start value
 ```
 
 `range` is responsible for calculating the current window range. The
-allocated count is incremented before hand and the window is advanced
+allocated count is incremented beforehand and the window is advanced
 if half filled.
 
 ### Conflict range
@@ -243,7 +243,7 @@ There are two main aspects for any algorithm: correctness and performance
 ### Correctness
 
 Instead of proving the correctness in a rigorous way, I am going to
-reason in a semi formal way.
+reason in a semi-formal way.
 
 At any point in time, the algorithm would be in two state
 
@@ -323,8 +323,8 @@ FoundationDB provides serializable isolation, which roughly means there should b
 <svg id="hca-average"></svg>
 <svg id="hca-conflicts"></svg>
 
-From the graphs it's clear that the hca algorithm scales linearly
-without any problem.
+From the graphs it's clear that the high contention allocator
+algorithm scales linearly without any problem.
 
 
 
