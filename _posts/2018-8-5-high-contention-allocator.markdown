@@ -248,7 +248,7 @@ reason in a semi-formal way.
 At any point in time, the algorithm would be in two state
 
 1. There are enough unfilled values within in the current window. All
-   the process would be able to allocate without advancing the
+   the processes would be able to allocate without advancing the
    window. As the conflict range is set on the reserved candidate,
    only one of the processes would succeed.
 
