@@ -1,0 +1,68 @@
+.hca-layout svg .axis text {
+    font-size: 12px;
+    fill: #aaa;
+}
+.hca-layout svg .axis path.domain, .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+.hca-layout svg .axis .tick line {
+    stroke: #dedede;
+    shape-rendering: crispEdges;
+}
+
+.hca-layout svg .y.axis .tick:first-child text {
+    display: none;
+}
+
+.hca-layout svg.distribution .y.axis text {
+    font-size: 9px;
+}
+
+.hca-layout svg path.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.hca-layout svg text.cutoff {
+    font-size: 10px;
+    font-family: serif;
+}
+
+.hca-layout svg g.slider path.handle {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.hca-layout pre.highlight {
+    font-size: .68rem;
+}
+
+
+.hca-layout button.reset:focus {
+    outline: none;
+}
+
+.hca-layout button.reset {
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    color: #333;
+    background: #fff;
+    margin-right: 35px;
+    float: right;
+}
+
+.hca-layout button:hover {
+    border-color: #000;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.hca-layout .trace pre.highlight {
+    font-size: .55rem;
+    padding: 0;
+}
