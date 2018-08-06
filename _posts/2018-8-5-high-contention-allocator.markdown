@@ -113,7 +113,7 @@ process tries to acquire a random value within the current
 window. Once the current window is half filled, the window is
 advanced. The number of conflicting transactions will be small if the
 window size is big enough compared to the number of concurrent
-process.
+processes.
 
 
 <button id="hca-allocate-reset" class="reset">↻ Reset</button>
