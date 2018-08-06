@@ -230,7 +230,7 @@ consistency. Here [snapshot
 reads](https://apple.github.io/foundationdb/developer-guide.html#snapshot-reads)
 and [atomic
 updates](https://apple.github.io/foundationdb/developer-guide.html#atomic-operations)
-are used avoid the creation of unnecessary conflict ranges. More on
+are used to avoid the creation of unnecessary conflict ranges. More on
 conflicts will be explained later.
 
 ```elixir
