@@ -6,19 +6,59 @@ title: High contention allocator
 
 [FoundationDB](https://www.foundationdb.org/) is a distributed
 key-value store. The whole database can be considered as a giant
-sorted map where key and value are bytes. FoundationDB client library
-provides two means for handling namespaces.
+sorted map where keys and values are bytes. FoundationDB client
+libraries provide two means for handling namespaces.
 
-**Subspace** - Raw bytes like `users` or `users:profile` is prefixed to keys before
-they get stored and stripped from the keys when they are
-retrieved. The primary disadvantage is the size of prefix, which
-increases as the level of nesting increases.
+**Subspace** - Raw bytes like `users:friends` or `users:profile` is
+prefixed to keys before they get stored and stripped from the keys
+when they are retrieved.
 
-**Directory** - The size problem is solved by converting the namespace
-to a short unique prefix. There is an extra cost involved when a
+
+```elixir
+alias FDB.Coder.{Subspace, Integer, ByteString}
+alias FDB.Transaction
+
+coder =
+  Transaction.Coder.new(
+    # key encoding
+    Subspace.new("users:friends", Integer.new()),
+    # value encoding
+    ByteString.new()
+  )
+user = Transaction.get(tr, 42, %{coder: coder})
+```
+
+The key is encoded as `users:friends\x21\x42`. The primary
+disadvantage is the size of prefix, which increases as the level of
+nesting increases.
+
+**Directory** - The size problem is solved by converting the
+namespace to a short unique prefix. There is an extra cost involved when a
 directory is created or opened compared to the subspace, but this will
 get amortized over time if the number of directories used is small
 enough compared to other requests.
+
+```elixir
+alias FDB.Directory
+
+root = Directory.new()
+coder =
+  Transaction.Coder.new(
+    Subspace.new(
+      Directory.create_or_open(root, tr, ["users", "friends"]),
+      Integer.new()
+    ),
+    ByteString.new()
+  )
+user = Transaction.get(tr, 42, %{coder: coder})
+```
+
+The key will get encoded something like `\x21\x8\x21\x42`. Internally
+a mapping from `["users", "friends"]` to the prefix `\x21\x8` is
+stored. This has the added advantage that renaming the namespace for
+example from `["users", "friends"]` to `["v1", "users", "friends"]`
+could be done without changing all the keys. Only the internal mapping
+has to be updated.
 
 This blog post attempts to explain the algorithm used to create short
 unique prefixes in the FoundationDB client libraries. To understand
