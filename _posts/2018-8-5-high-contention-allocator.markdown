@@ -146,7 +146,7 @@ defmodule HCA do
   end
 ```
 
-How the keys and values should be serialized is defined using the `hca_coder`. The
+How the keys and values should be encoded is defined using the `hca_coder`. The
 actual work is delegated to the `search` function.
 
 ```elixir
