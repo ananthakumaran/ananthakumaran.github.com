@@ -282,6 +282,19 @@ There are two main aspects for any algorithm: correctness and performance
 
 ### Correctness
 
+What is correctness? From the algorithm perspective same prefix value
+shouldn't get allocated to two different processes. In a typical
+scenario the
+[atomicity](https://en.wikipedia.org/wiki/Atomicity_(database_systems))
+and [serializable
+isolation](https://en.wikipedia.org/wiki/Isolation_(database_systems)#Serializable)
+provided by the database will make the job easy. We can assume that
+operations of different transactions won't get interleaved. But as we
+mentioned earlier, to reduce the number of conflicts we are explicitly
+instructing the database to not consider the conflicts produced by
+some of the reads and writes. So the burden is now on us to make sure
+we haven't compromised the correctness for performance.
+
 Instead of proving the correctness in a rigorous way, I am going to
 reason in a semi-formal way.
 
@@ -355,7 +368,44 @@ edited version of the xml trace file is shown below.
 {OP: 'CommitError', ID: 'process 2', Err: 'Transaction not committed due to conflict with another transaction'}
 ```
 
-FoundationDB provides serializable isolation, which roughly means there should be a total order across all transactions. A transaction conflicts if it reads a key that has been written between the transaction's read version and commit version. Because Process 1 has started before Process 2 is commited, Process 2's read on `{@reserve, candidate}` key conflicts with Process 1's write on the same key. Once a transaction gets the read version, it can't observe any other concurrent writes by other processes. If Process 2 started after Process 1 has committed, then the read will return non nil even if Process 3 has cleared the key range concurrently. This effectively means advancing window doesn't actually introduce any new state. Just having read and write conflicts on reserved candidate's key is enough to maintain the correctness.
+FoundationDB uses [multi version concurrency
+control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control)
+for reads. Internally it stores multiple versions of the same key --
+for a short period of time. When a transaction starts, the first read
+will get the current version of the database as the read version of
+the transaction. This is indicated by the `{OP: 'GetVersion'}` in the
+trace. Any further reads from the transaction will not observe any
+writes that happens after that.
+
+![timeline](/public/images/hca-timeline.svg)
+
+
+A transaction conflicts if it reads a key that has been written
+between the transaction's read version and commit version. Because
+Process 1 has committed before Process 2 is commited, Process 2's read
+on `{@reserve, candidate}` key conflicts with Process 1's write on
+the same key. The commit by Process 2 would get cancelled and it
+should retry the whole process again. This is indicated by the last
+entry `{OP: 'CommitError'...` in the trace log. Once a transaction
+gets the read version, it can't observe any other concurrent writes by
+other processes. If Process 2 has started after Process 1 had
+committed, then the read on `{@reserve, candidate}` would return non
+nil even if Process 3 has cleared the key range concurrently.
+
+This effectively means concurrent clear won't cause problem.
+
+1. The transactions that have started before the commit of Process 3
+   would try to allocate within the last window. They will not
+   observe the clear range operation.
+
+1. The transactions that have started after the commit of Process 3
+   would try to allocate within the new window
+
+Multiple processes trying to advance the window concurrently is not a
+problem from correctness perspective. They would still conflict with
+each other if they try to allocate the same candidate. Because of the
+serlizable isolation, we can assume there would be a total order
+across all commits, ie commit won't happen concurrently.
 
 ### Performance
 
