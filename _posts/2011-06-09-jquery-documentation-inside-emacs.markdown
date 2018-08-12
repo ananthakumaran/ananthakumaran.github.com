@@ -4,6 +4,7 @@ title: jQuery documentation inside Emacs
 header: jQuery documentation inside Emacs
 meta_keywords: jquery documentation emacs
 meta_descripton: jQuery documentation inside Emacs
+tags: emacs jquery
 ---
 
 Recently I found myself switching between Emacs and browser to refer

@@ -11,21 +11,41 @@ layout: default
     </div>
   </div>
 
-  <div class="related">
-    <h2>Related Posts</h2>
-    <ul class="related-posts">
-      {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+  {% assign count = 0 %}
+  {% for post in site.posts %}
+    {% assign match = false %}
+    {% for tag in post.tags %}
+      {% if page.url != post.url and page.tags contains tag %}
+        {% assign match = true %}
+      {% endif %}
+    {% endfor %}
+    {% if match == true %}
+
+      {% if count == 0 %}
+        <div class="related">
+          <h2>Related Posts</h2>
+          <ul class="related-posts">
+      {% endif %}
+
+        <li>
+          <h3>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              {{ post.title }}
+              <small>{{ post.date | date_to_string }}</small>
+            </a>
+          </h3>
+        </li>
+       {% assign count = count | plus: 1 %}
+       {% if count == 5 %}
+         {% break %}
+       {% endif %}
+    {% endif %}
+   {% endfor %}
+
+   {% if count > 0 %}
+       </ul>
+     </div>
+   {% endif %}
 
   {% include comments.html %}
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: RSI
+tags: health
 ---
 
 You have already invested more than 5 years in your career, it's going

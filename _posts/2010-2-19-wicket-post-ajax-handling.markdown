@@ -4,6 +4,7 @@ title: Wicket Post Ajax Handling
 header : Wicket Post Ajax Handling
 meta_keywords: wicket , ajax , wicket post ajax , wicket ajax internals
 meta_description: wicket post ajax handling
+tags: wicket
 ---
 
 Wicket Ajax Hooks

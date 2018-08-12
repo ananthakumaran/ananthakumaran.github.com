@@ -4,6 +4,7 @@ title: Ruby Block
 header: Ruby Block
 meta_keywords: blocks in ruby, functional programming, lisp
 meta_descripton: comparing ruby's block with lisp functions
+tags: ruby
 ---
 
 {% highlight ruby %}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Debugging cryptic errors
+tags: elixir debugging
 ---
 
 At a project I am working on, our backend system makes http requests

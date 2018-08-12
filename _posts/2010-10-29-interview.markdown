@@ -4,6 +4,7 @@ title: My Interview Story
 header : My Interview Story
 meta_keywords: interview
 meta_description: my interview story
+tags: industry
 ---
 
 `written on 9th June 2010`

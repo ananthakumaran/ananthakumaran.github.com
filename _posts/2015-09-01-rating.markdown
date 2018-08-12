@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ratings
+tags: goodreads
 ---
 
 I have been using Goodreads for about 3 years. Usually, I add a book

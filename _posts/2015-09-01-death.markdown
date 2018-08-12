@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Death
+tags: philosophy
 ---
 
 Human, the only species on the earth which is consciously aware of the

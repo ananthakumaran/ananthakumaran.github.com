@@ -4,6 +4,7 @@ title: Github Mavenized
 header: Github Mavenized
 meta_keywords: maven repo in github , mave site in github , maven github , github mavenized , maven project in github
 meta_descripton: maven project in github - maven site in github - maven repo in github
+tags: github maven
 ---
 
 Maven projects can use the [github pages](http://pages.github.com/)

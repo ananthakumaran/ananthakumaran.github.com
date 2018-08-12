@@ -4,6 +4,7 @@ title: Wicket Custom Paging Navigator
 header : Wicket Custom Paging Navigator
 meta_keywords: wicket , wicket custom markup , custom paging navigator
 meta_description: wicket custom paging navigator
+tags: wicket
 ---
 
 Wicket Built-in Components

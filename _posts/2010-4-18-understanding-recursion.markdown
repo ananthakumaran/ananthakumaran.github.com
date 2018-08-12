@@ -4,6 +4,7 @@ title : Understanding Recursion
 header : Understanding Recursion
 meta_keywords: recursion , scheme , functional programming , little schemer review
 meta_description: understanding recursion , functional concepts , scheme
+tags: recursion
 ---
 
 As Every college in India did, our college taught us a bunch of

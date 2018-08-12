@@ -2,6 +2,7 @@
 layout: post
 title: Probability behind marriage horoscope
 viz: true
+tags: visualization horoscope
 ---
 
 Most of the Indians do arranged marriage. One part of the process is

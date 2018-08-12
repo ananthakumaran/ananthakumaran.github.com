@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mastering Elixir
+tags: elixir review
 ---
 
 This is written for someone who is already a programmer and familiar

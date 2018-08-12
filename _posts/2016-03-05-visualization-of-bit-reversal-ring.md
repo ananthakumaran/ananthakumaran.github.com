@@ -2,6 +2,7 @@
 layout: post
 title: Visualization of Bit Reversal Ring
 viz: true
+tags: visualization
 ---
 
 > Bit reversal ring of size z could be defined as the reverse of the

@@ -2,6 +2,7 @@
 layout: post
 title: Visualization of backoff functions
 viz: true
+tags: visualization backoff
 ---
 
 Failures are inevitable in any system. How it should be handled varies

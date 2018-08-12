@@ -2,6 +2,7 @@
 container: hca-layout
 layout: post
 title: High contention allocator
+tags: foundationdb elixir
 ---
 
 [FoundationDB](https://www.foundationdb.org/) is a distributed

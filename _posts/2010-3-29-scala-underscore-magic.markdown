@@ -4,6 +4,7 @@ title: Scala _ [underscore] magic
 header : Scala _ [underscore] magic
 meta_keywords: scala , underscore , underscore magic
 meta_description: scala underscore magic
+tags: scala
 ---
 
 I started learning Scala a few days before. Initially i was annoyed by

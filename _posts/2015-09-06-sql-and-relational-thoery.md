@@ -1,6 +1,7 @@
 ---
 layout: post
 title : SQL and Relational Theory
+tags: review
 ---
 
 At work, I had to write a JQPL — Yet another poorly documented
