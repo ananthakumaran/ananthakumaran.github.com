@@ -72,7 +72,7 @@ the integer. Tags <tag>0C</tag> to <tag>13</tag> are used for negative numbers a
 zero and tags <tag>15</tag> to <tag>1C</tag> are used for positive number.
 
 
-For positive integers, [big endian byte
+For positive integers, [big-endian byte
 order](https://en.wikipedia.org/wiki/Endianness#Big-endian) is used
 which naturally preserves the sort order. For negative integers, the
 sign is removed and bit complement of big-endian byte order is used
