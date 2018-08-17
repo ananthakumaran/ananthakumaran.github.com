@@ -1,0 +1,42 @@
+.order-layout tag, .order-layout term, .order-layout byte, .order-layout escape {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    padding: 1px 2px;
+    margin: 0;
+    display: inline;
+    opacity: 0.7;
+    color: #000;
+}
+
+.order-layout .left {
+    display: inline-block;
+    width: 5rem;
+    white-space: nowrap;
+}
+
+.order-layout .left-number {
+    display: inline-block;
+    width: 10rem;
+    white-space: nowrap;
+}
+
+.order-layout .left-number code {
+    padding: 0;
+}
+
+.order-layout tag {
+    background: #fbb4ae;
+}
+
+/* fed9a6ffffcce5d8bdfddaecf2f2f2 */
+
+.order-layout term {
+    background: #b3cde3;
+}
+
+.order-layout byte {
+    background: #ccebc5;
+}
+
+.order-layout escape {
+    background: #decbe4;
+}
