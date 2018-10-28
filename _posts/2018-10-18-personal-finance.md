@@ -252,7 +252,7 @@ calculated as follows.
 
 ### Register
 
-The list all the transactions related to a account and it's running
+The list of all the transactions related to a account and it's running
 total could be reported by the register command.
 
 <pre style="color: #657b83; background-color: #fdf6e3;">
