@@ -5,7 +5,7 @@ function year(string) {
   return moment(new Date(n, 0, 1));
 }
 
-var read = _.filter(books, function (book) { return !!book['Date Read']; });
+var read = _.filter(books, function (book) { return !!book['Date Read'] && book['Exclusive Shelf'] == 'read'; });
 read = _.sortBy(_.map(read, function (book) {
   var pageCount = parseInt(book['Number of Pages'], 10);
   if (_.isNaN(pageCount)) {
