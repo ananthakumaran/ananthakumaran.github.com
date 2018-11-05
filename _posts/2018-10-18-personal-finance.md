@@ -91,7 +91,7 @@ represent it as follows.
 </span><span style="color: #2aa198;">    Asset:Debt:EPF  </span><span style="color: #b58900;">                             12,000 INR</span><span style="color: #657b83; background-color: #fdf6e3;">
 </span></pre>
 
-There can be multiple debit entries in a transaction as long as the
+There can be multiple credit entries in a transaction as long as the
 credit and debit sum up to zero. Let's say you invest 5,000 INR every
 month in the PPF account, it could be represented as follows.
 
