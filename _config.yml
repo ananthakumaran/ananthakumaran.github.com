@@ -22,6 +22,10 @@ highlighter:         rouge
 # safe:                true
 excerpt_separator:   ""
 
-gems:
+feed:
+  path: atom.xml
+
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
