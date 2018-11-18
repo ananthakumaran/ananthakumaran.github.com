@@ -709,7 +709,7 @@ function bookPerShelf() {
 
 function timelineShelf(id, range) {
   var node = document.getElementById(id);
-  var margin = {top: 5, right: 10, bottom: 20, left: 10};
+  var margin = {top: 5, right: 15, bottom: 20, left: 15};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
   var height = 80;
   var svg = d3.select(node)
