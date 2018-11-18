@@ -60,10 +60,23 @@ title: Reading Statistics
     of the book is considered.
   </div>
 
+  <svg id="book-per-shelf"></svg>
+  <div class="desc">
+    Number of books per shelf. Same book may present in multiple shelves.
+  </div>
+
+  <svg id="timeline-shelf-1"></svg>
+  <svg id="timeline-shelf-2"></svg>
+  <div class="desc">
+    Timeline of the kind of books I have read. Color represents the
+    book shelf (same as the previous bar chart) and area represents
+    the percentage of time spent.
+  </div>
+
   <div class="desc cover">
     List of <span id="selected-tag"></span> books, grouped by ratings
     and within each group the books are sorted by average rating in
-    goodreads. Click on a tag to change selection.
+    goodreads. Click on a shelf to filter selection.
   </div>
   <div id="tags">
 
@@ -82,7 +95,7 @@ title: Reading Statistics
 
 <link rel="stylesheet" href="/public/css/books.css"/>
 <script src="/public/js/d3.v4.min.js"></script>
-<script src="/public/js/underscore.js"></script>
+<script src="/public/js/lodash.js"></script>
 <script src="/public/js/book-data.js"></script>
 <script src="/public/js/moment.min.js"></script>
 <script src="/public/js/link.js"></script>

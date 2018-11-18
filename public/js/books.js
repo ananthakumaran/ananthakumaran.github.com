@@ -11,11 +11,16 @@ read = _.sortBy(_.map(read, function (book) {
   if (_.isNaN(pageCount)) {
     pageCount = 0;
   }
+  var added = moment((book['Date Added']), 'YYYY/MM/DD');
+  var read = moment((book['Date Read']), 'YYYY/MM/DD');
+  var started = read.diff(added, 'days') > 360 ? read.clone().subtract(360, 'days') : added;
   return {
     title: book['Title'].split(/[:([]/)[0].trim(),
     fullTitle: book['Title'],
     pageCount: pageCount,
-    read: moment((book['Date Read']), 'YYYY/MM/DD'),
+    added: added,
+    started: started,
+    read: read,
     published: year(book['Original Publication Year']),
     rating: parseInt(book['My Rating']),
     averageRating: parseFloat(book['Average Rating']),
@@ -25,6 +30,16 @@ read = _.sortBy(_.map(read, function (book) {
   };
 }), 'read');
 
+var shelves = _.chain(read).map('bookshelves').flatten().uniq().without('', 'own').sort().value();
+
+var shelfColor = (function() {
+  var color = d3.scaleSequential(d3.interpolateRainbow)
+    .domain([0, shelves.length]);
+
+  return function (shelf) {
+    return color(shelves.indexOf(shelf));
+  };
+})();
 
 function setCounter(name, value) {
   var node = document.querySelector('.counter.' + name);
@@ -96,15 +111,15 @@ function layout(read, y) {
 
 
 setCounter('read', read.length);
-setCounter('author', _.uniq(_.pluck(read, 'author')).length);
-setCounter('pages', _.reduce(_.pluck(read, 'pageCount'), add, 0));
+setCounter('author', _.uniq(_.map(read, 'author')).length);
+setCounter('pages', _.reduce(_.map(read, 'pageCount'), add, 0));
 
 
 function timeline() {
   var node = document.getElementById('timeline');
   var margin = {top: 20, right: 0, bottom: 50, left: 80};
   var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.left - margin.right;
-  var domain = d3.extent(_.pluck(read, 'read'));
+  var domain = d3.extent(_.map(read, 'read'));
   var height = (domain[1] - domain[0]) / 15000000;
   var svg = d3.select("#timeline")
       .attr("width", width + margin.left + margin.right)
@@ -238,7 +253,7 @@ function timelineSmall(id, range) {
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var readInRange = _.filter(read, function(b) { return b.read >= range[0] && b.read < range[1]; });
-  var domain = d3.extent(_.pluck(readInRange, 'read'));
+  var domain = d3.extent(_.map(readInRange, 'read'));
   var x = d3.scaleLinear()
       .domain(range)
       .rangeRound([0, width]);
@@ -293,7 +308,7 @@ function distribution() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var distribution = _.mapObject(_.groupBy(read, 'rating'), function (l) { return l.length; });
+  var distribution = _.mapValues(_.groupBy(read, 'rating'), function (l) { return l.length; });
 
   var x = d3.scaleLinear()
       .domain([0, _.max(_.values(distribution))])
@@ -312,7 +327,7 @@ function distribution() {
       .scale(y);
 
  svg.selectAll(".bar")
-    .data(_.pairs(distribution))
+    .data(_.toPairs(distribution))
     .enter().append("rect")
     .attr("class", 'bar')
     .style("fill", function (d) { return color(parseInt(d[0], 10)); })
@@ -400,7 +415,7 @@ function pageCount() {
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var readWithCount = _.filter(read, function(b) { return b.pageCount > 0; });
-  var domain = [0, _.max(_.pluck(readWithCount, 'pageCount'))];
+  var domain = [0, _.max(_.map(readWithCount, 'pageCount'))];
   var x = d3.scaleLinear()
       .domain(domain)
       .rangeRound([0, width])
@@ -453,7 +468,7 @@ function pagePerYear() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var distribution = _.mapObject(_.groupBy(read, function (b) { return b.read.year(); }), function (l) { return _.reduce(_.pluck(l, 'pageCount'), add, 0); });
+  var distribution = _.mapValues(_.groupBy(read, function (b) { return b.read.year(); }), function (l) { return _.reduce(_.map(l, 'pageCount'), add, 0); });
 
   var x = d3.scaleLinear()
       .domain([0, _.max(_.values(distribution))])
@@ -474,7 +489,7 @@ function pagePerYear() {
       .scale(y);
 
  svg.selectAll(".bar")
-    .data(_.pairs(distribution))
+    .data(_.toPairs(distribution))
     .enter().append("rect")
     .attr("class", 'bar')
     .attr("x", x(0))
@@ -504,7 +519,7 @@ function bookPerYear() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var distribution = _.mapObject(_.groupBy(read, function (b) { return b.read.year(); }), function (l) { return l.length; });
+  var distribution = _.mapValues(_.groupBy(read, function (b) { return b.read.year(); }), function (l) { return l.length; });
 
   var x = d3.scaleLinear()
       .domain([0, _.max(_.values(distribution))])
@@ -524,7 +539,7 @@ function bookPerYear() {
       .scale(y);
 
  svg.selectAll(".bar")
-    .data(_.pairs(distribution))
+    .data(_.toPairs(distribution))
     .enter().append("rect")
     .attr("class", 'bar')
     .attr("x", x(0))
@@ -533,7 +548,7 @@ function bookPerYear() {
     .attr("height", y.bandwidth());
 
  svg.selectAll(".count")
-    .data(_.pairs(distribution))
+    .data(_.toPairs(distribution))
     .enter().append("text")
     .attr("class", 'count')
     .attr("dy", "0.32em")
@@ -601,7 +616,6 @@ function covers(id, list) {
 }
 
 function tags() {
-  var shelves = _.chain(read).pluck('bookshelves').flatten().uniq().without('', 'own').unshift('all').value();
   var node = document.getElementById('tags');
 
   var filter = function(shelf) {
@@ -614,7 +628,7 @@ function tags() {
 
   d3.select(node)
     .selectAll('.tag')
-    .data(shelves)
+    .data(_.concat(['all'], shelves))
     .enter()
     .append('a')
     .attr('class', 'tag')
@@ -632,6 +646,153 @@ function tags() {
   d3.select(node).selectAll('.tag').filter(':first-child').dispatch('click');
 }
 
+function bookPerShelf() {
+  var node = document.getElementById('book-per-shelf');
+  var margin = {top: 20, right: 20, bottom: 30, left: 120};
+  var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
+  var height = 200;
+  var svg = d3.select(node)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var distribution = _.chain(read).map('bookshelves').flatten().without('', 'own').groupBy().mapValues(function (l) { return l.length; }).value();
+
+  var x = d3.scaleLinear()
+      .domain([0, _.max(_.values(distribution))])
+      .rangeRound([0, width])
+      .nice();
+
+  var y = d3.scaleBand()
+      .domain(_.chain(distribution).keys().reverse().value())
+      .range([0, height])
+      .round(true)
+      .padding([0.2]);
+
+  var xAxis = d3.axisBottom()
+      .scale(x);
+
+  var yAxis = d3.axisLeft()
+      .scale(y);
+
+ svg.selectAll(".bar")
+    .data(_.toPairs(distribution))
+    .enter().append("rect")
+    .attr("class", 'bar')
+    .attr("x", x(0))
+    .attr("y", function(d) { return y(d[0]); })
+    .style("fill", function(d) { return shelfColor(d[0]); })
+    .attr("width", function(d) { return Math.abs(x(d[1]) - x(0)); })
+    .attr("height", y.bandwidth());
+
+ svg.selectAll(".count")
+    .data(_.toPairs(distribution))
+    .enter().append("text")
+    .attr("class", 'count')
+    .attr("dy", "0.32em")
+    .attr("dx", "0.2em")
+    .attr("x", function(d) { return x(d[1]); })
+    .attr("y", function(d) { return y(d[0]) + y.bandwidth() / 2; })
+    .text(function (d) { return d[1]; });
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(" + x(0) + ",0)")
+    .call(yAxis);
+}
+
+function timelineShelf(id, range) {
+  var node = document.getElementById(id);
+  var margin = {top: 5, right: 10, bottom: 20, left: 10};
+  var width = parseInt(window.getComputedStyle(node.parentNode).getPropertyValue('width')) - margin.right - margin.left;
+  var height = 80;
+  var svg = d3.select(node)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var base = _.chain(shelves).map(function(shelf) { return [shelf, 0]; }).fromPairs().value();
+
+  var ticks = [];
+  var start = range[0].clone();
+  while (start <= range[1]) {
+    ticks.push(start.clone());
+    start.add(1, 'month');
+  }
+
+  var data = _.chain(ticks)
+      .map(function (month) {
+        var distribution = _.chain(read)
+            .filter(function(b) { return month.isSame(b.read, 'month') || month.isBetween(b.started, b.read); })
+            .map(function(b) {
+              var shelves = _.without(b.bookshelves, '', 'own');
+              if (shelves.length > 1) {
+                return _.without(shelves, 'non-fiction', 'fiction', 'technical');
+              } else {
+                return shelves;
+              }
+            })
+            .flatten().groupBy().mapValues(function (l) { return l.length; }).value();
+        distribution.month = month;
+        return _.extend({}, base, distribution);
+      })
+      .value();
+
+  var stack = d3.stack()
+      .keys(shelves)
+      .order(d3.stackOrderInsideOut)
+      .offset(d3.stackOffsetExpand);
+
+  var series = stack(data);
+
+  var x = d3.scaleLinear()
+      .domain(range)
+      .range([0, width]);
+
+  var xAxis = d3.axisBottom(x)
+      .tickValues(_.map(_.range(range[0].year(), range[1].year() + 1), function (year) { return moment(year, 'YYYY'); }))
+      .tickFormat(function (x) { return moment(x).format('YYYY'); });
+
+  function stackMax(layer) {
+    return d3.max(layer, function(d) { return d[1]; });
+  }
+
+  function stackMin(layer) {
+    return d3.min(layer, function(d) { return d[0]; });
+  }
+
+  var y = d3.scaleLinear()
+      .domain([d3.min(series, stackMin), d3.max(series, stackMax)])
+      .range([height, 0]);
+
+  var area = d3.area()
+      .x(function(d) { return x(d.data.month); })
+      .y0(function(d) { return y(d[0]); })
+      .y1(function(d) { return y(d[1]); })
+      .curve(d3.curveStepAfter);
+
+  svg.append("g")
+    .selectAll("path")
+    .data(series)
+    .enter().append("path")
+    .attr("d", area)
+    .style("fill", function(d) { return shelfColor(d.key); })
+    .append("title")
+    .text(function(d) { return d.key; });
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+}
+
 
 function authors() {
   var node = document.getElementById('authors');
@@ -646,7 +807,7 @@ function authors() {
 
   var authors = _.groupBy(read, 'author');
 
-  var domain = d3.extent(_.chain(authors).values().pluck('length').value());
+  var domain = d3.extent(_.chain(authors).values().map('length').value());
   var x = d3.scaleLinear()
       .domain(domain)
       .rangeRound([0, width]);
@@ -655,7 +816,7 @@ function authors() {
       .domain(domain)
       .range([1, 10]);
 
-  var data = _.pairs(authors);
+  var data = _.toPairs(authors);
   var simulation = d3.forceSimulation(data)
       .force("x", d3.forceX(function(d) { return x(d[1].length); }).strength(1))
       .force("y", d3.forceY(height / 2))
@@ -695,7 +856,7 @@ function authors() {
     .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
 
   cell.append("title")
-    .text(function(d) { return d.data[1].length + ' ' + d.data[0] + '\n\n' + _.pluck(d.data[1], 'title').join('\n'); });
+    .text(function(d) { return d.data[1].length + ' ' + d.data[0] + '\n\n' + _.map(d.data[1], 'title').join('\n'); });
 }
 
 timeline();
@@ -710,5 +871,7 @@ pageCount();
 pagePerYear();
 bookPerYear();
 authors();
+bookPerShelf();
+timelineShelf('timeline-shelf-1', [year('2009'), year('2015')]);
+timelineShelf('timeline-shelf-2', [year('2015'), year('2021')]);
 tags();
-

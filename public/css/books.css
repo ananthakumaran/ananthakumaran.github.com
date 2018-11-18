@@ -118,7 +118,7 @@
 }
 
 
-.books #page-per-year .y.axis .domain, .books #book-per-year .y.axis .domain {
+.books #page-per-year .y.axis .domain, .books #book-per-year .y.axis .domain, .books #book-per-shelf .y.axis .domain {
     stroke: none;
 }
 
@@ -126,11 +126,20 @@
     fill: #fc8d59;
 }
 
-.books #book-per-year .count {
+.books #book-per-year .count, .books #book-per-shelf .count {
     text-anchor: end;
     font-size: 10px;
     fill: white;
     font-family: sans-serif;
+}
+
+.books #book-per-shelf .count {
+    fill: #999;
+    text-anchor: start;
+}
+
+.books #book-per-shelf .y.axis text {
+    font-size: 12px;
 }
 
 .desc.cover {
