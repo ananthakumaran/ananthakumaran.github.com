@@ -734,7 +734,7 @@ function timelineShelf(id, range) {
             .map(function(b) {
               var shelves = _.without(b.bookshelves, '', 'own');
               if (shelves.length > 1) {
-                return _.without(shelves, 'non-fiction', 'fiction', 'technical');
+                return _.without(shelves, 'non-fiction', 'fiction', 'programming');
               } else {
                 return shelves;
               }
