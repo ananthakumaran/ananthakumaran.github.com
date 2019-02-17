@@ -15,7 +15,7 @@
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
-            {% if page.layout == "post" || page.title == "Home" %}
+            {% if page.layout == "post" or page.title == "Home" %}
             <img src="/public/images/logo-colored.svg" style="float: right;height: 50px;">
             {% endif %}
           </h3>
