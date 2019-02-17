@@ -561,3 +561,14 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+
+
+/** custom **/
+
+img.logo-background {
+    text-align: center;
+    width: 300px;
+    opacity: 0.25;
+    margin: -40px auto 0;
+}

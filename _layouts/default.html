@@ -15,6 +15,9 @@
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
+            {% if page.layout == "post" %}
+            <img src="/public/images/logo-colored.svg" style="float: right;height: 50px;">
+            {% endif %}
           </h3>
         </div>
       </div>
@@ -23,7 +26,6 @@
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
     <script>
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
