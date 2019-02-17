@@ -1,0 +1,10 @@
+.glslCanvas {
+    position: relative;
+    float: right;
+}
+
+.flags-layout pre.highlight {
+    font-size: .7rem;
+    padding: .5rem;
+    padding-bottom: 0;
+}
