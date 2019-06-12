@@ -55,7 +55,7 @@ where this is not sufficient. Let say we want to see the top 10 slow
 queries based on the count, we can't simply group based on the
 *source* field. Even though the query structure will be the same, the
 argument of each query operator might differ for each slow log. What
-we might find useful is something like sql parameterized query, where
+we might find useful is something like parameterized sql query, where
 all the variables are represented as `?`
 
 
