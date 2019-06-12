@@ -49,7 +49,7 @@ be then ingested into a centralized logging system like Graylog or ELK.
 
 <img src="/public/images/es-slow-info.png" style="width: 200px; float: right"/>
 
-Now we can find queries that took more than 500 ms or group the values
+Now we can find queries that took more than 500 ms or group the logs
 based on a field like *level*, etc. But there are still some cases
 where this is not sufficient. Let say we want to see the top 10 slow
 queries based on the count, we can't simply group based on the
