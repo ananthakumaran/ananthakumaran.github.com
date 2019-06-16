@@ -8,10 +8,7 @@ Elasticsearch provides the ability to log
 [slow](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-slowlog.html)
 search queries that exceed a certain threshold. When enabled, all the
 search queries that exceed the given threshold are written to
-*/var/log/elasticsearch/${cluster_name}_index_search_slowlog.log*
-
-
-A typical line in the slow log file looks like
+*/var/log/elasticsearch/${cluster_name}_index_search_slowlog.log*. A typical line in the slow log file looks like
 ```
 [2017-09-10T12:35:53,355][WARN ][index.search.slowlog.fetch] [GOgO9TD]
 [testindex-slowlogs][0] took[150.6micros], took_millis[0], types[],
