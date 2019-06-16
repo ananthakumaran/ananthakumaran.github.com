@@ -67,7 +67,7 @@ all the variables are represented as `?`
 }
 ```
 
-<img src="/public/images/es-slow-source-id.png" style="width: 265px; float: left"/>
+<img src="/public/images/es-slow-source-id.png" style="width: 200px; float: left"/>
 
 Once we have that, we could just take the hash of the *source_normalized*
 field and group based on it. *source_id* is just the first 8 characters
@@ -78,7 +78,7 @@ plugin](https://github.com/ananthakumaran/logstash-filter-elasticsearchslowlog)
 which does exactly this. All you need to do is install the plugin and
 add the filter configuration for slow log files.
 
-<pre style="float: left; width: calc(100% - 265px)">
+<pre style="float: left; width: calc(100% - 200px); min-width: 380px;">
 filter {
   elasticsearchslowlog {
   }
