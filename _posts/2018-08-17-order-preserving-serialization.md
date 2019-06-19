@@ -3,6 +3,7 @@ container: order-layout
 layout: post
 title: Sort order preserving serialization
 tags: foundationdb encoding
+canonical: https://www.activesphere.com/blog/2018/08/17/order-preserving-serialization
 ---
 
 [FoundationDB](https://www.foundationdb.org/) is a distributed

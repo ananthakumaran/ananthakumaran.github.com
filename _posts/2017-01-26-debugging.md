@@ -2,6 +2,7 @@
 layout: post
 title: Debugging cryptic errors
 tags: elixir debugging
+canonical: https://www.activesphere.com/blog/2017/08/08/debugging
 ---
 
 At a project I am working on, our backend system makes http requests

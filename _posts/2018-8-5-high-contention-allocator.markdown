@@ -3,6 +3,7 @@ container: hca-layout
 layout: post
 title: High contention allocator
 tags: foundationdb elixir
+canonical: https://www.activesphere.com/blog/2018/08/05/high-contention-allocator
 ---
 
 [FoundationDB](https://www.foundationdb.org/) is a distributed

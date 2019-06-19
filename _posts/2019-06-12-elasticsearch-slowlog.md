@@ -2,6 +2,7 @@
 layout: post
 title: Grouping Elasticsearch slow log queries
 tags: elasticsearch
+canonical: https://www.activesphere.com/blog/2019/06/12/elasticsearch-slowlog
 ---
 
 Elasticsearch provides the ability to log

@@ -3,6 +3,7 @@ layout: post
 title: Visualization of backoff functions
 viz: true
 tags: visualization backoff
+canonical: https://www.activesphere.com/blog/2017/04/01/visualization-fo-backoff-functions
 ---
 
 Failures are inevitable in any system. How it should be handled varies

@@ -4,6 +4,7 @@ layout: post
 title: A primer on Elixir Stream
 viz: true
 tags: elixir stream
+canonical: https://www.activesphere.com/blog/2017/11/28/stream
 ---
 
 For many problems in programming, the most straightforward solution is to transform a list (E.g. map/filter/reduce etc over it). Once in a while, there will be problems which could be solved with list and transformations, except that the list is big and consumes lot of memory. Let's say you want to export records in database as a csv report, it might not be possible to load the entire set of records in memory before the transformations can be applied to it. [Stream](https://hexdocs.pm/elixir/Stream.html) abstraction in Elixir is designed to address these kinds of problems.
