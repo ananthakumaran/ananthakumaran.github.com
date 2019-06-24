@@ -58,7 +58,7 @@
     margin: 15px 0;
 }
 
-.resume section.projects strong {
+.resume section.projects strong, .resume section.proficiency strong {
     font-size: 14px;
     font-weight: normal;
 }
