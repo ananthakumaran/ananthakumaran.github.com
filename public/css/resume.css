@@ -5,7 +5,7 @@
     max-width: 32rem;
 }
 
-.resume h1, h2 {
+.resume h1, .resume h2 {
     font-family: 'Open Sans', sans-serif;
     color: rgb(85, 85, 85);
     font-size: 20px;
@@ -60,4 +60,28 @@
 .resume section.projects strong {
     font-size: 14px;
     font-weight: normal;
+}
+
+.resume ul {
+    margin-bottom: 0.25rem;
+}
+
+@media print {
+    .masthead {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+
+    .page.resume {
+        max-width: 100%;
+    }
+
+    @page {
+        margin: 20px;
+    }
 }
