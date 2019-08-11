@@ -1,13 +1,12 @@
 .page.resume {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
     font-size: 14px;
     max-width: 32rem;
 }
 
 .resume h1, .resume h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(85, 85, 85);
     font-size: 20px;
 }
@@ -21,8 +20,8 @@
 
 
 .resume strong {
-    font-size: 16px;
-    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     color: rgb(85, 85, 85);
 }
 
@@ -35,11 +34,16 @@
 }
 
 .resume em {
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     color: #999;
     font-size: 14px;
     font-style: normal;
     float: right;
+}
+
+.resume em.inline {
+    font-size: 12px;
+    float: none;
 }
 
 .resume p {
