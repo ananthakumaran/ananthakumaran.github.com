@@ -1,0 +1,225 @@
+---
+container: xlsx
+layout: post
+title: Generate XLSX with unlimited rows
+---
+
+In my previous post I have talked about Elixir
+[stream](https://ananthakumaran.in/2017/11/28/stream.html). In this
+post I am going to talk about a particular use case. How would one
+approach the problem of generating a Excel spreadsheet with unlimited
+number of rows. The main constrain is that we only have a limited memory available.
+
+The first part of the problem is to understand the XLSX file format. I
+won't get into the details here, but there is a nice
+[article](http://officeopenxml.com/anatomyofOOXML-xlsx.php) about the
+anatomy of the XLSX file. In essence, XLSX is just a zip file with
+different file extension.
+
+<pre style="color: #657b83; background-color: #f9f9f9;">
+<span style="color: #b58900; font-weight: bold;">$ </span>unzip -q -d spreadsheet spreadsheet.xlsx
+<span style="color: #b58900; font-weight: bold;">$ </span>tree -C spreadsheet/
+<span style="color: #268bd2; font-weight: bold;">spreadsheet/</span>
+&#9500;&#9472;&#9472; [Content_Types].xml
+&#9500;&#9472;&#9472; <span style="color: #268bd2; font-weight: bold;">_rels</span>
+&#9500;&#9472;&#9472; <span style="color: #268bd2; font-weight: bold;">docProps</span>
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; app.xml
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; core.xml
+&#9492;&#9472;&#9472; <span style="color: #268bd2; font-weight: bold;">xl</span>
+    &#9500;&#9472;&#9472; <span style="color: #268bd2; font-weight: bold;">_rels</span>
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; workbook.xml.rels
+    &#9500;&#9472;&#9472; sharedStrings.xml
+    &#9500;&#9472;&#9472; styles.xml
+    &#9500;&#9472;&#9472; workbook.xml
+    &#9492;&#9472;&#9472; <span style="color: #268bd2; font-weight: bold;">worksheets</span>
+        &#9492;&#9472;&#9472; sheet1.xml
+</pre>
+
+Except `sheet1.xml`, other xml files are just made of static contents
+that will be nearly the same size regardless of the number of rows.
+
+Now we have two smaller problems
+
+1) can we generate xml using stream.
+
+2) can we combine multiple xml stream and generate a zip stream.
+
+<div class="diagram"><img class="margin-right" style="right: -300px" src="/public/images/tree.svg" /></div>
+
+Let's start with the xml problem. In abstract sense, xml document is a
+tree structure. To print a xml document, we have to first print the
+open tag `<tag>` and all its children and the close tag
+`</tag>`. Let's say we do a pre-order like traversal, at any point in
+time, we have to keep the list of parent nodes in a stack like data
+structure. Essentially at minimum we would need memory proportional to
+the depth of the tree. Fortunately, most of the xml documents we deal
+in real world won't have much depth. In our case with spreadsheet, the
+max depth would be less than 10.
+
+
+Let's take the example of generating html table. Consider the case of
+generating table with unlimited rows and unlimited cells within each
+row.
+
+```elixir
+import XmlStream
+
+rows = Stream.map(1..1000_000, fn row ->
+  Stream.map(1..1000, fn cell ->
+    {row, cell}
+  end)
+end)
+
+element(
+  "table",
+  Stream.map(stream, fn row ->
+    element(
+      "tr",
+      Stream.map(row, fn {row_index, cell_index} ->
+        element("td", content("row #{row_index} cell #{cell_index}"))
+      end)
+    )
+  end)
+)
+|> XmlStream.stream!
+```
+
+We have a nested stream called `rows` and a xml document constructed
+based on that stream using primitives like `element` and
+`content`. `element` takes tag name as the first argument. The second
+argument represents the children, it could be a either a stream or a
+text generated using `content`.
+
+`XmlStream.stream!` is the one which does the real work. It takes a
+xml document and returns a byte stream. Essentially what it does a
+pre-order traversal of the xml doc and emits the required tags
+whenever it enters a exists a node.
+
+Even though the approach makes sense, we haven't explained how to do a
+pre-order traversal using
+[Stream](https://hexdocs.pm/elixir/Stream.html) module. There is no
+Stream.traverse function, but it's quite trivial to implement a
+traverse function on top of
+[Stream.flat_map](https://hexdocs.pm/elixir/Stream.html#flat_map/2)
+
+```elixir
+def traverse(stream, leaf?) do
+  Stream.flat_map(stream, fn node ->
+    if leaf?.(node) do
+      [:leaf, node]
+    else
+      Stream.concat([
+          [:node_start],
+          traverse(node, leaf?),
+          [:node_end]
+      ])
+    end
+  end)
+end
+
+traverse(rows, &is_tuple/1)
+|> Stream.each(&IO.inspect/1)
+|> Stream.run
+```
+
+The important part is the recursive call. The callback function passed
+to [Stream.flat_map](https://hexdocs.pm/elixir/Stream.html#flat_map/2) can return either normal list or another stream. In
+case of stream, it will be forced which will trigger another
+Stream.flap_map and so on. At any point in time, we will have at max
+only one active stream per level of depth. A full implementation of
+XmlStream can be found at
+[activesphere/xml_stream](https://github.com/activesphere/xml_stream). Even
+though the code might look complicated, the essential principle is the
+same.
+
+Now that we have solved the first problem, how could we combine these
+xml streams and generate a zip file.
+
+If we look at the overview of the zip file format in the
+[specification](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT),
+we can find two important headers: local file header and central
+directory header.
+
+```
+[local file header 1]
+[encryption header 1]
+[file data 1]
+[data descriptor 1]
+.
+.
+.
+[local file header n]
+[encryption header n]
+[file data n]
+[data descriptor n]
+[archive decryption header]
+[archive extra data record]
+[central directory header 1]
+.
+.
+.
+[central directory header n]
+[zip64 end of central directory record]
+[zip64 end of central directory locator]
+[end of central directory record]
+```
+
+Both local file header and central directory header contain fields
+like crc-32 and compressed and uncompressed file size. Fortunately,
+these fields are optional in the local file header. We could just set
+these fields to 0 in the local header.
+
+```elixir
+Zstream.zip([
+  Zstream.entry("xl/worksheets/sheet1.xml", sheet1_stream),
+  Zstream.entry("xl/worksheets/workbook.xml", workbook)
+])
+|> Stream.into(File.stream!("spreadsheet.xlsx"))
+|> Stream.run
+```
+
+Assume we expose an interface like the above, we could use a
+combination of
+[Stream.flat_map]((https://hexdocs.pm/elixir/Stream.html#flat_map/2))
+and
+[Stream.transform](https://hexdocs.pm/elixir/Stream.html#transform/4).
+
+```elixir
+def zip(entries) do
+  Stream.concat([
+    [{:start}],
+    Stream.flat_map(entries,
+      fn %{stream: stream, name: name, options: options} ->
+        Stream.concat(
+          [{:head, %{name: name, options: options}}],
+          stream
+        )
+      end),
+    [{:end}]
+  ])
+  |> Stream.transform(fn -> %State{} end, &construct/2, &free_resource/1)
+end
+```
+
+The entries are flat mapped and extra annotations are added, so we
+know when a file stream starts and when it ends. The construct
+function will then just emit correct zip headers and keep track of the
+list of files and their size in the state.
+
+```elixir
+defp construct({:start}, state) do
+defp construct({:end}, state) do
+defp construct({:head, header}, state) do
+defp construct(chunk, state) do
+```
+
+When all the streams are emitted and it hits the `:end` annotation,
+the central directory headers will be emitted based on the data in the state.
+
+The only time we need to use unbounded memory is for the state where
+we keep track of the central directory headers. But as we use very
+small amount of memory per file, this should not be an issue in real
+world. The full source code of the library can be found at
+[ananthakumaran/zstream](https://github.com/ananthakumaran/zstream)
+
+<link rel="stylesheet" href="/public/css/xlsx.css"/>

@@ -1,0 +1,13 @@
+.xlsx .diagram {
+    position: relative;
+}
+
+.xlsx .margin-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.xlsx pre.highlight {
+    font-size: .7rem;
+}
