@@ -1,6 +1,7 @@
 ---
 container: xlsx
 layout: post
+tags: stream elixir
 title: Generate XLSX with unlimited rows
 ---
 
@@ -91,15 +92,15 @@ argument represents the children, it could be a either a stream or a
 text generated using `content`.
 
 `XmlStream.stream!` is the one which does the real work. It takes a
-xml document and returns a byte stream. Essentially what it does a
-pre-order traversal of the xml doc and emits the required tags
-whenever it enters a exists a node.
+xml document and returns a byte stream. Essentially it does a
+pre-order traversal of the xml nodes and emits the required tags
+whenever it enters and exists a node.
 
 Even though the approach makes sense, we haven't explained how to do a
 pre-order traversal using
 [Stream](https://hexdocs.pm/elixir/Stream.html) module. There is no
 Stream.traverse function, but it's quite trivial to implement a
-traverse function on top of
+`traverse` function on top of
 [Stream.flat_map](https://hexdocs.pm/elixir/Stream.html#flat_map/2)
 
 ```elixir
@@ -123,11 +124,13 @@ traverse(rows, &is_tuple/1)
 ```
 
 The important part is the recursive call. The callback function passed
-to [Stream.flat_map](https://hexdocs.pm/elixir/Stream.html#flat_map/2) can return either normal list or another stream. In
-case of stream, it will be forced which will trigger another
-Stream.flap_map and so on. At any point in time, we will have at max
-only one active stream per level of depth. A full implementation of
-XmlStream can be found at
+to [Stream.flat_map](https://hexdocs.pm/elixir/Stream.html#flat_map/2)
+can return either normal list or another stream. In case of stream, it
+will be forced which will trigger another
+[Stream.flat_map](https://hexdocs.pm/elixir/Stream.html#flat_map/2)
+and so on. At any point in time, we will have at max only one active
+stream per level of depth. A full implementation of XmlStream can be
+found at
 [activesphere/xml_stream](https://github.com/activesphere/xml_stream). Even
 though the code might look complicated, the essential principle is the
 same.
@@ -208,7 +211,7 @@ file comment (variable size)
 Both local file header and central directory header contain fields
 like crc-32 and compressed and uncompressed file size, which can't be
 calculated beforehand in our case. Fortunately, these fields are
-optional in the local file header and could just set to 0. The irony
+optional in the local file header and could be set to 0. The irony
 with zip format is that, if we write it in a streaming way, we can't
 read it back in a streaming way.
 
@@ -245,7 +248,7 @@ end
 ```
 
 The entries are flat mapped and extra annotations are added, so we
-know when a file stream starts and when it ends. The construct
+know when a file stream starts and when it ends. The `construct`
 function will then just emit correct zip headers and keep track of the
 list of files and their size in the state.
 
