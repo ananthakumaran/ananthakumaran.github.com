@@ -11,3 +11,31 @@
 .xlsx pre.highlight {
     font-size: .7rem;
 }
+
+.zipspec {
+    min-width: 720px;
+}
+
+pre.overview {
+    font-size: .7rem;
+    padding-bottom: 70px;
+}
+
+pre.local, pre.central {
+    font-size: .5rem;
+    background: none;
+    border-left: 1px solid #ddd;
+    padding: 0 13px;
+}
+
+pre.local {
+    float: right;
+    margin-top: -510px;
+    border-bottom: 1px solid #ddd;
+}
+
+pre.central {
+    float: right;
+    margin-top: -317px;
+    border-top: 1px solid #ddd;
+}

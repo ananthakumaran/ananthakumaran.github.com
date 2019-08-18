@@ -139,9 +139,9 @@ If we look at the overview of the zip file format in the
 [specification](https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT),
 we can find two important headers: local file header and central
 directory header.
-
-```
-[local file header 1]
+<div class="zipspec">
+<pre class="overview">
+<b>[local file header 1]</b> <span style="color: #ddd">────────────────────</span>
 [encryption header 1]
 [file data 1]
 [data descriptor 1]
@@ -154,7 +154,7 @@ directory header.
 [data descriptor n]
 [archive decryption header]
 [archive extra data record]
-[central directory header 1]
+<b>[central directory header 1]</b> <span style="color: #ddd">─────────────</span>
 .
 .
 .
@@ -162,12 +162,55 @@ directory header.
 [zip64 end of central directory record]
 [zip64 end of central directory locator]
 [end of central directory record]
-```
+</pre>
+
+<pre class="local">
+<b>local file header signature     4 bytes  (0x04034b50)</b>
+version needed to extract       2 bytes
+general purpose bit flag        2 bytes
+compression method              2 bytes
+last mod file time              2 bytes
+last mod file date              2 bytes
+crc-32                          4 bytes
+compressed size                 4 bytes
+uncompressed size               4 bytes
+file name length                2 bytes
+extra field length              2 bytes
+file name (variable size)
+extra field (variable size)
+</pre>
+
+<pre class="central">
+<b>central file header signature   4 bytes  (0x02014b50)</b>
+version made by                 2 bytes
+version needed to extract       2 bytes
+general purpose bit flag        2 bytes
+compression method              2 bytes
+last mod file time              2 bytes
+last mod file date              2 bytes
+crc-32                          4 bytes
+compressed size                 4 bytes
+uncompressed size               4 bytes
+file name length                2 bytes
+extra field length              2 bytes
+file comment length             2 bytes
+disk number start               2 bytes
+internal file attributes        2 bytes
+external file attributes        4 bytes
+relative offset of local header 4 bytes
+
+file name (variable size)
+extra field (variable size)
+file comment (variable size)
+</pre>
+</div>
 
 Both local file header and central directory header contain fields
-like crc-32 and compressed and uncompressed file size. Fortunately,
-these fields are optional in the local file header. We could just set
-these fields to 0 in the local header.
+like crc-32 and compressed and uncompressed file size, which can't be
+calculated beforehand in our case. Fortunately, these fields are
+optional in the local file header and could just set to 0. The irony
+with zip format is that, if we write it in a streaming way, we can't
+read it back in a streaming way.
 
 ```elixir
 Zstream.zip([
