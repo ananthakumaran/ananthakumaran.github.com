@@ -18,7 +18,7 @@
 
 pre.overview {
     font-size: .7rem;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 pre.local, pre.central {
@@ -30,12 +30,12 @@ pre.local, pre.central {
 
 pre.local {
     float: right;
-    margin-top: -510px;
+    margin-top: -498px;
     border-bottom: 1px solid #ddd;
 }
 
 pre.central {
     float: right;
-    margin-top: -317px;
+    margin-top: -302px;
     border-top: 1px solid #ddd;
 }

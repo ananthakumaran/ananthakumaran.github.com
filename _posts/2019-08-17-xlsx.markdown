@@ -201,7 +201,6 @@ disk number start               2 bytes
 internal file attributes        2 bytes
 external file attributes        4 bytes
 relative offset of local header 4 bytes
-
 file name (variable size)
 extra field (variable size)
 file comment (variable size)
