@@ -73,7 +73,7 @@ end)
 
 element(
   "table",
-  Stream.map(stream, fn row ->
+  Stream.map(rows, fn row ->
     element(
       "tr",
       Stream.map(row, fn {row_index, cell_index} ->
