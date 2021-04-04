@@ -15,6 +15,7 @@ viz: true
     <h2>Posts</h2>
     <ul class="related-posts">
       {% for post in site.posts %}
+      {% unless post.archived %}
       <li>
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
@@ -23,6 +24,7 @@ viz: true
           </a>
         </h3>
       </li>
+      {% endunless %}
       {% endfor %}
     </ul>
   </div>

@@ -3,4 +3,6 @@
   (c-basic-offset . 2)
   (js2-pretty-multiline-declarations . t)
   (indent-tabs-mode . nil)
-  (js2-strict-inconsistent-return-warning . nil)))
+  (js2-strict-inconsistent-return-warning . nil))
+ (css-mode
+  (css-indent-offset . 2)))

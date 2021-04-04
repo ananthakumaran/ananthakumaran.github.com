@@ -15,7 +15,7 @@ layout: default
   {% for post in site.posts %}
     {% assign match = false %}
     {% for tag in post.tags %}
-      {% if page.url != post.url and page.tags contains tag %}
+      {% if page.url != post.url and page.archived != true and page.tags contains tag %}
         {% assign match = true %}
       {% endif %}
     {% endfor %}

@@ -2,6 +2,7 @@
 layout: post
 title: Sad State of Computer Science Department
 tags: industry
+archived: true
 ---
 
 Except some high profile engineering colleges like IIT, the quality of

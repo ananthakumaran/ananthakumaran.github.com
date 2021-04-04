@@ -5,6 +5,7 @@ header : Computer Centers are Evil
 meta_keywords: computer centers , evil , programming
 meta_description: computer centers will ruin you. They are Evils
 tags: industry
+archived: true
 ---
 
 How do i know computer centers are bad?. Well, I ate that dog food.
