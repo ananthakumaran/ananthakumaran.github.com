@@ -7,7 +7,7 @@ var books = [
     "Additional Authors": "Christopher Drew, Annette Lawrence Drew",
     "ISBN": "=\"006097771X\"",
     "ISBN13": "=\"9780060977719\"",
-    "My Rating": "0",
+    "My Rating": "3",
     "Average Rating": "4.21",
     "Publisher": "William Morrow Paperbacks",
     "Binding": "Paperback",
