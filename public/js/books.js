@@ -1277,9 +1277,11 @@ function authors() {
   });
 }
 
+var nextYear = (new Date().getFullYear() + 1).toString();
+
 timeline();
 timelineSmall("timeline-small-1", [year("2009"), year("2015")]);
-timelineSmall("timeline-small-2", [year("2015"), year("2021")]);
+timelineSmall("timeline-small-2", [year("2015"), year(nextYear)]);
 distribution();
 var breakAt = year("1970");
 timelinePublications("timeline-publication-too-old", 30, [
@@ -1300,5 +1302,5 @@ bookPerYear();
 authors();
 bookPerShelf();
 timelineShelf("timeline-shelf-1", [year("2009"), year("2015")]);
-timelineShelf("timeline-shelf-2", [year("2015"), year("2021")]);
+timelineShelf("timeline-shelf-2", [year("2015"), year(nextYear)]);
 tags();
