@@ -10,3 +10,6 @@ book-covers:
 	git add books.csv books.json public/js/book-data.js public/covers
 	git commit -m "update books"
 	git push origin master
+
+develop:
+	bundle exec jekyll serve --livereload --drafts
