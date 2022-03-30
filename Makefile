@@ -12,4 +12,4 @@ book-covers:
 	git push origin master
 
 develop:
-	bundle exec jekyll serve --livereload --drafts
+	bundle exec jekyll serve --livereload --drafts --host 0.0.0.0
