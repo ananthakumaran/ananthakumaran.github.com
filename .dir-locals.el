@@ -5,4 +5,4 @@
   (indent-tabs-mode . nil)
   (js2-strict-inconsistent-return-warning . nil))
  (css-mode
-  (css-indent-offset . 2)))
+  (css-indent-offset . 4)))

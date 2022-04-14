@@ -56,7 +56,7 @@
     margin: 10px 0;
 }
 
-@media (min-width: 38em) {
+@media print, (min-width: 38em) {
   .resume section.experience {
       display: flex;
       flex-wrap: wrap;
@@ -78,16 +78,20 @@
 }
 
 .resume section.experience.last {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .resume section.experience .left-column.sub strong {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .resume section.projects strong, .resume section.proficiency strong {
     font-size: 14px;
     font-weight: normal;
+}
+
+.resume section.projects p {
+    margin: 0;
 }
 
 .resume ul {
