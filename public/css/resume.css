@@ -20,7 +20,7 @@
 
 
 .resume strong {
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Roboto', sans-serif;
     color: rgb(85, 85, 85);
 }
@@ -36,18 +36,16 @@
 .resume em {
     font-family: 'Roboto', sans-serif;
     color: #999;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
-    float: right;
 }
 
 .resume em.inline {
     font-size: 12px;
-    float: none;
 }
 
 .resume p {
-    margin: 5px 0;
+    margin: 0 0 10px 0;
 }
 
 .resume #post {
@@ -58,8 +56,33 @@
     margin: 10px 0;
 }
 
+@media (min-width: 38em) {
+  .resume section.experience {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .resume section.experience .left-column {
+    width: 25%;
+  }
+
+  .resume section.experience .right-column {
+    width: 75%;
+  }
+}
+
 .resume section.experience {
-    margin: 15px 0;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.resume section.experience.last {
+  border-bottom: none;
+}
+
+.resume section.experience .left-column.sub strong {
+  font-size: 12px;
 }
 
 .resume section.projects strong, .resume section.proficiency strong {
