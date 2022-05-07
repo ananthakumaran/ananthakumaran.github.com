@@ -75,7 +75,7 @@ special](https://iterm2.com/3.0/documentation-preferences.html) chars as the act
 
 Clipboard doesn't work by default, but there is a package called
 [clipetty](https://github.com/spudlyo/clipetty) which solves the issue. There is a known issue related
-to [mosh](mosh), but fortunately it can be easily worked around by
+to [mosh](https://github.com/spudlyo/clipetty/issues/9), but fortunately it can be easily worked around by
 clearing `SSH_TTY` environment variable. It's also recommended to
 apply the clipboard related [fixes](https://github.com/mobile-shell/mosh/pull/1104) to mosh.
 
