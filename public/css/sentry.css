@@ -1,0 +1,24 @@
+
+@media (min-width: 38em) {
+    .full-width {
+        left: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        max-width: 100vw;
+        position: relative;
+        right: 50%;
+        width: 100vw;
+        padding-left: calc((100vw - 1024px) / 2);
+        padding-right: calc((100vw - 1024px) / 2);
+    }
+}
+
+.full-width {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.center-label {
+    text-align: center;
+    font-size: 0.8rem;
+}
