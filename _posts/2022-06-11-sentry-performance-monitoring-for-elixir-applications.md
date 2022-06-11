@@ -33,8 +33,8 @@ application observability APIs and tools. It supports traces in
 addition to other signals and has good library support for Elixir. The
 idea is to use the [opentelemetry-erlang](https://github.com/open-telemetry/opentelemetry-erlang) in Elixir applications
 and send all the traces to [OTEL Collector](https://opentelemetry.io/docs/collector/). Collector has
-pluggable exporters, we can use the [sentry-exporter](https://pkg.go.dev/github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sentryexporter#section-readme) to forward
-the traces to Sentry.
+pluggable exporters, [sentry-exporter](https://pkg.go.dev/github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sentryexporter#section-readme) is used to forward the
+traces to Sentry.
 
 <img src="/public/images/sentry/architecture.svg" />
 
