@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sentry Performance Monitoring for Elixir Applications
+title: Sentry Performance Monitoring for Elixir
 draft: true
 date: 2022-06-11 21:06 +0530
 tags: elixir telemetry
