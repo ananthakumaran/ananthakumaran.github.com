@@ -19,10 +19,9 @@ Sentry.
 
 ### Distributed Trace
 
-A Trace captures the details of operations across multiple
-applications within the context of a single root operation, typically
-a user initiated request. Individual operation is represented as Span
-in the trace.
+A Trace records operations across multiple applications within the
+context of a single root operation, typically a user initiated
+request. Individual operation is represented as Span in the trace.
 
 <img class="full-width" src="/public/images/sentry/trace.png" />
 
@@ -119,7 +118,7 @@ processors. For example, the way database span is named is different
 in opentelemetry-erlang compared to how it is handled by other sentry
 libraries. The query itself is used as a part of the span name. We
 were able to easily solve this problem by rewriting the span name
-using the [span](https://pkg.go.dev/github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanprocessor#section-readme) processor
+using the [span](https://pkg.go.dev/github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanprocessor#section-readme) processor.
 
 ```yaml
 span/db:
@@ -131,5 +130,20 @@ span/db:
     from_attributes: [db.statement]
 ```
 
+### Known issues
+
+There is a difference between the trace data model used by Sentry and
+OpenTelemetry. In OpenTelemetry, a trace is a set of spans that form a
+tree structure. Sentry follows a similar model, except some spans get
+called [transactions](https://docs.sentry.io/product/sentry-basics/tracing/distributed-tracing/#traces-transactions-and-spans). In the diagram below, application
+boundaries get represented by different colors. Sentry calls the root
+span within each application boundary as a transaction.
+
+<img src="/public/images/sentry/trace-diff.svg" />
+
+Since sentry-exporter creates these transactions based on
+[heuristics](https://pkg.go.dev/github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sentryexporter#readme-known-limitations), it may sometimes group spans within an application into
+multiple transactions. This issue happens especially in traces with a
+lot of spans.
 
 <link rel="stylesheet" href="/public/css/sentry.css"/>
