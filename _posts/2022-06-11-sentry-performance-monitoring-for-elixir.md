@@ -21,7 +21,7 @@ Sentry.
 
 A Trace records operations across multiple applications within the
 context of a single root operation, typically a user initiated
-request. Individual operation is represented as Span in the trace.
+request. Each individual operation is called **span**.
 
 <img class="full-width" src="/public/images/sentry/trace.png" />
 
