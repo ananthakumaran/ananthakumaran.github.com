@@ -13,9 +13,9 @@ var Rat = {name: "Rat", emoji: '🐀'};
 var Cow = {name: "Cow", emoji: '🐮'};
 var Buffalo = {name: "Buffalo", emoji: '🐃'};
 var Tiger = {name: "Tiger", emoji: '🐯'};
-var Deer = {name: "Deer", emoji: ''};
+var Deer = {name: "Deer", emoji: '🦌'};
 var Monkey = {name: "Monkey", emoji: '🐵' };
-var Mongoose = {name: "Mongoose", emoji: ''};
+var Mongoose = {name: "Mongoose", emoji: '🦦'};
 var Lion = {name: "Lion", emoji: '🦁'};
 var Horse = {name: "Horse", emoji: '🐴'};
 
@@ -255,9 +255,9 @@ function translate(x, y) {
 function renderMatrix(ruleName, rule, groupColor, pieColor, showAnimal) {
   groupColor = groupColor || _.constant(null);
   pieColor = pieColor || _.constant(null);
-  var cellLength = 20, length = Nakshatras.length * cellLength;
+  var cellLength = window.screen.width >= 1024 ? 20 : 10, length = Nakshatras.length * cellLength;
   var margin = {
-    top: 100, left: 120, right: 50, bottom: 20
+    top: 100, left: cellLength * 6, right: cellLength * 5/2, bottom: 20
   };
 
   var svg = d3.select(divId(ruleName))
@@ -284,7 +284,7 @@ function renderMatrix(ruleName, rule, groupColor, pieColor, showAnimal) {
     .attr('width', cellLength - 1)
     .attr('height', cellLength - 1)
     .attr('fill', function (d) {
-      return d ? '#999' : 'none';
+      return d ? '#d8f6c5' : '#ff8f8f';
     })
     .attr('transform', function (d, i) { return translate(i * cellLength, 0);});
 
@@ -346,7 +346,7 @@ function renderMatrix(ruleName, rule, groupColor, pieColor, showAnimal) {
     .style('fill', groupColor);
 
   svg.append('text')
-    .attr('transform', translate(15, margin.top + length/2) + ' rotate(-90)')
+    .attr('transform', translate(12, margin.top + length/2) + ' rotate(-90)')
     .attr('class', 'legend')
     .attr('text-anchor', 'middle')
     .text('Female');

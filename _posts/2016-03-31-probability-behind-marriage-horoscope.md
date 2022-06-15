@@ -168,11 +168,11 @@ time. Each porutham can be described as a set of rules.
 > Chithirai - 🐯 Female Tiger  
 > Swathi - 🐃 Male Buffalo  
 > Visakam - 🐯 Male Tiger  
-> Anusham - Female Deer  
-> Kettai - Male Deer  
+> Anusham - 🦌 Female Deer  
+> Kettai - 🦌 Male Deer  
 > Mulam - 🐶 Male Dog  
 > Puradam - 🐵 Male Monkey  
-> Uthirādam - Male Mongoose  
+> Uthirādam - 🦦 Male Mongoose  
 > Tiruvōnam - 🐵 Female Monkey  
 > Aviṭṭam - 🦁 Female Lion  
 > Sadayam - 🐴 Female Horse  
@@ -182,10 +182,10 @@ time. Each porutham can be described as a set of rules.
 >
 > **Animals with Enemity**
 >
-> <span style="color: rgb(214, 39, 40)">🐍 Snake x Mongoose</span>  
+> <span style="color: rgb(214, 39, 40)">🐍 Snake x 🦦 Mongoose</span>  
 > <span style="color: rgb(255, 127, 14)">🐘 Elephant x 🦁 Lion</span>  
 > <span style="color: rgb(44, 160, 44)">🐵 Monkey x 🐐 Goat</span>  
-> <span style="color: rgb(148, 103, 189)">Deer x 🐶 Dog</span>  
+> <span style="color: rgb(148, 103, 189)">🦌 Deer x 🐶 Dog</span>  
 > <span style="color: rgb(140, 86, 75)">🐀 Rat x 🐈 Cat</span>  
 > <span style="color: rgb(31, 119, 180)">🐴 Horse x 🐃 Buffalo</span>  
 > <span style="color: rgb(227, 119, 194)">🐮 Cow x 🐯 Tiger</span>  
@@ -273,3 +273,4 @@ time. Each porutham can be described as a set of rules.
 [source]: http://www.tamilhoroscope.in/marriage_matching_tamil_horoscope.php
 [nakshatras]: https://en.wikipedia.org/wiki/List_of_Nakshatras
 [rasis]: https://en.wikipedia.org/wiki/Hindu_astrology#R.C4.81.C5.9Bi_.E2.80.93_zodiacal_signs
+

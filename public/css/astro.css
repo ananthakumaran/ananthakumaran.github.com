@@ -7,9 +7,25 @@ svg.astro text.legend {
 }
 
 .axis text {
-    font-size: 14px;
+    font-size: 9px;
     fill: #aaa;
 }
+
+text.legend {
+    font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+  .axis text {
+      font-size: 14px;
+  }
+
+  text.legend {
+    font-size: 14px;
+  }
+}
+
+
 .axis path.domain, .axis line {
     fill: none;
 }
