@@ -14,7 +14,7 @@ Streams allow for processing of elements, without any buffering. A transformatio
 
 Let's look at an example to understand the api and semantics. I will skip details like escaping csv entries and focus on stream.
 
-<div class="diagram small margin-left">
+<div class="diagram height-3 small margin-left">
   <div class="source circle" style="top: 0px;"><span class="label left">cycle</span></div>
   <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
   <div class="source circle" style="top: 60px;"><span class="label left">take</span></div>
@@ -66,7 +66,7 @@ For example, the following transformation is easy to perform using stream abstra
 
 This works well when there is one operation in the end (the one that writes to file in the case above). But if you want to have multiple end operations, things get tricky. Though the version below looks similar to the one above, it is much more difficult to model using the stream abstraction.
 
-<div class="diagram small" style="height: 300px">
+<div class="diagram small zoom-7" style="height: 300px">
   <div class="source circle" style="top: 0px;"><span class="label left">fetch records from db</span></div>
   <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
   <div class="source circle" style="top: 60px;"><span class="label left">filter records</span></div>
@@ -125,7 +125,7 @@ Sink <span class="sink"></span> is good for stream that needs to be split into m
 
 The difference between the two types will become apparent when you think about the three fundamental transformations **merge**, **fork** and **map**
 
-<div class="diagram small" style="height: 180px">
+<div class="diagram small zoom-5" style="height: 180px">
  <div style="position: relative; margin-left: -500px">
   <div class="source arrow" style="top: -40px; margin-left: 157px; transform: rotate(137deg);"></div>
   <div class="source circle" style="top: 0px; margin-left: -70px;"></div>
@@ -155,7 +155,7 @@ The difference between the two types will become apparent when you think about t
 
 The table below shows all the possible combinations of source, sink and transformation and which can be implemented without introducing buffers.
 
-<div class="table">
+<div class="table zoom-7">
 merge(<span class="source"></span>,<span class="source"></span>)::<span class="source"></span>  <span class="strike">fork(<span class="source"></span>)::(<span class="source"></span>,<span class="source"></span>)</span>   map(<span class="source"></span>)::<span class="source"></span><br/>
 merge(<span class="source"></span>,<span class="source"></span>)::<span class="sink"></span>  fork(<span class="source"></span>)::(<span class="source"></span>,<span class="sink"></span>)  map(<span class="source"></span>)::<span class="sink"></span><br/>
 <span class="strike">merge(<span class="source"></span>,<span class="sink"></span>)::<span class="source"></span></span>   fork(<span class="source"></span>)::(<span class="sink"></span>,<span class="source"></span>)  <span class="strike">map(<span class="sink"></span>)::<span class="source"></span></span> <br/>
@@ -189,7 +189,7 @@ Effectively
 
 [Stream.into](https://hexdocs.pm/elixir/Stream.html#into/2) could be considered as a function that performs the fork transformation. It takes a source and a sink as arguments and returns a new source and connects the source to the sink. When the returned source is forced, each element will get pushed to the sink
 
-<div class="diagram small margin-left">
+<div class="diagram height-4 small margin-left">
   <div class="source circle" style="top: 0px;"><span class="label left">cycle</span></div>
   <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
   <div class="source circle" style="top: 60px;"><span class="label left">take</span></div>
@@ -249,7 +249,7 @@ defimpl Collectable, for: Sink do
 end
 ```
 
-<div class="diagram small margin-left">
+<div class="diagram small margin-left zoom-7 height-4">
   <div class="source circle" style="top: 0px;"><span class="label left">cycle</span></div>
   <div class="source arrow" style="top: -70px; transform: rotate(90deg);"></div>
   <div class="source circle" style="top: 60px;"><span class="label left">take</span></div>
