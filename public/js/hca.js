@@ -2,10 +2,11 @@
 
 (function () {
 
+  var WIDTH = window.screen.width >= 1024 ? 620 : window.screen.width * 0.7;
   var lineColor = ['', '#fef0d9', '#fdcc8a', '#fc8d59', '#e34a33', '#b30000'][4];
 
   function lines(data, id, name, xField, yField) {
-    var width = 620, height = 170;
+    var width = WIDTH, height = 170;
     var margin = {top: 20, right: 20, bottom: 20, left: 50};
     var svg = d3.select("#" + id);
     var g = svg
@@ -90,7 +91,7 @@
   };
 
   var allocate = function(id) {
-    var width = 660, height = 50;
+    var width = WIDTH, height = 50;
     var margin = {top: 10, right: 20, bottom: 60, left: 20};
     var svg = d3.select("#" + id);
     var root = document.getElementById(id);
