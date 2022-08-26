@@ -61,7 +61,7 @@ programming. But it's invaluable in some situations. I could not find
 any good introductory book on macros in Elixir. The best way I could find is to
 read [On Lisp](http://www.paulgraham.com/onlisp.html) or
 [Let Over Lambda](https://letoverlambda.com/). Once you understood
-it's use cases, you can read the
+its use cases, you can read the
 [Meta Programming](http://elixir-lang.github.io/getting-started/meta/quote-and-unquote.html)
 section in
 [getting started guide](http://elixir-lang.github.io/getting-started/introduction.html)
