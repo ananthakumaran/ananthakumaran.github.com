@@ -1,5 +1,31 @@
 var books = [
   {
+    "Book Id": "39943621",
+    "Title": "Fire & Blood (A Targaryen History, #1)",
+    "Author": "George R.R. Martin",
+    "Author l-f": "Martin, George R.R.",
+    "Additional Authors": "Doug Wheatley",
+    "ISBN": "=\"152479628X\"",
+    "ISBN13": "=\"9781524796280\"",
+    "My Rating": "2",
+    "Average Rating": "3.95",
+    "Publisher": "Bantam",
+    "Binding": "Hardcover",
+    "Number of Pages": "719",
+    "Year Published": "2018",
+    "Original Publication Year": "2018",
+    "Date Read": "2022/10/23",
+    "Date Added": "2022/10/13",
+    "Bookshelves": "fiction",
+    "Bookshelves with positions": "fiction (#177)",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": "1",
+    "Owned Copies": "0"
+  },
+  {
     "Book Id": "52824295",
     "Title": "The Making of Prince of Persia: Journals 1985-1993",
     "Author": "Jordan Mechner",
@@ -23,14 +49,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "45309700",
@@ -56,14 +75,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "222146",
@@ -89,14 +101,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "22584",
@@ -122,14 +127,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "25080953",
@@ -155,14 +153,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "55182024",
@@ -173,7 +164,7 @@ var books = [
     "ISBN": "=\"1492083658\"",
     "ISBN13": "=\"9781492083658\"",
     "My Rating": "3",
-    "Average Rating": "3.79",
+    "Average Rating": "3.73",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "214",
@@ -188,14 +179,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "102030",
@@ -221,14 +205,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "60829943",
@@ -254,14 +231,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "60821466",
@@ -287,14 +257,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "56481725",
@@ -305,7 +268,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "4.09",
+    "Average Rating": "4.08",
     "Publisher": "Will Larson",
     "Binding": "Kindle Edition",
     "Number of Pages": "337",
@@ -320,14 +283,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "179133",
@@ -353,14 +309,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1766063",
@@ -386,14 +335,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "54493401",
@@ -419,14 +361,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "40798",
@@ -452,14 +387,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "40099266",
@@ -485,14 +413,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8935689",
@@ -518,14 +439,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "35492204",
@@ -551,14 +465,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "42343",
@@ -584,25 +491,18 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7190",
     "Title": "Les Trois Mousquetaires | The Three Musketeers (The D'Artagnan Romances, #1)",
     "Author": "Alexandre Dumas",
     "Author l-f": "Dumas, Alexandre",
-    "Additional Authors": "Richard Pevear, Philip Bates, William Barrow, August Zoller, Marisa Zini, Moshe Ukle, Pierre Toutain-Dorbec, John      Lee, Jacques Georges Clemenc Le Clercq, Natalie Montoto, S.M. Sheley, Daniel Rasmusson, Louis Jourdan, Walter Covell, Michael Page, Brett Helquist, Michael York, Sylvie Thorel-Cailleteau, Milo Winter, Bill Homewood, Arthur Paul John Charles James Gore Sudley, S.N. Rizvi, Giorgio Manganelli, William Robson, Isabel Ely Lord, Александр Дюма",
+    "Additional Authors": "Richard Pevear, Philip Bates, William Barrow, August Zoller, Marisa Zini, Moshe Ukle, Pierre Toutain-Dorbec, John      Lee, Jacques Georges Clemenc Le Clercq, Natalie Montoto, S.M. Sheley, Daniel Rasmusson, Louis Jourdan, Walter Covell, Michael Page, Brett Helquist, Michael Hugh Johnson, Sylvie Thorel-Cailleteau, Milo Winter, Bill Homewood, Arthur Paul John Charles James Gore Sudley, S.N. Rizvi, Giorgio Manganelli, William Robson, Isabel Ely Lord, Александр Дюма",
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "4.08",
+    "Average Rating": "4.09",
     "Publisher": "Modern Library",
     "Binding": "Paperback",
     "Number of Pages": "625",
@@ -617,14 +517,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18630",
@@ -650,14 +543,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "102439",
@@ -683,14 +569,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18058001",
@@ -701,7 +580,7 @@ var books = [
     "ISBN": "=\"0133390098\"",
     "ISBN13": "=\"9780133390094\"",
     "My Rating": "4",
-    "Average Rating": "4.49",
+    "Average Rating": "4.50",
     "Publisher": "Prentice Hall",
     "Binding": "Paperback",
     "Number of Pages": "735",
@@ -716,14 +595,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18154",
@@ -749,14 +621,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "394024",
@@ -767,7 +632,7 @@ var books = [
     "ISBN": "=\"0812576357\"",
     "ISBN13": "=\"9780812576351\"",
     "My Rating": "4",
-    "Average Rating": "3.94",
+    "Average Rating": "3.93",
     "Publisher": "Tor Science Fiction",
     "Binding": "Paperback",
     "Number of Pages": "672",
@@ -782,14 +647,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "51635102",
@@ -800,7 +658,7 @@ var books = [
     "ISBN": "=\"0136554822\"",
     "ISBN13": "=\"9780136554820\"",
     "My Rating": "0",
-    "Average Rating": "4.52",
+    "Average Rating": "4.53",
     "Publisher": "Addison-Wesley Professional",
     "Binding": "Paperback",
     "Number of Pages": "880",
@@ -815,14 +673,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "582174",
@@ -848,14 +699,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8384010",
@@ -866,7 +710,7 @@ var books = [
     "ISBN": "=\"0740797719\"",
     "ISBN13": "=\"9780740797712\"",
     "My Rating": "3",
-    "Average Rating": "4.21",
+    "Average Rating": "4.20",
     "Publisher": "Andrews McMeel Publishing",
     "Binding": "Paperback",
     "Number of Pages": "224",
@@ -881,14 +725,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "34072",
@@ -914,14 +751,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1620069",
@@ -947,14 +777,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "50202953",
@@ -965,7 +788,7 @@ var books = [
     "ISBN": "=\"163557563X\"",
     "ISBN13": "=\"9781635575637\"",
     "My Rating": "4",
-    "Average Rating": "4.26",
+    "Average Rating": "4.25",
     "Publisher": "Bloomsbury",
     "Binding": "Hardcover",
     "Number of Pages": "245",
@@ -980,14 +803,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "25838602",
@@ -1013,14 +829,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "50840378",
@@ -1031,7 +840,7 @@ var books = [
     "ISBN": "=\"938679764X\"",
     "ISBN13": "=\"9789386797643\"",
     "My Rating": "3",
-    "Average Rating": "4.25",
+    "Average Rating": "4.26",
     "Publisher": "Simon & Schuster India",
     "Binding": "Paperback",
     "Number of Pages": "309",
@@ -1046,14 +855,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "890",
@@ -1079,14 +881,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11612989",
@@ -1112,14 +907,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "25587882",
@@ -1130,7 +918,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.17",
+    "Average Rating": "4.18",
     "Publisher": "",
     "Binding": "ebook",
     "Number of Pages": "314",
@@ -1145,14 +933,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "38310",
@@ -1178,14 +959,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9276509",
@@ -1211,14 +985,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "13642",
@@ -1229,7 +996,7 @@ var books = [
     "ISBN": "=\"0553383043\"",
     "ISBN13": "=\"9780553383041\"",
     "My Rating": "2",
-    "Average Rating": "4.00",
+    "Average Rating": "4.01",
     "Publisher": "",
     "Binding": "Paperback",
     "Number of Pages": "183",
@@ -1244,14 +1011,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1807642",
@@ -1262,7 +1022,7 @@ var books = [
     "ISBN": "=\"0446364967\"",
     "ISBN13": "=\"9780446364966\"",
     "My Rating": "3",
-    "Average Rating": "3.64",
+    "Average Rating": "3.63",
     "Publisher": "Grand Central Publishing",
     "Binding": "Paperback",
     "Number of Pages": "409",
@@ -1277,14 +1037,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "44936",
@@ -1310,14 +1063,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "353",
@@ -1328,7 +1074,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "3.96",
+    "Average Rating": "3.97",
     "Publisher": "Ace",
     "Binding": "Mass Market Paperback",
     "Number of Pages": "589",
@@ -1343,14 +1089,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "42589303",
@@ -1376,14 +1115,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "26759355",
@@ -1409,14 +1141,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23529",
@@ -1442,14 +1167,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7745",
@@ -1475,14 +1193,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1753248",
@@ -1493,7 +1204,7 @@ var books = [
     "ISBN": "=\"1585009709\"",
     "ISBN13": "=\"9781585009701\"",
     "My Rating": "2",
-    "Average Rating": "3.98",
+    "Average Rating": "3.97",
     "Publisher": "Authorhouse",
     "Binding": "Paperback",
     "Number of Pages": "",
@@ -1508,14 +1219,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "164154",
@@ -1541,14 +1245,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "827",
@@ -1574,14 +1271,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "662",
@@ -1607,14 +1297,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1031555",
@@ -1640,14 +1323,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2165",
@@ -1673,14 +1349,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "106728",
@@ -1691,7 +1360,7 @@ var books = [
     "ISBN": "=\"0195024028\"",
     "ISBN13": "=\"9780195024029\"",
     "My Rating": "4",
-    "Average Rating": "4.35",
+    "Average Rating": "4.36",
     "Publisher": "Oxford University Press, USA",
     "Binding": "Hardcover",
     "Number of Pages": "552",
@@ -1706,21 +1375,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "5297",
     "Title": "The Picture of Dorian Gray",
     "Author": "Oscar Wilde",
     "Author l-f": "Wilde, Oscar",
-    "Additional Authors": "Jeffrey Eugenides, Douglas Tufano, Radu Tătărucă, Renata Tufano Ho",
+    "Additional Authors": "Jeffrey Eugenides",
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
@@ -1739,14 +1401,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "42389860",
@@ -1772,14 +1427,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "310612",
@@ -1795,7 +1443,7 @@ var books = [
     "Binding": "Paperback",
     "Number of Pages": "394",
     "Year Published": "1994",
-    "Original Publication Year": "1980",
+    "Original Publication Year": "1994",
     "Date Read": "2020/03/10",
     "Date Added": "2020/02/18",
     "Bookshelves": "fiction",
@@ -1805,14 +1453,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18737900",
@@ -1838,14 +1479,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "25451264",
@@ -1871,14 +1505,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23168817",
@@ -1904,14 +1531,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "20518872",
@@ -1937,14 +1557,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17675119",
@@ -1970,14 +1583,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "39971446",
@@ -1988,7 +1594,7 @@ var books = [
     "ISBN": "=\"1492034142\"",
     "ISBN13": "=\"9781492034148\"",
     "My Rating": "3",
-    "Average Rating": "3.97",
+    "Average Rating": "3.98",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "386",
@@ -2003,14 +1609,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11644253",
@@ -2021,7 +1620,7 @@ var books = [
     "ISBN": "=\"0333933087\"",
     "ISBN13": "=\"9780333933084\"",
     "My Rating": "4",
-    "Average Rating": "4.72",
+    "Average Rating": "4.71",
     "Publisher": "Macmillan India Limited",
     "Binding": "Paperback",
     "Number of Pages": "274",
@@ -2036,14 +1635,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "6520980",
@@ -2054,7 +1646,7 @@ var books = [
     "ISBN": "=\"0333933079\"",
     "ISBN13": "=\"9780333933077\"",
     "My Rating": "3",
-    "Average Rating": "4.69",
+    "Average Rating": "4.68",
     "Publisher": "MacMillan Publishers India",
     "Binding": "Paperback",
     "Number of Pages": "283",
@@ -2069,14 +1661,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "156784",
@@ -2102,14 +1687,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "16064703",
@@ -2120,7 +1698,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.71",
+    "Average Rating": "4.70",
     "Publisher": "கிழக்கு பதிப்பகம்",
     "Binding": "Hardcover",
     "Number of Pages": "383",
@@ -2135,14 +1713,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "16064693",
@@ -2153,7 +1724,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.69",
+    "Average Rating": "4.68",
     "Publisher": "கிழக்கு பதிப்பகம்",
     "Binding": "",
     "Number of Pages": "370",
@@ -2168,14 +1739,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "76740",
@@ -2201,14 +1765,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "816",
@@ -2234,14 +1791,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18269572",
@@ -2267,14 +1817,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "27968891",
@@ -2300,14 +1843,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17255186",
@@ -2318,7 +1854,7 @@ var books = [
     "ISBN": "=\"0988262592\"",
     "ISBN13": "=\"9780988262591\"",
     "My Rating": "3",
-    "Average Rating": "4.26",
+    "Average Rating": "4.27",
     "Publisher": "IT Revolution Press",
     "Binding": "Hardcover",
     "Number of Pages": "345",
@@ -2333,14 +1869,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "22131010",
@@ -2366,14 +1895,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "14836",
@@ -2399,14 +1921,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1190262",
@@ -2432,14 +1947,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "25426365",
@@ -2465,14 +1973,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "35009908",
@@ -2483,7 +1984,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "3.14",
+    "Average Rating": "3.12",
     "Publisher": "basho",
     "Binding": "Paperback",
     "Number of Pages": "138",
@@ -2498,14 +1999,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "583796",
@@ -2531,14 +2025,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "946677",
@@ -2564,14 +2051,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "331256",
@@ -2597,14 +2077,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "106164",
@@ -2630,14 +2103,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "33618151",
@@ -2648,7 +2114,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "0",
-    "Average Rating": "4.23",
+    "Average Rating": "4.22",
     "Publisher": "",
     "Binding": "ebook",
     "Number of Pages": "473",
@@ -2663,14 +2129,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "74034",
@@ -2681,7 +2140,7 @@ var books = [
     "ISBN": "=\"014303653X\"",
     "ISBN13": "=\"9780143036531\"",
     "My Rating": "4",
-    "Average Rating": "4.14",
+    "Average Rating": "4.15",
     "Publisher": "Penguin Books",
     "Binding": "Paperback",
     "Number of Pages": "184",
@@ -2696,14 +2155,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "21887577",
@@ -2729,14 +2181,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "117833",
@@ -2762,14 +2207,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "34431414",
@@ -2780,7 +2218,7 @@ var books = [
     "ISBN": "=\"1491983876\"",
     "ISBN13": "=\"9781491983874\"",
     "My Rating": "4",
-    "Average Rating": "3.91",
+    "Average Rating": "3.90",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "352",
@@ -2795,14 +2233,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18702891",
@@ -2828,14 +2259,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "40604658",
@@ -2861,14 +2285,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "24075044",
@@ -2894,14 +2311,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "167847",
@@ -2927,14 +2337,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "167845",
@@ -2960,14 +2363,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2131099",
@@ -2993,14 +2389,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "394535",
@@ -3026,14 +2415,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "83895",
@@ -3044,7 +2426,7 @@ var books = [
     "ISBN": "=\"1558604286\"",
     "ISBN13": "=\"9781558604285\"",
     "My Rating": "0",
-    "Average Rating": "3.96",
+    "Average Rating": "3.97",
     "Publisher": "Morgan Kaufmann Publishers",
     "Binding": "Hardcover",
     "Number of Pages": "965",
@@ -3059,14 +2441,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "19144780",
@@ -3092,14 +2467,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3",
@@ -3125,14 +2493,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "37976541",
@@ -3143,7 +2504,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.40",
+    "Average Rating": "4.41",
     "Publisher": "Knopf Publishing Group",
     "Binding": "Hardcover",
     "Number of Pages": "339",
@@ -3158,14 +2519,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "82120",
@@ -3191,14 +2545,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "900892",
@@ -3224,14 +2571,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18626864",
@@ -3257,14 +2597,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "301563",
@@ -3275,7 +2608,7 @@ var books = [
     "ISBN": "=\"0809252023\"",
     "ISBN13": "=\"9780809252022\"",
     "My Rating": "4",
-    "Average Rating": "3.96",
+    "Average Rating": "3.95",
     "Publisher": "McGraw-Hill/Contemporary",
     "Binding": "Paperback",
     "Number of Pages": "252",
@@ -3290,14 +2623,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "673488",
@@ -3308,7 +2634,7 @@ var books = [
     "ISBN": "=\"048628462X\"",
     "ISBN13": "=\"9780486284620\"",
     "My Rating": "4",
-    "Average Rating": "4.00",
+    "Average Rating": "3.99",
     "Publisher": "Dover Publications",
     "Binding": "Paperback",
     "Number of Pages": "272",
@@ -3323,14 +2649,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1032724",
@@ -3356,14 +2675,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "840",
@@ -3389,14 +2701,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3368",
@@ -3422,14 +2727,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "134825",
@@ -3440,7 +2738,7 @@ var books = [
     "ISBN": "=\"0596001088\"",
     "ISBN13": "=\"9780596001087\"",
     "My Rating": "4",
-    "Average Rating": "3.83",
+    "Average Rating": "3.82",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "241",
@@ -3455,14 +2753,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8608541",
@@ -3488,14 +2779,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23503006",
@@ -3506,7 +2790,7 @@ var books = [
     "ISBN": "=\"0674744438\"",
     "ISBN13": "=\"9780674744431\"",
     "My Rating": "3",
-    "Average Rating": "4.11",
+    "Average Rating": "4.10",
     "Publisher": "Harvard University Press",
     "Binding": "Paperback",
     "Number of Pages": "208",
@@ -3521,14 +2805,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18182",
@@ -3554,14 +2831,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4004178",
@@ -3587,14 +2857,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "5152210",
@@ -3605,7 +2868,7 @@ var books = [
     "ISBN": "=\"1422119157\"",
     "ISBN13": "=\"9781422119150\"",
     "My Rating": "3",
-    "Average Rating": "4.11",
+    "Average Rating": "4.13",
     "Publisher": "Harvard Business Review Press",
     "Binding": "Paperback",
     "Number of Pages": "262",
@@ -3620,14 +2883,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "21611",
@@ -3653,14 +2909,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "112255",
@@ -3686,14 +2935,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "1416957",
@@ -3719,14 +2961,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15195",
@@ -3737,12 +2972,12 @@ var books = [
     "ISBN": "=\"0141014083\"",
     "ISBN13": "=\"9780141014081\"",
     "My Rating": "4",
-    "Average Rating": "4.55",
+    "Average Rating": "4.56",
     "Publisher": "Penguin Books",
     "Binding": "Paperback",
     "Number of Pages": "296",
     "Year Published": "2003",
-    "Original Publication Year": "1980",
+    "Original Publication Year": "1973",
     "Date Read": "2018/11/03",
     "Date Added": "2018/11/03",
     "Bookshelves": "non-fiction, comics",
@@ -3752,14 +2987,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "28259132",
@@ -3785,14 +3013,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "94486",
@@ -3818,14 +3039,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "41149696",
@@ -3851,14 +3065,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "77711",
@@ -3884,14 +3091,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1768603",
@@ -3917,14 +3117,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "226004",
@@ -3950,14 +3143,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7090",
@@ -3983,14 +3169,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18079367",
@@ -4016,14 +3195,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "50091",
@@ -4049,14 +3221,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "27276428",
@@ -4082,14 +3247,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "34646883",
@@ -4115,14 +3273,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15700613",
@@ -4133,7 +3284,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.11",
+    "Average Rating": "4.13",
     "Publisher": "",
     "Binding": "Hardcover",
     "Number of Pages": "",
@@ -4148,14 +3299,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "402093",
@@ -4181,14 +3325,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "108583",
@@ -4214,14 +3351,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13651",
@@ -4247,14 +3377,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23754",
@@ -4280,14 +3403,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7465712",
@@ -4298,7 +3414,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.09",
+    "Average Rating": "4.10",
     "Publisher": "",
     "Binding": "",
     "Number of Pages": "334",
@@ -4313,14 +3429,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "2",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "29981",
@@ -4346,14 +3455,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "2",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "60113",
@@ -4379,14 +3481,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "226469",
@@ -4397,7 +3492,7 @@ var books = [
     "ISBN": "=\"042506252X\"",
     "ISBN13": "=\"9780425062524\"",
     "My Rating": "4",
-    "Average Rating": "3.53",
+    "Average Rating": "3.54",
     "Publisher": "Berkley",
     "Binding": "Paperback",
     "Number of Pages": "202",
@@ -4412,14 +3507,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "2",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "10138607",
@@ -4445,14 +3533,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "6493321",
@@ -4466,7 +3547,7 @@ var books = [
     "Average Rating": "4.05",
     "Publisher": "Bloomsbury (NYC)",
     "Binding": "Paperback",
-    "Number of Pages": "352",
+    "Number of Pages": "347",
     "Year Published": "2009",
     "Original Publication Year": "2009",
     "Date Read": "2013/06/02",
@@ -4478,14 +3559,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "102920",
@@ -4511,14 +3585,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "472331",
@@ -4544,14 +3611,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "2",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "30165203",
@@ -4577,14 +3637,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "2",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8610067",
@@ -4595,7 +3648,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "5",
-    "Average Rating": "4.41",
+    "Average Rating": "4.42",
     "Publisher": "வானதி பதிப்பகம்",
     "Binding": "Hardcover",
     "Number of Pages": "1136",
@@ -4610,14 +3663,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9789692",
@@ -4628,7 +3674,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "3.87",
+    "Average Rating": "3.88",
     "Publisher": "",
     "Binding": "",
     "Number of Pages": "272",
@@ -4643,14 +3689,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1108124",
@@ -4676,14 +3715,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3828902",
@@ -4694,7 +3726,7 @@ var books = [
     "ISBN": "=\"1603580557\"",
     "ISBN13": "=\"9781603580557\"",
     "My Rating": "4",
-    "Average Rating": "4.21",
+    "Average Rating": "4.22",
     "Publisher": "Chelsea Green Publishing",
     "Binding": "Paperback",
     "Number of Pages": "240",
@@ -4709,14 +3741,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "537480",
@@ -4727,7 +3752,7 @@ var books = [
     "ISBN": "=\"0465082319\"",
     "ISBN13": "=\"9780465082315\"",
     "My Rating": "4",
-    "Average Rating": "3.86",
+    "Average Rating": "3.85",
     "Publisher": "Perseus Books",
     "Binding": "Hardcover",
     "Number of Pages": "210",
@@ -4742,14 +3767,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "375802",
@@ -4775,14 +3793,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9593",
@@ -4808,14 +3819,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7181921",
@@ -4841,21 +3845,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "18160",
     "Title": "The Art of Deception: Controlling the Human Element of Security",
     "Author": "Kevin D. Mitnick",
     "Author l-f": "Mitnick, Kevin D.",
-    "Additional Authors": "William L. Simon, Steve Wozniak",
+    "Additional Authors": "William   L.    Simon, Steve Wozniak",
     "ISBN": "=\"076454280X\"",
     "ISBN13": "=\"9780764542800\"",
     "My Rating": "2",
@@ -4874,14 +3871,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "29771604",
@@ -4907,14 +3897,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "31921",
@@ -4940,14 +3923,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18621323",
@@ -4973,14 +3949,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1355465",
@@ -5006,14 +3975,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11737352",
@@ -5039,14 +4001,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "567610",
@@ -5072,14 +4027,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "20527133",
@@ -5105,14 +4053,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7015635",
@@ -5138,14 +4079,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "25798014",
@@ -5171,14 +4105,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2094",
@@ -5189,7 +4116,7 @@ var books = [
     "ISBN": "=\"0553804367\"",
     "ISBN13": "=\"9780553804362\"",
     "My Rating": "4",
-    "Average Rating": "4.24",
+    "Average Rating": "4.25",
     "Publisher": "Bantam",
     "Binding": "Hardcover",
     "Number of Pages": "176",
@@ -5204,14 +4131,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "461104",
@@ -5237,14 +4157,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13036196",
@@ -5255,7 +4168,7 @@ var books = [
     "ISBN": "=\"1846146062\"",
     "ISBN13": "=\"9781846146060\"",
     "My Rating": "4",
-    "Average Rating": "4.17",
+    "Average Rating": "4.18",
     "Publisher": "Allen Lane",
     "Binding": "Paperback",
     "Number of Pages": "504",
@@ -5270,14 +4183,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "20604826",
@@ -5291,7 +4197,7 @@ var books = [
     "Average Rating": "4.14",
     "Publisher": "W. W. Norton  Company",
     "Binding": "Hardcover",
-    "Number of Pages": "288",
+    "Number of Pages": "274",
     "Year Published": "2014",
     "Original Publication Year": "2014",
     "Date Read": "2014/10/04",
@@ -5303,14 +4209,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "356824",
@@ -5336,14 +4235,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "218099",
@@ -5369,14 +4261,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "51291",
@@ -5387,7 +4272,7 @@ var books = [
     "ISBN": "=\"0393310728\"",
     "ISBN13": "=\"9780393310726\"",
     "My Rating": "2",
-    "Average Rating": "3.84",
+    "Average Rating": "3.85",
     "Publisher": "W. W. Norton & Company",
     "Binding": "Paperback",
     "Number of Pages": "142",
@@ -5402,14 +4287,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11797365",
@@ -5435,14 +4313,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "123471",
@@ -5468,14 +4339,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "61535",
@@ -5501,14 +4365,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "1202",
@@ -5534,14 +4391,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "24113",
@@ -5567,14 +4417,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "1713426",
@@ -5600,14 +4443,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "5544",
@@ -5633,14 +4469,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "10140462",
@@ -5666,14 +4495,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1199688",
@@ -5699,14 +4521,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "581125",
@@ -5732,14 +4547,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1280983",
@@ -5750,7 +4558,7 @@ var books = [
     "ISBN": "=\"0312944446\"",
     "ISBN13": "=\"9780312944445\"",
     "My Rating": "4",
-    "Average Rating": "3.90",
+    "Average Rating": "3.89",
     "Publisher": "Bluejay Books",
     "Binding": "Paperback",
     "Number of Pages": "153",
@@ -5765,14 +4573,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4671",
@@ -5798,14 +4599,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "32585",
@@ -5831,14 +4625,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "830",
@@ -5864,14 +4651,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "736131",
@@ -5897,18 +4677,11 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "29580",
-    "Title": "Second Foundation (Foundation #3)",
+    "Title": "Second Foundation (Foundation, #3)",
     "Author": "Isaac Asimov",
     "Author l-f": "Asimov, Isaac",
     "Additional Authors": "",
@@ -5930,18 +4703,11 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "29581",
-    "Title": "Foundation and Empire (Foundation #2)",
+    "Title": "Foundation and Empire (Foundation, #2)",
     "Author": "Isaac Asimov",
     "Author l-f": "Asimov, Isaac",
     "Additional Authors": "",
@@ -5963,14 +4729,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18373",
@@ -5996,14 +4755,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "16690",
@@ -6029,14 +4781,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "5129",
@@ -6062,14 +4807,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "29579",
@@ -6095,14 +4833,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "77566",
@@ -6113,7 +4844,7 @@ var books = [
     "ISBN": "=\"0553283685\"",
     "ISBN13": "=\"9780553283686\"",
     "My Rating": "5",
-    "Average Rating": "4.24",
+    "Average Rating": "4.25",
     "Publisher": "Bantam Doubleday Dell Publishing Group",
     "Binding": "Mass Market Paperback",
     "Number of Pages": "500",
@@ -6128,14 +4859,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "77565",
@@ -6161,14 +4885,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7624",
@@ -6194,14 +4911,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "209525",
@@ -6212,7 +4922,7 @@ var books = [
     "ISBN": "=\"0803292791\"",
     "ISBN13": "=\"9780803292796\"",
     "My Rating": "3",
-    "Average Rating": "3.43",
+    "Average Rating": "3.42",
     "Publisher": "Bison Books",
     "Binding": "Paperback",
     "Number of Pages": "296",
@@ -6227,14 +4937,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "194366",
@@ -6260,14 +4963,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "194373",
@@ -6293,14 +4989,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8921",
@@ -6316,7 +5005,7 @@ var books = [
     "Binding": "Mass Market Paperback",
     "Number of Pages": "256",
     "Year Published": "2001",
-    "Original Publication Year": "1902",
+    "Original Publication Year": "1901",
     "Date Read": "2017/04/16",
     "Date Added": "2017/04/15",
     "Bookshelves": "fiction",
@@ -6326,14 +5015,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18626849",
@@ -6359,14 +5041,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3590",
@@ -6392,14 +5067,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "102868",
@@ -6425,14 +5093,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "608474",
@@ -6458,14 +5119,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18512",
@@ -6491,14 +5145,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "34",
@@ -6524,14 +5171,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15241",
@@ -6542,7 +5182,7 @@ var books = [
     "ISBN": "=\"0618346260\"",
     "ISBN13": "=\"9780618346264\"",
     "My Rating": "5",
-    "Average Rating": "4.46",
+    "Average Rating": "4.47",
     "Publisher": "Houghton Mifflin",
     "Binding": "Paperback",
     "Number of Pages": "322",
@@ -6557,14 +5197,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7604",
@@ -6590,14 +5223,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "343",
@@ -6623,14 +5249,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "149267",
@@ -6638,8 +5257,8 @@ var books = [
     "Author": "Stephen King",
     "Author l-f": "King, Stephen",
     "Additional Authors": "Bernie Wrightson",
-    "ISBN": "=\"0385199570\"",
-    "ISBN13": "=\"9780385199575\"",
+    "ISBN": "=\"\"",
+    "ISBN13": "=\"\"",
     "My Rating": "4",
     "Average Rating": "4.34",
     "Publisher": "Doubleday Books",
@@ -6656,14 +5275,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2767052",
@@ -6689,14 +5301,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "350",
@@ -6722,14 +5327,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "24285690",
@@ -6755,14 +5353,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "6481280",
@@ -6788,14 +5379,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "320",
@@ -6821,21 +5405,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "332613",
     "Title": "One Flew Over the Cuckoo's Nest",
     "Author": "Ken Kesey",
     "Author l-f": "Kesey, Ken",
-    "Additional Authors": "Vytautas Petrukaitis",
+    "Additional Authors": "",
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
@@ -6854,14 +5431,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "485894",
@@ -6887,14 +5457,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "76778",
@@ -6920,14 +5483,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18386",
@@ -6938,7 +5494,7 @@ var books = [
     "ISBN": "=\"1600964338\"",
     "ISBN13": "=\"9781600964336\"",
     "My Rating": "4",
-    "Average Rating": "4.11",
+    "Average Rating": "4.12",
     "Publisher": "Waking Lion Press",
     "Binding": "Paperback",
     "Number of Pages": "86",
@@ -6953,14 +5509,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "14817",
@@ -6986,14 +5535,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15823480",
@@ -7019,14 +5561,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13498",
@@ -7052,14 +5587,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1262916",
@@ -7085,14 +5613,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18007564",
@@ -7118,14 +5639,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "162",
@@ -7151,14 +5665,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4936457",
@@ -7184,14 +5691,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "78411",
@@ -7217,14 +5717,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7126",
@@ -7250,14 +5743,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17690",
@@ -7283,14 +5769,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11047925",
@@ -7316,14 +5795,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "28676",
@@ -7334,7 +5806,7 @@ var books = [
     "ISBN": "=\"0679735771\"",
     "ISBN13": "=\"9780679735779\"",
     "My Rating": "2",
-    "Average Rating": "3.81",
+    "Average Rating": "3.82",
     "Publisher": "Vintage Contemporaries / Random House",
     "Binding": "Paperback",
     "Number of Pages": "399",
@@ -7349,14 +5821,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "52036",
@@ -7382,14 +5847,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2526",
@@ -7405,7 +5863,7 @@ var books = [
     "Binding": "Paperback",
     "Number of Pages": "326",
     "Year Published": "1999",
-    "Original Publication Year": "1995",
+    "Original Publication Year": "1996",
     "Date Read": "2014/11/22",
     "Date Added": "2014/11/22",
     "Bookshelves": "own, fiction",
@@ -7415,21 +5873,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "234225",
     "Title": "Dune (Dune #1)",
     "Author": "Frank Herbert",
     "Author l-f": "Herbert, Frank",
-    "Additional Authors": "علي رضا",
+    "Additional Authors": "",
     "ISBN": "=\"0340839937\"",
     "ISBN13": "=\"9780340839935\"",
     "My Rating": "5",
@@ -7448,14 +5899,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11",
@@ -7466,7 +5910,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.22",
+    "Average Rating": "4.23",
     "Publisher": "Del Rey Books",
     "Binding": "Mass Market Paperback",
     "Number of Pages": "216",
@@ -7481,14 +5925,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17470674",
@@ -7514,14 +5951,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11692391",
@@ -7547,14 +5977,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4979",
@@ -7580,14 +6003,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11970747",
@@ -7613,14 +6029,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11350430",
@@ -7631,7 +6040,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "4.22",
+    "Average Rating": "4.23",
     "Publisher": "",
     "Binding": "ebook",
     "Number of Pages": "104",
@@ -7646,14 +6055,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "382450",
@@ -7679,14 +6081,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11985631",
@@ -7712,14 +6107,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "14064",
@@ -7745,14 +6133,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "14201",
@@ -7778,14 +6159,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "156775",
@@ -7811,14 +6185,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "19301931",
@@ -7844,14 +6211,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2493",
@@ -7877,14 +6237,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7082",
@@ -7910,14 +6263,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "295",
@@ -7943,14 +6289,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2890090",
@@ -7961,7 +6300,7 @@ var books = [
     "ISBN": "=\"0553804693\"",
     "ISBN13": "=\"9780553804690\"",
     "My Rating": "4",
-    "Average Rating": "4.21",
+    "Average Rating": "4.22",
     "Publisher": "Del Rey",
     "Binding": "Hardcover",
     "Number of Pages": "650",
@@ -7976,14 +6315,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8909",
@@ -8009,14 +6341,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "22328",
@@ -8042,14 +6367,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "49552",
@@ -8060,7 +6378,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.00",
+    "Average Rating": "4.01",
     "Publisher": "Vintage International",
     "Binding": "Paperback",
     "Number of Pages": "159",
@@ -8075,14 +6393,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "6425904",
@@ -8108,14 +6419,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "887877",
@@ -8141,14 +6445,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "169437",
@@ -8174,14 +6471,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9601",
@@ -8207,14 +6497,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "22034",
@@ -8225,7 +6508,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
-    "Average Rating": "4.37",
+    "Average Rating": "4.38",
     "Publisher": "NAL",
     "Binding": "Paperback",
     "Number of Pages": "448",
@@ -8240,14 +6523,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "862311",
@@ -8258,7 +6534,7 @@ var books = [
     "ISBN": "=\"0812970047\"",
     "ISBN13": "=\"9780812970043\"",
     "My Rating": "3",
-    "Average Rating": "4.23",
+    "Average Rating": "4.22",
     "Publisher": "Modern Library",
     "Binding": "Paperback",
     "Number of Pages": "266",
@@ -8273,14 +6549,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "436982",
@@ -8306,14 +6575,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "112537",
@@ -8339,14 +6601,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1305",
@@ -8357,7 +6612,7 @@ var books = [
     "ISBN": "=\"055338368X\"",
     "ISBN13": "=\"9780553383683\"",
     "My Rating": "4",
-    "Average Rating": "4.39",
+    "Average Rating": "4.40",
     "Publisher": "Bantam",
     "Binding": "Paperback",
     "Number of Pages": "526",
@@ -8372,14 +6627,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "40395",
@@ -8405,14 +6653,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "531509",
@@ -8438,14 +6679,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18423",
@@ -8471,14 +6705,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1406553",
@@ -8504,14 +6731,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17184",
@@ -8537,14 +6757,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "175516",
@@ -8570,14 +6783,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2183989",
@@ -8603,14 +6809,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8579173",
@@ -8621,7 +6820,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "3.78",
+    "Average Rating": "3.80",
     "Publisher": "Wiley & Putnam",
     "Binding": "Kindle Edition",
     "Number of Pages": "34",
@@ -8636,14 +6835,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "391724",
@@ -8669,14 +6861,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "899492",
@@ -8702,14 +6887,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18490",
@@ -8735,14 +6913,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15850704",
@@ -8753,7 +6924,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "3.69",
+    "Average Rating": "3.68",
     "Publisher": "Feedbooks",
     "Binding": "ebook",
     "Number of Pages": "42",
@@ -8768,14 +6939,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13023",
@@ -8801,14 +6965,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "83346",
@@ -8834,14 +6991,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "364985",
@@ -8852,7 +7002,7 @@ var books = [
     "ISBN": "=\"1419143956\"",
     "ISBN13": "=\"9781419143953\"",
     "My Rating": "3",
-    "Average Rating": "3.92",
+    "Average Rating": "3.91",
     "Publisher": "Kessinger Publishing",
     "Binding": "Paperback",
     "Number of Pages": "48",
@@ -8867,21 +7017,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17245",
     "Title": "Dracula",
     "Author": "Bram Stoker",
     "Author l-f": "Stoker, Bram",
-    "Additional Authors": "Rubén Toledo, Nina Auerbach, David J. Skal, Diana Gibson, John      Lee",
+    "Additional Authors": "Rubén Toledo, Nina Auerbach, David J. Skal",
     "ISBN": "=\"0393970124\"",
     "ISBN13": "=\"9780393970128\"",
     "My Rating": "4",
@@ -8900,14 +7043,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4980",
@@ -8933,14 +7069,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "135479",
@@ -8966,14 +7095,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "4981",
@@ -8999,14 +7121,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1512702",
@@ -9032,21 +7147,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "5043",
     "Title": "The Pillars of the Earth (Kingsbridge, #1)",
     "Author": "Ken Follett",
     "Author l-f": "Follett, Ken",
-    "Additional Authors": "Кен Фолет, Валерий Русинов, Чавдар Монов",
+    "Additional Authors": "",
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "4",
@@ -9065,14 +7173,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7613",
@@ -9083,7 +7184,7 @@ var books = [
     "ISBN": "=\"0452284244\"",
     "ISBN13": "=\"9780452284241\"",
     "My Rating": "4",
-    "Average Rating": "3.97",
+    "Average Rating": "3.98",
     "Publisher": "NAL",
     "Binding": "Paperback",
     "Number of Pages": "122",
@@ -9098,14 +7199,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "24800",
@@ -9116,7 +7210,7 @@ var books = [
     "ISBN": "=\"038560310X\"",
     "ISBN13": "=\"9780385603102\"",
     "My Rating": "4",
-    "Average Rating": "4.07",
+    "Average Rating": "4.08",
     "Publisher": "Random House",
     "Binding": "Paperback",
     "Number of Pages": "710",
@@ -9131,21 +7225,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7144",
     "Title": "Crime and Punishment",
     "Author": "Fyodor Dostoevsky",
     "Author l-f": "Dostoevsky, Fyodor",
-    "Additional Authors": "David McDuff, Joseph Frank, Constance Garnett, Nina Guerra, Filipe Guerra, اصغر رستگار, A.H. Tammsaare, حميدرضا آتش‌برآب",
+    "Additional Authors": "David McDuff, Joseph Frank, Fyodor Dostoyevsky",
     "ISBN": "=\"0143058142\"",
     "ISBN13": "=\"9780143058144\"",
     "My Rating": "4",
@@ -9164,14 +7251,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4982",
@@ -9197,14 +7277,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "5907",
@@ -9230,14 +7303,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "10664113",
@@ -9263,14 +7329,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "168668",
@@ -9296,14 +7355,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13497",
@@ -9329,14 +7381,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "105576",
@@ -9362,14 +7407,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "22590",
@@ -9395,14 +7433,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "10572",
@@ -9428,14 +7459,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "62291",
@@ -9461,14 +7485,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13496",
@@ -9494,14 +7511,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "2657",
@@ -9527,14 +7537,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "5470",
@@ -9560,14 +7563,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "17948832",
@@ -9593,14 +7589,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18324312",
@@ -9626,14 +7615,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "24791466",
@@ -9659,14 +7641,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23245313",
@@ -9692,14 +7667,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15809496",
@@ -9725,14 +7693,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17971957",
@@ -9758,14 +7719,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "20524444",
@@ -9776,7 +7730,7 @@ var books = [
     "ISBN": "=\"161729201X\"",
     "ISBN13": "=\"9781617292019\"",
     "My Rating": "4",
-    "Average Rating": "4.55",
+    "Average Rating": "4.54",
     "Publisher": "Manning",
     "Binding": "Paperback",
     "Number of Pages": "351",
@@ -9791,14 +7745,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "41803",
@@ -9824,14 +7771,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "8129142",
@@ -9857,14 +7797,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "475858",
@@ -9890,14 +7823,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "548914",
@@ -9908,7 +7834,7 @@ var books = [
     "ISBN": "=\"0262560992\"",
     "ISBN13": "=\"9780262560993\"",
     "My Rating": "5",
-    "Average Rating": "4.28",
+    "Average Rating": "4.29",
     "Publisher": "MIT Press",
     "Binding": "Paperback",
     "Number of Pages": "210",
@@ -9923,14 +7849,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "43713",
@@ -9956,14 +7875,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "74645",
@@ -9989,14 +7901,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23463279",
@@ -10022,14 +7927,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "34691716",
@@ -10040,7 +7938,7 @@ var books = [
     "ISBN": "=\"1491983647\"",
     "ISBN13": "=\"9781491983645\"",
     "My Rating": "3",
-    "Average Rating": "3.58",
+    "Average Rating": "3.57",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "149",
@@ -10055,14 +7953,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "21557290",
@@ -10088,14 +7979,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "29598815",
@@ -10106,7 +7990,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"9781491940105\"",
     "My Rating": "4",
-    "Average Rating": "4.30",
+    "Average Rating": "4.29",
     "Publisher": "O'Reilly Media",
     "Binding": "ebook",
     "Number of Pages": "183",
@@ -10121,14 +8005,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23237460",
@@ -10154,14 +8031,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "23612990",
@@ -10187,14 +8057,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13421400",
@@ -10205,7 +8068,7 @@ var books = [
     "ISBN": "=\"1617290343\"",
     "ISBN13": "=\"9781617290343\"",
     "My Rating": "4",
-    "Average Rating": "3.85",
+    "Average Rating": "3.84",
     "Publisher": "Manning",
     "Binding": "Paperback",
     "Number of Pages": "328",
@@ -10220,14 +8083,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "18652140",
@@ -10253,14 +8109,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17743",
@@ -10286,14 +8135,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17746",
@@ -10319,14 +8161,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15765619",
@@ -10352,14 +8187,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "853213",
@@ -10385,14 +8213,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17744",
@@ -10403,7 +8224,7 @@ var books = [
     "ISBN": "=\"0961392142\"",
     "ISBN13": "=\"9780961392147\"",
     "My Rating": "4",
-    "Average Rating": "4.40",
+    "Average Rating": "4.39",
     "Publisher": "Graphics Press",
     "Binding": "Hardcover",
     "Number of Pages": "197",
@@ -10418,14 +8239,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17745",
@@ -10451,14 +8265,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1122695",
@@ -10484,14 +8291,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4415662",
@@ -10502,7 +8302,7 @@ var books = [
     "ISBN": "=\"\"",
     "ISBN13": "=\"\"",
     "My Rating": "3",
-    "Average Rating": "4.11",
+    "Average Rating": "4.09",
     "Publisher": "Peepcode Press",
     "Binding": "ebook",
     "Number of Pages": "120",
@@ -10517,14 +8317,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3131525",
@@ -10550,14 +8343,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "67825",
@@ -10583,14 +8369,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1753460",
@@ -10601,7 +8380,7 @@ var books = [
     "ISBN": "=\"0324168624\"",
     "ISBN13": "=\"9780324168624\"",
     "My Rating": "5",
-    "Average Rating": "4.08",
+    "Average Rating": "4.09",
     "Publisher": "Thomson South-Western",
     "Binding": "Hardcover",
     "Number of Pages": "848",
@@ -10616,14 +8395,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3839712",
@@ -10649,14 +8421,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "910789",
@@ -10682,14 +8447,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1069723",
@@ -10700,7 +8458,7 @@ var books = [
     "ISBN": "=\"0596002424\"",
     "ISBN13": "=\"9780596002428\"",
     "My Rating": "1",
-    "Average Rating": "3.41",
+    "Average Rating": "3.40",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "224",
@@ -10715,14 +8473,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "433443",
@@ -10748,21 +8499,14 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "433567",
     "Title": "Flatland: A Romance of Many Dimensions",
     "Author": "Edwin A. Abbott",
     "Author l-f": "Abbott, Edwin A.",
-    "Additional Authors": "Banesh Hoffmann, Giorgio Manganelli, Masolino D'Amico",
+    "Additional Authors": "Banesh Hoffmann, Giorgio Manganelli, Masolino d'Amico",
     "ISBN": "=\"048627263X\"",
     "ISBN13": "=\"9780486272634\"",
     "My Rating": "4",
@@ -10781,14 +8525,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "116185",
@@ -10814,14 +8551,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3023",
@@ -10832,7 +8562,7 @@ var books = [
     "ISBN": "=\"0465081452\"",
     "ISBN13": "=\"9780465081455\"",
     "My Rating": "4",
-    "Average Rating": "4.35",
+    "Average Rating": "4.36",
     "Publisher": "Basic Books",
     "Binding": "Hardcover",
     "Number of Pages": "448",
@@ -10847,14 +8577,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1741472",
@@ -10880,14 +8603,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13136685",
@@ -10913,14 +8629,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "86591",
@@ -10946,14 +8655,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "112262",
@@ -10979,14 +8681,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "0",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "6219481",
@@ -11012,14 +8707,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15499449",
@@ -11045,14 +8733,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "69736",
@@ -11078,14 +8759,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "20578310",
@@ -11111,14 +8785,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2047544",
@@ -11144,14 +8811,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "772585",
@@ -11162,7 +8822,7 @@ var books = [
     "ISBN": "=\"0262220695\"",
     "ISBN13": "=\"9780262220699\"",
     "My Rating": "5",
-    "Average Rating": "4.10",
+    "Average Rating": "4.11",
     "Publisher": "MIT Press",
     "Binding": "Hardcover",
     "Number of Pages": "936",
@@ -11177,14 +8837,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "3226758",
@@ -11210,14 +8863,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17623632",
@@ -11243,14 +8889,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13355765",
@@ -11276,14 +8915,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "17994",
@@ -11297,7 +8929,7 @@ var books = [
     "Average Rating": "4.28",
     "Publisher": "Anchor",
     "Binding": "Paperback",
-    "Number of Pages": "412",
+    "Number of Pages": "432",
     "Year Published": "2000",
     "Original Publication Year": "1999",
     "Date Read": "2013/04/21",
@@ -11309,14 +8941,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "62158",
@@ -11327,7 +8952,7 @@ var books = [
     "ISBN": "=\"1841193976\"",
     "ISBN13": "=\"9781841193977\"",
     "My Rating": "3",
-    "Average Rating": "4.09",
+    "Average Rating": "4.10",
     "Publisher": "Robinson",
     "Binding": "Paperback",
     "Number of Pages": "532",
@@ -11342,14 +8967,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9282423",
@@ -11375,14 +8993,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13366727",
@@ -11408,14 +9019,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "78378",
@@ -11441,14 +9045,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13610343",
@@ -11474,14 +9071,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "15992715",
@@ -11507,14 +9097,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13073554",
@@ -11540,14 +9123,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "198207",
@@ -11573,14 +9149,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "174904",
@@ -11606,14 +9175,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "405790",
@@ -11639,14 +9201,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "12491550",
@@ -11672,14 +9227,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13485355",
@@ -11705,14 +9253,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2047737",
@@ -11738,14 +9279,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1069827",
@@ -11771,14 +9305,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9364729",
@@ -11789,7 +9316,7 @@ var books = [
     "ISBN": "=\"0321584104\"",
     "ISBN13": "=\"9780321584106\"",
     "My Rating": "5",
-    "Average Rating": "4.34",
+    "Average Rating": "4.35",
     "Publisher": "Addison-Wesley Professional",
     "Binding": "Paperback",
     "Number of Pages": "413",
@@ -11804,14 +9331,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "11172642",
@@ -11837,14 +9357,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "9856964",
@@ -11870,14 +9383,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "10198539",
@@ -11903,14 +9409,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "52084",
@@ -11936,14 +9435,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "13629",
@@ -11969,14 +9461,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "6713575",
@@ -12002,14 +9487,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "4099",
@@ -12035,14 +9513,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7003902",
@@ -12068,14 +9539,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "428594",
@@ -12101,14 +9565,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "1898432",
@@ -12134,14 +9591,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "6636216",
@@ -12152,7 +9602,7 @@ var books = [
     "ISBN": "=\"0596800673\"",
     "ISBN13": "=\"9780596800673\"",
     "My Rating": "3",
-    "Average Rating": "3.45",
+    "Average Rating": "3.46",
     "Publisher": "O'Reilly Media",
     "Binding": "Paperback",
     "Number of Pages": "284",
@@ -12167,14 +9617,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "7183279",
@@ -12185,7 +9628,7 @@ var books = [
     "ISBN": "=\"1934356476\"",
     "ISBN13": "=\"9781934356470\"",
     "My Rating": "4",
-    "Average Rating": "4.29",
+    "Average Rating": "4.30",
     "Publisher": "Pragmatic Bookshelf",
     "Binding": "Paperback",
     "Number of Pages": "296",
@@ -12200,14 +9643,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   },
   {
     "Book Id": "2485075",
@@ -12233,14 +9669,7 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "1",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "unspecified",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "1"
   },
   {
     "Book Id": "2998152",
@@ -12266,13 +9695,6 @@ var books = [
     "Spoiler": "",
     "Private Notes": "",
     "Read Count": "1",
-    "Recommended For": "",
-    "Recommended By": "",
-    "Owned Copies": "0",
-    "Original Purchase Date": "",
-    "Original Purchase Location": "",
-    "Condition": "",
-    "Condition Description": "",
-    "BCID": ""
+    "Owned Copies": "0"
   }
 ]
