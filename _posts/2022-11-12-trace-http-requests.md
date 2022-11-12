@@ -13,13 +13,13 @@ the link and it took him to a Grafana Dashboard.
 
 He stared at the red heart icon for a few seconds, there was a high
 failure rate on one of the microservices. For a second, he was tempted
-to update the error threshold, so he can get back to
+to update the error threshold, so he could get back to
 sleep. Grudgingly, he opened the Graylog and looked at the logs, and
 noticed 401 responses. He dug around the logs for more information but
 found nothing useful.
 
 He connected to the production VPN and entered one of the k8s pods
-using kubectl exec. He wanted to look at the raw HTTP request, but he
+using kubectl exec. He wanted to look at the raw HTTP requests, but he
 didn't remember the port number the server was listening to.
 
 ```text
@@ -96,7 +96,7 @@ Connection: close
 
 `tcpflow` can analyze the data transmitted via tcp sockets. It can
 look at any live tcp socket and show the back and forth
-communication. You might think, this sounds very similar to `tcpdump`,
+communications. You might think, this sounds very similar to `tcpdump`,
 it is, with one twist, it understands the HTTP protocol and shows the
 HTTP request and response in a meaningful way. The flag -c sends all
 the output to stdout, without that, multiple files will be created
