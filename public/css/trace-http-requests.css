@@ -1,0 +1,5 @@
+pre.highlight {
+    font-size: .6rem;
+    white-space: pre;
+    overflow-x: auto;
+}
