@@ -337,7 +337,7 @@ called. During this phase, `lazy_votes_count` will get called three
 times. The batch-loader does not go ahead and fetch the data, instead,
 it just keeps track of the value passed to the `for` method and
 returns a lazy object. In the second phase, the plain JSON hash will
-be converted string. During this phase, some methods will be get
+be converted to string. During this phase, some methods will be get
 called on the lazy object, which will trigger the batch load. Since
 the batch loader has collected three ids so far, it will call the
 callback once with three ids.
@@ -372,7 +372,7 @@ the subject[^1]. In fact, the batch-loader is inspired by the
 [Haxl](https://github.com/facebook/Haxl) implementation. batch-loader provides a good abstraction,
 but it is still awkward to integrate it with ActiveModelSerializer. I
 initially tried to use it with [Blueprinter](https://github.com/procore/blueprinter), but it didn't work
-because Blueprinter forces the value [right away](https://github.com/procore/blueprinter/blob/master/lib/blueprinter/extractors/auto_extractor.rb#L15). The way the
+because Blueprinter forces the value [right away](https://github.com/procore/blueprinter/blob/60b8f94616e18aa0346fa3c697b9e30c66c4ec8c/lib/blueprinter/extractors/auto_extractor.rb#L15). The way the
 second attempt works might be entirely accidental, it is quite
 possible some future changes on ActiveModelSerializer might break it.
 
