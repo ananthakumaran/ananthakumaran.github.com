@@ -1,0 +1,8 @@
+pre {
+    font-size: 0.7rem;
+    overflow-x: auto;
+}
+
+pre.small {
+    font-size: 0.5rem;
+}
