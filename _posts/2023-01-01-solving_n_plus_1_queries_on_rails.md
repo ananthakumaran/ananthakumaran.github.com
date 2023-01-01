@@ -112,7 +112,7 @@ diagram captures the sequence of the queries. I am hoping the diagram
 also hints at the obvious solution: **breadth-first** loading. The
 ideal solution requires us to load the data in a breadth-first
 approach, but unfortunately, this is harder to write because it does
-compose well. I will talk more about this in the next section, you
+not compose well. I will talk more about this in the next section, you
 will notice the code becomes more complicated as we optimize the
 queries.
 
