@@ -388,4 +388,4 @@ phase.
 
 <link rel="stylesheet" href="/public/css/n_plus_1.css"/>
 
-[^1]: There is no Fork: an Abstraction for Efficient, Concurrent, and Concise Data Access
+[^1]: [There is no Fork](https://simonmar.github.io/bib/papers/haxl-icfp14.pdf): an Abstraction for Efficient, Concurrent, and Concise Data Access
