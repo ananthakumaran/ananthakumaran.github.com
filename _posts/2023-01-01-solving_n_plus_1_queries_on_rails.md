@@ -376,7 +376,7 @@ because Blueprinter forces the value [right away](https://github.com/procore/blu
 second attempt works might be entirely accidental, it is quite
 possible some future changes on ActiveModelSerializer might break it.
 
-I keep remembering [what color is your function](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/) when thinking of a
+I kept remembering [what color is your function](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/) when thinking of a
 solution. The ideal solution would be something that clearly separates
 the two parts of the problem. One set of methods that defines the data
 load part and another set of methods that handles the serialization
