@@ -26,7 +26,7 @@ function fetch(books) {
 
         fs.writeFileSync(`books/${id}.html`, body);
         var $ = cheerio.load(body);
-        var cover = $(".bookCoverPrimary a img").attr("src");
+        var cover = $(".BookPage__bookCover img").attr("src");
         request(cover).pipe(fs.createWriteStream(`public/covers/${id}.jpg`));
         fetch(rest);
       }
