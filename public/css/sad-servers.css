@@ -1,0 +1,68 @@
+/* total width */
+.sad-servers pre::-webkit-scrollbar {
+    background-color: #fdf6e3;
+    width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+.sad-servers pre::-webkit-scrollbar-track {
+    background-color: #fdf6e3;
+}
+
+/* scrollbar itself */
+.sad-servers pre::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 4px solid #fdf6e3;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.sad-servers pre::-webkit-scrollbar-button {
+    display:none;
+}
+
+.sad-servers pre {
+    font-size: 0.6rem;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.sad-servers pre.highlight {
+    padding: 0 5px;
+}
+
+.sad-servers .highlight {
+    margin-bottom: 0;
+}
+
+.sad-servers span.prompt {
+    font-size: 0.6rem;
+    color: #cb4b16;
+    font-weight: bold;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.sad-servers code.command {
+    font-size: 0.6rem;
+    color: #2aa198;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    border-radius: 0;
+}
+
+.sad-servers code.command::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.sad-servers .post-content p:has(span) {
+    margin-bottom: 0;
+    background: #fdf6e3;
+    padding: 0 5px;
+}
+
+.sad-servers .post-content p:has(code.command) {
+    line-height: 14px;
+}
