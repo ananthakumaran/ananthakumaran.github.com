@@ -17,7 +17,13 @@ function fetch(books) {
     fetch(rest);
   } else {
     request.get(
-      `http://www.goodreads.com/book/show/${id}`,
+      `https://www.goodreads.com/book/show/${id}`,
+      {
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        },
+      },
       (err, response, body) => {
         if (err) {
           console.log(err);
@@ -29,7 +35,7 @@ function fetch(books) {
         var cover = $(".BookPage__bookCover img").attr("src");
         request(cover).pipe(fs.createWriteStream(`public/covers/${id}.jpg`));
         fetch(rest);
-      }
+      },
     );
   }
 }
