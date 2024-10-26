@@ -1,0 +1,33 @@
+@media (min-width: 38em) {
+    .full-width {
+        left: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        max-width: 100vw;
+        position: relative;
+        right: 50%;
+        width: 100vw;
+        padding-left: calc((100vw - 1210px) / 2);
+        padding-right: calc((100vw - 1210px) / 2);
+    }
+}
+
+.full-width {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+}
+
+.full-width iframe {
+    border: none;
+    width: 1210px;
+    height: 2150px;
+}
+
+pre.highlight {
+    font-size: 0.7rem;
+}
+
+.language-text pre.highlight {
+    font-size: .5rem;
+}
