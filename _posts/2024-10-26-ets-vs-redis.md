@@ -51,14 +51,16 @@ Copy the `out.stacks` file to your local machine and use
 
 ### Hypothesis
 
-The percentage of Elixir stack is so small it didn't even show up
-anywhere unless one starts to zoom in. There were a lot of `[unknown]`
-stacks as well, which I haven’t yet figured out how to fix. Playing
-around with the flamegraph for a bit, I noticed the `binary_to_term_1`
-with **3.02%** usage and another place with exactly the same children,
-just with the name `binary_to_term_1` missing. The total usage added
-to **31.87%**. I assumed both were the same and started to look into our
-codebase for `binary_to_term` usage.
+The percentage of the Elixir stack was so small it didn’t even show up
+anywhere unless one started to zoom in. There were a lot of
+`[unknown]` stacks as well, which I have’t yet figured out how to
+fix. Playing around with the flamegraph for a bit, I noticed the
+`binary_to_term_1` with **3.02%** usage and another place with exactly
+the same children, just with the name `binary_to_term_1` missing. The
+total usage added up to **31.87%**. I assumed both were the same and
+started to look into our codebase for `binary_to_term` usage.
+
+
 
 ```text
 $global::call_light_bif_shared > binary_to_term_1 > [beam.smp] > [beam.smp] > erts_atom_put > erts_atom_put_index
