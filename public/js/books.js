@@ -35,7 +35,7 @@ read = _.sortBy(
       bookshelves: book["Bookshelves"].split(", "),
     };
   }),
-  "read"
+  "read",
 );
 
 var shelves = _.chain(read)
@@ -124,7 +124,7 @@ function layout(read, y) {
         .forceX(function (d) {
           return d.x;
         })
-        .strength(1)
+        .strength(1),
     )
     .force(
       "y",
@@ -132,7 +132,7 @@ function layout(read, y) {
         .forceY(function (d) {
           return d.y;
         })
-        .strength(0.01)
+        .strength(0.01),
     )
     .force(
       "collide",
@@ -141,7 +141,7 @@ function layout(read, y) {
           return d.height / 2;
         })
         .strength(0.9)
-        .iterations(5)
+        .iterations(5),
     )
     .stop();
 
@@ -162,7 +162,7 @@ function timeline() {
   var margin = { top: 20, right: 0, bottom: 50, left: 80 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.left -
     margin.right;
@@ -315,11 +315,11 @@ function timelineSmall(id, range) {
   var margin = { top: 0, right: 10, bottom: 20, left: 10 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
-  var height = 60;
+  var height = 70;
   var svg = d3
     .select(node)
     .attr("width", width + margin.left + margin.right)
@@ -341,7 +341,7 @@ function timelineSmall(id, range) {
         .forceX(function (d) {
           return x(d.read);
         })
-        .strength(1)
+        .strength(1),
     )
     .force("y", d3.forceY(height / 2))
     .force("collide", d3.forceCollide(3))
@@ -361,12 +361,12 @@ function timelineSmall(id, range) {
             _.range(domain[0].year(), domain[1].year() + 1),
             function (year) {
               return moment(year, "YYYY");
-            }
-          )
+            },
+          ),
         )
         .tickFormat(function (x) {
           return moment(x).format("YYYY");
-        })
+        }),
     );
 
   var cell = svg
@@ -386,7 +386,7 @@ function timelineSmall(id, range) {
         .y(function (d) {
           return d.y;
         })
-        .polygons(readInRange)
+        .polygons(readInRange),
     )
     .enter()
     .append("g");
@@ -424,7 +424,7 @@ function distribution() {
   var margin = { top: 20, right: 10, bottom: 30, left: 20 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -492,7 +492,7 @@ function timelinePublications(id, height, domain) {
   var margin = { top: 0, right: 20, bottom: 20, left: 20 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -520,7 +520,7 @@ function timelinePublications(id, height, domain) {
         .forceX(function (d) {
           return x(d.published);
         })
-        .strength(1)
+        .strength(1),
     )
     .force("y", d3.forceY(height / 2))
     .force("collide", d3.forceCollide(3))
@@ -535,7 +535,7 @@ function timelinePublications(id, height, domain) {
     .call(
       d3.axisBottom(x).tickFormat(function (x) {
         return moment(x).format("YYYY");
-      })
+      }),
     );
 
   var polygons = d3
@@ -593,7 +593,7 @@ function pageCount() {
   var margin = { top: 20, right: 20, bottom: 30, left: 10 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -619,7 +619,7 @@ function pageCount() {
         .forceX(function (d) {
           return x(d.pageCount);
         })
-        .strength(1)
+        .strength(1),
     )
     .force("y", d3.forceY(height / 2))
     .force("collide", d3.forceCollide(3))
@@ -650,7 +650,7 @@ function pageCount() {
         .y(function (d) {
           return d.y;
         })
-        .polygons(readWithCount)
+        .polygons(readWithCount),
     )
     .enter()
     .append("g");
@@ -682,7 +682,7 @@ function pagePerYear() {
   var margin = { top: 20, right: 20, bottom: 30, left: 40 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -700,7 +700,7 @@ function pagePerYear() {
     }),
     function (l) {
       return _.reduce(_.map(l, "pageCount"), add, 0);
-    }
+    },
   );
 
   var x = d3
@@ -753,7 +753,7 @@ function bookPerYear() {
   var margin = { top: 20, right: 20, bottom: 30, left: 40 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -771,7 +771,7 @@ function bookPerYear() {
     }),
     function (l) {
       return l.length;
-    }
+    },
   );
 
   var x = d3
@@ -840,7 +840,7 @@ function bookPerYear() {
 function covers(id, list) {
   var node = document.getElementById(id);
   var width = parseInt(
-    window.getComputedStyle(node.parentNode).getPropertyValue("width")
+    window.getComputedStyle(node.parentNode).getPropertyValue("width"),
   );
   var container = d3.select(node);
   var data = _.chain(list)
@@ -945,7 +945,7 @@ function bookPerShelf() {
   var margin = { top: 20, right: 20, bottom: 30, left: 120 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -1038,7 +1038,7 @@ function timelineShelf(id, range) {
   var margin = { top: 5, right: 15, bottom: 20, left: 15 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -1106,7 +1106,7 @@ function timelineShelf(id, range) {
     .tickValues(
       _.map(_.range(range[0].year(), range[1].year() + 1), function (year) {
         return moment(year, "YYYY");
-      })
+      }),
     )
     .tickFormat(function (x) {
       return moment(x).format("YYYY");
@@ -1169,7 +1169,7 @@ function authors() {
   var margin = { top: 30, right: 20, bottom: 30, left: 20 };
   var width =
     parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width")
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
@@ -1197,14 +1197,14 @@ function authors() {
         .forceX(function (d) {
           return x(d[1].length);
         })
-        .strength(1)
+        .strength(1),
     )
     .force("y", d3.forceY(height / 2))
     .force(
       "collide",
       d3.forceCollide().radius(function (d) {
         return radius(d[1].length) + 1;
-      })
+      }),
     )
     .stop();
 
@@ -1224,7 +1224,7 @@ function authors() {
     .call(
       d3.axisTop(x).tickFormat(function (x) {
         return count[x] ? count[x].length : 0;
-      })
+      }),
     );
 
   var cell = svg
@@ -1244,7 +1244,7 @@ function authors() {
         .y(function (d) {
           return d.y;
         })
-        .polygons(data)
+        .polygons(data),
     )
     .enter()
     .append("g");
@@ -1280,8 +1280,8 @@ function authors() {
 var nextYear = (new Date().getFullYear() + 1).toString();
 
 timeline();
-timelineSmall("timeline-small-1", [year("2009"), year("2015")]);
-timelineSmall("timeline-small-2", [year("2015"), year(nextYear)]);
+timelineSmall("timeline-small-1", [year("2009"), year("2017")]);
+timelineSmall("timeline-small-2", [year("2017"), year(nextYear)]);
 distribution();
 var breakAt = year("1970");
 timelinePublications("timeline-publication-too-old", 30, [
@@ -1301,6 +1301,6 @@ pagePerYear();
 bookPerYear();
 authors();
 bookPerShelf();
-timelineShelf("timeline-shelf-1", [year("2009"), year("2015")]);
-timelineShelf("timeline-shelf-2", [year("2015"), year(nextYear)]);
+timelineShelf("timeline-shelf-1", [year("2009"), year("2017")]);
+timelineShelf("timeline-shelf-2", [year("2017"), year(nextYear)]);
 tags();

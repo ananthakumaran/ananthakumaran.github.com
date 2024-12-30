@@ -128,7 +128,8 @@
 
 .books #book-per-year .count, .books #book-per-shelf .count {
     text-anchor: end;
-    font-size: 10px;
+    font-size: 8px;
+    font-weight: bold;
     fill: white;
     font-family: sans-serif;
 }
