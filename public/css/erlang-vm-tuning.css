@@ -1,0 +1,16 @@
+.erlang-vm-tuning pre {
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.erlang-vm-tuning pre.small {
+    font-size: 0.6rem;
+    padding: 5px;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.erlang-vm-tuning .bold {
+    font-weight: bold;
+    color: #cb4b16;
+}
