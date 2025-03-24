@@ -1,3 +1,8 @@
 .hybrid-query-engine .language-text pre.highlight {
     font-size: .5rem;
 }
+
+pre.highlight {
+    white-space: pre;
+    overflow-x: auto;
+}
