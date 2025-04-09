@@ -1074,11 +1074,11 @@ function timelineShelf(id, range) {
         })
         .map(function (b) {
           var shelves = _.without(b.bookshelves, "", "own");
-          if (shelves.length > 1) {
-            return _.without(shelves, "non-fiction", "fiction", "programming");
-          } else {
-            return shelves;
+          var generic = ["non-fiction", "fiction", "programming"];
+          while (generic.length > 0 && shelves.length > 1) {
+            shelves = _.without(shelves, generic.shift());
           }
+          return shelves;
         })
         .flatten()
         .groupBy()
