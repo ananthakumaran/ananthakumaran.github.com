@@ -4,5 +4,4 @@ _site/
 node_modules
 books/
 .DS_Store
-_drafts
 .jekyll-metadata
