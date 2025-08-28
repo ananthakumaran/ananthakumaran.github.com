@@ -21,6 +21,8 @@ title: Resume
   <div class="right-column">
     <p>Working as a Principal Software Engineer for <a target="_blank" href="https://www.userflow.com">Userflow</a>.</p>
     <ul>
+      <li>Led the migration from a single PostgreSQL instance to a sharded multi-instance architecture, and later to a multi-region setup to comply with GDPR regulations. Designed and implemented the control plane and data plane model to support this transition, where the control plane is replicated across all regions while the data plane remains region-specific.
+</li>
       <li>set up and maintain a self-hosted ClickHouse cluster and migrated over 6TB of data from PostgreSQL.</li>
       <li><a href="https://ananthakumaran.in/2024/10/26/ets-vs-redis.html" target="_blank">optimized<a/> <a href="https://ananthakumaran.in/2025/01/04/erlang-vm-tuning.html" target="_blank">infrastructure</a> to reduce costs by over $16K per month.</li>
       <li>redesigned the segmentation engine to leverage ClickHouse, enabling segment queries to be converted into a logical plan executable in ClickHouse, PostgreSQL, or a hybrid approach. This <a href="https://ananthakumaran.in/2025/03/18/hybrid-query-engine.html" target="_blank">optimization</a> allowed real-time queries by using PostgreSQL for recent data (last 1 day) and ClickHouse for historical data, reducing the need to store historical data in PostgreSQL.</li>
