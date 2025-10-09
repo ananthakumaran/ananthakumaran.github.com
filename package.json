@@ -20,6 +20,7 @@
     "bluebird": "^3.5.0",
     "cheerio": "^0.22.0",
     "google-books-search": "^0.3.1",
+    "playwright": "1.52",
     "request": "^2.83.0"
   }
 }

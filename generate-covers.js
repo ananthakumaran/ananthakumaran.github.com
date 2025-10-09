@@ -1,43 +1,62 @@
-const Promise = require("bluebird");
-const cheerio = require("cheerio");
 const fs = require("fs");
-const request = require("request");
-var books = require("./books.json");
+const path = require("path");
+const { chromium } = require("playwright");
+const books = require("./books.json");
 
-function fetch(books) {
+async function fetch(books, browser) {
   if (books.length === 0) {
+    await browser.close();
     return;
   }
 
-  var [book, ...rest] = books;
-  var id = book["Book Id"];
-  console.log("fetching...", id, book["Title"]);
-  if (fs.existsSync(`public/covers/${id}.jpg`)) {
-    console.log("skipping");
-    fetch(rest);
-  } else {
-    request.get(
-      `https://www.goodreads.com/book/show/${id}`,
-      {
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        },
-      },
-      (err, response, body) => {
-        if (err) {
-          console.log(err);
-          return;
-        }
+  const [book, ...rest] = books;
+  const id = book["Book Id"];
+  const title = book["Title"];
 
-        fs.writeFileSync(`books/${id}.html`, body);
-        var $ = cheerio.load(body);
-        var cover = $(".BookPage__bookCover img").attr("src");
-        request(cover).pipe(fs.createWriteStream(`public/covers/${id}.jpg`));
-        fetch(rest);
-      },
-    );
+  const coverPath = path.join("public", "covers", `${id}.jpg`);
+  const htmlPath = path.join("books", `${id}.html`);
+  // const pngPath = path.join("books", `${id}.png`);
+
+  if (fs.existsSync(coverPath)) {
+    await fetch(rest, browser);
+  } else {
+    console.log("fetching...", id, title);
+    const page = await browser.newPage();
+    await page.setExtraHTTPHeaders({
+      "User-Agent":
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    });
+    try {
+      await page.goto(`https://www.goodreads.com/book/show/${id}`, {
+        waitUntil: "domcontentloaded",
+        timeout: 60000,
+      });
+
+      const body = await page.content();
+      fs.writeFileSync(htmlPath, body);
+
+      await page.waitForSelector(".BookCover__image img", { timeout: 30000 });
+      // await page.screenshot({ path: pngPath, fullPage: true });
+      const cover = await page.$(".BookCover__image img");
+      if (cover) {
+        const coverUrl = await cover.getAttribute("src");
+        const response = await page.request.get(coverUrl);
+        const buffer = await response.body();
+        fs.writeFileSync(coverPath, buffer);
+        console.log("saved cover:", id);
+      } else {
+        console.log("no cover found:", id);
+      }
+    } catch (err) {
+      console.error("error fetching:", id, err.message);
+    } finally {
+      await page.close();
+      await fetch(rest, browser);
+    }
   }
 }
 
-fetch(books);
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  await fetch(books, browser);
+})();
