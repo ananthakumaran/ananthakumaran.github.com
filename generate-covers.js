@@ -14,7 +14,6 @@ async function fetch(books, browser) {
   const title = book["Title"];
 
   const coverPath = path.join("public", "covers", `${id}.jpg`);
-  const htmlPath = path.join("books", `${id}.html`);
   // const pngPath = path.join("books", `${id}.png`);
 
   if (fs.existsSync(coverPath)) {
@@ -31,9 +30,6 @@ async function fetch(books, browser) {
         waitUntil: "domcontentloaded",
         timeout: 60000,
       });
-
-      const body = await page.content();
-      fs.writeFileSync(htmlPath, body);
 
       await page.waitForSelector(".BookCover__image img", { timeout: 30000 });
       // await page.screenshot({ path: pngPath, fullPage: true });
