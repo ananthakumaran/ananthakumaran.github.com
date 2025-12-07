@@ -910,31 +910,41 @@ function covers(id, list) {
 function tags() {
   var node = document.getElementById("tags");
 
-  var filter = function (shelf) {
-    var books = read;
-    if (shelf !== "all") {
-      books = _.filter(read, function (book) {
-        return _.includes(book.bookshelves, shelf);
-      });
-    }
-    return books;
-  };
+  var allTags = [];
+  allTags.push({name: 'all', tag: 'all', books: read});
+  for (var s of shelves) {
+    allTags.push({name: s, tag: 'shelf', books: read.filter(b => _.includes(b.bookshelves, s))});
+  }
+
+  _.chain(read)
+    .groupBy(b => b.read.year())
+    .each((books, year) => allTags.push({name: year.toString(), books, tag: 'year'}))
+    .value()
+
+  _.chain(read)
+    .groupBy(b => b.author)
+    .each((books, author) => {
+      if (books.length > 2) {
+        allTags.push({name: author, books, tag: 'author'});
+      }
+    })
+    .value()
+
 
   d3.select(node)
     .selectAll(".tag")
-    .data(_.concat(["all"], shelves))
+    .data(allTags)
     .enter()
     .append("a")
-    .attr("class", "tag")
+    .attr("class", d => "tag " + d.tag)
     .on("click", function (d) {
       d3.select(node).selectAll(".tag").classed("active", false);
       d3.select(this).classed("active", true);
-      document.getElementById("selected-tag").innerHTML = d;
 
-      covers("covers", filter(d));
+      covers("covers", d.books);
     })
     .html(function (d) {
-      return d + ' <span class="tag-count">' + filter(d).length + "<span>";
+      return d.name + ' <span class="tag-count">' + d.books.length + "<span>";
     });
 
   d3.select(node).selectAll(".tag").filter(":first-child").dispatch("click");

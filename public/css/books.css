@@ -182,8 +182,6 @@
 }
 
 .books a.tag {
-    color: #d28445;
-    border: 1px solid #d28445;
     font-size: .7rem;
     margin: 8px 5px 0 0;
     padding: 2px 5px;
@@ -192,15 +190,48 @@
     display: inline-block;
 }
 
-.books a.tag.active {
-    background: #d28445;
+.books a.tag.author {
+    color: oklch(53.2% 0.157 131.589);
+    border: 1px solid oklch(53.2% 0.157 131.589);
+}
+
+.books a.tag.author.active {
+    background: oklch(53.2% 0.157 131.589);
     color: white;
 }
 
-#selected-tag {
-    color: #d28445;
+.books a.tag.shelf {
+    color: oklch(54.1% 0.281 293.009);
+    border: 1px solid oklch(54.1% 0.281 293.009);
+}
+
+.books a.tag.shelf.active {
+    background: oklch(54.1% 0.281 293.009);
+    color: white;
+}
+
+
+.books a.tag.year {
+    color: oklch(66.6% 0.179 58.318);
+    border: 1px solid oklch(66.6% 0.179 58.318);
+}
+
+.books a.tag.year.active {
+    background: oklch(66.6% 0.179 58.318);
+    color: white;
+}
+
+.books a.tag.all {
+    color: oklch(50% 0.134 242.749);
+    border: 1px solid oklch(50% 0.134 242.749);
+}
+
+.books a.tag.all.active {
+    background: oklch(50% 0.134 242.749);
+    color: white;
 }
 
 .books .tag-count {
     font-size: .5rem;
+    font-weight: bold;
 }
