@@ -27,7 +27,7 @@ read = _.sortBy(
       added: added,
       started: started,
       read: read,
-      published: year(book["Original Publication Year"]),
+      published: year(book["Original Publication Year"] || book["Year Published"]),
       rating: parseInt(book["My Rating"]),
       averageRating: parseFloat(book["Average Rating"]),
       author: book["Author"],
@@ -909,45 +909,72 @@ function covers(id, list) {
 
 function tags() {
   var node = document.getElementById("tags");
-
+  var selectNode = document.getElementById("filter-select");
   var allTags = [];
-  allTags.push({name: 'all', tag: 'all', books: read});
+  allTags.push({name: 'all', tag: 'None', books: read});
   for (var s of shelves) {
-    allTags.push({name: s, tag: 'shelf', books: read.filter(b => _.includes(b.bookshelves, s))});
+    allTags.push({name: s, tag: 'Shelf', books: read.filter(b => _.includes(b.bookshelves, s))});
   }
 
   _.chain(read)
     .groupBy(b => b.read.year())
-    .each((books, year) => allTags.push({name: year.toString(), books, tag: 'year'}))
+    .each((books, year) => allTags.push({name: year.toString(), books, tag: 'Read Year'}))
     .value()
 
   _.chain(read)
     .groupBy(b => b.author)
     .each((books, author) => {
       if (books.length > 2) {
-        allTags.push({name: author, books, tag: 'author'});
+        allTags.push({name: author, books, tag: 'Author'});
       }
     })
     .value()
 
-
-  d3.select(node)
-    .selectAll(".tag")
-    .data(allTags)
-    .enter()
-    .append("a")
-    .attr("class", d => "tag " + d.tag)
-    .on("click", function (d) {
-      d3.select(node).selectAll(".tag").classed("active", false);
-      d3.select(this).classed("active", true);
-
-      covers("covers", d.books);
+  _.chain(read)
+    .filter(b => b.published.isValid())
+    .groupBy(b => `${Math.floor(b.published.year() / 10) * 10}s`)
+    .each((books, decade) => {
+      allTags.push({name: decade, books, tag: 'Published Decade'});
     })
-    .html(function (d) {
-      return d.name + ' <span class="tag-count">' + d.books.length + "<span>";
+    .value()
+
+
+  d3.select(selectNode)
+    .selectAll("option")
+    .data(_.uniq(_.map(allTags, d => d.tag)))
+    .enter()
+    .append("option")
+    .attr("value", d => d)
+    .text(d => d);
+
+  d3.select(selectNode)
+    .on('change', function(event) {
+      const selected = d3.select(this).property("value");
+      const selection = d3.select(node)
+            .selectAll(".tag")
+            .data(_.chain(allTags).filter(d => d.tag == selected).sortBy(d => d.name).value());
+
+      selection.exit().remove();
+
+      selection
+        .enter()
+        .append("a")
+        .attr("class", "tag")
+        .on("click", function (d) {
+          d3.select(node).selectAll(".tag").classed("active", false);
+          d3.select(this).classed("active", true);
+          covers("covers", d.books);
+        })
+        .merge(selection)
+        .html(function (d) {
+          return d.name + ' <span class="tag-count">' + d.books.length + "<span>";
+        });
+
+        d3.select(node).selectAll(".tag").filter(":last-child").dispatch("click");
     });
 
-  d3.select(node).selectAll(".tag").filter(":first-child").dispatch("click");
+  selectNode.value = 'None';
+  selectNode.dispatchEvent(new Event('change'));
 }
 
 function bookPerShelf() {
