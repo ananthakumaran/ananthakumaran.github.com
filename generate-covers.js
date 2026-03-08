@@ -53,6 +53,7 @@ async function fetch(books, browser) {
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  // ls $PLAYWRIGHT_BROWSERS_PATH
+  const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_BROWSERS_PATH + '/chromium_headless_shell-1194/chrome-linux/headless_shell' });
   await fetch(books, browser);
 })();
