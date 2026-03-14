@@ -74,7 +74,7 @@ metric in this context.
 Given that clicks can never be greater than impressions, we can place
 the bars directly on top of each other. The impressions bar forms the
 full height, and the clicks bar sits within it because it is always
-smaller.
+smaller.[^1]
 
 This layout retains all the advantages of the grouped bar chart. You
 can still compare **impressions across days** and **clicks across
@@ -128,3 +128,5 @@ without losing the ability to compare the two metrics.
 
 <link rel="stylesheet" href="/public/css/overlay-bar-chart.css"/>
 <script src="/public/js/overlay-bar-chart.js"></script>
+
+[^1]: <small>In rare cases the two values may be equal. When this happens, the clicks bar completely overlaps the impressions bar and is not visible. However, the equality can still be inferred because clicks cannot exceed impressions, so a fully filled bar implies both values are the same.<small>
