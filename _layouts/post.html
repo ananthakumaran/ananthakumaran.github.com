@@ -47,5 +47,7 @@ layout: default
      </div>
    {% endif %}
 
-  {% include comments.html %}
+  {% if jekyll.environment == "production" %}
+    {% include comments.html %}
+  {% endif %}
 </div>
