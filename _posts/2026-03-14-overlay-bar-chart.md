@@ -3,6 +3,7 @@ layout: post
 title: Overlay Bar Chart
 plot: true
 date: 2026-03-14 11:04 +0530
+tags: visualization barchart
 ---
 In this post, I will discuss the **overlay bar chart**. There is
 plenty of material on **stacked** and **grouped** bar charts, but
