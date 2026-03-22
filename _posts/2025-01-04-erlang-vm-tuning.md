@@ -78,7 +78,7 @@ A typical session would look like this:
 can be queried in various ways. Below is a sample result from
 `:lcnt.conflicts()`, where the data is grouped by lock class.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.conflicts()</b>
 
                        lock    id    #tries  #collisions  collisions [%]  time [us]  duration [%]
@@ -103,7 +103,7 @@ can be queried in various ways. Below is a sample result from
 
 You can choose not to group by class and instead sort by per lock **id**. This provides a clearer view of which specific locks are consuming more time.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.conflicts(combine: false, print: [:name, :id, :tries, :ratio, :time, :duration])</b>
 
            lock                       id  #tries  collisions [%]  time [us]  duration [%]
@@ -133,7 +133,7 @@ You can choose not to group by class and instead sort by per lock **id**. This p
 `:lcnt.information()` displays aggregate-level information at the VM
 level. Below is a sample response from a different machine.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.information()</b>
 
 information:
@@ -153,7 +153,7 @@ I started with `alcu_allocator` because it was one of the two locks
 with the most contention. The `:lcnt.inspect/1` function could be used
 to inspect a specific lock class.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.inspect(:alcu_allocator)</b>
 
            lock            id  #tries  #collisions  collisions [%]  time [us]  duration [%] histogram [log2(us)]
@@ -175,7 +175,7 @@ The issue seemed to be related to one specific lock. The `{class, id}`
 format could be used to inspect a specific lock, and with the location
 flag set, it prints the exact source location of the lock as well.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.inspect({:alcu_allocator, :eheap_alloc}, locations: true, combine: true)</b>
 
                      location  #tries  #collisions  collisions [%]  time [us]  duration [%] histogram [log2(us)]
@@ -200,7 +200,7 @@ contention arises due to GC activity on the dirty scheduler. The
 results from [msacc](https://www.erlang.org/doc/apps/runtime_tools/msacc.html) also indicated that a significant amount of CPU
 time is being spent on garbage collection on the dirty schedulers.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :msacc.start(1000);:msacc.print()</b>
 
 Average thread real-time    :  1000961 us
@@ -284,7 +284,7 @@ Once the fix for the memory allocator was implemented, the
 of `db_hash_slot` started to increase. The issue with locks is that
 when one bottleneck is removed, the next one takes its place.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.conflicts()</b>
 
                        lock    id    #tries  #collisions  collisions [%]  time [us]  duration [%]
@@ -316,7 +316,7 @@ relied on a single [ets](https://www.erlang.org/doc/apps/stdlib/ets.html) table.
 read and write operations, it became a bottleneck under high load.
 
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.inspect(:db_hash_slot)</b>
 
          lock                      id  #tries  #collisions  collisions [%]  time [us]  duration [%] histogram [log2(us)]
@@ -350,7 +350,7 @@ scheduler. Once we switched to the [peep](https://github.com/rkallos/peep) libra
 `db_hash_slot` no longer appeared as the top bottleneck.
 
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <b>iex> :lcnt.conflicts()</b>
 
               lock   id    #tries  #collisions  collisions [%]  time [us]  duration [%]

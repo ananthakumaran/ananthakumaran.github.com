@@ -6,3 +6,9 @@ pre {
 pre.small {
     font-size: 0.5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    img {
+        mix-blend-mode: difference;
+    }
+}

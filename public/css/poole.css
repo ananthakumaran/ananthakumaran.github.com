@@ -428,3 +428,31 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #dee2e6;
+        background-color: #343a40;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong {
+        color: #fff;
+    }
+
+    a {
+        color: #74c0fc;
+    }
+
+    a:hover {
+        color: #4dabf7;
+    }
+
+    hr, abbr[title], blockquote, table, th, .related, .pagination-item {
+        border-color: rgba(255,255,255,.15);
+    }
+
+    code, pre, .message, tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+        background-color: #212529;
+    }
+}

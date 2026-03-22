@@ -572,3 +572,57 @@ img.logo-background {
     opacity: 0.25;
     margin: -40px auto 0;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #dee2e6;
+        background-color: #343a40;
+    }
+
+    .sidebar-toggle {
+        color: #dee2e6;
+        background-color: #343a40;
+    }
+
+    .sidebar-toggle:before {
+        background-image: -webkit-linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
+        background-image:    -moz-linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
+        background-image:     -ms-linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
+        background-image:         linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
+    }
+
+    .sidebar-toggle:active,
+    #sidebar-checkbox:focus ~ .sidebar-toggle,
+    #sidebar-checkbox:checked ~ .sidebar-toggle {
+        color: #343a40;
+        background-color: #dee2e6;
+    }
+
+    .sidebar-toggle:active:before,
+    #sidebar-checkbox:focus ~ .sidebar-toggle:before,
+    #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+        background-image: -webkit-linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
+        background-image:    -moz-linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
+        background-image:     -ms-linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
+        background-image:         linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+    }
+
+    .page-title,
+    .post-title,
+    .post-title a {
+        color: #fff;
+    }
+
+    hr, abbr[title], blockquote, table, td, th, .related, .pagination-item, .masthead {
+        border-color: rgba(255,255,255,.15);
+    }
+
+    code, pre, .message, tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+        background-color: #212529;
+    }
+}

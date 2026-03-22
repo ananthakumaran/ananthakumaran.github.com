@@ -66,3 +66,28 @@
     font-size: .55rem;
     padding: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+    .hca-layout button.reset {
+        color: #dee2e6;
+        background: #343a40;
+        border: solid 1px #555;
+    }
+
+    .hca-layout button:hover {
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .hca-layout svg .axis text {
+        fill: #777;
+    }
+
+    .hca-layout svg .axis path.domain, .axis line {
+        stroke: #555;
+    }
+
+    .hca-layout svg .axis .tick line {
+        stroke: #555;
+    }
+}

@@ -212,3 +212,49 @@
     font-family: sans-serif;
     color: #515151;
 }
+
+@media (prefers-color-scheme: dark) {
+    .books .card {
+        background-color: #343a40;
+    }
+
+    .books svg .axis text {
+        fill: #999;
+    }
+
+    .books svg .axis path.domain, .axis line {
+        stroke: #666;
+    }
+
+    .books svg .axis .tick line {
+        stroke: #555;
+    }
+
+    .books .timeline .axis .tick line {
+        stroke: #666;
+    }
+
+    .books .timeline line {
+        stroke: #555;
+    }
+
+    .books #book-per-year .count, .books #book-per-shelf .count {
+        fill: #000;
+    }
+
+    .books a.tag.active {
+        color: #000;
+    }
+
+    .books .tag-count {
+        color: #aaa;
+    }
+
+    .books .active .tag-count {
+        color: #333;
+    }
+
+    .books a.tag.active {
+        color: #000;
+    }
+}

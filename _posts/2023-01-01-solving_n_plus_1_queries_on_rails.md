@@ -57,23 +57,35 @@ end
 Let's hit the endpoint to see how the data is fetched from the database.
 
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 Started GET "/posts/latest" for 127.0.0.1 at 2023-01-01 13:05:42 +0530
 Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Post Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT ?</span>  [["LIMIT", 3]]
   &#8627; app/controllers/posts_controller.rb:11:in `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Comment Load (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?</span>  [["post_id", 3]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/controllers/posts_controller.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `latest'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/controllers/posts_controller.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Comment Load (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?</span>  [["post_id", 2]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/controllers/posts_controller.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `latest'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/controllers/posts_controller.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Comment Load (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?</span>  [["post_id", 1]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/controllers/posts_controller.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `latest'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/controllers/posts_controller.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Count (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = ?</span>  [["comment_id", 3]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">5</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">5</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `votes_count'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Count (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = ?</span>  [["comment_id", 1]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">5</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">5</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `votes_count'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Count (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = ?</span>  [["comment_id", 2]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">5</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">5</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `votes_count'
 [active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.2ms)
 Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 1.1ms | Allocations: 19123)
 
@@ -136,7 +148,7 @@ end
 
 This solves the comments loading problem.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 Started GET "/posts/latest" for 127.0.0.1 at 2023-01-01 13:07:34 +0530
 Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Post Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT ?</span>  [["LIMIT", 3]]
@@ -144,11 +156,17 @@ Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Comment Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "comments".* FROM "comments" WHERE "comments"."post_id" IN (?, ?, ?)</span>  [["post_id", 3], ["post_id", 2], ["post_id", 1]]
   &#8627; app/controllers/posts_controller.rb:11:in `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Count (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = ?</span>  [["comment_id", 3]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">5</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">5</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `votes_count'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Count (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = ?</span>  [["comment_id", 1]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">5</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">5</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `votes_count'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Count (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT COUNT(*) FROM "votes" WHERE "votes"."comment_id" = ?</span>  [["comment_id", 2]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">5</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/serializers/comment_serializer.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">5</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `votes_count'
 [active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.42ms)
 Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 1.0ms | Allocations: 16355)
 </pre>
@@ -181,7 +199,7 @@ class CommentSerializer < ActiveModel::Serializer
 end
 ```
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 Started GET "/posts/latest" for 127.0.0.1 at 2023-01-01 13:09:59 +0530
 Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Post Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT ?</span>  [["LIMIT", 3]]
@@ -257,7 +275,7 @@ def latest
 end
 ```
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 Started GET "/posts/latest" for 127.0.0.1 at 2023-01-01 13:28:49 +0530
 Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Post Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT ?</span>  [["LIMIT", 3]]
@@ -265,7 +283,9 @@ Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Comment Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "comments".* FROM "comments" WHERE "comments"."post_id" IN (?, ?, ?)</span>  [["post_id", 3], ["post_id", 2], ["post_id", 1]]
   &#8627; app/controllers/posts_controller.rb:11:in `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Pluck (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "votes"."comment_id", count(id) FROM "votes" WHERE "votes"."comment_id" IN (?, ?, ?) GROUP BY "votes"."comment_id"</span>  [["comment_id", 3], ["comment_id", 1], ["comment_id", 2]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `block in lazy_votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `block in lazy_votes_count'
 [active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.87ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 7451)
 </pre>
@@ -288,7 +308,7 @@ end
 Let's make the update and see what happens. To our surprise, the votes
 count reverts back to N + 1 queries.
 
-<pre class="small" style="color: #657b83; background-color: #fdf6e3;">
+<pre class="small" style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 Started GET "/posts/latest" for 127.0.0.1 at 2023-01-01 14:17:55 +0530
 Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Post Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT ?</span>  [["LIMIT", 3]]
@@ -296,11 +316,17 @@ Processing by PostsController#latest as */*
   <span style="color: #2aa198; font-weight: bold;">Comment Load (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "comments".* FROM "comments" WHERE "comments"."post_id" IN (?, ?, ?)</span>  [["post_id", 3], ["post_id", 2], ["post_id", 1]]
   &#8627; app/controllers/posts_controller.rb:11:in `latest'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Pluck (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "votes"."comment_id", count(id) FROM "votes" WHERE "votes"."comment_id" = ? GROUP BY "votes"."comment_id"</span>  [["comment_id", 3]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `block in lazy_votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `block in lazy_votes_count'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Pluck (0.1ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "votes"."comment_id", count(id) FROM "votes" WHERE "votes"."comment_id" = ? GROUP BY "votes"."comment_id"</span>  [["comment_id", 1]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `block in lazy_votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `block in lazy_votes_count'
 [active_model_serializers]   <span style="color: #2aa198; font-weight: bold;">Vote Pluck (0.0ms)</span>  <span style="color: #268bd2; font-weight: bold;">SELECT "votes"."comment_id", count(id) FROM "votes" WHERE "votes"."comment_id" = ? GROUP BY "votes"."comment_id"</span>  [["comment_id", 2]]
-<span style="color: #cb4b16; background-color: #fdf6e3;">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: #657b83; background-color: #fdf6e3;">:</span><span style="color: #859900; background-color: #fdf6e3;">11</span><span style="color: #657b83; background-color: #fdf6e3;">:i</span>n `block in lazy_votes_count'
+<span style="color: #cb4b16; background-color:
+var(--code-highlight-bg, #fdf6e3);">[active_model_serializers]   &#8627; app/models/comment.rb</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:</span><span style="color: #859900; background-color:
+var(--code-highlight-bg, #fdf6e3);">11</span><span style="color: var(--code-highlight-bg, #657b83); background-color: var(--code-highlight-fg: #fdf6e3);">:i</span>n `block in lazy_votes_count'
 [active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.84ms)
 Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.6ms | Allocations: 18820)
 </pre>
@@ -311,7 +337,7 @@ object, not the real integer. This can be easily verified by placing a
 breakpoint and inspecting the votes count value.
 
 
-<pre style="color: #657b83; background-color: #fdf6e3;">
+<pre style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #fdf6e3);">
 <span style="font-weight: bold;">Frame number:</span> 0/130
 
 <span style="font-weight: bold;">From:</span> [redacted]/blog/app/serializers/comment_serializer.rb:5 CommentSerializer#votes_count:

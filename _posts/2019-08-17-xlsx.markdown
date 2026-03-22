@@ -17,7 +17,7 @@ won't get into the details here, but there is a nice
 anatomy of the XLSX file. In essence, XLSX is just a zip file with
 different file extension.
 
-<pre style="color: #657b83; background-color: #f9f9f9;">
+<pre style="color: var(--code-highlight-fg, #657b83); background-color: var(--code-highlight-bg, #f9f9f9);">
 <span style="color: #b58900; font-weight: bold;">$ </span>unzip -q -d spreadsheet spreadsheet.xlsx
 <span style="color: #b58900; font-weight: bold;">$ </span>tree -C spreadsheet/
 <span style="color: #268bd2; font-weight: bold;">spreadsheet/</span>

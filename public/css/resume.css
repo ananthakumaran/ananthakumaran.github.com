@@ -117,3 +117,21 @@
         margin: 20px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .page.resume {
+        color: #bbb;
+    }
+
+    .resume h1, .resume h2 {
+        color: #dee2e6;
+    }
+
+    .resume h2, .resume section.experience {
+        border-color: rgba(255,255,255,.15);
+    }
+
+    .resume strong {
+        color: #dee2e6;
+    }
+}
