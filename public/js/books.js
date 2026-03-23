@@ -1,4 +1,4 @@
-/* global _, d3, $, moment, books, linkToBook */
+/* global _, d3, $, moment, books, linkToBook, Intl */
 
 function year(string) {
   var n = parseInt(string, 10);
@@ -678,22 +678,6 @@ function pageCount() {
 }
 
 function pagePerYear() {
-  var node = document.getElementById("page-per-year");
-  var margin = { top: 20, right: 20, bottom: 30, left: 40 };
-  var width =
-    parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
-    ) -
-    margin.right -
-    margin.left;
-  var height = 150;
-  var svg = d3
-    .select(node)
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
   var distribution = _.mapValues(
     _.groupBy(read, function (b) {
       return b.read.year();
@@ -702,6 +686,23 @@ function pagePerYear() {
       return _.reduce(_.map(l, "pageCount"), add, 0);
     },
   );
+
+  var node = document.getElementById("page-per-year");
+  var margin = { top: 20, right: 20, bottom: 30, left: 40 };
+  var width =
+    parseInt(
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
+    ) -
+    margin.right -
+    margin.left;
+  var height = _.size(distribution) * 11;
+  var svg = d3
+    .select(node)
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 
   var x = d3
     .scaleLinear()
@@ -749,21 +750,6 @@ function pagePerYear() {
 }
 
 function bookPerYear() {
-  var node = document.getElementById("book-per-year");
-  var margin = { top: 20, right: 20, bottom: 30, left: 40 };
-  var width =
-    parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
-    ) -
-    margin.right -
-    margin.left;
-  var height = 150;
-  var svg = d3
-    .select(node)
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var distribution = _.mapValues(
     _.groupBy(read, function (b) {
@@ -773,6 +759,23 @@ function bookPerYear() {
       return l.length;
     },
   );
+
+  var node = document.getElementById("book-per-year");
+  var margin = { top: 20, right: 20, bottom: 30, left: 40 };
+  var width =
+    parseInt(
+      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
+    ) -
+    margin.right -
+    margin.left;
+  var height = _.size(distribution) * 11;
+  var svg = d3
+    .select(node)
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 
   var x = d3
     .scaleLinear()
@@ -938,6 +941,24 @@ function tags() {
     })
     .value()
 
+  const pageCounts = read.map(b => b.pageCount);
+
+  const bins = d3.histogram()
+        .domain(d3.extent(pageCounts))
+        .thresholds(10)(pageCounts);
+
+  _.chain(read)
+    .filter(b => b.pageCount > 0)
+    .groupBy(b => {
+      const bin = bins.find(bin => b.pageCount >= bin.x0 && b.pageCount <= bin.x1);
+      return `${bin.x0} - ${bin.x1}`;
+    })
+    .each((books, range) => {
+      allTags.push({name: range, books, tag: 'Page Count'});
+    })
+    .value()
+
+
 
   d3.select(selectNode)
     .selectAll("option")
@@ -947,12 +968,16 @@ function tags() {
     .attr("value", d => d)
     .text(d => d);
 
+  const collator = new Intl.Collator(undefined, {
+    numeric: true
+  });
+
   d3.select(selectNode)
     .on('change', function(event) {
       const selected = d3.select(this).property("value");
       const selection = d3.select(node)
             .selectAll(".tag")
-            .data(_.chain(allTags).filter(d => d.tag == selected).sortBy(d => d.name).value());
+            .data(allTags.filter(d => d.tag == selected).sort((a, b) => collator.compare(a.name, b.name)));
 
       selection.exit().remove();
 

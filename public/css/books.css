@@ -257,4 +257,8 @@
     .books a.tag.active {
         color: #000;
     }
+
+    .books #book-per-shelf .count {
+        fill: #dee2e6;
+    }
 }
