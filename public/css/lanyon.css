@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar content */
 .sidebar a {
   font-weight: normal;
-  color: #fff;
+  color: #d1cccc;
 }
 .sidebar-item {
   padding: 1rem;
@@ -217,7 +217,7 @@ a.sidebar-nav-item:focus {
   display: block;
   padding: .25rem .75rem;
   color: #505050;
-  background-color: #fff;
+  background-color: #d1cccc;
   border-radius: .25rem;
   cursor: pointer;
 }
@@ -227,26 +227,26 @@ a.sidebar-nav-item:focus {
   width: 1rem;
   height: .75rem;
   content: "";
-  background-image: -webkit-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:    -moz-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:         linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
+  background-image: -webkit-linear-gradient(to bottom, #555, #555 20%, #d1cccc 20%, #d1cccc 40%, #555 40%, #555 60%, #d1cccc 60%, #d1cccc 80%, #555 80%, #555 100%);
+  background-image:    -moz-linear-gradient(to bottom, #555, #555 20%, #d1cccc 20%, #d1cccc 40%, #555 40%, #555 60%, #d1cccc 60%, #d1cccc 80%, #555 80%, #555 100%);
+  background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #d1cccc 20%, #d1cccc 40%, #555 40%, #555 60%, #d1cccc 60%, #d1cccc 80%, #555 80%, #555 100%);
+  background-image:         linear-gradient(to bottom, #555, #555 20%, #d1cccc 20%, #d1cccc 40%, #555 40%, #555 60%, #d1cccc 60%, #d1cccc 80%, #555 80%, #555 100%);
 }
 
 .sidebar-toggle:active,
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
+  color: #d1cccc;
   background-color: #555;
 }
 
 .sidebar-toggle:active:before,
 #sidebar-checkbox:focus ~ .sidebar-toggle:before,
 #sidebar-checkbox:checked ~ .sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
+  background-image: -webkit-linear-gradient(to bottom, #d1cccc, #d1cccc 20%, #555 20%, #555 40%, #d1cccc 40%, #d1cccc 60%, #555 60%, #555 80%, #d1cccc 80%, #d1cccc 100%);
+  background-image:    -moz-linear-gradient(to bottom, #d1cccc, #d1cccc 20%, #555 20%, #555 40%, #d1cccc 40%, #d1cccc 60%, #555 60%, #555 80%, #d1cccc 80%, #d1cccc 100%);
+  background-image:     -ms-linear-gradient(to bottom, #d1cccc, #d1cccc 20%, #555 20%, #555 40%, #d1cccc 40%, #d1cccc 60%, #555 60%, #555 80%, #d1cccc 80%, #d1cccc 100%);
+  background-image:         linear-gradient(to bottom, #d1cccc, #d1cccc 20%, #555 20%, #555 40%, #d1cccc 40%, #d1cccc 60%, #555 60%, #555 80%, #d1cccc 80%, #d1cccc 100%);
 }
 
 @media (min-width: 30.1em) {
@@ -551,7 +551,7 @@ a.pagination-item:hover {
           transform: translateX(0);
 }
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
-  box-shadow: 0 0 0 .25rem #fff;
+  box-shadow: 0 0 0 .25rem #d1cccc;
 }
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
@@ -576,46 +576,46 @@ img.logo-background {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #dee2e6;
-        background-color: #343a40;
+        color: #b1adac;
+        background-color: #181515;
     }
 
     .sidebar-toggle {
-        color: #dee2e6;
-        background-color: #343a40;
+        color: #b1adac;
+        background-color: #181515;
     }
 
     .sidebar-toggle:before {
-        background-image: -webkit-linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
-        background-image:    -moz-linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
-        background-image:     -ms-linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
-        background-image:         linear-gradient(to bottom, #dee2e6, #dee2e6 20%, #343a40 20%, #343a40 40%, #dee2e6 40%, #dee2e6 60%, #343a40 60%, #343a40 80%, #dee2e6 80%, #dee2e6 100%);
+        background-image: -webkit-linear-gradient(to bottom, #b1adac, #b1adac 20%, #181515 20%, #181515 40%, #b1adac 40%, #b1adac 60%, #181515 60%, #181515 80%, #b1adac 80%, #b1adac 100%);
+        background-image:    -moz-linear-gradient(to bottom, #b1adac, #b1adac 20%, #181515 20%, #181515 40%, #b1adac 40%, #b1adac 60%, #181515 60%, #181515 80%, #b1adac 80%, #b1adac 100%);
+        background-image:     -ms-linear-gradient(to bottom, #b1adac, #b1adac 20%, #181515 20%, #181515 40%, #b1adac 40%, #b1adac 60%, #181515 60%, #181515 80%, #b1adac 80%, #b1adac 100%);
+        background-image:         linear-gradient(to bottom, #b1adac, #b1adac 20%, #181515 20%, #181515 40%, #b1adac 40%, #b1adac 60%, #181515 60%, #181515 80%, #b1adac 80%, #b1adac 100%);
     }
 
     .sidebar-toggle:active,
     #sidebar-checkbox:focus ~ .sidebar-toggle,
     #sidebar-checkbox:checked ~ .sidebar-toggle {
-        color: #343a40;
-        background-color: #dee2e6;
+        color: #181515;
+        background-color: #b1adac;
     }
 
     .sidebar-toggle:active:before,
     #sidebar-checkbox:focus ~ .sidebar-toggle:before,
     #sidebar-checkbox:checked ~ .sidebar-toggle:before {
-        background-image: -webkit-linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
-        background-image:    -moz-linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
-        background-image:     -ms-linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
-        background-image:         linear-gradient(to bottom, #343a40, #343a40 20%, #dee2e6 20%, #dee2e6 40%, #343a40 40%, #343a40 60%, #dee2e6 60%, #dee2e6 80%, #343a40 80%, #343a40 100%);
+        background-image: -webkit-linear-gradient(to bottom, #181515, #181515 20%, #b1adac 20%, #b1adac 40%, #181515 40%, #181515 60%, #b1adac 60%, #b1adac 80%, #181515 80%, #181515 100%);
+        background-image:    -moz-linear-gradient(to bottom, #181515, #181515 20%, #b1adac 20%, #b1adac 40%, #181515 40%, #181515 60%, #b1adac 60%, #b1adac 80%, #181515 80%, #181515 100%);
+        background-image:     -ms-linear-gradient(to bottom, #181515, #181515 20%, #b1adac 20%, #b1adac 40%, #181515 40%, #181515 60%, #b1adac 60%, #b1adac 80%, #181515 80%, #181515 100%);
+        background-image:         linear-gradient(to bottom, #181515, #181515 20%, #b1adac 20%, #b1adac 40%, #181515 40%, #181515 60%, #b1adac 60%, #b1adac 80%, #181515 80%, #181515 100%);
     }
 
     h1, h2, h3, h4, h5, h6 {
-        color: #fff;
+        color: #d1cccc;
     }
 
     .page-title,
     .post-title,
     .post-title a {
-        color: #fff;
+        color: #d1cccc;
     }
 
     hr, abbr[title], blockquote, table, td, th, .related, .pagination-item, .masthead {

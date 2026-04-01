@@ -215,7 +215,7 @@
 
 @media (prefers-color-scheme: dark) {
     .books .card {
-        background-color: #343a40;
+        background-color: #181515;
     }
 
     .books svg .axis text {
@@ -259,6 +259,6 @@
     }
 
     .books #book-per-shelf .count {
-        fill: #dee2e6;
+        fill: #b1adac;
     }
 }

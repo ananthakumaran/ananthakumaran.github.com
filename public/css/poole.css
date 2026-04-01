@@ -60,7 +60,7 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  background-color: #d1cccc;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -133,7 +133,7 @@ hr {
   margin: 1.5rem 0;
   border: 0;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #d1cccc;
 }
 
 abbr {
@@ -432,12 +432,12 @@ a.pagination-item:hover {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #dee2e6;
-        background-color: #343a40;
+        color: #b1adac;
+        background-color: #181515;
     }
 
     h1, h2, h3, h4, h5, h6, strong {
-        color: #fff;
+        color: #d1cccc;
     }
 
     a {

@@ -124,7 +124,7 @@
     }
 
     .resume h1, .resume h2 {
-        color: #dee2e6;
+        color: #b1adac;
     }
 
     .resume h2, .resume section.experience {
@@ -132,6 +132,6 @@
     }
 
     .resume strong {
-        color: #dee2e6;
+        color: #b1adac;
     }
 }

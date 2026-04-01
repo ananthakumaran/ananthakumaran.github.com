@@ -51,7 +51,7 @@
     border-radius: 5px;
     border: solid 1px #ccc;
     color: #333;
-    background: #fff;
+    background: #d1cccc;
     margin-right: 35px;
     float: right;
 }
@@ -69,14 +69,14 @@
 
 @media (prefers-color-scheme: dark) {
     .hca-layout button.reset {
-        color: #dee2e6;
-        background: #343a40;
+        color: #b1adac;
+        background: #181515;
         border: solid 1px #555;
     }
 
     .hca-layout button:hover {
-        border-color: #fff;
-        color: #fff;
+        border-color: #d1cccc;
+        color: #d1cccc;
     }
 
     .hca-layout svg .axis text {
