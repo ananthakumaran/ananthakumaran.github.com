@@ -60,7 +60,7 @@ html {
 
 body {
   color: #515151;
-  background-color: #d1cccc;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -133,7 +133,7 @@ hr {
   margin: 1.5rem 0;
   border: 0;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #d1cccc;
+  border-bottom: 1px solid #fff;
 }
 
 abbr {
