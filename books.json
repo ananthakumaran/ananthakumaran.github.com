@@ -1,5 +1,30 @@
 [
   {
+    "Book Id": "62294487",
+    "Title": "The Little Learner: A Straight Line to Deep Learning",
+    "Author": "Daniel P. Friedman",
+    "Author l-f": "Friedman, Daniel P.",
+    "Additional Authors": "Anurag Mendhekar",
+    "ISBN": "=\"026254637X\"",
+    "ISBN13": "=\"9780262546379\"",
+    "My Rating": "4",
+    "Publisher": "The MIT Press",
+    "Binding": "Paperback",
+    "Number of Pages": "440",
+    "Year Published": "2023",
+    "Original Publication Year": "",
+    "Date Read": "2026/05/23",
+    "Date Added": "2026/05/18",
+    "Bookshelves": "programming",
+    "Bookshelves with positions": "programming (#124)",
+    "Exclusive Shelf": "read",
+    "My Review": "",
+    "Spoiler": "",
+    "Private Notes": "",
+    "Read Count": "1",
+    "Owned Copies": "0"
+  },
+  {
     "Book Id": "36162660",
     "Title": "Tree-based Machine Learning Algorithms: Decision Trees, Random Forests, and Boosting",
     "Author": "Clinton Sheppard",
@@ -2827,7 +2852,7 @@
   {
     "Book Id": "23529",
     "Title": "From Hell",
-    "Author": "Alan             Moore",
+    "Author": "Alan Moore",
     "Author l-f": "Moore, Alan",
     "Additional Authors": "Eddie Campbell, Pete Mullins",
     "ISBN": "=\"0861661419\"",
@@ -5026,7 +5051,7 @@
   },
   {
     "Book Id": "10138607",
-    "Title": "Habibi (Pantheon Graphic Library)",
+    "Title": "Habibi",
     "Author": "Craig Thompson",
     "Author l-f": "Thompson, Craig",
     "Additional Authors": "",
@@ -5102,7 +5127,7 @@
   {
     "Book Id": "472331",
     "Title": "Watchmen",
-    "Author": "Alan             Moore",
+    "Author": "Alan Moore",
     "Author l-f": "Moore, Alan",
     "Additional Authors": "Dave Gibbons, John    Higgins",
     "ISBN": "=\"0930289234\"",
@@ -7901,7 +7926,7 @@
   },
   {
     "Book Id": "862311",
-    "Title": "The Star Rover (Modern Library Classics)",
+    "Title": "The Star Rover",
     "Author": "Jack London",
     "Author l-f": "London, Jack",
     "Additional Authors": "Lorenzo Carcaterra",
