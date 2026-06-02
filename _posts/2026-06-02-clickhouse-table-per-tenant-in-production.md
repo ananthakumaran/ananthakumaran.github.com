@@ -31,13 +31,13 @@ of and how to handle things if you decide to go down this route.
              ┌─────────────────────────────────────────┐
              │ table                                   │
              │   ┌─────────────────────────────────┐   │
-             │   │ partittion1                     │   │
+             │   │ partition1                      │   │
              │   │  ┌────────┐ ┌───────┐ ┌───────┐ │   │
              │   │  │  part1 │ │ part2 │ │ part3 │ │   │
              │   │  └────────┘ └───────┘ └───────┘ │   │
              │   └─────────────────────────────────┘   │
              │   ┌─────────────────────────────────┐   │
-             │   │ partittion2                     │   │
+             │   │ partition2                      │   │
              │   │  ┌────────┐ ┌───────┐ ┌───────┐ │   │
              │   │  │  part1 │ │ part2 │ │ part3 │ │   │
              │   │  └────────┘ └───────┘ └───────┘ │   │
@@ -115,7 +115,7 @@ It is best to load the tables synchronously and let the other servers
 handle the requests while it's restarting. If you run it on
 Kubernetes, it also makes sense to have a generous
 [initialDelaySeconds](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#configure-probes) in your probes, you don't want Kubernetes to kill
-the pod while it's trying to load the tables
+the pod while it's trying to load the tables.
 
 ## Zookeeper
 
