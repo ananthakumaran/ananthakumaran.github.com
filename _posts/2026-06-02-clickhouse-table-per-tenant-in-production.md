@@ -28,21 +28,21 @@ of and how to handle things if you decide to go down this route.
 
 
 ```
-             ┌─────────────────────────────────────────┐
-             │ table                                   │
-             │   ┌─────────────────────────────────┐   │
-             │   │ partition1                      │   │
-             │   │  ┌────────┐ ┌───────┐ ┌───────┐ │   │
-             │   │  │  part1 │ │ part2 │ │ part3 │ │   │
-             │   │  └────────┘ └───────┘ └───────┘ │   │
-             │   └─────────────────────────────────┘   │
-             │   ┌─────────────────────────────────┐   │
-             │   │ partition2                      │   │
-             │   │  ┌────────┐ ┌───────┐ ┌───────┐ │   │
-             │   │  │  part1 │ │ part2 │ │ part3 │ │   │
-             │   │  └────────┘ └───────┘ └───────┘ │   │
-             │   └─────────────────────────────────┘   │
-             └─────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│ table                                   │
+│   ┌─────────────────────────────────┐   │
+│   │ partition1                      │   │
+│   │  ┌────────┐ ┌───────┐ ┌───────┐ │   │
+│   │  │  part1 │ │ part2 │ │ part3 │ │   │
+│   │  └────────┘ └───────┘ └───────┘ │   │
+│   └─────────────────────────────────┘   │
+│   ┌─────────────────────────────────┐   │
+│   │ partition2                      │   │
+│   │  ┌────────┐ ┌───────┐ ┌───────┐ │   │
+│   │  │  part1 │ │ part2 │ │ part3 │ │   │
+│   │  └────────┘ └───────┘ └───────┘ │   │
+│   └─────────────────────────────────┘   │
+└─────────────────────────────────────────┘
 ```
 
 
@@ -216,3 +216,5 @@ consistently hashed to the same node using [`hash_policy`](https://www.envoyprox
 tenant id header. If all write nodes go down, traffic can spill over to the read group
 using Envoy's [priority levels](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/load_balancing/priority), but not the other way around. We also use
 [retry on different priority](https://www.envoyproxy.io/docs/envoy/latest/api-v3/extensions/retry/priority/previous_priorities/v3/previous_priorities_config.proto) for write retries.
+
+<link rel="stylesheet" href="/public/css/clickhouse-table-per-tenant-in-production.css"/>
