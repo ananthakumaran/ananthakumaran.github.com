@@ -15,22 +15,26 @@ title: Resume
 <section class="experience">
   <div class="left-column">
     <strong>Userflow</strong></br>
-    <em>July 2024 — Present</em></br>
+    <em>July 2024 — June 2026</em></br>
     <em>remote</em>
   </div>
   <div class="right-column">
-    <p>Working as a Principal Software Engineer for <a target="_blank" href="https://www.userflow.com">Userflow</a>.</p>
+    <p>Worked as a Principal Software Engineer for <a target="_blank" href="https://www.userflow.com">Userflow</a>. Took full responsibility for infrastructure and releases, maintaining nearly four 9s uptime across US and EU regions.</p>
     <ul>
-      <li>Led the migration from a single PostgreSQL instance to a sharded multi-instance architecture, and later to a multi-region setup to comply with GDPR regulations. Designed and implemented the control plane and data plane model to support this transition, where the control plane is replicated across all regions while the data plane remains region-specific.
+      <li>Userflow was running with a single PostgreSQL instance when I joined the company. I implemented sharding and tenant based routing, followed by a multi-region setup across US and EU. I designed the control plane/data plane architecture and added support for <a href="https://ananthakumaran.in/2025/11/02/moving-tables-across-postgres-instances.html" target="_blank">moving</a> tenant data between <a href="https://ananthakumaran.in/2026/04/22/moving-tenant-across-postgresql-instances.html" target="_blank">regions</a>. Today the platform handles 250K+ active WebSocket connections and nearly 100K database queries/sec at peak load.</li>
+      <li>When I joined the company, ClickHouse was at a POC stage. I took it to production, migrated more than 6TB of data from PostgreSQL, and set up and maintained a self-hosted ClickHouse cluster tuned for a <a href="https://ananthakumaran.in/2026/06/02/clickhouse-table-per-tenant-in-production.html" target="_blank">table per tenant</a> architecture serving thousands of tenants.
 </li>
-      <li>set up and maintain a self-hosted ClickHouse cluster and migrated over 6TB of data from PostgreSQL.</li>
-      <li><a href="https://ananthakumaran.in/2024/10/26/ets-vs-redis.html" target="_blank">optimized<a/> <a href="https://ananthakumaran.in/2025/01/04/erlang-vm-tuning.html" target="_blank">infrastructure</a> to reduce costs by over $16K per month.</li>
-      <li>redesigned the segmentation engine to leverage ClickHouse, enabling segment queries to be converted into a logical plan executable in ClickHouse, PostgreSQL, or a hybrid approach. This <a href="https://ananthakumaran.in/2025/03/18/hybrid-query-engine.html" target="_blank">optimization</a> allowed real-time queries by using PostgreSQL for recent data (last 1 day) and ClickHouse for historical data, reducing the need to store historical data in PostgreSQL.</li>
+      <li>
+  <a href="https://ananthakumaran.in/2024/10/26/ets-vs-redis.html" target="_blank">Optimized</a>
+  <a href="https://ananthakumaran.in/2025/01/04/erlang-vm-tuning.html" target="_blank">infrastructure</a>
+  to reduce costs by over $21K per month. Built observability with OpenTelemetry, Grafana, Prometheus and Sentry, upgraded PostgreSQL from <a href="https://ananthakumaran.in/2025/06/11/postgresql-upgrade.html" target="_blank">13 to 16</a>, enabled x86 and Google Axion deployments, introduced a Python stack for ML workloads, and built a <a href="https://ananthakumaran.in/2025/03/18/hybrid-query-engine.html" target="_blank">hybrid query engine</a> combining PostgreSQL and ClickHouse.
+</li>
+      <li>Apart from the platform work, I delivered a string of features including FlowAI Signals, AI condition builder, Flow recommendations, Flow debugger, funnel charts, and rule based Slack/Email notifications.</li>
     </ul>
 
     Used several technologies including Phoenix, Websocket,
     ClickHouse, Redis, PostgreSQL, Oban, Kubernetes, Cloudflare,
-    Prometheus, Elasticsearch, Pinecone, Terraform, GCP, GKE.
+    Prometheus, Elasticsearch, Pinecone, Terraform, GCP, GKE, Python.
   </div>
 </section>
 <section class="experience">
