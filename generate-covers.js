@@ -53,7 +53,13 @@ async function fetch(books, browser) {
 }
 
 (async () => {
-  // ls $PLAYWRIGHT_BROWSERS_PATH
-  const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_BROWSERS_PATH + '/chromium_headless_shell-1194/chrome-linux/headless_shell' });
+  const browsersDir = process.env.PLAYWRIGHT_BROWSERS_PATH;
+  const entries = fs.readdirSync(browsersDir);
+  const chromiumDir = entries.find(e => e.startsWith('chromium_headless_shell'));
+  if (!chromiumDir) {
+    throw new Error('Could not find chromium directory in ' + browsersDir);
+  }
+  const executablePath = path.join(browsersDir, chromiumDir, 'chrome-headless-shell-linux64', 'chrome-headless-shell');
+  const browser = await chromium.launch({ headless: true, executablePath });
   await fetch(books, browser);
 })();
