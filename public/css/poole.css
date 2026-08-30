@@ -179,6 +179,20 @@ pre code {
   background-color: transparent;
 }
 
+kbd {
+  display: inline;
+  padding: .1em .35em;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 80%;
+  font-weight: 600;
+  line-height: 1;
+  color: #333;
+  background-color: #f4f4f4;
+  border: 1px solid #b8b8b8;
+  border-bottom: 3px solid #b8b8b8;
+  border-radius: 4px;
+}
+
 /* Pygments via Jekyll */
 .highlight {
   margin: 0 0 1rem 0;
@@ -454,5 +468,11 @@ a.pagination-item:hover {
 
     code, pre, .message, tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
         background-color: #212529;
+    }
+
+    kbd {
+        color: #eee;
+        background-color: #333;
+        border-color: #666;
     }
 }
