@@ -16,7 +16,7 @@ async function fetch(books, browser) {
   const coverPath = path.join("public", "covers", `${id}.jpg`);
   // const pngPath = path.join("books", `${id}.png`);
 
-  if (fs.existsSync(coverPath)) {
+  if (fs.existsSync(coverPath) && fs.statSync(coverPath).size > 0) {
     await fetch(rest, browser);
   } else {
     console.log("fetching...", id, title);
@@ -37,8 +37,19 @@ async function fetch(books, browser) {
       if (cover) {
         const coverUrl = await cover.getAttribute("src");
         const response = await page.request.get(coverUrl);
+        if (!response.ok()) {
+          throw new Error(`Cover download failed: HTTP ${response.status()}`);
+        }
         const buffer = await response.body();
-        fs.writeFileSync(coverPath, buffer);
+        if (buffer.length === 0) {
+          throw new Error("Cover download returned an empty image");
+        }
+        const contentType = response.headers()["content-type"] || "";
+        if (!contentType.toLowerCase().startsWith("image/")) {
+          throw new Error(`Cover download returned a non-image response: ${contentType}`);
+        }
+        fs.writeFileSync(coverPath + ".tmp", buffer);
+        fs.renameSync(coverPath + ".tmp", coverPath);
         console.log("saved cover:", id);
       } else {
         console.log("no cover found:", id);

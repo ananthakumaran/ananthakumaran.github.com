@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/ananthakumaran/ananthakumaran.github.com#readme",
   "dependencies": {
+    "@napi-rs/canvas": "^1.0.11",
+    "@popperjs/core": "^2.11.8",
     "bluebird": "^3.5.0",
     "cheerio": "^0.22.0",
     "google-books-search": "^0.3.1",
     "playwright": "1.52",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "tippy.js": "^6.3.7"
   }
 }

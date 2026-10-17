@@ -1,8 +1,13 @@
-/* global _, d3, $, moment, books, linkToBook, Intl */
+/* global _, d3, $, moment, books, linkToBook, Intl, tippy */
 
 function year(string) {
   var n = parseInt(string, 10);
   return moment(new Date(n, 0, 1));
+}
+
+function spineTitle(title) {
+  var label = title.replace(/(?:\s+(?:\([^()]*\)|\[[^\[\]]*\]))+\s*$/, "").trim() || title;
+  return label.length >= 30 ? label.replace(/:\s+.*$/, "").trim() || label : label;
 }
 
 var read = _.filter(books, function (book) {
@@ -23,6 +28,7 @@ read = _.sortBy(
     return {
       title: book["Title"].split(/[:([]/)[0].trim(),
       fullTitle: book["Title"],
+      spineTitle: spineTitle(book["Title"]),
       pageCount: pageCount,
       added: added,
       started: started,
@@ -32,6 +38,11 @@ read = _.sortBy(
       averageRating: parseFloat(book["Average Rating"]),
       author: book["Author"],
       id: book["Book Id"],
+      spineColor: /^#[\da-f]{6}$/i.test(book["Spine Color"] || "")
+        ? book["Spine Color"]
+        : "#75695b",
+      spineTextColor: /^#[\da-f]{6}$/i.test(book["Spine Text Color"] || "")
+        ? book["Spine Text Color"] : null,
       bookshelves: book["Bookshelves"].split(", "),
     };
   }),
@@ -75,6 +86,37 @@ function direction(a, b) {
 
 function color(rating) {
   return ["", "#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"][rating];
+}
+
+function spineLabelColor(value, preferred) {
+  function luminance(color) {
+    var rgb = d3.rgb(color);
+    var channels = [rgb.r, rgb.g, rgb.b].map(function (channel) {
+      channel = Math.max(0, Math.min(255, channel)) / 255;
+      return channel <= 0.04045
+        ? channel / 12.92
+        : Math.pow((channel + 0.055) / 1.055, 2.4);
+    });
+    return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
+  }
+  var background = luminance(value);
+  function contrast(color) {
+    var foreground = luminance(color);
+    return (Math.max(background, foreground) + 0.05) /
+      (Math.min(background, foreground) + 0.05);
+  }
+  var darkContrast = contrast("#000000");
+  var lightContrast = contrast("#ffffff");
+  var target = Math.min(7, Math.max(darkContrast, lightContrast));
+  var ink = preferred || value;
+  if (preferred && contrast(ink) >= target) return ink;
+  // Old/missing color data still gets readable ink without inventing a new hue.
+  var adjust = d3.interpolateRgb(ink, darkContrast >= lightContrast ? "#000000" : "#ffffff");
+  for (var step = 0; step <= 100; step++) {
+    var shade = adjust(step / 100);
+    if (contrast(shade) >= target) return shade;
+  }
+  return adjust(1);
 }
 
 function connect(x1, x2, y1, y2, state) {
@@ -157,6 +199,140 @@ setCounter("read", read.length);
 setCounter("author", _.uniq(_.map(read, "author")).length);
 setCounter("pages", _.reduce(_.map(read, "pageCount"), add, 0));
 
+function bookPreviewContent(book, showCover) {
+  var popup = d3.select(document.createElement("div")).attr("class", "book-preview")
+    .classed("book-preview--text-only", !showCover);
+  if (showCover) {
+    var cover = popup.append("div").attr("class", "book-preview-cover");
+    var image = cover.append("img").attr("alt", "");
+    var missingCover = cover.append("span").text("No cover available").property("hidden", true);
+    var fallback = "/public/covers/" + book.id + ".jpg";
+    image.on("error", function () {
+      if (this.getAttribute("src") !== fallback) {
+        this.setAttribute("src", fallback);
+        return;
+      }
+      image.style("visibility", "hidden");
+      missingCover.property("hidden", false);
+    }).attr("src", "/public/covers/" + book.id + ".webp");
+  }
+  var details = popup.append("div").attr("class", "book-preview-details");
+  details.append("h3").text(book.fullTitle);
+  details.append("p").attr("class", "book-preview-author").text(book.author);
+  function number(parent, value) {
+    return parent.append("span").attr("class", "book-preview-number").text(value);
+  }
+  var rating = details.append("p").attr("class", "book-preview-rating");
+  if (book.rating > 0) {
+    number(rating, stars(book.rating)).attr("aria-label", book.rating + " out of 5 stars");
+  }
+  if (book.averageRating > 0) {
+    var average = rating.append("span").attr("class", "book-preview-average");
+    average.append("span").text((book.rating > 0 ? " · " : "") + "Goodreads ");
+    number(average, book.averageRating.toFixed(2));
+  }
+  if (book.pageCount > 0 || book.published.isValid()) {
+    var metadata = details.append("p").attr("class", "book-preview-meta");
+    if (book.pageCount > 0) {
+      number(metadata, book.pageCount.toLocaleString());
+      metadata.append("span").text(" pages");
+    }
+    if (book.published.isValid()) {
+      metadata.append("span").text((book.pageCount > 0 ? " · " : "") + "Published " + book.published.format("YYYY"));
+    }
+  }
+  details.append("p").attr("class", "book-preview-meta").text("Read " + book.read.format("D MMM YYYY"));
+  var bookShelves = _.uniq(book.bookshelves).filter(function (shelf) {
+    return shelves.indexOf(shelf) !== -1;
+  });
+  if (bookShelves.length) {
+    var shelfInfo = details.append("p").attr("class", "book-preview-shelves");
+    bookShelves.forEach(function (shelf) {
+      shelfInfo.append("span").attr("class", "book-preview-shelf").text(shelf);
+    });
+  }
+
+  return popup.node();
+}
+
+var bookPreviews = new Set();
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    bookPreviews.forEach(function (preview) {
+      preview.clearDelayTimeouts();
+      preview.hide();
+    });
+  }
+});
+
+function attachPreviews(nodes, renderContent) {
+  var fresh = nodes.filter(function (node) {
+    if (!node._tippy) return true;
+    node._tippy.clearDelayTimeouts();
+    node._tippy.hide();
+    node._tippy.setContent("");
+    return false;
+  });
+  tippy(fresh, {
+    content: "",
+    theme: "book-preview",
+    placement: "bottom",
+    maxWidth: 380,
+    delay: [250, 150],
+    duration: [120, 80],
+    interactive: true,
+    interactiveBorder: 12,
+    touch: false,
+    appendTo: function () { return document.body; },
+    aria: { content: "describedby", expanded: false },
+    popperOptions: {
+      modifiers: [
+        { name: "flip", options: { fallbackPlacements: ["top", "right", "left"] } },
+        { name: "preventOverflow", options: { padding: 12 } },
+      ],
+    },
+    onCreate: function (instance) {
+      bookPreviews.add(instance);
+      var dot = instance.reference.querySelector("circle");
+      if (dot) {
+        // Keep the generous Voronoi hover area, but position the card by the dot.
+        instance.setProps({ getReferenceClientRect: function () { return dot.getBoundingClientRect(); } });
+      }
+    },
+    onDestroy: function (instance) { bookPreviews.delete(instance); },
+    onShow: function (instance) {
+      tippy.hideAll({ exclude: instance, duration: 0 });
+      if (instance.props.content === "") {
+        instance.setContent(renderContent(instance.reference.__data__));
+      }
+    },
+  });
+}
+
+function attachBookPreviews(nodes, showCover) {
+  attachPreviews(nodes, function (d) {
+    return bookPreviewContent(d.data || d, showCover);
+  });
+}
+
+function attachBookChartPreviews(cells) {
+  cells.attr("tabindex", 0).attr("role", "img")
+    .attr("aria-label", function (d) { return d.data.fullTitle + " by " + d.data.author; });
+  attachBookPreviews(cells.nodes(), true);
+}
+
+function authorPreviewContent(author) {
+  var popup = d3.select(document.createElement("div"))
+    .attr("class", "book-preview book-preview--text-only book-preview--author");
+  var details = popup.append("div").attr("class", "book-preview-details");
+  var heading = details.append("h3").attr("class", "book-preview-author").text(author[0]);
+  heading.append("span").attr("class", "book-preview-number").text(" (" + author[1].length + ")");
+  details.append("ul").attr("class", "book-preview-book-list")
+    .selectAll("li").data(author[1]).enter().append("li")
+    .text(function (book) { return book.fullTitle; });
+  return popup.node();
+}
+
 function timeline() {
   var node = document.getElementById("timeline");
   var margin = { top: 20, right: 0, bottom: 50, left: 80 };
@@ -170,10 +346,27 @@ function timeline() {
   var height = (domain[1] - domain[0]) / 15000000;
   var svg = d3
     .select("#timeline")
-    .attr("width", width + margin.left + margin.right)
+    // Extend the viewport without moving or resizing the spines.
+    .attr("width", width + margin.left + margin.right + 8)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var lighting = [
+    { name: "highlight", depth: 6, color: "#fff", opacities: [1, 0], bottom: false },
+    { name: "shade", depth: 9, color: "#000", opacities: [0, 1], bottom: true },
+  ];
+  var defs = d3.select(node).append("defs");
+  lighting.forEach(function (light) {
+    var gradient = defs.append("linearGradient")
+      .attr("id", "timeline-spine-" + light.name)
+      .attr("x1", "0%").attr("y1", "0%")
+      .attr("x2", "0%").attr("y2", "100%");
+    gradient.selectAll("stop").data(light.opacities).enter().append("stop")
+      .attr("offset", function (d, i) { return i ? "100%" : "0%"; })
+      .attr("stop-color", light.color)
+      .attr("stop-opacity", function (d) { return d; });
+  });
 
   var y = d3.scaleLinear().domain(domain).range([height, 0]);
   var x = width / 2;
@@ -209,58 +402,142 @@ function timeline() {
     .attr("y1", y(domain[0]))
     .attr("y2", y(domain[1]));
 
-  var container = d3.select(".timeline");
-
   var cardWidth = width / 2 - 30;
-  var card = container
-    .selectAll(".card")
+  var thickness = d3.scaleSqrt().domain([0, 1200]).range([20, 36]).clamp(true);
+  var lineHeight = 13;
+  var textWidth = Math.max(1, cardWidth - 24);
+  var measurement = svg.append("g").attr("class", "book-spine").attr("visibility", "hidden");
+  var measureLabel = measurement.append("text").attr("class", "spine-label");
+  function fits(text) {
+    measureLabel.text(text);
+    return measureLabel.node().getComputedTextLength() <= textWidth;
+  }
+  function wrapTitle(title) {
+    var lines = [];
+    var line = "";
+    title.trim().split(/\s+/).forEach(function (word) {
+      var candidate = line ? line + " " + word : word;
+      if (fits(candidate)) {
+        line = candidate;
+        return;
+      }
+      if (line) lines.push(line);
+      if (fits(word)) {
+        line = word;
+        return;
+      }
+      // Even a long unbroken word must remain visible, without ellipses.
+      line = "";
+      Array.from(word).forEach(function (character) {
+        if (line && !fits(line + character)) {
+          lines.push(line);
+          line = character;
+        } else {
+          line += character;
+        }
+      });
+    });
+    if (line) lines.push(line);
+    return lines;
+  }
+  read.forEach(function (book, i) {
+    book.spineWidth = cardWidth;
+    book.spineLines = wrapTitle(book.spineTitle);
+    book.spineHeight = Math.max(thickness(book.pageCount), book.spineLines.length * lineHeight + 14);
+    book.cardHeight = book.spineHeight + 12;
+    var column = i % 2 == 0 ? 0 : width / 2 + 30;
+    book.x = margin.left + column + (cardWidth - book.spineWidth) / 2;
+  });
+  measurement.remove();
+
+
+  function describeBook(d) {
+    return d.read.format("D MMM YYYY") + "  " + stars(d.rating) +
+      "  " + d.fullTitle + " - " + d.author;
+  }
+
+  var card = svg
+    .selectAll(".book-spine")
     .data(read)
     .enter()
-    .append("div")
-    .attr("class", "card");
-
-  card.append("span").text(function (d) {
-    return d.title;
-  });
-
-  card
-    .attr("title", function (d) {
-      return (
-        d.read.format("D MMM YYYY") +
-        "  " +
-        stars(d.rating) +
-        "  " +
-        d.title +
-        " - " +
-        d.author
-      );
-    })
-    .style("width", cardWidth + "px")
-    .style("border-color", function (d) {
-      return color(d.rating);
-    })
-    .style("left", function (b, i) {
-      b.cardHeight =
-        parseInt(window.getComputedStyle(this).getPropertyValue("height"), 10) +
-        10;
-      b.y = y(b.read);
-      var x;
-      if (i % 2 == 0) {
-        x = margin.left;
-      } else {
-        x = margin.left + width / 2 + 30;
-      }
-      b.x = x;
-      return x + "px";
-    })
+    .append("g")
+    .attr("class", "book-spine")
+    .attr("role", "link")
+    .attr("tabindex", 0)
+    .attr("aria-label", describeBook)
     .on("click", function (d) {
       window.open(linkToBook(d), "_blank");
+    })
+    .on("keydown", function (d) {
+      if (d3.event.key === "Enter" || d3.event.key === " ") {
+        d3.event.preventDefault();
+        window.open(linkToBook(d), "_blank");
+      }
     });
+
+  attachBookPreviews(card.nodes(), true);
+  card
+    .append("rect")
+    .attr("class", "spine-body")
+    .attr("rx", 2)
+    .attr("width", function (d) { return d.spineWidth; })
+    .attr("height", function (d) { return d.spineHeight; })
+    .attr("fill", function (d) { return d.spineColor; })
+    .attr("stroke", function (d) { return d3.interpolateRgb(d.spineColor, "#000")(0.12); });
+  // Fixed-depth edge lighting, rather than a gradient stretched over tall spines.
+  lighting.forEach(function (light) {
+    card.append("rect")
+      .attr("class", "spine-lighting")
+      .attr("rx", 2)
+      .attr("width", function (d) { return d.spineWidth; })
+      .attr("height", light.depth)
+      .attr("y", function (d) { return light.bottom ? d.spineHeight - light.depth : 0; })
+      .attr("fill", "url(#timeline-spine-" + light.name + ")")
+      .attr("opacity", function (d) {
+        // Perceptual lightness: pale covers need less lighting, dark covers more.
+        var darkness = 1 - Math.max(0, Math.min(1, d3.lab(d.spineColor).l / 100));
+        return light.bottom ? 0.08 + 0.20 * darkness : 0.06 + 0.24 * darkness;
+      })
+      .attr("pointer-events", "none")
+      .attr("aria-hidden", "true");
+  });
+  card
+    .append("text")
+    .attr("class", "spine-label")
+    .attr("x", 12)
+    .attr("y", function (d) {
+      return d.spineHeight / 2 - (d.spineLines.length - 1) * lineHeight / 2;
+    })
+    .attr("fill", function (d) { return spineLabelColor(d.spineColor, d.spineTextColor); })
+    .selectAll("tspan")
+    .data(function (d) { return d.spineLines; })
+    .enter()
+    .append("tspan")
+    .attr("x", 12)
+    .attr("dy", function (d, i) { return i === 0 ? 0 : lineHeight; })
+    .text(function (d) { return d; });
 
   layout(read, y);
 
-  card.style("top", function (d) {
-    return d.y1 + 25 - d.cardHeight / 2 + "px";
+  // Collision resolution can move cards beyond either end of the date range.
+  margin.top = Math.max(
+    margin.top,
+    d3.max(read, function (d) {
+      return d.cardHeight / 2 - d.y1;
+    }),
+  );
+  margin.bottom = Math.max(
+    margin.bottom,
+    d3.max(read, function (d) {
+      return d.y1 + d.cardHeight / 2 - height;
+    }),
+  );
+  d3.select("#timeline").attr("height", height + margin.top + margin.bottom);
+  svg.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  card.attr("transform", function (d) {
+    return "translate(" + (d.x - margin.left) + "," +
+      (d.y1 - d.spineHeight / 2) + ")";
   });
 
   var leftState = {};
@@ -272,11 +549,11 @@ function timeline() {
     .append("path")
     .attr("class", "edge")
     .style("stroke", function (d) {
-      return color(d.rating);
+      return d3.interpolateRgb(d.spineColor, "#000")(0.12);
     })
     .attr("d", function (d, i) {
       if (i % 2 == 0) {
-        return connect(x, d.x + cardWidth - margin.left, d.y, d.y1, leftState);
+        return connect(x, d.x + d.spineWidth - margin.left, d.y, d.y1, leftState);
       } else {
         return connect(x, d.x - margin.left, d.y, d.y1, rightState);
       }
@@ -288,13 +565,11 @@ function timeline() {
     .enter()
     .append("circle")
     .attr("class", "dot")
-    .attr("r", 7)
+    .attr("r", 3)
     .attr("cx", x)
-    .attr("cy", function (b) {
-      return y(b.read);
-    })
+    .attr("cy", function (d) { return y(d.read); })
     .style("fill", function (d) {
-      return color(d.rating);
+      return d3.interpolateRgb(d.spineColor, "#000")(0.12);
     });
 }
 
@@ -408,15 +683,7 @@ function timelineSmall(id, range) {
     return "M" + d.join("L") + "Z";
   });
 
-  cell.append("title").text(function (d) {
-    return (
-      d.data.read.format("MMM YYYY") +
-      "  " +
-      stars(d.data.rating) +
-      "  " +
-      d.data.title
-    );
-  });
+  attachBookChartPreviews(cell);
 }
 
 function distribution() {
@@ -577,15 +844,7 @@ function timelinePublications(id, height, domain) {
     return "M" + d.join("L") + "Z";
   });
 
-  cell.append("title").text(function (d) {
-    return (
-      d.data.published.format("YYYY") +
-      "  " +
-      stars(d.data.rating) +
-      "  " +
-      d.data.title
-    );
-  });
+  attachBookChartPreviews(cell);
 }
 
 function pageCount() {
@@ -672,9 +931,7 @@ function pageCount() {
     return "M" + d.join("L") + "Z";
   });
 
-  cell.append("title").text(function (d) {
-    return d.data.pageCount + "  " + stars(d.data.rating) + "  " + d.data.title;
-  });
+  attachBookChartPreviews(cell);
 }
 
 function pagePerYear() {
@@ -875,38 +1132,35 @@ function covers(id, list) {
       return d;
     });
 
-  card
-    .enter()
-    .append("a")
-    .attr("class", "book-cover")
+  var entered = card.enter().append("a").attr("class", "book-cover");
+  entered.append("img")
+    .on("error", function (d) {
+      var fallback = "/public/covers/" + d.id + ".jpg";
+      if (this.getAttribute("src") !== fallback) {
+        this.setAttribute("src", fallback);
+      }
+    });
+
+  var all = card.merge(entered)
+    .attr("href", linkToBook)
+    .attr("target", "_blank")
+    .attr("rel", "noopener noreferrer")
+    .attr("title", null)
     .on("click", function (d) {
+      d3.event.preventDefault();
       window.open(linkToBook(d), "_blank");
     })
-    .attr("title", function (d) {
-      return stars(d.rating) + "  " + d.title;
-    })
-    .append("img")
-    .attr("src", function (d) {
-      return "/public/covers/" + d.id + ".jpg";
-    })
-    .attr("alt", function (d) {
-      return d.title;
-    });
+    .attr("aria-label", function (d) { return d.fullTitle + " by " + d.author; });
+  all.select("img")
+    .attr("src", function (d) { return "/public/covers/" + d.id + ".webp"; })
+    .attr("alt", function (d) { return d.fullTitle; });
+  attachBookPreviews(all.nodes(), false);
 
-  card
-    .attr("title", function (d) {
-      return stars(d.rating) + "  " + d.title;
-    })
-    .select("img")
-    .attr("src", function (d) {
-      return "/public/covers/" + d.id + ".jpg";
-    })
-    .attr("alt", function (d) {
-      return d.title;
-    });
-
-  card.exit().remove();
-
+  function destroyPreview() {
+    if (this._tippy) this._tippy.destroy();
+  }
+  card.exit().each(destroyPreview).remove();
+  cardGroup.exit().selectAll(".book-cover").each(destroyPreview);
   cardGroup.exit().remove();
 }
 
@@ -1215,9 +1469,7 @@ function timelineShelf(id, range) {
       return shelfColor(d.key);
     })
     .append("title")
-    .text(function (d) {
-      return d.key;
-    });
+    .text(function (d) { return d.key; });
 
   svg
     .append("g")
@@ -1328,15 +1580,9 @@ function authors() {
     return "M" + d.join("L") + "Z";
   });
 
-  cell.append("title").text(function (d) {
-    return (
-      d.data[1].length +
-      " " +
-      d.data[0] +
-      "\n\n" +
-      _.map(d.data[1], "title").join("\n")
-    );
-  });
+  cell.attr("tabindex", 0).attr("role", "img")
+    .attr("aria-label", function (d) { return d.data[0] + ", " + d.data[1].length + " books"; });
+  attachPreviews(cell.nodes(), function (d) { return authorPreviewContent(d.data); });
 }
 
 var nextYear = (new Date().getFullYear() + 1).toString();
