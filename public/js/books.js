@@ -206,6 +206,16 @@ function layout(read, y, singleColumn) {
     read[i].y1 = points[i].y;
     read[i].y = y(read[i].read);
   }
+
+  if (singleColumn) {
+    // Force collisions are approximate; enforce the actual spine heights and gaps.
+    var ordered = _.sortBy(read, "y1");
+    for (var j = 1; j < ordered.length; j++) {
+      var previous = ordered[j - 1];
+      var current = ordered[j];
+      current.y1 = Math.max(current.y1, previous.y1 + (previous.cardHeight + current.cardHeight) / 2);
+    }
+  }
 }
 
 setCounter("read", read.length);
@@ -356,7 +366,7 @@ function timeline() {
   var margin = { top: 20, right: 0, bottom: 50, left: singleColumn ? 60 : 80 };
   var width = node.parentNode.clientWidth - margin.left - margin.right - (singleColumn ? 8 : 0);
   var domain = d3.extent(_.map(read, "read"));
-  var height = (domain[1] - domain[0]) / 15000000;
+  var height = (domain[1] - domain[0]) / 15000000 * (singleColumn ? 2 : 1);
   var svg = d3
     .select("#timeline")
     // Extend the viewport without moving or resizing the spines.
@@ -417,7 +427,7 @@ function timeline() {
 
   var cardWidth = singleColumn ? width - 24 : width / 2 - 30;
   var thickness = d3.scaleSqrt().domain([0, 1200]).range([20, 36]).clamp(true);
-  var lineHeight = singleColumn ? 15 : 13;
+  var lineHeight = 15;
   var textWidth = Math.max(1, cardWidth - 24);
   var measurement = svg.append("g").attr("class", "book-spine").attr("visibility", "hidden");
   var measureLabel = measurement.append("text").attr("class", "spine-label");

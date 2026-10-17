@@ -85,7 +85,7 @@
 }
 
 .books .book-spine .spine-label {
-    font-size: 10.5px;
+    font-size: 12px;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 500;
     dominant-baseline: middle;
@@ -447,10 +447,6 @@
         display: block;
         margin: 1.5rem 0 .5rem;
         font-size: 1.25rem;
-    }
-
-    .books .book-spine .spine-label {
-        font-size: 12px;
     }
 
     .books .desc {
