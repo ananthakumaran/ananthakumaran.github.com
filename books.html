@@ -3,7 +3,7 @@ layout: books
 title: Reading Statistics
 ---
 
-<div class="content">
+<div class="content" id="reading-stats">
   So far I have read <span class="counter read"></span> books written
   by <span class="counter author"></span> distinct authors
   in <span class="counter language">2</span> different languages
@@ -15,7 +15,7 @@ title: Reading Statistics
     A short timeline of when I read each book. A single dot represents
     a book and their positions are adjusted along the y axis such that
     they don't collide with each other. Color represents the rating,
-    the darker the better. Hover over a dot for details.
+    the darker the better. Hover over or tap a dot for details.
   </div>
 
   <svg id="rating-distribution" class="distribution"></svg>
@@ -55,8 +55,8 @@ title: Reading Statistics
   <div class="desc">
     Grouping of authors based on the number of books I have read. Each
     dot represents an author. The size of the dot is scaled based on
-    the number of books. Hover over a dot for the list of books. If a
-    book is written by more than one authors, only the primary author
+    the number of books. Hover over or tap a dot for the list of books. If a
+    book is written by more than one author, only the primary author
     of the book is considered.
   </div>
 
@@ -79,7 +79,7 @@ title: Reading Statistics
     filter selection.
   </div>
   <div class="filter">
-    Filter By:
+    <label for="filter-select">Filter by:</label>
     <form>
       <select id="filter-select">
       </select>
@@ -95,7 +95,8 @@ title: Reading Statistics
   <div class="clear"></div>
 
 </div>
-<div class="timeline">
+<div class="timeline" id="reading-timeline">
+  <h2 class="mobile-heading">Reading timeline</h2>
   <svg id="timeline"></svg>
 </div>
 

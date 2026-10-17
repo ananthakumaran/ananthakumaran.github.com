@@ -1,5 +1,18 @@
 /* global _, d3, $, moment, books, linkToBook, Intl, tippy */
 
+var compactBooks = window.matchMedia("(max-width: 48em)");
+
+function tickCount(width) {
+  return Math.max(2, Math.floor(width / 55));
+}
+
+function yearTicks(range, width) {
+  var count = Math.min(tickCount(width), Math.max(1, range[1].year() - range[0].year()));
+  return d3.ticks(range[0].year(), range[1].year(), count).map(function (value) {
+    return range[0].clone().year(value).startOf("year");
+  });
+}
+
 function year(string) {
   var n = parseInt(string, 10);
   return moment(new Date(n, 0, 1));
@@ -152,10 +165,10 @@ function connect(x1, x2, y1, y2, state) {
   ]);
 }
 
-function layout(read, y) {
+function layout(read, y, singleColumn) {
   var points = _.map(read, function (r, i) {
     var h = r.cardHeight;
-    return { x: i % 2 == 0 ? 0 : 5000, y: y(r.read), height: h };
+    return { x: singleColumn || i % 2 == 0 ? 0 : 5000, y: y(r.read), height: h };
   });
 
   var simulation = d3
@@ -203,7 +216,10 @@ function bookPreviewContent(book, showCover) {
   var popup = d3.select(document.createElement("div")).attr("class", "book-preview")
     .classed("book-preview--text-only", !showCover);
   if (showCover) {
-    var cover = popup.append("div").attr("class", "book-preview-cover");
+    var cover = popup.append("a").attr("class", "book-preview-cover")
+      .attr("href", linkToBook(book)).attr("target", "_blank")
+      .attr("rel", "noopener noreferrer")
+      .attr("aria-label", "View " + book.fullTitle + " on Goodreads");
     var image = cover.append("img").attr("alt", "");
     var missingCover = cover.append("span").text("No cover available").property("hidden", true);
     var fallback = "/public/covers/" + book.id + ".jpg";
@@ -282,7 +298,8 @@ function attachPreviews(nodes, renderContent) {
     duration: [120, 80],
     interactive: true,
     interactiveBorder: 12,
-    touch: false,
+    trigger: "mouseenter focus click",
+    touch: true,
     appendTo: function () { return document.body; },
     aria: { content: "describedby", expanded: false },
     popperOptions: {
@@ -335,13 +352,9 @@ function authorPreviewContent(author) {
 
 function timeline() {
   var node = document.getElementById("timeline");
-  var margin = { top: 20, right: 0, bottom: 50, left: 80 };
-  var width =
-    parseInt(
-      window.getComputedStyle(node.parentNode).getPropertyValue("width"),
-    ) -
-    margin.left -
-    margin.right;
+  var singleColumn = compactBooks.matches;
+  var margin = { top: 20, right: 0, bottom: 50, left: singleColumn ? 60 : 80 };
+  var width = node.parentNode.clientWidth - margin.left - margin.right - (singleColumn ? 8 : 0);
   var domain = d3.extent(_.map(read, "read"));
   var height = (domain[1] - domain[0]) / 15000000;
   var svg = d3
@@ -369,7 +382,7 @@ function timeline() {
   });
 
   var y = d3.scaleLinear().domain(domain).range([height, 0]);
-  var x = width / 2;
+  var x = singleColumn ? 0 : width / 2;
 
   var ticks = [];
   var start = domain[0].clone();
@@ -402,9 +415,9 @@ function timeline() {
     .attr("y1", y(domain[0]))
     .attr("y2", y(domain[1]));
 
-  var cardWidth = width / 2 - 30;
+  var cardWidth = singleColumn ? width - 24 : width / 2 - 30;
   var thickness = d3.scaleSqrt().domain([0, 1200]).range([20, 36]).clamp(true);
-  var lineHeight = 13;
+  var lineHeight = singleColumn ? 15 : 13;
   var textWidth = Math.max(1, cardWidth - 24);
   var measurement = svg.append("g").attr("class", "book-spine").attr("visibility", "hidden");
   var measureLabel = measurement.append("text").attr("class", "spine-label");
@@ -443,9 +456,9 @@ function timeline() {
   read.forEach(function (book, i) {
     book.spineWidth = cardWidth;
     book.spineLines = wrapTitle(book.spineTitle);
-    book.spineHeight = Math.max(thickness(book.pageCount), book.spineLines.length * lineHeight + 14);
+    book.spineHeight = Math.max(singleColumn ? 34 : 0, thickness(book.pageCount), book.spineLines.length * lineHeight + 14);
     book.cardHeight = book.spineHeight + 12;
-    var column = i % 2 == 0 ? 0 : width / 2 + 30;
+    var column = singleColumn ? 24 : (i % 2 == 0 ? 0 : width / 2 + 30);
     book.x = margin.left + column + (cardWidth - book.spineWidth) / 2;
   });
   measurement.remove();
@@ -466,6 +479,7 @@ function timeline() {
     .attr("tabindex", 0)
     .attr("aria-label", describeBook)
     .on("click", function (d) {
+      if (tippy.currentInput.isTouch) return;
       window.open(linkToBook(d), "_blank");
     })
     .on("keydown", function (d) {
@@ -498,6 +512,10 @@ function timeline() {
         var darkness = 1 - Math.max(0, Math.min(1, d3.lab(d.spineColor).l / 100));
         return light.bottom ? 0.08 + 0.20 * darkness : 0.06 + 0.24 * darkness;
       })
+      .style("--spine-dark-opacity", function (d) {
+        var lightness = Math.max(0, Math.min(1, d3.lab(d.spineColor).l / 100));
+        return light.bottom ? 0.14 + 0.20 * lightness : 0.04 + 0.08 * (1 - lightness);
+      })
       .attr("pointer-events", "none")
       .attr("aria-hidden", "true");
   });
@@ -517,7 +535,7 @@ function timeline() {
     .attr("dy", function (d, i) { return i === 0 ? 0 : lineHeight; })
     .text(function (d) { return d; });
 
-  layout(read, y);
+  layout(read, y, singleColumn);
 
   // Collision resolution can move cards beyond either end of the date range.
   margin.top = Math.max(
@@ -552,7 +570,7 @@ function timeline() {
       return d3.interpolateRgb(d.spineColor, "#000")(0.12);
     })
     .attr("d", function (d, i) {
-      if (i % 2 == 0) {
+      if (!singleColumn && i % 2 == 0) {
         return connect(x, d.x + d.spineWidth - margin.left, d.y, d.y1, leftState);
       } else {
         return connect(x, d.x - margin.left, d.y, d.y1, rightState);
@@ -587,14 +605,14 @@ function stars(n) {
 
 function timelineSmall(id, range) {
   var node = document.getElementById(id);
-  var margin = { top: 0, right: 10, bottom: 20, left: 10 };
+  var margin = { top: 0, right: 18, bottom: 20, left: 18 };
   var width =
     parseInt(
       window.getComputedStyle(node.parentNode).getPropertyValue("width"),
     ) -
     margin.right -
     margin.left;
-  var height = 70;
+  var height = compactBooks.matches ? 100 : 70;
   var svg = d3
     .select(node)
     .attr("width", width + margin.left + margin.right)
@@ -631,14 +649,7 @@ function timelineSmall(id, range) {
     .call(
       d3
         .axisBottom(x)
-        .tickValues(
-          _.map(
-            _.range(domain[0].year(), domain[1].year() + 1),
-            function (year) {
-              return moment(year, "YYYY");
-            },
-          ),
-        )
+        .tickValues(yearTicks(domain, width))
         .tickFormat(function (x) {
           return moment(x).format("YYYY");
         }),
@@ -661,7 +672,7 @@ function timelineSmall(id, range) {
         .y(function (d) {
           return d.y;
         })
-        .polygons(readInRange),
+        .polygons(readInRange).filter(Boolean),
     )
     .enter()
     .append("g");
@@ -719,7 +730,7 @@ function distribution() {
     .round(true)
     .padding([0.1]);
 
-  var xAxis = d3.axisBottom().scale(x);
+  var xAxis = d3.axisBottom().scale(x).ticks(tickCount(width));
 
   var yAxis = d3.axisLeft().scale(y);
 
@@ -757,6 +768,7 @@ function distribution() {
 function timelinePublications(id, height, domain) {
   var node = document.getElementById(id);
   var margin = { top: 0, right: 20, bottom: 20, left: 20 };
+  if (compactBooks.matches) height = Math.round(height * 1.4);
   var width =
     parseInt(
       window.getComputedStyle(node.parentNode).getPropertyValue("width"),
@@ -800,7 +812,7 @@ function timelinePublications(id, height, domain) {
     .attr("class", "axis")
     .attr("transform", "translate(0," + height + ")")
     .call(
-      d3.axisBottom(x).tickFormat(function (x) {
+      d3.axisBottom(x).tickValues(yearTicks(domain, width)).tickFormat(function (x) {
         return moment(x).format("YYYY");
       }),
     );
@@ -817,7 +829,7 @@ function timelinePublications(id, height, domain) {
     .y(function (d) {
       return d.y;
     })
-    .polygons(published);
+    .polygons(published).filter(Boolean);
 
   var cell = svg
     .append("g")
@@ -856,7 +868,7 @@ function pageCount() {
     ) -
     margin.right -
     margin.left;
-  var height = 100;
+  var height = compactBooks.matches ? 130 : 100;
   var svg = d3
     .select(node)
     .attr("width", width + margin.left + margin.right)
@@ -890,7 +902,7 @@ function pageCount() {
     .append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x));
+    .call(d3.axisBottom(x).ticks(tickCount(width)));
 
   var cell = svg
     .append("g")
@@ -909,7 +921,7 @@ function pageCount() {
         .y(function (d) {
           return d.y;
         })
-        .polygons(readWithCount),
+        .polygons(readWithCount).filter(Boolean),
     )
     .enter()
     .append("g");
@@ -974,7 +986,7 @@ function pagePerYear() {
     .round(true)
     .padding([0.1]);
 
-  var xAxis = d3.axisBottom().scale(x).tickFormat(d3.formatPrefix("1.0", 1e3));
+  var xAxis = d3.axisBottom().scale(x).ticks(tickCount(width)).tickFormat(d3.formatPrefix("1.0", 1e3));
 
   var yAxis = d3.axisLeft().scale(y);
 
@@ -1047,7 +1059,7 @@ function bookPerYear() {
     .round(true)
     .padding([0.1]);
 
-  var xAxis = d3.axisBottom().scale(x);
+  var xAxis = d3.axisBottom().scale(x).ticks(tickCount(width));
 
   var yAxis = d3.axisLeft().scale(y);
 
@@ -1099,9 +1111,6 @@ function bookPerYear() {
 
 function covers(id, list) {
   var node = document.getElementById(id);
-  var width = parseInt(
-    window.getComputedStyle(node.parentNode).getPropertyValue("width"),
-  );
   var container = d3.select(node);
   var data = _.chain(list)
     .sortBy("averageRating")
@@ -1134,6 +1143,8 @@ function covers(id, list) {
 
   var entered = card.enter().append("a").attr("class", "book-cover");
   entered.append("img")
+    .attr("loading", "lazy")
+    .attr("decoding", "async")
     .on("error", function (d) {
       var fallback = "/public/covers/" + d.id + ".jpg";
       if (this.getAttribute("src") !== fallback) {
@@ -1246,7 +1257,7 @@ function tags() {
         })
         .merge(selection)
         .html(function (d) {
-          return d.name + ' <span class="tag-count">' + d.books.length + "<span>";
+          return d.name + ' <span class="tag-count">' + d.books.length + "</span>";
         });
 
         d3.select(node).selectAll(".tag").filter(":last-child").dispatch("click");
@@ -1296,7 +1307,7 @@ function bookPerShelf() {
     .round(true)
     .padding([0.2]);
 
-  var xAxis = d3.axisBottom().scale(x);
+  var xAxis = d3.axisBottom().scale(x).ticks(tickCount(width));
 
   var yAxis = d3.axisLeft().scale(y);
 
@@ -1419,11 +1430,7 @@ function timelineShelf(id, range) {
 
   var xAxis = d3
     .axisBottom(x)
-    .tickValues(
-      _.map(_.range(range[0].year(), range[1].year() + 1), function (year) {
-        return moment(year, "YYYY");
-      }),
-    )
+    .tickValues(yearTicks(range, width))
     .tickFormat(function (x) {
       return moment(x).format("YYYY");
     });
@@ -1487,7 +1494,7 @@ function authors() {
     ) -
     margin.right -
     margin.left;
-  var height = 100;
+  var height = compactBooks.matches ? 140 : 100;
   var svg = d3
     .select(node)
     .attr("width", width + margin.left + margin.right)
@@ -1528,7 +1535,7 @@ function authors() {
     .append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x));
+    .call(d3.axisBottom(x).ticks(tickCount(width)));
 
   var count = _.chain(authors).values().groupBy("length").value();
   svg
@@ -1536,7 +1543,7 @@ function authors() {
     .attr("class", "axis top")
     .attr("transform", "translate(0,10)")
     .call(
-      d3.axisTop(x).tickFormat(function (x) {
+      d3.axisTop(x).ticks(tickCount(width)).tickFormat(function (x) {
         return count[x] ? count[x].length : 0;
       }),
     );
@@ -1558,7 +1565,7 @@ function authors() {
         .y(function (d) {
           return d.y;
         })
-        .polygons(data),
+        .polygons(data).filter(Boolean),
     )
     .enter()
     .append("g");
@@ -1585,30 +1592,39 @@ function authors() {
   attachPreviews(cell.nodes(), function (d) { return authorPreviewContent(d.data); });
 }
 
-var nextYear = (new Date().getFullYear() + 1).toString();
+var renderedChartSize;
 
-timeline();
-timelineSmall("timeline-small-1", [year("2009"), year("2017")]);
-timelineSmall("timeline-small-2", [year("2017"), year(nextYear)]);
-distribution();
-var breakAt = year("1970");
-timelinePublications("timeline-publication-too-old", 30, [
-  year("-1000"),
-  year("1800"),
-]);
-timelinePublications("timeline-publication-old", 50, [
-  year("1800"),
-  breakAt.clone(),
-]);
-timelinePublications("timeline-publication-current", 75, [
-  breakAt.clone(),
-  moment(),
-]);
-pageCount();
-pagePerYear();
-bookPerYear();
-authors();
-bookPerShelf();
-timelineShelf("timeline-shelf-1", [year("2009"), year("2017")]);
-timelineShelf("timeline-shelf-2", [year("2017"), year(nextYear)]);
+function renderCharts() {
+  var stats = document.getElementById("reading-stats");
+  var spine = document.getElementById("reading-timeline");
+  var size = [stats.clientWidth, spine.clientWidth, compactBooks.matches].join(":");
+  if (size === renderedChartSize) return;
+  renderedChartSize = size;
+
+  // Keep the cover selection; only rebuild charts whose geometry depends on width.
+  bookPreviews.forEach(function (preview) {
+    if (preview.reference.ownerSVGElement) preview.destroy();
+  });
+  d3.selectAll(".books svg").selectAll("*").remove();
+
+  var nextYear = (new Date().getFullYear() + 1).toString();
+  var breakAt = year("1970");
+  timeline();
+  timelineSmall("timeline-small-1", [year("2009"), year("2017")]);
+  timelineSmall("timeline-small-2", [year("2017"), year(nextYear)]);
+  distribution();
+  timelinePublications("timeline-publication-too-old", 30, [year("-1000"), year("1800")]);
+  timelinePublications("timeline-publication-old", 50, [year("1800"), breakAt.clone()]);
+  timelinePublications("timeline-publication-current", 75, [breakAt.clone(), moment()]);
+  pageCount();
+  pagePerYear();
+  bookPerYear();
+  authors();
+  bookPerShelf();
+  timelineShelf("timeline-shelf-1", [year("2009"), year("2017")]);
+  timelineShelf("timeline-shelf-2", [year("2017"), year(nextYear)]);
+}
+
+renderCharts();
 tags();
+window.addEventListener("resize", _.debounce(renderCharts, 200));
