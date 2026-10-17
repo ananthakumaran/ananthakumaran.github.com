@@ -23,7 +23,7 @@ vendor-tooltips:
 
 commit: book-covers
 	@git diff --cached --quiet || { echo "Existing staged changes: commit or unstage them before updating books." >&2; exit 1; }
-	git add -- books.csv books.json public/js/book-data.js 'public/covers/*.jpg' 'public/covers/*.webp'
+	git add -- books.csv books.json public/js/book-data.js 'public/covers/*.jpg' 'public/covers/*.avif'
 	@if git diff --cached --quiet; then \
 		echo "No book updates to commit."; \
 	else \

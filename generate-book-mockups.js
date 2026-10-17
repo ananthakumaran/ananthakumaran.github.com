@@ -15,6 +15,7 @@ const settings = {
   bumpStrength: 0.025,
   shininess: 128,
   reflectiveness: 0.5,
+  avifQuality: 80, // Keep 4× resolution, full chroma, and lossless alpha.
 };
 
 function normalize(x, y, z) {
@@ -398,7 +399,12 @@ async function renderBookMockup(input) {
   shadeCover(front, geometry);
   context.drawImage(front, 0, 0, width, height);
 
-  return canvas.encode("webp", 100);
+  return canvas.encode("avif", {
+    quality: settings.avifQuality,
+    alphaQuality: 100,
+    chromaSubsampling: "4:4:4", // Preserve fine colored lettering.
+    speed: 4,
+  });
 }
 
 async function main() {
@@ -422,7 +428,7 @@ async function main() {
   let skipped = 0;
   for (const file of files) {
     const input = path.join(coversDirectory, file);
-    const output = input.replace(/\.jpg$/, ".webp");
+    const output = input.replace(/\.jpg$/, ".avif");
     try {
       const sourceTime = (await fs.stat(input)).mtimeMs;
       const existing = await fs.stat(output).catch((error) => {
@@ -435,13 +441,13 @@ async function main() {
         existing.mtimeMs >= Math.max(sourceTime, scriptTime)
       ) {
         skipped++;
-        continue;
+      } else {
+        const buffer = await renderBookMockup(input);
+        await fs.writeFile(output + ".tmp", buffer);
+        await fs.rename(output + ".tmp", output);
+        generated++;
+        console.log("saved mockup:", path.basename(output));
       }
-      const buffer = await renderBookMockup(input);
-      await fs.writeFile(output + ".tmp", buffer);
-      await fs.rename(output + ".tmp", output);
-      generated++;
-      console.log("saved mockup:", path.basename(output));
     } catch (error) {
       process.exitCode = 1;
       console.error("error rendering:", file, error.message);

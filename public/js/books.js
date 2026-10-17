@@ -240,7 +240,7 @@ function bookPreviewContent(book, showCover) {
       }
       image.style("visibility", "hidden");
       missingCover.property("hidden", false);
-    }).attr("src", "/public/covers/" + book.id + ".webp");
+    }).attr("src", "/public/covers/" + book.id + ".avif");
   }
   var details = popup.append("div").attr("class", "book-preview-details");
   details.append("h3").text(book.fullTitle);
@@ -1173,7 +1173,7 @@ function covers(id, list) {
     })
     .attr("aria-label", function (d) { return d.fullTitle + " by " + d.author; });
   all.select("img")
-    .attr("src", function (d) { return "/public/covers/" + d.id + ".webp"; })
+    .attr("src", function (d) { return "/public/covers/" + d.id + ".avif"; })
     .attr("alt", function (d) { return d.fullTitle; });
   attachBookPreviews(all.nodes(), false);
 
