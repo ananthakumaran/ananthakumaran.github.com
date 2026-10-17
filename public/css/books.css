@@ -109,6 +109,42 @@
 
 .tippy-box[data-theme~="book-preview"] > .tippy-arrow {
     color: #fff;
+    border-color: inherit;
+}
+
+.tippy-box[data-theme~="book-preview"] > .tippy-arrow::before {
+    width: 11px;
+    height: 11px;
+    box-sizing: border-box;
+    background: currentColor;
+    border: solid;
+    border-color: inherit;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.tippy-box[data-theme~="book-preview"][data-placement^="top"] > .tippy-arrow::before {
+    bottom: -5.5px;
+    left: 2.5px;
+    border-width: 0 1px 1px 0;
+}
+
+.tippy-box[data-theme~="book-preview"][data-placement^="bottom"] > .tippy-arrow::before {
+    top: -5.5px;
+    left: 2.5px;
+    border-width: 1px 0 0 1px;
+}
+
+.tippy-box[data-theme~="book-preview"][data-placement^="left"] > .tippy-arrow::before {
+    right: -5.5px;
+    top: 2.5px;
+    border-width: 1px 1px 0 0;
+}
+
+.tippy-box[data-theme~="book-preview"][data-placement^="right"] > .tippy-arrow::before {
+    left: -5.5px;
+    top: 2.5px;
+    border-width: 0 0 1px 1px;
 }
 
 .book-preview {
