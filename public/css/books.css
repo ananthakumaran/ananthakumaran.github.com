@@ -370,29 +370,39 @@
     margin: 15px 0 0 0;
 }
 
+.book-group {
+    position: relative;
+}
+
 .book-group .star {
-    clear: both;
     padding: 20px 5px 5px;
     font-size: 0.7rem;
     font-family: sans-serif;
 }
 
 .book-cover {
-    float: left;
-    height: 140px;
-    margin: 5px 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    margin: 0;
     cursor: pointer;
 }
 
 .book-cover img {
     display: block;
-    width: 103px;
-    /* Shadow padding may overflow the unchanged 140px outer slot. */
-    height: 150px;
-    object-fit: contain;
-    object-position: top;
+    width: 100%;
+    /* Retain the original canvas proportions; crop only transparent padding. */
+    height: auto;
+    aspect-ratio: 103 / 150;
     border-radius: 0;
     margin: 0;
+}
+
+.book-cover img.book-cover-fallback {
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: top;
 }
 
 .books #authors .top.axis .domain {
@@ -502,31 +512,8 @@
         font-size: .65rem;
     }
 
-    .books .book-group {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
-        column-gap: 6px;
-    }
-
     .books .book-group .star {
-        grid-column: 1 / -1;
         font-size: .8rem;
-    }
-
-    .books .book-cover {
-        float: none;
-        display: block;
-        justify-self: center;
-        width: 100%;
-        max-width: 103px;
-        height: auto;
-        aspect-ratio: 103 / 140;
-    }
-
-    .books .book-cover img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 103 / 150;
     }
 
     .book-preview {

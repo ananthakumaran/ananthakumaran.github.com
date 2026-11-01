@@ -51,6 +51,7 @@ read = _.sortBy(
       averageRating: parseFloat(book["Average Rating"]),
       author: book["Author"],
       id: book["Book Id"],
+      coverHeight: Math.max(1, Math.min(150, Number(book["Cover Height"]) || 150)),
       spineColor: /^#[\da-f]{6}$/i.test(book["Spine Color"] || "")
         ? book["Spine Color"]
         : "#75695b",
@@ -1119,6 +1120,28 @@ function bookPerYear() {
     .call(yAxis);
 }
 
+// Keep rating groups separate; place the next book in the shortest column.
+function layoutCovers() {
+  document.querySelectorAll("#covers .book-group").forEach(function (group) {
+    var columns = 4;
+    var gap = 6;
+    var columnWidth = (group.clientWidth - gap * (columns - 1)) / columns;
+    var width = Math.max(1, Math.min(103, columnWidth));
+    var start = group.querySelector(".star").offsetHeight + 5;
+    var bottoms = Array(columns).fill(start);
+    d3.select(group).selectAll(".book-cover").each(function (book) {
+      var column = bottoms.indexOf(Math.min.apply(null, bottoms));
+      var height = width * book.coverHeight / 103;
+      this.style.width = width + "px";
+      this.style.height = height + "px";
+      this.style.left = (column * (columnWidth + gap) + (columnWidth - width) / 2) + "px";
+      this.style.top = bottoms[column] + "px";
+      bottoms[column] += height + 10;
+    });
+    group.style.height = Math.max.apply(null, bottoms) + "px";
+  });
+}
+
 function covers(id, list) {
   var node = document.getElementById(id);
   var container = d3.select(node);
@@ -1158,6 +1181,7 @@ function covers(id, list) {
     .on("error", function (d) {
       var fallback = "/public/covers/" + d.id + ".jpg";
       if (this.getAttribute("src") !== fallback) {
+        this.classList.add("book-cover-fallback");
         this.setAttribute("src", fallback);
       }
     });
@@ -1173,6 +1197,7 @@ function covers(id, list) {
     })
     .attr("aria-label", function (d) { return d.fullTitle + " by " + d.author; });
   all.select("img")
+    .classed("book-cover-fallback", false)
     .attr("src", function (d) { return "/public/covers/" + d.id + ".avif"; })
     .attr("alt", function (d) { return d.fullTitle; });
   attachBookPreviews(all.nodes(), false);
@@ -1183,6 +1208,7 @@ function covers(id, list) {
   card.exit().each(destroyPreview).remove();
   cardGroup.exit().selectAll(".book-cover").each(destroyPreview);
   cardGroup.exit().remove();
+  layoutCovers();
 }
 
 function tags() {
@@ -1638,3 +1664,5 @@ function renderCharts() {
 renderCharts();
 tags();
 window.addEventListener("resize", _.debounce(renderCharts, 200));
+window.addEventListener("resize", layoutCovers);
+if (document.fonts) document.fonts.ready.then(layoutCovers);

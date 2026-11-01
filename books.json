@@ -24,7 +24,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#040301",
-    "Spine Text Color": "#ff5c87"
+    "Spine Text Color": "#ff5c87",
+    "Cover Height": 146
   },
   {
     "Book Id": "60692351",
@@ -51,7 +52,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefdfd",
-    "Spine Text Color": "#9f3222"
+    "Spine Text Color": "#9f3222",
+    "Cover Height": 82
   },
   {
     "Book Id": "10549257",
@@ -78,7 +80,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f2cd6f",
-    "Spine Text Color": "#5f310f"
+    "Spine Text Color": "#5f310f",
+    "Cover Height": 148
   },
   {
     "Book Id": "59952",
@@ -105,7 +108,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#5993b0",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 80
   },
   {
     "Book Id": "392297",
@@ -132,7 +136,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfafc",
-    "Spine Text Color": "#a6221b"
+    "Spine Text Color": "#a6221b",
+    "Cover Height": 148
   },
   {
     "Book Id": "52362",
@@ -159,7 +164,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b6dec3",
-    "Spine Text Color": "#810f14"
+    "Spine Text Color": "#810f14",
+    "Cover Height": 148
   },
   {
     "Book Id": "13578175",
@@ -186,7 +192,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#95968d",
-    "Spine Text Color": "#010000"
+    "Spine Text Color": "#010000",
+    "Cover Height": 148
   },
   {
     "Book Id": "59980",
@@ -213,7 +220,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#180808",
-    "Spine Text Color": "#ff6a73"
+    "Spine Text Color": "#ff6a73",
+    "Cover Height": 148
   },
   {
     "Book Id": "297627",
@@ -240,7 +248,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f8f3e2",
-    "Spine Text Color": "#5f503c"
+    "Spine Text Color": "#5f503c",
+    "Cover Height": 148
   },
   {
     "Book Id": "48727813",
@@ -267,7 +276,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fab338",
-    "Spine Text Color": "#502807"
+    "Spine Text Color": "#502807",
+    "Cover Height": 148
   },
   {
     "Book Id": "41821",
@@ -294,7 +304,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2d2a53",
-    "Spine Text Color": "#f2f5ee"
+    "Spine Text Color": "#f2f5ee",
+    "Cover Height": 148
   },
   {
     "Book Id": "509784",
@@ -321,7 +332,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#8f5459",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "62294487",
@@ -348,7 +360,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f0f9fa",
-    "Spine Text Color": "#a8131a"
+    "Spine Text Color": "#a8131a",
+    "Cover Height": 128
   },
   {
     "Book Id": "36162660",
@@ -375,7 +388,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#382f2b",
-    "Spine Text Color": "#a7bdff"
+    "Spine Text Color": "#a7bdff",
+    "Cover Height": 148
   },
   {
     "Book Id": "12491550",
@@ -402,7 +416,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e63245",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 149
   },
   {
     "Book Id": "25499718",
@@ -429,7 +444,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#080f10",
-    "Spine Text Color": "#39adad"
+    "Spine Text Color": "#39adad",
+    "Cover Height": 148
   },
   {
     "Book Id": "235364769",
@@ -456,7 +472,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#a4a699",
-    "Spine Text Color": "#231904"
+    "Spine Text Color": "#231904",
+    "Cover Height": 125
   },
   {
     "Book Id": "239472387",
@@ -483,7 +500,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#868684",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 146
   },
   {
     "Book Id": "42046112",
@@ -510,7 +528,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fef202",
-    "Spine Text Color": "#08060b"
+    "Spine Text Color": "#08060b",
+    "Cover Height": 141
   },
   {
     "Book Id": "20655567",
@@ -537,7 +556,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#778990",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "192408",
@@ -564,7 +584,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0b0e11",
-    "Spine Text Color": "#ff6a86"
+    "Spine Text Color": "#ff6a86",
+    "Cover Height": 148
   },
   {
     "Book Id": "89185",
@@ -591,7 +612,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010000",
-    "Spine Text Color": "#ff5f58"
+    "Spine Text Color": "#ff5f58",
+    "Cover Height": 148
   },
   {
     "Book Id": "202492455",
@@ -618,7 +640,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d9c9a7",
-    "Spine Text Color": "#352a15"
+    "Spine Text Color": "#352a15",
+    "Cover Height": 148
   },
   {
     "Book Id": "89187",
@@ -645,7 +668,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010202",
-    "Spine Text Color": "#cbd6cd"
+    "Spine Text Color": "#cbd6cd",
+    "Cover Height": 148
   },
   {
     "Book Id": "35068705",
@@ -672,7 +696,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f9fafa",
-    "Spine Text Color": "#0c0f10"
+    "Spine Text Color": "#0c0f10",
+    "Cover Height": 150
   },
   {
     "Book Id": "7430121",
@@ -699,7 +724,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#92d1f0",
-    "Spine Text Color": "#033e4c"
+    "Spine Text Color": "#033e4c",
+    "Cover Height": 148
   },
   {
     "Book Id": "209234015",
@@ -726,7 +752,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#280911",
-    "Spine Text Color": "#dcc227"
+    "Spine Text Color": "#dcc227",
+    "Cover Height": 125
   },
   {
     "Book Id": "355697",
@@ -753,7 +780,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f9fbfd",
-    "Spine Text Color": "#ae0936"
+    "Spine Text Color": "#ae0936",
+    "Cover Height": 149
   },
   {
     "Book Id": "7733",
@@ -780,7 +808,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0d0807",
-    "Spine Text Color": "#d6865c"
+    "Spine Text Color": "#d6865c",
+    "Cover Height": 148
   },
   {
     "Book Id": "58027534",
@@ -807,7 +836,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbeed4",
-    "Spine Text Color": "#2d3375"
+    "Spine Text Color": "#2d3375",
+    "Cover Height": 148
   },
   {
     "Book Id": "22328",
@@ -834,7 +864,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#edeae6",
-    "Spine Text Color": "#684349"
+    "Spine Text Color": "#684349",
+    "Cover Height": 148
   },
   {
     "Book Id": "1126719",
@@ -861,7 +892,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#191815",
-    "Spine Text Color": "#fcfcf5"
+    "Spine Text Color": "#fcfcf5",
+    "Cover Height": 148
   },
   {
     "Book Id": "341735",
@@ -888,7 +920,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#161410",
-    "Spine Text Color": "#ff766f"
+    "Spine Text Color": "#ff766f",
+    "Cover Height": 148
   },
   {
     "Book Id": "55610573",
@@ -915,7 +948,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#055f86"
+    "Spine Text Color": "#055f86",
+    "Cover Height": 124
   },
   {
     "Book Id": "48484",
@@ -942,7 +976,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0c0709",
-    "Spine Text Color": "#b0a8b6"
+    "Spine Text Color": "#b0a8b6",
+    "Cover Height": 148
   },
   {
     "Book Id": "51496",
@@ -969,7 +1004,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#120e10",
-    "Spine Text Color": "#c9adb2"
+    "Spine Text Color": "#c9adb2",
+    "Cover Height": 148
   },
   {
     "Book Id": "40792913",
@@ -996,7 +1032,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfbfb",
-    "Spine Text Color": "#b00622"
+    "Spine Text Color": "#b00622",
+    "Cover Height": 148
   },
   {
     "Book Id": "210408850",
@@ -1023,7 +1060,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#73503e"
+    "Spine Text Color": "#73503e",
+    "Cover Height": 130
   },
   {
     "Book Id": "18866705",
@@ -1050,7 +1088,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fce907",
-    "Spine Text Color": "#99050c"
+    "Spine Text Color": "#99050c",
+    "Cover Height": 148
   },
   {
     "Book Id": "17306293",
@@ -1077,7 +1116,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b3d3e8",
-    "Spine Text Color": "#2e3e4b"
+    "Spine Text Color": "#2e3e4b",
+    "Cover Height": 148
   },
   {
     "Book Id": "13453029",
@@ -1104,7 +1144,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2a352f",
-    "Spine Text Color": "#ccc454"
+    "Spine Text Color": "#ccc454",
+    "Cover Height": 148
   },
   {
     "Book Id": "43889703",
@@ -1131,7 +1172,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#232323",
-    "Spine Text Color": "#fef002"
+    "Spine Text Color": "#fef002",
+    "Cover Height": 148
   },
   {
     "Book Id": "2767793",
@@ -1158,7 +1200,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ecd4b2",
-    "Spine Text Color": "#4d1430"
+    "Spine Text Color": "#4d1430",
+    "Cover Height": 148
   },
   {
     "Book Id": "68429",
@@ -1185,7 +1228,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#060d2f",
-    "Spine Text Color": "#20aeb7"
+    "Spine Text Color": "#20aeb7",
+    "Cover Height": 148
   },
   {
     "Book Id": "68428",
@@ -1212,7 +1256,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#8e6e8e",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "17214",
@@ -1239,7 +1284,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0d090c",
-    "Spine Text Color": "#f9f8f7"
+    "Spine Text Color": "#f9f8f7",
+    "Cover Height": 148
   },
   {
     "Book Id": "21617",
@@ -1266,7 +1312,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#322c29",
-    "Spine Text Color": "#ffa457"
+    "Spine Text Color": "#ffa457",
+    "Cover Height": 148
   },
   {
     "Book Id": "9864913",
@@ -1293,7 +1340,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcb107",
-    "Spine Text Color": "#502405"
+    "Spine Text Color": "#502405",
+    "Cover Height": 130
   },
   {
     "Book Id": "2131099",
@@ -1320,7 +1368,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#724d30",
-    "Spine Text Color": "#fff7ed"
+    "Spine Text Color": "#fff7ed",
+    "Cover Height": 148
   },
   {
     "Book Id": "276767",
@@ -1347,7 +1396,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#172815",
-    "Spine Text Color": "#5bbbd7"
+    "Spine Text Color": "#5bbbd7",
+    "Cover Height": 148
   },
   {
     "Book Id": "123245371",
@@ -1374,7 +1424,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020202",
-    "Spine Text Color": "#ffb913"
+    "Spine Text Color": "#ffb913",
+    "Cover Height": 149
   },
   {
     "Book Id": "22668729",
@@ -1401,7 +1452,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f1d448",
-    "Spine Text Color": "#2c2711"
+    "Spine Text Color": "#2c2711",
+    "Cover Height": 148
   },
   {
     "Book Id": "34921690",
@@ -1428,7 +1480,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#0c2f4f"
+    "Spine Text Color": "#0c2f4f",
+    "Cover Height": 120
   },
   {
     "Book Id": "70156",
@@ -1455,7 +1508,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030303",
-    "Spine Text Color": "#ff606a"
+    "Spine Text Color": "#ff606a",
+    "Cover Height": 128
   },
   {
     "Book Id": "51635102",
@@ -1482,7 +1536,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfefe",
-    "Spine Text Color": "#9e3128"
+    "Spine Text Color": "#9e3128",
+    "Cover Height": 131
   },
   {
     "Book Id": "18737900",
@@ -1509,7 +1564,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefffe",
-    "Spine Text Color": "#27346e"
+    "Spine Text Color": "#27346e",
+    "Cover Height": 126
   },
   {
     "Book Id": "44936",
@@ -1536,7 +1592,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfbee",
-    "Spine Text Color": "#8d3f2c"
+    "Spine Text Color": "#8d3f2c",
+    "Cover Height": 128
   },
   {
     "Book Id": "414895",
@@ -1563,7 +1620,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#050202",
-    "Spine Text Color": "#f4b370"
+    "Spine Text Color": "#f4b370",
+    "Cover Height": 148
   },
   {
     "Book Id": "28256439",
@@ -1590,7 +1648,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f7f6e2",
-    "Spine Text Color": "#36492d"
+    "Spine Text Color": "#36492d",
+    "Cover Height": 141
   },
   {
     "Book Id": "697251",
@@ -1617,7 +1676,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d73b2f",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "41597",
@@ -1644,7 +1704,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#6a246a",
-    "Spine Text Color": "#f6e433"
+    "Spine Text Color": "#f6e433",
+    "Cover Height": 141
   },
   {
     "Book Id": "50090498",
@@ -1671,7 +1732,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#28222c",
-    "Spine Text Color": "#fdfdfd"
+    "Spine Text Color": "#fdfdfd",
+    "Cover Height": 125
   },
   {
     "Book Id": "1301",
@@ -1698,7 +1760,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f1f1f1",
-    "Spine Text Color": "#962921"
+    "Spine Text Color": "#962921",
+    "Cover Height": 148
   },
   {
     "Book Id": "52824295",
@@ -1725,7 +1788,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2e469c",
-    "Spine Text Color": "#eaeaea"
+    "Spine Text Color": "#eaeaea",
+    "Cover Height": 146
   },
   {
     "Book Id": "50663055",
@@ -1752,7 +1816,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#cdab76",
-    "Spine Text Color": "#322211"
+    "Spine Text Color": "#322211",
+    "Cover Height": 148
   },
   {
     "Book Id": "59801863",
@@ -1779,7 +1844,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#312f30",
-    "Spine Text Color": "#fefefe"
+    "Spine Text Color": "#fefefe",
+    "Cover Height": 129
   },
   {
     "Book Id": "29519",
@@ -1806,7 +1872,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#090d17",
-    "Spine Text Color": "#ff6d65"
+    "Spine Text Color": "#ff6d65",
+    "Cover Height": 148
   },
   {
     "Book Id": "32171114",
@@ -1833,7 +1900,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#76798c",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 125
   },
   {
     "Book Id": "226004",
@@ -1860,7 +1928,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f9fcfe",
-    "Spine Text Color": "#ab1925"
+    "Spine Text Color": "#ab1925",
+    "Cover Height": 148
   },
   {
     "Book Id": "24455567",
@@ -1887,7 +1956,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#320408",
-    "Spine Text Color": "#ff7968"
+    "Spine Text Color": "#ff7968",
+    "Cover Height": 148
   },
   {
     "Book Id": "7865083",
@@ -1914,7 +1984,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020605",
-    "Spine Text Color": "#0bab8e"
+    "Spine Text Color": "#0bab8e",
+    "Cover Height": 148
   },
   {
     "Book Id": "43190966",
@@ -1941,7 +2012,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0e1c29",
-    "Spine Text Color": "#fefefe"
+    "Spine Text Color": "#fefefe",
+    "Cover Height": 128
   },
   {
     "Book Id": "323172",
@@ -1968,7 +2040,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#040607",
-    "Spine Text Color": "#b1eb31"
+    "Spine Text Color": "#b1eb31",
+    "Cover Height": 148
   },
   {
     "Book Id": "22014876",
@@ -1995,7 +2068,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fde13b",
-    "Spine Text Color": "#60402e"
+    "Spine Text Color": "#60402e",
+    "Cover Height": 148
   },
   {
     "Book Id": "126571502",
@@ -2022,7 +2096,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d9eeff",
-    "Spine Text Color": "#293e66"
+    "Spine Text Color": "#293e66",
+    "Cover Height": 142
   },
   {
     "Book Id": "59960",
@@ -2049,7 +2124,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030209",
-    "Spine Text Color": "#fcca04"
+    "Spine Text Color": "#fcca04",
+    "Cover Height": 148
   },
   {
     "Book Id": "41881472",
@@ -2076,7 +2152,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefffe",
-    "Spine Text Color": "#080909"
+    "Spine Text Color": "#080909",
+    "Cover Height": 148
   },
   {
     "Book Id": "7562764",
@@ -2103,7 +2180,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b11c1a",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "61903",
@@ -2130,7 +2208,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#6f0a07",
-    "Spine Text Color": "#ffb1aa"
+    "Spine Text Color": "#ffb1aa",
+    "Cover Height": 148
   },
   {
     "Book Id": "26889576",
@@ -2157,7 +2236,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0c1828",
-    "Spine Text Color": "#f68c1e"
+    "Spine Text Color": "#f68c1e",
+    "Cover Height": 148
   },
   {
     "Book Id": "99245",
@@ -2184,7 +2264,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#262651",
-    "Spine Text Color": "#dfaf61"
+    "Spine Text Color": "#dfaf61",
+    "Cover Height": 148
   },
   {
     "Book Id": "32758901",
@@ -2211,7 +2292,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2c3631",
-    "Spine Text Color": "#f1f5f1"
+    "Spine Text Color": "#f1f5f1",
+    "Cover Height": 148
   },
   {
     "Book Id": "56991925",
@@ -2238,7 +2320,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020f29",
-    "Spine Text Color": "#53a4de"
+    "Spine Text Color": "#53a4de",
+    "Cover Height": 120
   },
   {
     "Book Id": "190999",
@@ -2265,7 +2348,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#3c061d",
-    "Spine Text Color": "#e29555"
+    "Spine Text Color": "#e29555",
+    "Cover Height": 148
   },
   {
     "Book Id": "39943621",
@@ -2292,7 +2376,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4e100c",
-    "Spine Text Color": "#f8cf8e"
+    "Spine Text Color": "#f8cf8e",
+    "Cover Height": 148
   },
   {
     "Book Id": "45309700",
@@ -2319,7 +2404,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#71cff9",
-    "Spine Text Color": "#050608"
+    "Spine Text Color": "#050608",
+    "Cover Height": 143
   },
   {
     "Book Id": "222146",
@@ -2346,7 +2432,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4c8b30",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "22584",
@@ -2373,7 +2460,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2d3985",
-    "Spine Text Color": "#eed61d"
+    "Spine Text Color": "#eed61d",
+    "Cover Height": 148
   },
   {
     "Book Id": "25080953",
@@ -2400,7 +2488,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#b01719"
+    "Spine Text Color": "#b01719",
+    "Cover Height": 129
   },
   {
     "Book Id": "55182024",
@@ -2427,7 +2516,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#312b2a"
+    "Spine Text Color": "#312b2a",
+    "Cover Height": 131
   },
   {
     "Book Id": "102030",
@@ -2454,7 +2544,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#9b6f4c",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 143
   },
   {
     "Book Id": "60829943",
@@ -2481,7 +2572,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030204",
-    "Spine Text Color": "#fafafa"
+    "Spine Text Color": "#fafafa",
+    "Cover Height": 148
   },
   {
     "Book Id": "60821466",
@@ -2508,7 +2600,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#5377c3",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "56481725",
@@ -2535,7 +2628,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f0ecec",
-    "Spine Text Color": "#353333"
+    "Spine Text Color": "#353333",
+    "Cover Height": 148
   },
   {
     "Book Id": "179133",
@@ -2562,7 +2656,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#01b3d2",
-    "Spine Text Color": "#111a1b"
+    "Spine Text Color": "#111a1b",
+    "Cover Height": 131
   },
   {
     "Book Id": "1766063",
@@ -2589,7 +2684,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#292928",
-    "Spine Text Color": "#5fc5b7"
+    "Spine Text Color": "#5fc5b7",
+    "Cover Height": 148
   },
   {
     "Book Id": "54493401",
@@ -2616,7 +2712,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#060502",
-    "Spine Text Color": "#ccac2c"
+    "Spine Text Color": "#ccac2c",
+    "Cover Height": 148
   },
   {
     "Book Id": "40798",
@@ -2643,7 +2740,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#060b0a",
-    "Spine Text Color": "#16b229"
+    "Spine Text Color": "#16b229",
+    "Cover Height": 145
   },
   {
     "Book Id": "40099266",
@@ -2670,7 +2768,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b1d0de",
-    "Spine Text Color": "#313a3e"
+    "Spine Text Color": "#313a3e",
+    "Cover Height": 148
   },
   {
     "Book Id": "8935689",
@@ -2697,7 +2796,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#36abcb",
-    "Spine Text Color": "#051415"
+    "Spine Text Color": "#051415",
+    "Cover Height": 148
   },
   {
     "Book Id": "35492204",
@@ -2724,7 +2824,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfcfc",
-    "Spine Text Color": "#0f532e"
+    "Spine Text Color": "#0f532e",
+    "Cover Height": 120
   },
   {
     "Book Id": "42343",
@@ -2751,7 +2852,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b6b1aa",
-    "Spine Text Color": "#4f0707"
+    "Spine Text Color": "#4f0707",
+    "Cover Height": 148
   },
   {
     "Book Id": "7190",
@@ -2778,7 +2880,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020202",
-    "Spine Text Color": "#f2f5f5"
+    "Spine Text Color": "#f2f5f5",
+    "Cover Height": 140
   },
   {
     "Book Id": "18630",
@@ -2805,7 +2908,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0b0705",
-    "Spine Text Color": "#ff6a27"
+    "Spine Text Color": "#ff6a27",
+    "Cover Height": 148
   },
   {
     "Book Id": "102439",
@@ -2832,7 +2936,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#eff2fc",
-    "Spine Text Color": "#050467"
+    "Spine Text Color": "#050467",
+    "Cover Height": 148
   },
   {
     "Book Id": "18058001",
@@ -2859,7 +2964,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfdfd",
-    "Spine Text Color": "#993818"
+    "Spine Text Color": "#993818",
+    "Cover Height": 130
   },
   {
     "Book Id": "18154",
@@ -2886,7 +2992,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fef023",
-    "Spine Text Color": "#9c1413"
+    "Spine Text Color": "#9c1413",
+    "Cover Height": 148
   },
   {
     "Book Id": "394024",
@@ -2913,7 +3020,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020104",
-    "Spine Text Color": "#ec9806"
+    "Spine Text Color": "#ec9806",
+    "Cover Height": 148
   },
   {
     "Book Id": "582174",
@@ -2940,7 +3048,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#13181b",
-    "Spine Text Color": "#d4cdcf"
+    "Spine Text Color": "#d4cdcf",
+    "Cover Height": 141
   },
   {
     "Book Id": "8384010",
@@ -2967,7 +3076,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#674735",
-    "Spine Text Color": "#ffec9a"
+    "Spine Text Color": "#ffec9a",
+    "Cover Height": 117
   },
   {
     "Book Id": "34072",
@@ -2994,7 +3104,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d6a766",
-    "Spine Text Color": "#27250c"
+    "Spine Text Color": "#27250c",
+    "Cover Height": 86
   },
   {
     "Book Id": "1620069",
@@ -3021,7 +3132,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f6e3ae",
-    "Spine Text Color": "#544734"
+    "Spine Text Color": "#544734",
+    "Cover Height": 116
   },
   {
     "Book Id": "50202953",
@@ -3048,7 +3160,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010000",
-    "Spine Text Color": "#c98657"
+    "Spine Text Color": "#c98657",
+    "Cover Height": 148
   },
   {
     "Book Id": "25838602",
@@ -3075,7 +3188,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#c7311a",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "50840378",
@@ -3102,7 +3216,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#971829",
-    "Spine Text Color": "#ffe8b0"
+    "Spine Text Color": "#ffe8b0",
+    "Cover Height": 148
   },
   {
     "Book Id": "890",
@@ -3129,7 +3244,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d0b990",
-    "Spine Text Color": "#2a261c"
+    "Spine Text Color": "#2a261c",
+    "Cover Height": 146
   },
   {
     "Book Id": "11612989",
@@ -3156,7 +3272,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e8e8d0",
-    "Spine Text Color": "#684218"
+    "Spine Text Color": "#684218",
+    "Cover Height": 148
   },
   {
     "Book Id": "25587882",
@@ -3183,7 +3300,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e9d9bc",
-    "Spine Text Color": "#850d0d"
+    "Spine Text Color": "#850d0d",
+    "Cover Height": 146
   },
   {
     "Book Id": "38310",
@@ -3210,7 +3328,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e5e6d1",
-    "Spine Text Color": "#032d76"
+    "Spine Text Color": "#032d76",
+    "Cover Height": 80
   },
   {
     "Book Id": "9276509",
@@ -3237,7 +3356,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#ced2a8",
-    "Spine Text Color": "#4e2a16"
+    "Spine Text Color": "#4e2a16",
+    "Cover Height": 148
   },
   {
     "Book Id": "13642",
@@ -3264,7 +3384,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f2f1bc",
-    "Spine Text Color": "#525127"
+    "Spine Text Color": "#525127",
+    "Cover Height": 148
   },
   {
     "Book Id": "1807642",
@@ -3291,7 +3412,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#59151b",
-    "Spine Text Color": "#ddb478"
+    "Spine Text Color": "#ddb478",
+    "Cover Height": 148
   },
   {
     "Book Id": "353",
@@ -3318,7 +3440,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f99634",
-    "Spine Text Color": "#381c18"
+    "Spine Text Color": "#381c18",
+    "Cover Height": 148
   },
   {
     "Book Id": "42589303",
@@ -3345,7 +3468,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#302d2e"
+    "Spine Text Color": "#302d2e",
+    "Cover Height": 131
   },
   {
     "Book Id": "26759355",
@@ -3372,7 +3496,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffffe",
-    "Spine Text Color": "#03519d"
+    "Spine Text Color": "#03519d",
+    "Cover Height": 131
   },
   {
     "Book Id": "23529",
@@ -3399,7 +3524,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#040d11",
-    "Spine Text Color": "#ff6a6a"
+    "Spine Text Color": "#ff6a6a",
+    "Cover Height": 133
   },
   {
     "Book Id": "7745",
@@ -3426,7 +3552,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f2f4f1",
-    "Spine Text Color": "#4e1506"
+    "Spine Text Color": "#4e1506",
+    "Cover Height": 148
   },
   {
     "Book Id": "1753248",
@@ -3453,7 +3580,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f9f8f9",
-    "Spine Text Color": "#685136"
+    "Spine Text Color": "#685136",
+    "Cover Height": 148
   },
   {
     "Book Id": "164154",
@@ -3480,7 +3608,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#100e0e",
-    "Spine Text Color": "#efd017"
+    "Spine Text Color": "#efd017",
+    "Cover Height": 148
   },
   {
     "Book Id": "827",
@@ -3507,7 +3636,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#080202",
-    "Spine Text Color": "#ff635c"
+    "Spine Text Color": "#ff635c",
+    "Cover Height": 148
   },
   {
     "Book Id": "662",
@@ -3534,7 +3664,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020208",
-    "Spine Text Color": "#b79134"
+    "Spine Text Color": "#b79134",
+    "Cover Height": 148
   },
   {
     "Book Id": "1031555",
@@ -3561,7 +3692,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b0b1f3",
-    "Spine Text Color": "#282747"
+    "Spine Text Color": "#282747",
+    "Cover Height": 129
   },
   {
     "Book Id": "2165",
@@ -3588,7 +3720,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#019fe8",
-    "Spine Text Color": "#020305"
+    "Spine Text Color": "#020305",
+    "Cover Height": 148
   },
   {
     "Book Id": "106728",
@@ -3615,7 +3748,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e5cc96",
-    "Spine Text Color": "#2a2b16"
+    "Spine Text Color": "#2a2b16",
+    "Cover Height": 148
   },
   {
     "Book Id": "5297",
@@ -3642,7 +3776,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fafbf9",
-    "Spine Text Color": "#313130"
+    "Spine Text Color": "#313130",
+    "Cover Height": 148
   },
   {
     "Book Id": "42389860",
@@ -3669,7 +3804,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#000000",
-    "Spine Text Color": "#f8cb0a"
+    "Spine Text Color": "#f8cb0a",
+    "Cover Height": 141
   },
   {
     "Book Id": "310612",
@@ -3696,7 +3832,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#a9f4f3",
-    "Spine Text Color": "#100e37"
+    "Spine Text Color": "#100e37",
+    "Cover Height": 148
   },
   {
     "Book Id": "25451264",
@@ -3723,7 +3860,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0f0d0e",
-    "Spine Text Color": "#819cd1"
+    "Spine Text Color": "#819cd1",
+    "Cover Height": 148
   },
   {
     "Book Id": "23168817",
@@ -3750,7 +3888,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#040204",
-    "Spine Text Color": "#f1af13"
+    "Spine Text Color": "#f1af13",
+    "Cover Height": 148
   },
   {
     "Book Id": "20518872",
@@ -3777,7 +3916,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2d4b70",
-    "Spine Text Color": "#e1ee54"
+    "Spine Text Color": "#e1ee54",
+    "Cover Height": 148
   },
   {
     "Book Id": "17675119",
@@ -3804,7 +3944,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#221b44",
-    "Spine Text Color": "#f8d40f"
+    "Spine Text Color": "#f8d40f",
+    "Cover Height": 140
   },
   {
     "Book Id": "39971446",
@@ -3831,7 +3972,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#feffff",
-    "Spine Text Color": "#0456a7"
+    "Spine Text Color": "#0456a7",
+    "Cover Height": 131
   },
   {
     "Book Id": "11644253",
@@ -3858,7 +4000,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#673c3a",
-    "Spine Text Color": "#ffdabb"
+    "Spine Text Color": "#ffdabb",
+    "Cover Height": 144
   },
   {
     "Book Id": "6520980",
@@ -3885,7 +4028,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#333955",
-    "Spine Text Color": "#ffbe8f"
+    "Spine Text Color": "#ffbe8f",
+    "Cover Height": 142
   },
   {
     "Book Id": "156784",
@@ -3912,7 +4056,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ad7049",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "16064703",
@@ -3939,7 +4084,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#904e2c",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "16064693",
@@ -3966,7 +4112,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ead178",
-    "Spine Text Color": "#503a26"
+    "Spine Text Color": "#503a26",
+    "Cover Height": 142
   },
   {
     "Book Id": "76740",
@@ -3993,7 +4140,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2f2728",
-    "Spine Text Color": "#8cb8e9"
+    "Spine Text Color": "#8cb8e9",
+    "Cover Height": 148
   },
   {
     "Book Id": "816",
@@ -4020,7 +4168,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010101",
-    "Spine Text Color": "#ff5e6a"
+    "Spine Text Color": "#ff5e6a",
+    "Cover Height": 148
   },
   {
     "Book Id": "18269572",
@@ -4047,7 +4196,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#eeece7",
-    "Spine Text Color": "#6b2c13"
+    "Spine Text Color": "#6b2c13",
+    "Cover Height": 132
   },
   {
     "Book Id": "27968891",
@@ -4074,7 +4224,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#feffff",
-    "Spine Text Color": "#0356a7"
+    "Spine Text Color": "#0356a7",
+    "Cover Height": 131
   },
   {
     "Book Id": "17255186",
@@ -4101,7 +4252,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfefd",
-    "Spine Text Color": "#070707"
+    "Spine Text Color": "#070707",
+    "Cover Height": 146
   },
   {
     "Book Id": "22131010",
@@ -4128,7 +4280,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fc6530",
-    "Spine Text Color": "#010101"
+    "Spine Text Color": "#010101",
+    "Cover Height": 137
   },
   {
     "Book Id": "14836",
@@ -4155,7 +4308,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbf0da",
-    "Spine Text Color": "#a30f08"
+    "Spine Text Color": "#a30f08",
+    "Cover Height": 148
   },
   {
     "Book Id": "1190262",
@@ -4182,7 +4336,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#262a2a",
-    "Spine Text Color": "#aeddf1"
+    "Spine Text Color": "#aeddf1",
+    "Cover Height": 126
   },
   {
     "Book Id": "25426365",
@@ -4209,7 +4364,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#484848"
+    "Spine Text Color": "#484848",
+    "Cover Height": 140
   },
   {
     "Book Id": "35009908",
@@ -4236,7 +4392,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f1e469",
-    "Spine Text Color": "#79321f"
+    "Spine Text Color": "#79321f",
+    "Cover Height": 148
   },
   {
     "Book Id": "583796",
@@ -4263,7 +4420,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#dba574",
-    "Spine Text Color": "#381f12"
+    "Spine Text Color": "#381f12",
+    "Cover Height": 148
   },
   {
     "Book Id": "946677",
@@ -4290,7 +4448,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#fefffe",
-    "Spine Text Color": "#060b06"
+    "Spine Text Color": "#060b06",
+    "Cover Height": 148
   },
   {
     "Book Id": "331256",
@@ -4317,7 +4476,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbf545",
-    "Spine Text Color": "#215469"
+    "Spine Text Color": "#215469",
+    "Cover Height": 148
   },
   {
     "Book Id": "106164",
@@ -4344,7 +4504,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbfdf7",
-    "Spine Text Color": "#304f6c"
+    "Spine Text Color": "#304f6c",
+    "Cover Height": 148
   },
   {
     "Book Id": "33618151",
@@ -4371,7 +4532,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#0c0b0c"
+    "Spine Text Color": "#0c0b0c",
+    "Cover Height": 125
   },
   {
     "Book Id": "74034",
@@ -4398,7 +4560,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e72825",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "21887577",
@@ -4425,7 +4588,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffefe",
-    "Spine Text Color": "#933179"
+    "Spine Text Color": "#933179",
+    "Cover Height": 131
   },
   {
     "Book Id": "117833",
@@ -4452,7 +4616,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#763a2a",
-    "Spine Text Color": "#f7f1f0"
+    "Spine Text Color": "#f7f1f0",
+    "Cover Height": 148
   },
   {
     "Book Id": "34431414",
@@ -4479,7 +4644,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#b0122a"
+    "Spine Text Color": "#b0122a",
+    "Cover Height": 131
   },
   {
     "Book Id": "18702891",
@@ -4506,7 +4672,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f6f7f7",
-    "Spine Text Color": "#03588d"
+    "Spine Text Color": "#03588d",
+    "Cover Height": 125
   },
   {
     "Book Id": "40604658",
@@ -4533,7 +4700,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfcfc",
-    "Spine Text Color": "#ab172b"
+    "Spine Text Color": "#ab172b",
+    "Cover Height": 148
   },
   {
     "Book Id": "24075044",
@@ -4560,7 +4728,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#6b5441"
+    "Spine Text Color": "#6b5441",
+    "Cover Height": 120
   },
   {
     "Book Id": "167847",
@@ -4587,7 +4756,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#080c09",
-    "Spine Text Color": "#13a3f1"
+    "Spine Text Color": "#13a3f1",
+    "Cover Height": 148
   },
   {
     "Book Id": "167845",
@@ -4614,7 +4784,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#a4382b",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "394535",
@@ -4641,7 +4812,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcea50",
-    "Spine Text Color": "#4d1617"
+    "Spine Text Color": "#4d1617",
+    "Cover Height": 148
   },
   {
     "Book Id": "83895",
@@ -4668,7 +4840,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#f4d9b7",
-    "Spine Text Color": "#5a3f34"
+    "Spine Text Color": "#5a3f34",
+    "Cover Height": 128
   },
   {
     "Book Id": "19144780",
@@ -4695,7 +4868,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#9c6a2b",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 125
   },
   {
     "Book Id": "3",
@@ -4722,7 +4896,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#343739",
-    "Spine Text Color": "#f9de3c"
+    "Spine Text Color": "#f9de3c",
+    "Cover Height": 148
   },
   {
     "Book Id": "37976541",
@@ -4749,7 +4924,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010000",
-    "Spine Text Color": "#ff5f5e"
+    "Spine Text Color": "#ff5f5e",
+    "Cover Height": 147
   },
   {
     "Book Id": "82120",
@@ -4776,7 +4952,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d33a24",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "900892",
@@ -4803,7 +4980,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffe516",
-    "Spine Text Color": "#514a07"
+    "Spine Text Color": "#514a07",
+    "Cover Height": 148
   },
   {
     "Book Id": "18626864",
@@ -4830,7 +5008,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4a0503",
-    "Spine Text Color": "#ff8b87"
+    "Spine Text Color": "#ff8b87",
+    "Cover Height": 148
   },
   {
     "Book Id": "301563",
@@ -4857,7 +5036,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#11100d",
-    "Spine Text Color": "#a5a05f"
+    "Spine Text Color": "#a5a05f",
+    "Cover Height": 148
   },
   {
     "Book Id": "673488",
@@ -4884,7 +5064,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#045697",
-    "Spine Text Color": "#f0f8ff"
+    "Spine Text Color": "#f0f8ff",
+    "Cover Height": 148
   },
   {
     "Book Id": "1032724",
@@ -4911,7 +5092,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d6d6cb",
-    "Spine Text Color": "#181715"
+    "Spine Text Color": "#181715",
+    "Cover Height": 131
   },
   {
     "Book Id": "840",
@@ -4938,7 +5120,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#242424",
-    "Spine Text Color": "#ff8f81"
+    "Spine Text Color": "#ff8f81",
+    "Cover Height": 148
   },
   {
     "Book Id": "3368",
@@ -4965,7 +5148,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#89462e"
+    "Spine Text Color": "#89462e",
+    "Cover Height": 128
   },
   {
     "Book Id": "134825",
@@ -4992,7 +5176,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfdfc",
-    "Spine Text Color": "#6e3412"
+    "Spine Text Color": "#6e3412",
+    "Cover Height": 148
   },
   {
     "Book Id": "8608541",
@@ -5019,7 +5204,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffffe",
-    "Spine Text Color": "#6e5036"
+    "Spine Text Color": "#6e5036",
+    "Cover Height": 148
   },
   {
     "Book Id": "23503006",
@@ -5046,7 +5232,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2d2d2d",
-    "Spine Text Color": "#f7f5f2"
+    "Spine Text Color": "#f7f5f2",
+    "Cover Height": 135
   },
   {
     "Book Id": "18182",
@@ -5073,7 +5260,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d8d28d",
-    "Spine Text Color": "#5f2e28"
+    "Spine Text Color": "#5f2e28",
+    "Cover Height": 81
   },
   {
     "Book Id": "4004178",
@@ -5100,7 +5288,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#013274",
-    "Spine Text Color": "#d1ebf3"
+    "Spine Text Color": "#d1ebf3",
+    "Cover Height": 148
   },
   {
     "Book Id": "5152210",
@@ -5127,7 +5316,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#edeef2",
-    "Spine Text Color": "#2c3433"
+    "Spine Text Color": "#2c3433",
+    "Cover Height": 148
   },
   {
     "Book Id": "21611",
@@ -5154,7 +5344,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#131115",
-    "Spine Text Color": "#69cef0"
+    "Spine Text Color": "#69cef0",
+    "Cover Height": 148
   },
   {
     "Book Id": "112255",
@@ -5181,7 +5372,8 @@
     "Read Count": "0",
     "Owned Copies": "1",
     "Spine Color": "#fffffe",
-    "Spine Text Color": "#3b5b7e"
+    "Spine Text Color": "#3b5b7e",
+    "Cover Height": 128
   },
   {
     "Book Id": "1416957",
@@ -5208,7 +5400,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030303",
-    "Spine Text Color": "#17a8a1"
+    "Spine Text Color": "#17a8a1",
+    "Cover Height": 123
   },
   {
     "Book Id": "15195",
@@ -5235,7 +5428,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#3d3c42",
-    "Spine Text Color": "#ffc0c8"
+    "Spine Text Color": "#ffc0c8",
+    "Cover Height": 144
   },
   {
     "Book Id": "28259132",
@@ -5262,7 +5456,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#282828",
-    "Spine Text Color": "#ff9692"
+    "Spine Text Color": "#ff9692",
+    "Cover Height": 148
   },
   {
     "Book Id": "94486",
@@ -5289,7 +5484,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d6d0d2",
-    "Spine Text Color": "#771a1c"
+    "Spine Text Color": "#771a1c",
+    "Cover Height": 148
   },
   {
     "Book Id": "41149696",
@@ -5316,7 +5512,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#94366a"
+    "Spine Text Color": "#94366a",
+    "Cover Height": 120
   },
   {
     "Book Id": "77711",
@@ -5343,7 +5540,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#121311",
-    "Spine Text Color": "#6ea0eb"
+    "Spine Text Color": "#6ea0eb",
+    "Cover Height": 148
   },
   {
     "Book Id": "1768603",
@@ -5370,7 +5568,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfdfd",
-    "Spine Text Color": "#921348"
+    "Spine Text Color": "#921348",
+    "Cover Height": 148
   },
   {
     "Book Id": "7090",
@@ -5397,7 +5596,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ad6e96",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "18079367",
@@ -5424,7 +5624,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffffe",
-    "Spine Text Color": "#b0112a"
+    "Spine Text Color": "#b0112a",
+    "Cover Height": 131
   },
   {
     "Book Id": "50091",
@@ -5451,7 +5652,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d5e8f0",
-    "Spine Text Color": "#204b7a"
+    "Spine Text Color": "#204b7a",
+    "Cover Height": 148
   },
   {
     "Book Id": "27276428",
@@ -5478,7 +5680,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcd209",
-    "Spine Text Color": "#7d191b"
+    "Spine Text Color": "#7d191b",
+    "Cover Height": 148
   },
   {
     "Book Id": "34646883",
@@ -5505,7 +5708,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#feffff",
-    "Spine Text Color": "#0455a6"
+    "Spine Text Color": "#0455a6",
+    "Cover Height": 131
   },
   {
     "Book Id": "15700613",
@@ -5532,7 +5736,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#18272b",
-    "Spine Text Color": "#fcfaf4"
+    "Spine Text Color": "#fcfaf4",
+    "Cover Height": 148
   },
   {
     "Book Id": "402093",
@@ -5559,7 +5764,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f7fcf5",
-    "Spine Text Color": "#af0404"
+    "Spine Text Color": "#af0404",
+    "Cover Height": 150
   },
   {
     "Book Id": "108583",
@@ -5586,7 +5792,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#dc1d2f",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "13651",
@@ -5613,7 +5820,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#feab05",
-    "Spine Text Color": "#4b0b30"
+    "Spine Text Color": "#4b0b30",
+    "Cover Height": 148
   },
   {
     "Book Id": "23754",
@@ -5640,7 +5848,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#090809",
-    "Spine Text Color": "#d48858"
+    "Spine Text Color": "#d48858",
+    "Cover Height": 148
   },
   {
     "Book Id": "7465712",
@@ -5667,7 +5876,8 @@
     "Read Count": "2",
     "Owned Copies": "0",
     "Spine Color": "#fcfdfb",
-    "Spine Text Color": "#a12c26"
+    "Spine Text Color": "#a12c26",
+    "Cover Height": 148
   },
   {
     "Book Id": "29981",
@@ -5694,7 +5904,8 @@
     "Read Count": "2",
     "Owned Copies": "0",
     "Spine Color": "#030505",
-    "Spine Text Color": "#74b88c"
+    "Spine Text Color": "#74b88c",
+    "Cover Height": 148
   },
   {
     "Book Id": "60113",
@@ -5721,7 +5932,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbfbfb",
-    "Spine Text Color": "#a4231c"
+    "Spine Text Color": "#a4231c",
+    "Cover Height": 148
   },
   {
     "Book Id": "226469",
@@ -5748,7 +5960,8 @@
     "Read Count": "2",
     "Owned Copies": "0",
     "Spine Color": "#3a3131",
-    "Spine Text Color": "#f5b831"
+    "Spine Text Color": "#f5b831",
+    "Cover Height": 148
   },
   {
     "Book Id": "10138607",
@@ -5775,7 +5988,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#56220d",
-    "Spine Text Color": "#ddbd53"
+    "Spine Text Color": "#ddbd53",
+    "Cover Height": 130
   },
   {
     "Book Id": "6493321",
@@ -5802,7 +6016,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#252122",
-    "Spine Text Color": "#fae5d3"
+    "Spine Text Color": "#fae5d3",
+    "Cover Height": 139
   },
   {
     "Book Id": "102920",
@@ -5829,7 +6044,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#110f15",
-    "Spine Text Color": "#ff6d84"
+    "Spine Text Color": "#ff6d84",
+    "Cover Height": 147
   },
   {
     "Book Id": "472331",
@@ -5856,7 +6072,8 @@
     "Read Count": "2",
     "Owned Copies": "0",
     "Spine Color": "#fdf21c",
-    "Spine Text Color": "#922629"
+    "Spine Text Color": "#922629",
+    "Cover Height": 148
   },
   {
     "Book Id": "30165203",
@@ -5883,7 +6100,8 @@
     "Read Count": "2",
     "Owned Copies": "0",
     "Spine Color": "#013368",
-    "Spine Text Color": "#7bcff4"
+    "Spine Text Color": "#7bcff4",
+    "Cover Height": 148
   },
   {
     "Book Id": "8610067",
@@ -5910,7 +6128,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#edced0",
-    "Spine Text Color": "#22416b"
+    "Spine Text Color": "#22416b",
+    "Cover Height": 144
   },
   {
     "Book Id": "9789692",
@@ -5937,7 +6156,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#143370",
-    "Spine Text Color": "#86cdff"
+    "Spine Text Color": "#86cdff",
+    "Cover Height": 133
   },
   {
     "Book Id": "1108124",
@@ -5964,7 +6184,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#afb2af",
-    "Spine Text Color": "#322418"
+    "Spine Text Color": "#322418",
+    "Cover Height": 138
   },
   {
     "Book Id": "3828902",
@@ -5991,7 +6212,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefdfc",
-    "Spine Text Color": "#304e2e"
+    "Spine Text Color": "#304e2e",
+    "Cover Height": 148
   },
   {
     "Book Id": "537480",
@@ -6018,7 +6240,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfefe",
-    "Spine Text Color": "#68562c"
+    "Spine Text Color": "#68562c",
+    "Cover Height": 148
   },
   {
     "Book Id": "375802",
@@ -6045,7 +6268,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#070808",
-    "Spine Text Color": "#6f9fbd"
+    "Spine Text Color": "#6f9fbd",
+    "Cover Height": 148
   },
   {
     "Book Id": "9593",
@@ -6072,7 +6296,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b9ffc3",
-    "Spine Text Color": "#4f070a"
+    "Spine Text Color": "#4f070a",
+    "Cover Height": 148
   },
   {
     "Book Id": "7181921",
@@ -6099,7 +6324,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#f58e14",
-    "Spine Text Color": "#241c10"
+    "Spine Text Color": "#241c10",
+    "Cover Height": 133
   },
   {
     "Book Id": "18160",
@@ -6126,7 +6352,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#080a0a",
-    "Spine Text Color": "#9a99a3"
+    "Spine Text Color": "#9a99a3",
+    "Cover Height": 148
   },
   {
     "Book Id": "29771604",
@@ -6153,7 +6380,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#211f20",
-    "Spine Text Color": "#fafafa"
+    "Spine Text Color": "#fafafa",
+    "Cover Height": 149
   },
   {
     "Book Id": "31921",
@@ -6180,7 +6408,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#5a64af",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "1355465",
@@ -6207,7 +6436,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e76a5c",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "18621323",
@@ -6234,7 +6464,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#5a8fa4",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "11737352",
@@ -6261,7 +6492,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ba9577",
-    "Spine Text Color": "#120d09"
+    "Spine Text Color": "#120d09",
+    "Cover Height": 122
   },
   {
     "Book Id": "567610",
@@ -6288,7 +6520,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbfdfc",
-    "Spine Text Color": "#ae0f04"
+    "Spine Text Color": "#ae0f04",
+    "Cover Height": 148
   },
   {
     "Book Id": "7015635",
@@ -6315,7 +6548,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffffe",
-    "Spine Text Color": "#496022"
+    "Spine Text Color": "#496022",
+    "Cover Height": 148
   },
   {
     "Book Id": "20527133",
@@ -6342,7 +6576,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#4a5156"
+    "Spine Text Color": "#4a5156",
+    "Cover Height": 148
   },
   {
     "Book Id": "25798014",
@@ -6369,7 +6604,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#343434"
+    "Spine Text Color": "#343434",
+    "Cover Height": 148
   },
   {
     "Book Id": "356824",
@@ -6396,7 +6632,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfdfe",
-    "Spine Text Color": "#722e52"
+    "Spine Text Color": "#722e52",
+    "Cover Height": 148
   },
   {
     "Book Id": "461104",
@@ -6423,7 +6660,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d72b01",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 141
   },
   {
     "Book Id": "13036196",
@@ -6450,7 +6688,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfdfd",
-    "Spine Text Color": "#555656"
+    "Spine Text Color": "#555656",
+    "Cover Height": 148
   },
   {
     "Book Id": "2094",
@@ -6477,7 +6716,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#13161a",
-    "Spine Text Color": "#a7a558"
+    "Spine Text Color": "#a7a558",
+    "Cover Height": 148
   },
   {
     "Book Id": "20604826",
@@ -6504,7 +6744,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ee1b2c",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "218099",
@@ -6531,7 +6772,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ecebf1",
-    "Spine Text Color": "#343337"
+    "Spine Text Color": "#343337",
+    "Cover Height": 148
   },
   {
     "Book Id": "51291",
@@ -6558,7 +6800,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#3244d9",
-    "Spine Text Color": "#fffefc"
+    "Spine Text Color": "#fffefc",
+    "Cover Height": 147
   },
   {
     "Book Id": "11797365",
@@ -6585,7 +6828,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#52534e",
-    "Spine Text Color": "#fff1e3"
+    "Spine Text Color": "#fff1e3",
+    "Cover Height": 148
   },
   {
     "Book Id": "1202",
@@ -6612,7 +6856,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fafbf3",
-    "Spine Text Color": "#784c18"
+    "Spine Text Color": "#784c18",
+    "Cover Height": 148
   },
   {
     "Book Id": "61535",
@@ -6639,7 +6884,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#fefefd",
-    "Spine Text Color": "#762f2e"
+    "Spine Text Color": "#762f2e",
+    "Cover Height": 148
   },
   {
     "Book Id": "123471",
@@ -6666,7 +6912,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#fcfefc",
-    "Spine Text Color": "#853e6d"
+    "Spine Text Color": "#853e6d",
+    "Cover Height": 140
   },
   {
     "Book Id": "5544",
@@ -6693,7 +6940,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#6a6f73",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "24113",
@@ -6720,7 +6968,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#2d282b",
-    "Spine Text Color": "#eaa677"
+    "Spine Text Color": "#eaa677",
+    "Cover Height": 142
   },
   {
     "Book Id": "1713426",
@@ -6747,7 +6996,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0377c1",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "10140462",
@@ -6774,7 +7024,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#c7ebe9",
-    "Spine Text Color": "#404b4b"
+    "Spine Text Color": "#404b4b",
+    "Cover Height": 148
   },
   {
     "Book Id": "581125",
@@ -6801,7 +7052,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f8f6f0",
-    "Spine Text Color": "#80441f"
+    "Spine Text Color": "#80441f",
+    "Cover Height": 148
   },
   {
     "Book Id": "1199688",
@@ -6828,7 +7080,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0c0403",
-    "Spine Text Color": "#ff6555"
+    "Spine Text Color": "#ff6555",
+    "Cover Height": 148
   },
   {
     "Book Id": "4671",
@@ -6855,7 +7108,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f7f7f0",
-    "Spine Text Color": "#361b46"
+    "Spine Text Color": "#361b46",
+    "Cover Height": 148
   },
   {
     "Book Id": "830",
@@ -6882,7 +7136,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#07060d",
-    "Spine Text Color": "#7094ff"
+    "Spine Text Color": "#7094ff",
+    "Cover Height": 148
   },
   {
     "Book Id": "32585",
@@ -6909,7 +7164,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#520804",
-    "Spine Text Color": "#fbd994"
+    "Spine Text Color": "#fbd994",
+    "Cover Height": 148
   },
   {
     "Book Id": "736131",
@@ -6936,7 +7192,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#c2272f",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 100
   },
   {
     "Book Id": "1280983",
@@ -6963,7 +7220,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#55abb7",
-    "Spine Text Color": "#171201"
+    "Spine Text Color": "#171201",
+    "Cover Height": 147
   },
   {
     "Book Id": "29580",
@@ -6990,7 +7248,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b0ac02",
-    "Spine Text Color": "#06052f"
+    "Spine Text Color": "#06052f",
+    "Cover Height": 148
   },
   {
     "Book Id": "16690",
@@ -7017,7 +7276,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#313131",
-    "Spine Text Color": "#ffa995"
+    "Spine Text Color": "#ffa995",
+    "Cover Height": 148
   },
   {
     "Book Id": "29581",
@@ -7044,7 +7304,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#6efa03",
-    "Spine Text Color": "#06477a"
+    "Spine Text Color": "#06477a",
+    "Cover Height": 148
   },
   {
     "Book Id": "29579",
@@ -7071,7 +7332,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fc9227",
-    "Spine Text Color": "#4c0109"
+    "Spine Text Color": "#4c0109",
+    "Cover Height": 148
   },
   {
     "Book Id": "5129",
@@ -7098,7 +7360,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefdfd",
-    "Spine Text Color": "#382c34"
+    "Spine Text Color": "#382c34",
+    "Cover Height": 148
   },
   {
     "Book Id": "18373",
@@ -7125,7 +7388,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ef191a",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "209525",
@@ -7152,7 +7416,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#150b0b",
-    "Spine Text Color": "#d58f4e"
+    "Spine Text Color": "#d58f4e",
+    "Cover Height": 148
   },
   {
     "Book Id": "77566",
@@ -7179,7 +7444,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#171411",
-    "Spine Text Color": "#bf9d3c"
+    "Spine Text Color": "#bf9d3c",
+    "Cover Height": 148
   },
   {
     "Book Id": "77565",
@@ -7206,7 +7472,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#293034",
-    "Spine Text Color": "#e9b33c"
+    "Spine Text Color": "#e9b33c",
+    "Cover Height": 148
   },
   {
     "Book Id": "194366",
@@ -7233,7 +7500,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#5a363a",
-    "Spine Text Color": "#62e6ff"
+    "Spine Text Color": "#62e6ff",
+    "Cover Height": 148
   },
   {
     "Book Id": "7624",
@@ -7260,7 +7528,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#438784",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "18626849",
@@ -7287,7 +7556,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#362d2c",
-    "Spine Text Color": "#ffa870"
+    "Spine Text Color": "#ffa870",
+    "Cover Height": 148
   },
   {
     "Book Id": "3590",
@@ -7314,7 +7584,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#581e1d",
-    "Spine Text Color": "#ffac67"
+    "Spine Text Color": "#ffac67",
+    "Cover Height": 148
   },
   {
     "Book Id": "8921",
@@ -7341,7 +7612,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#074e6f",
-    "Spine Text Color": "#ffddc1"
+    "Spine Text Color": "#ffddc1",
+    "Cover Height": 148
   },
   {
     "Book Id": "194373",
@@ -7368,7 +7640,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#765056",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 149
   },
   {
     "Book Id": "102868",
@@ -7395,7 +7668,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#6c1306",
-    "Spine Text Color": "#ffb399"
+    "Spine Text Color": "#ffb399",
+    "Cover Height": 148
   },
   {
     "Book Id": "15241",
@@ -7422,7 +7696,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#231911",
-    "Spine Text Color": "#cb9d76"
+    "Spine Text Color": "#cb9d76",
+    "Cover Height": 148
   },
   {
     "Book Id": "18512",
@@ -7449,7 +7724,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#110b06",
-    "Spine Text Color": "#ff5fb9"
+    "Spine Text Color": "#ff5fb9",
+    "Cover Height": 148
   },
   {
     "Book Id": "34",
@@ -7476,7 +7752,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#1b2215",
-    "Spine Text Color": "#ccd0d4"
+    "Spine Text Color": "#ccd0d4",
+    "Cover Height": 148
   },
   {
     "Book Id": "608474",
@@ -7503,7 +7780,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#252e27",
-    "Spine Text Color": "#f5f7f5"
+    "Spine Text Color": "#f5f7f5",
+    "Cover Height": 148
   },
   {
     "Book Id": "350",
@@ -7530,7 +7808,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2951ac",
-    "Spine Text Color": "#f5fbff"
+    "Spine Text Color": "#f5fbff",
+    "Cover Height": 148
   },
   {
     "Book Id": "7604",
@@ -7557,7 +7836,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#8d8f2b",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "149267",
@@ -7584,7 +7864,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#050718",
-    "Spine Text Color": "#cd8b41"
+    "Spine Text Color": "#cd8b41",
+    "Cover Height": 147
   },
   {
     "Book Id": "2767052",
@@ -7611,7 +7892,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010101",
-    "Spine Text Color": "#d18c2b"
+    "Spine Text Color": "#d18c2b",
+    "Cover Height": 147
   },
   {
     "Book Id": "343",
@@ -7638,7 +7920,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#05030a",
-    "Spine Text Color": "#ff6462"
+    "Spine Text Color": "#ff6462",
+    "Cover Height": 146
   },
   {
     "Book Id": "332613",
@@ -7665,7 +7948,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2965a4",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "24285690",
@@ -7692,7 +7976,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f2ede7",
-    "Spine Text Color": "#090807"
+    "Spine Text Color": "#090807",
+    "Cover Height": 129
   },
   {
     "Book Id": "320",
@@ -7719,7 +8004,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#72a930",
-    "Spine Text Color": "#070b03"
+    "Spine Text Color": "#070b03",
+    "Cover Height": 147
   },
   {
     "Book Id": "6481280",
@@ -7746,7 +8032,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#c42f2f",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "18386",
@@ -7773,7 +8060,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#1a0d16",
-    "Spine Text Color": "#bf9671"
+    "Spine Text Color": "#bf9671",
+    "Cover Height": 148
   },
   {
     "Book Id": "14817",
@@ -7800,7 +8088,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#111527",
-    "Spine Text Color": "#df8e63"
+    "Spine Text Color": "#df8e63",
+    "Cover Height": 148
   },
   {
     "Book Id": "485894",
@@ -7827,7 +8116,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#8a7471",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "15823480",
@@ -7854,7 +8144,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2a1916",
-    "Spine Text Color": "#c3a54f"
+    "Spine Text Color": "#c3a54f",
+    "Cover Height": 148
   },
   {
     "Book Id": "76778",
@@ -7881,7 +8172,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ab8a66",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "162",
@@ -7908,7 +8200,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#8f7270",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "13498",
@@ -7935,7 +8228,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#080708",
-    "Spine Text Color": "#b2946d"
+    "Spine Text Color": "#b2946d",
+    "Cover Height": 148
   },
   {
     "Book Id": "1262916",
@@ -7962,7 +8256,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e15518",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "18007564",
@@ -7989,7 +8284,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#cc4f29",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "4936457",
@@ -8016,7 +8312,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#efe8d8",
-    "Spine Text Color": "#2d344a"
+    "Spine Text Color": "#2d344a",
+    "Cover Height": 148
   },
   {
     "Book Id": "7126",
@@ -8043,7 +8340,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2a2a31",
-    "Spine Text Color": "#cdb385"
+    "Spine Text Color": "#cdb385",
+    "Cover Height": 148
   },
   {
     "Book Id": "78411",
@@ -8070,7 +8368,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#57586c",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 140
   },
   {
     "Book Id": "28676",
@@ -8097,7 +8396,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4c5046",
-    "Spine Text Color": "#ffe9d3"
+    "Spine Text Color": "#ffe9d3",
+    "Cover Height": 148
   },
   {
     "Book Id": "11047925",
@@ -8124,7 +8424,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d04b31",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "17690",
@@ -8151,7 +8452,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#4e4f4f"
+    "Spine Text Color": "#4e4f4f",
+    "Cover Height": 148
   },
   {
     "Book Id": "11",
@@ -8178,7 +8480,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#50336f",
-    "Spine Text Color": "#d7e676"
+    "Spine Text Color": "#d7e676",
+    "Cover Height": 148
   },
   {
     "Book Id": "2526",
@@ -8205,7 +8508,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#fcfdfd",
-    "Spine Text Color": "#2f3334"
+    "Spine Text Color": "#2f3334",
+    "Cover Height": 148
   },
   {
     "Book Id": "234225",
@@ -8232,7 +8536,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#110d0c",
-    "Spine Text Color": "#b49b27"
+    "Spine Text Color": "#b49b27",
+    "Cover Height": 148
   },
   {
     "Book Id": "52036",
@@ -8259,7 +8564,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#252884",
-    "Spine Text Color": "#fbfcfc"
+    "Spine Text Color": "#fbfcfc",
+    "Cover Height": 148
   },
   {
     "Book Id": "17470674",
@@ -8286,7 +8592,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#614542",
-    "Spine Text Color": "#ffe78e"
+    "Spine Text Color": "#ffe78e",
+    "Cover Height": 144
   },
   {
     "Book Id": "11692391",
@@ -8313,7 +8620,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#edeeef",
-    "Spine Text Color": "#292829"
+    "Spine Text Color": "#292829",
+    "Cover Height": 148
   },
   {
     "Book Id": "4979",
@@ -8340,7 +8648,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#dda42f",
-    "Spine Text Color": "#2c2109"
+    "Spine Text Color": "#2c2109",
+    "Cover Height": 148
   },
   {
     "Book Id": "382450",
@@ -8367,7 +8676,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#1d2528",
-    "Spine Text Color": "#12bfd7"
+    "Spine Text Color": "#12bfd7",
+    "Cover Height": 148
   },
   {
     "Book Id": "11350430",
@@ -8394,7 +8704,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#303964",
-    "Spine Text Color": "#f1e9e9"
+    "Spine Text Color": "#f1e9e9",
+    "Cover Height": 148
   },
   {
     "Book Id": "11985631",
@@ -8421,7 +8732,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#82142f",
-    "Spine Text Color": "#d1eaf5"
+    "Spine Text Color": "#d1eaf5",
+    "Cover Height": 148
   },
   {
     "Book Id": "11970747",
@@ -8448,7 +8760,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#183d19",
-    "Spine Text Color": "#f4f9f3"
+    "Spine Text Color": "#f4f9f3",
+    "Cover Height": 148
   },
   {
     "Book Id": "19301931",
@@ -8475,7 +8788,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#300504",
-    "Spine Text Color": "#d4952a"
+    "Spine Text Color": "#d4952a",
+    "Cover Height": 148
   },
   {
     "Book Id": "156775",
@@ -8502,7 +8816,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#140e0b",
-    "Spine Text Color": "#ff57e0"
+    "Spine Text Color": "#ff57e0",
+    "Cover Height": 148
   },
   {
     "Book Id": "14201",
@@ -8529,7 +8844,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#010101",
-    "Spine Text Color": "#f8f8f8"
+    "Spine Text Color": "#f8f8f8",
+    "Cover Height": 148
   },
   {
     "Book Id": "14064",
@@ -8556,7 +8872,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2f3330",
-    "Spine Text Color": "#edeed1"
+    "Spine Text Color": "#edeed1",
+    "Cover Height": 148
   },
   {
     "Book Id": "7082",
@@ -8583,7 +8900,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#504d4b",
-    "Spine Text Color": "#f3f259"
+    "Spine Text Color": "#f3f259",
+    "Cover Height": 148
   },
   {
     "Book Id": "2890090",
@@ -8610,7 +8928,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#747868",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "295",
@@ -8637,7 +8956,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0c0909",
-    "Spine Text Color": "#ff6b57"
+    "Spine Text Color": "#ff6b57",
+    "Cover Height": 127
   },
   {
     "Book Id": "2493",
@@ -8664,7 +8984,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#14a6d2",
-    "Spine Text Color": "#020a16"
+    "Spine Text Color": "#020a16",
+    "Cover Height": 148
   },
   {
     "Book Id": "887877",
@@ -8691,7 +9012,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4f0c05",
-    "Spine Text Color": "#ff9743"
+    "Spine Text Color": "#ff9743",
+    "Cover Height": 148
   },
   {
     "Book Id": "6425904",
@@ -8718,7 +9040,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b2ac8a",
-    "Spine Text Color": "#2a1f14"
+    "Spine Text Color": "#2a1f14",
+    "Cover Height": 148
   },
   {
     "Book Id": "8909",
@@ -8745,7 +9068,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#01121b",
-    "Spine Text Color": "#f8b34f"
+    "Spine Text Color": "#f8b34f",
+    "Cover Height": 148
   },
   {
     "Book Id": "49552",
@@ -8772,7 +9096,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fafafa",
-    "Spine Text Color": "#292728"
+    "Spine Text Color": "#292728",
+    "Cover Height": 148
   },
   {
     "Book Id": "22034",
@@ -8799,7 +9124,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#640a0e",
-    "Spine Text Color": "#ffa5a7"
+    "Spine Text Color": "#ffa5a7",
+    "Cover Height": 148
   },
   {
     "Book Id": "169437",
@@ -8826,7 +9152,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#1a1917",
-    "Spine Text Color": "#97dbea"
+    "Spine Text Color": "#97dbea",
+    "Cover Height": 144
   },
   {
     "Book Id": "9601",
@@ -8853,7 +9180,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e0da7a",
-    "Spine Text Color": "#24416b"
+    "Spine Text Color": "#24416b",
+    "Cover Height": 148
   },
   {
     "Book Id": "862311",
@@ -8880,7 +9208,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f2ffef",
-    "Spine Text Color": "#704f3e"
+    "Spine Text Color": "#704f3e",
+    "Cover Height": 148
   },
   {
     "Book Id": "1305",
@@ -8907,7 +9236,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#040806",
-    "Spine Text Color": "#ff684c"
+    "Spine Text Color": "#ff684c",
+    "Cover Height": 148
   },
   {
     "Book Id": "112537",
@@ -8934,7 +9264,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#131416",
-    "Spine Text Color": "#6ea2e8"
+    "Spine Text Color": "#6ea2e8",
+    "Cover Height": 148
   },
   {
     "Book Id": "436982",
@@ -8961,7 +9292,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#04070c",
-    "Spine Text Color": "#34a3d4"
+    "Spine Text Color": "#34a3d4",
+    "Cover Height": 148
   },
   {
     "Book Id": "531509",
@@ -8988,7 +9320,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f1d0ad",
-    "Spine Text Color": "#5a382a"
+    "Spine Text Color": "#5a382a",
+    "Cover Height": 148
   },
   {
     "Book Id": "18423",
@@ -9015,7 +9348,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f2f4f3",
-    "Spine Text Color": "#0a5781"
+    "Spine Text Color": "#0a5781",
+    "Cover Height": 148
   },
   {
     "Book Id": "40395",
@@ -9042,7 +9376,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fc1316",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "17184",
@@ -9069,7 +9404,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#7aafb5",
-    "Spine Text Color": "#1c1c1c"
+    "Spine Text Color": "#1c1c1c",
+    "Cover Height": 148
   },
   {
     "Book Id": "1406553",
@@ -9096,7 +9432,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2f2c56",
-    "Spine Text Color": "#f4f4f3"
+    "Spine Text Color": "#f4f4f3",
+    "Cover Height": 148
   },
   {
     "Book Id": "2183989",
@@ -9123,7 +9460,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f8f3b1",
-    "Spine Text Color": "#603918"
+    "Spine Text Color": "#603918",
+    "Cover Height": 148
   },
   {
     "Book Id": "8579173",
@@ -9150,7 +9488,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4e3516",
-    "Spine Text Color": "#ecc68f"
+    "Spine Text Color": "#ecc68f",
+    "Cover Height": 128
   },
   {
     "Book Id": "391724",
@@ -9177,7 +9516,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fafafa",
-    "Spine Text Color": "#162848"
+    "Spine Text Color": "#162848",
+    "Cover Height": 148
   },
   {
     "Book Id": "175516",
@@ -9204,7 +9544,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fafaf9",
-    "Spine Text Color": "#162848"
+    "Spine Text Color": "#162848",
+    "Cover Height": 148
   },
   {
     "Book Id": "899492",
@@ -9231,7 +9572,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#060b0e",
-    "Spine Text Color": "#ff6c48"
+    "Spine Text Color": "#ff6c48",
+    "Cover Height": 140
   },
   {
     "Book Id": "364985",
@@ -9258,7 +9600,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e7c035",
-    "Spine Text Color": "#291603"
+    "Spine Text Color": "#291603",
+    "Cover Height": 124
   },
   {
     "Book Id": "13023",
@@ -9285,7 +9628,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b6c9cb",
-    "Spine Text Color": "#4d2d2a"
+    "Spine Text Color": "#4d2d2a",
+    "Cover Height": 131
   },
   {
     "Book Id": "18490",
@@ -9312,7 +9656,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030304",
-    "Spine Text Color": "#e7b150"
+    "Spine Text Color": "#e7b150",
+    "Cover Height": 148
   },
   {
     "Book Id": "15850704",
@@ -9339,7 +9684,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefd",
-    "Spine Text Color": "#a12755"
+    "Spine Text Color": "#a12755",
+    "Cover Height": 148
   },
   {
     "Book Id": "83346",
@@ -9366,7 +9712,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#131817",
-    "Spine Text Color": "#f1eb93"
+    "Spine Text Color": "#f1eb93",
+    "Cover Height": 148
   },
   {
     "Book Id": "135479",
@@ -9393,7 +9740,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#ceced3",
-    "Spine Text Color": "#323753"
+    "Spine Text Color": "#323753",
+    "Cover Height": 148
   },
   {
     "Book Id": "4981",
@@ -9420,7 +9768,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#5d462e",
-    "Spine Text Color": "#ffdfde"
+    "Spine Text Color": "#ffdfde",
+    "Cover Height": 148
   },
   {
     "Book Id": "4980",
@@ -9447,7 +9796,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2e3c29",
-    "Spine Text Color": "#96ceff"
+    "Spine Text Color": "#96ceff",
+    "Cover Height": 148
   },
   {
     "Book Id": "17245",
@@ -9474,7 +9824,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#322d2e",
-    "Spine Text Color": "#f4efeb"
+    "Spine Text Color": "#f4efeb",
+    "Cover Height": 148
   },
   {
     "Book Id": "24800",
@@ -9501,7 +9852,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#161111",
-    "Spine Text Color": "#db8c52"
+    "Spine Text Color": "#db8c52",
+    "Cover Height": 131
   },
   {
     "Book Id": "1512702",
@@ -9528,7 +9880,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#edd6ab",
-    "Spine Text Color": "#1d484f"
+    "Spine Text Color": "#1d484f",
+    "Cover Height": 148
   },
   {
     "Book Id": "7613",
@@ -9555,7 +9908,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#131417",
-    "Spine Text Color": "#f6f1db"
+    "Spine Text Color": "#f6f1db",
+    "Cover Height": 148
   },
   {
     "Book Id": "5043",
@@ -9582,7 +9936,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefef4",
-    "Spine Text Color": "#675339"
+    "Spine Text Color": "#675339",
+    "Cover Height": 148
   },
   {
     "Book Id": "7144",
@@ -9609,7 +9964,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#273136",
-    "Spine Text Color": "#f6f8f9"
+    "Spine Text Color": "#f6f8f9",
+    "Cover Height": 148
   },
   {
     "Book Id": "168668",
@@ -9636,7 +9992,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#194b90",
-    "Spine Text Color": "#f5fcfb"
+    "Spine Text Color": "#f5fcfb",
+    "Cover Height": 148
   },
   {
     "Book Id": "4982",
@@ -9663,7 +10020,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0c0908",
-    "Spine Text Color": "#d5910f"
+    "Spine Text Color": "#d5910f",
+    "Cover Height": 148
   },
   {
     "Book Id": "5907",
@@ -9690,7 +10048,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#254233",
-    "Spine Text Color": "#f8cf50"
+    "Spine Text Color": "#f8cf50",
+    "Cover Height": 148
   },
   {
     "Book Id": "10664113",
@@ -9717,7 +10076,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d0d3d4",
-    "Spine Text Color": "#2f342f"
+    "Spine Text Color": "#2f342f",
+    "Cover Height": 149
   },
   {
     "Book Id": "22590",
@@ -9744,7 +10104,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#faaf3a",
-    "Spine Text Color": "#1c3430"
+    "Spine Text Color": "#1c3430",
+    "Cover Height": 148
   },
   {
     "Book Id": "105576",
@@ -9771,7 +10132,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfcfc",
-    "Spine Text Color": "#310e08"
+    "Spine Text Color": "#310e08",
+    "Cover Height": 148
   },
   {
     "Book Id": "13497",
@@ -9798,7 +10160,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b2362e",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "62291",
@@ -9825,7 +10188,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#2c744b",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "10572",
@@ -9852,7 +10216,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#aa7326",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "5470",
@@ -9879,7 +10244,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#0f0b0a"
+    "Spine Text Color": "#0f0b0a",
+    "Cover Height": 148
   },
   {
     "Book Id": "13496",
@@ -9906,7 +10272,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#903818",
-    "Spine Text Color": "#fff4eb"
+    "Spine Text Color": "#fff4eb",
+    "Cover Height": 148
   },
   {
     "Book Id": "2657",
@@ -9933,7 +10300,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#160e12",
-    "Spine Text Color": "#ff724c"
+    "Spine Text Color": "#ff724c",
+    "Cover Height": 148
   },
   {
     "Book Id": "17948832",
@@ -9960,7 +10328,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0c69e8",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 143
   },
   {
     "Book Id": "18324312",
@@ -9987,7 +10356,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffefe",
-    "Spine Text Color": "#93317a"
+    "Spine Text Color": "#93317a",
+    "Cover Height": 131
   },
   {
     "Book Id": "23245313",
@@ -10014,7 +10384,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d4c868",
-    "Spine Text Color": "#3a3722"
+    "Spine Text Color": "#3a3722",
+    "Cover Height": 136
   },
   {
     "Book Id": "24791466",
@@ -10041,7 +10412,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#7b4386"
+    "Spine Text Color": "#7b4386",
+    "Cover Height": 120
   },
   {
     "Book Id": "15809496",
@@ -10068,7 +10440,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#9e2a6b"
+    "Spine Text Color": "#9e2a6b",
+    "Cover Height": 131
   },
   {
     "Book Id": "17971957",
@@ -10095,7 +10468,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#0c0c0c"
+    "Spine Text Color": "#0c0c0c",
+    "Cover Height": 120
   },
   {
     "Book Id": "20524444",
@@ -10122,7 +10496,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#592227",
-    "Spine Text Color": "#dac334"
+    "Spine Text Color": "#dac334",
+    "Cover Height": 125
   },
   {
     "Book Id": "41803",
@@ -10149,7 +10524,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ec0101",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "475858",
@@ -10176,7 +10552,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdaf72",
-    "Spine Text Color": "#690520"
+    "Spine Text Color": "#690520",
+    "Cover Height": 129
   },
   {
     "Book Id": "8129142",
@@ -10203,7 +10580,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#445068",
-    "Spine Text Color": "#ffecd0"
+    "Spine Text Color": "#ffecd0",
+    "Cover Height": 125
   },
   {
     "Book Id": "548914",
@@ -10230,7 +10608,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefe07",
-    "Spine Text Color": "#a80b38"
+    "Spine Text Color": "#a80b38",
+    "Cover Height": 124
   },
   {
     "Book Id": "43713",
@@ -10257,7 +10636,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#6d30b8",
-    "Spine Text Color": "#fff4f1"
+    "Spine Text Color": "#fff4f1",
+    "Cover Height": 148
   },
   {
     "Book Id": "74645",
@@ -10284,7 +10664,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#b34748",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "21557290",
@@ -10311,7 +10692,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#af112a"
+    "Spine Text Color": "#af112a",
+    "Cover Height": 131
   },
   {
     "Book Id": "23463279",
@@ -10338,7 +10720,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffeff",
-    "Spine Text Color": "#a62538"
+    "Spine Text Color": "#a62538",
+    "Cover Height": 131
   },
   {
     "Book Id": "34691716",
@@ -10365,7 +10748,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#feffff",
-    "Spine Text Color": "#0355a5"
+    "Spine Text Color": "#0355a5",
+    "Cover Height": 131
   },
   {
     "Book Id": "13421400",
@@ -10392,7 +10776,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#aaaba1",
-    "Spine Text Color": "#391509"
+    "Spine Text Color": "#391509",
+    "Cover Height": 124
   },
   {
     "Book Id": "23237460",
@@ -10419,7 +10804,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fffefe",
-    "Spine Text Color": "#b0122a"
+    "Spine Text Color": "#b0122a",
+    "Cover Height": 131
   },
   {
     "Book Id": "23612990",
@@ -10446,7 +10832,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#414046",
-    "Spine Text Color": "#ffcd8b"
+    "Spine Text Color": "#ffcd8b",
+    "Cover Height": 125
   },
   {
     "Book Id": "29598815",
@@ -10473,7 +10860,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#e4243d",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 148
   },
   {
     "Book Id": "18652140",
@@ -10500,7 +10888,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#d72646",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 131
   },
   {
     "Book Id": "17743",
@@ -10527,7 +10916,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#486f2a",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 117
   },
   {
     "Book Id": "17746",
@@ -10554,7 +10944,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#faf3e3",
-    "Spine Text Color": "#535248"
+    "Spine Text Color": "#535248",
+    "Cover Height": 126
   },
   {
     "Book Id": "15765619",
@@ -10581,7 +10972,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#faf4d7",
-    "Spine Text Color": "#040404"
+    "Spine Text Color": "#040404",
+    "Cover Height": 148
   },
   {
     "Book Id": "17745",
@@ -10608,7 +11000,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbf8f9",
-    "Spine Text Color": "#545150"
+    "Spine Text Color": "#545150",
+    "Cover Height": 126
   },
   {
     "Book Id": "17744",
@@ -10635,7 +11028,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f8e5b7",
-    "Spine Text Color": "#504a3b"
+    "Spine Text Color": "#504a3b",
+    "Cover Height": 126
   },
   {
     "Book Id": "853213",
@@ -10662,7 +11056,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfefe",
-    "Spine Text Color": "#02616d"
+    "Spine Text Color": "#02616d",
+    "Cover Height": 148
   },
   {
     "Book Id": "1122695",
@@ -10689,7 +11084,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#cff5fe",
-    "Spine Text Color": "#3c5163"
+    "Spine Text Color": "#3c5163",
+    "Cover Height": 109
   },
   {
     "Book Id": "4415662",
@@ -10716,7 +11112,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfcfc",
-    "Spine Text Color": "#2f2f2f"
+    "Spine Text Color": "#2f2f2f",
+    "Cover Height": 78
   },
   {
     "Book Id": "3131525",
@@ -10743,7 +11140,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030c1a",
-    "Spine Text Color": "#c1933d"
+    "Spine Text Color": "#c1933d",
+    "Cover Height": 130
   },
   {
     "Book Id": "67825",
@@ -10770,7 +11168,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbfaf7",
-    "Spine Text Color": "#051409"
+    "Spine Text Color": "#051409",
+    "Cover Height": 148
   },
   {
     "Book Id": "1753460",
@@ -10797,7 +11196,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ccd2d1",
-    "Spine Text Color": "#053f6f"
+    "Spine Text Color": "#053f6f",
+    "Cover Height": 124
   },
   {
     "Book Id": "3839712",
@@ -10824,7 +11224,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#cfd3ce",
-    "Spine Text Color": "#0c4264"
+    "Spine Text Color": "#0c4264",
+    "Cover Height": 148
   },
   {
     "Book Id": "910789",
@@ -10851,7 +11252,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#013d7b",
-    "Spine Text Color": "#bcd1ff"
+    "Spine Text Color": "#bcd1ff",
+    "Cover Height": 113
   },
   {
     "Book Id": "1069723",
@@ -10878,7 +11280,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfcf9",
-    "Spine Text Color": "#615526"
+    "Spine Text Color": "#615526",
+    "Cover Height": 147
   },
   {
     "Book Id": "433443",
@@ -10905,7 +11308,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#35703b",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "433567",
@@ -10932,7 +11336,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0e0d0d",
-    "Spine Text Color": "#f8f995"
+    "Spine Text Color": "#f8f995",
+    "Cover Height": 148
   },
   {
     "Book Id": "116185",
@@ -10959,7 +11364,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#101119",
-    "Spine Text Color": "#f07a89"
+    "Spine Text Color": "#f07a89",
+    "Cover Height": 148
   },
   {
     "Book Id": "3023",
@@ -10986,7 +11392,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#db525a",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 145
   },
   {
     "Book Id": "1741472",
@@ -11013,7 +11420,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#fbfcfc",
-    "Spine Text Color": "#036161"
+    "Spine Text Color": "#036161",
+    "Cover Height": 130
   },
   {
     "Book Id": "13136685",
@@ -11040,7 +11448,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#bbd147",
-    "Spine Text Color": "#242121"
+    "Spine Text Color": "#242121",
+    "Cover Height": 129
   },
   {
     "Book Id": "86591",
@@ -11067,7 +11476,8 @@
     "Read Count": "0",
     "Owned Copies": "0",
     "Spine Color": "#fdfdfd",
-    "Spine Text Color": "#074877"
+    "Spine Text Color": "#074877",
+    "Cover Height": 131
   },
   {
     "Book Id": "112262",
@@ -11094,7 +11504,8 @@
     "Read Count": "0",
     "Owned Copies": "1",
     "Spine Color": "#685b57",
-    "Spine Text Color": "#ffffff"
+    "Spine Text Color": "#ffffff",
+    "Cover Height": 148
   },
   {
     "Book Id": "6219481",
@@ -11121,7 +11532,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f7f7f7",
-    "Spine Text Color": "#a1251e"
+    "Spine Text Color": "#a1251e",
+    "Cover Height": 131
   },
   {
     "Book Id": "15499449",
@@ -11148,7 +11560,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#020101",
-    "Spine Text Color": "#d9d1c6"
+    "Spine Text Color": "#d9d1c6",
+    "Cover Height": 124
   },
   {
     "Book Id": "69736",
@@ -11175,7 +11588,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fdfda6",
-    "Spine Text Color": "#393217"
+    "Spine Text Color": "#393217",
+    "Cover Height": 123
   },
   {
     "Book Id": "20578310",
@@ -11202,7 +11616,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#692266",
-    "Spine Text Color": "#8ceb5e"
+    "Spine Text Color": "#8ceb5e",
+    "Cover Height": 131
   },
   {
     "Book Id": "2047544",
@@ -11229,7 +11644,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#030602",
-    "Spine Text Color": "#ff645e"
+    "Spine Text Color": "#ff645e",
+    "Cover Height": 129
   },
   {
     "Book Id": "772585",
@@ -11256,7 +11672,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#094b71",
-    "Spine Text Color": "#b6e7ff"
+    "Spine Text Color": "#b6e7ff",
+    "Cover Height": 124
   },
   {
     "Book Id": "3226758",
@@ -11283,7 +11700,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#8d3678"
+    "Spine Text Color": "#8d3678",
+    "Cover Height": 131
   },
   {
     "Book Id": "17623632",
@@ -11310,7 +11728,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#02635c"
+    "Spine Text Color": "#02635c",
+    "Cover Height": 131
   },
   {
     "Book Id": "13355765",
@@ -11337,7 +11756,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#464742",
-    "Spine Text Color": "#aaf35c"
+    "Spine Text Color": "#aaf35c",
+    "Cover Height": 125
   },
   {
     "Book Id": "17994",
@@ -11364,7 +11784,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#f1eeee",
-    "Spine Text Color": "#604d2e"
+    "Spine Text Color": "#604d2e",
+    "Cover Height": 148
   },
   {
     "Book Id": "62158",
@@ -11391,7 +11812,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#13182e",
-    "Spine Text Color": "#8ba3e0"
+    "Spine Text Color": "#8ba3e0",
+    "Cover Height": 148
   },
   {
     "Book Id": "9282423",
@@ -11418,7 +11840,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#335d79"
+    "Spine Text Color": "#335d79",
+    "Cover Height": 132
   },
   {
     "Book Id": "13366727",
@@ -11445,7 +11868,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#4c2f16",
-    "Spine Text Color": "#f8b870"
+    "Spine Text Color": "#f8b870",
+    "Cover Height": 128
   },
   {
     "Book Id": "78378",
@@ -11472,7 +11896,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fcfdfd",
-    "Spine Text Color": "#025b91"
+    "Spine Text Color": "#025b91",
+    "Cover Height": 132
   },
   {
     "Book Id": "13610343",
@@ -11499,7 +11924,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#0d0b0c",
-    "Spine Text Color": "#f6bc2b"
+    "Spine Text Color": "#f6bc2b",
+    "Cover Height": 131
   },
   {
     "Book Id": "15992715",
@@ -11526,7 +11952,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#332f30"
+    "Spine Text Color": "#332f30",
+    "Cover Height": 148
   },
   {
     "Book Id": "13073554",
@@ -11553,7 +11980,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#23187b",
-    "Spine Text Color": "#ffa166"
+    "Spine Text Color": "#ffa166",
+    "Cover Height": 148
   },
   {
     "Book Id": "198207",
@@ -11580,7 +12008,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fea501",
-    "Spine Text Color": "#013046"
+    "Spine Text Color": "#013046",
+    "Cover Height": 122
   },
   {
     "Book Id": "174904",
@@ -11607,7 +12036,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#897196",
-    "Spine Text Color": "#000000"
+    "Spine Text Color": "#000000",
+    "Cover Height": 125
   },
   {
     "Book Id": "405790",
@@ -11634,7 +12064,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#91b4d4",
-    "Spine Text Color": "#182734"
+    "Spine Text Color": "#182734",
+    "Cover Height": 131
   },
   {
     "Book Id": "13485355",
@@ -11661,7 +12092,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#c6dff5",
-    "Spine Text Color": "#332f2d"
+    "Spine Text Color": "#332f2d",
+    "Cover Height": 145
   },
   {
     "Book Id": "2047737",
@@ -11688,7 +12120,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#050b07",
-    "Spine Text Color": "#fcfdfd"
+    "Spine Text Color": "#fcfdfd",
+    "Cover Height": 148
   },
   {
     "Book Id": "1069827",
@@ -11715,7 +12148,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#292929"
+    "Spine Text Color": "#292929",
+    "Cover Height": 120
   },
   {
     "Book Id": "9364729",
@@ -11742,7 +12176,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#040608",
-    "Spine Text Color": "#ff646f"
+    "Spine Text Color": "#ff646f",
+    "Cover Height": 131
   },
   {
     "Book Id": "11172642",
@@ -11769,7 +12204,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#881011",
-    "Spine Text Color": "#fcfbfb"
+    "Spine Text Color": "#fcfbfb",
+    "Cover Height": 130
   },
   {
     "Book Id": "9856964",
@@ -11796,7 +12232,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#080808"
+    "Spine Text Color": "#080808",
+    "Cover Height": 120
   },
   {
     "Book Id": "10198539",
@@ -11823,7 +12260,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#01635d"
+    "Spine Text Color": "#01635d",
+    "Cover Height": 131
   },
   {
     "Book Id": "52084",
@@ -11850,7 +12288,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#c2c2ba",
-    "Spine Text Color": "#333331"
+    "Spine Text Color": "#333331",
+    "Cover Height": 126
   },
   {
     "Book Id": "13629",
@@ -11877,7 +12316,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#194f5a",
-    "Spine Text Color": "#f4f5f6"
+    "Spine Text Color": "#f4f5f6",
+    "Cover Height": 147
   },
   {
     "Book Id": "6713575",
@@ -11904,7 +12344,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#000000",
-    "Spine Text Color": "#fbc83b"
+    "Spine Text Color": "#fbc83b",
+    "Cover Height": 148
   },
   {
     "Book Id": "4099",
@@ -11931,7 +12372,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#131512",
-    "Spine Text Color": "#afac8d"
+    "Spine Text Color": "#afac8d",
+    "Cover Height": 127
   },
   {
     "Book Id": "7003902",
@@ -11958,7 +12400,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fbfbfb",
-    "Spine Text Color": "#8b3575"
+    "Spine Text Color": "#8b3575",
+    "Cover Height": 148
   },
   {
     "Book Id": "428594",
@@ -11985,7 +12428,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffca3e",
-    "Spine Text Color": "#7e0b10"
+    "Spine Text Color": "#7e0b10",
+    "Cover Height": 125
   },
   {
     "Book Id": "1898432",
@@ -12012,7 +12456,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#8f1e1a",
-    "Spine Text Color": "#d8e7ff"
+    "Spine Text Color": "#d8e7ff",
+    "Cover Height": 124
   },
   {
     "Book Id": "6636216",
@@ -12039,7 +12484,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#8d367a"
+    "Spine Text Color": "#8d367a",
+    "Cover Height": 131
   },
   {
     "Book Id": "7183279",
@@ -12066,7 +12512,8 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#ffffff",
-    "Spine Text Color": "#303030"
+    "Spine Text Color": "#303030",
+    "Cover Height": 121
   },
   {
     "Book Id": "2485075",
@@ -12093,7 +12540,8 @@
     "Read Count": "1",
     "Owned Copies": "1",
     "Spine Color": "#fefefe",
-    "Spine Text Color": "#8f357c"
+    "Spine Text Color": "#8f357c",
+    "Cover Height": 131
   },
   {
     "Book Id": "2998152",
@@ -12120,6 +12568,7 @@
     "Read Count": "1",
     "Owned Copies": "0",
     "Spine Color": "#feffff",
-    "Spine Text Color": "#02645e"
+    "Spine Text Color": "#02645e",
+    "Cover Height": 131
   }
 ]

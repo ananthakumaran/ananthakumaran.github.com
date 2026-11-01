@@ -1,4 +1,4 @@
-.PHONY: all book-json book-covers book-colors book-mockups vendor-tooltips commit develop
+.PHONY: all book-json book-covers book-colors book-mockups book-heights vendor-tooltips commit develop
 
 all: commit
 
@@ -11,12 +11,17 @@ book-covers: book-json
 	node generate-covers.js
 	node generate-spine-colors.js
 	node generate-book-mockups.js
+	node generate-cover-heights.js
 
 book-colors:
 	node generate-spine-colors.js
 
 book-mockups:
 	node generate-book-mockups.js $(ARGS)
+	node generate-cover-heights.js
+
+book-heights:
+	node generate-cover-heights.js
 
 vendor-tooltips:
 	node vendor-tooltips.js
